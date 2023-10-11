@@ -1,0 +1,38 @@
+{
+    "name": "abantecart/ups-php",
+    "description": "UPS PHP SDK based on OAuth",
+    "keywords": [
+        "ups",
+        "api",
+        "php",
+        "sdk",
+        "oauth",
+        "shipping processing",
+        "rest",
+        "web service"
+    ],
+    "homepage": "https://www.abantecart.com",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0",
+        "wikimedia/composer-merge-plugin": "2.0.1"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "*/composer.json"
+            ],
+            "recurse": true
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "wikimedia/composer-merge-plugin": true
+        }
+    }
+}

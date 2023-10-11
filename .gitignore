@@ -1,0 +1,5 @@
+/.idea/
+/.swagger-codegen/
+/vendor/
+/composer.lock
+/build.php

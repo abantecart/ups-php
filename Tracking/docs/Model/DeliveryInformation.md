@@ -1,0 +1,11 @@
+# DeliveryInformation
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**location** | **string** | location | [optional] 
+**received_by** | **string** | receivedBy | [optional] 
+**signature** | [**\UPS\Tracking\Tracking\Signature**](Signature.md) |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
