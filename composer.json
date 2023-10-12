@@ -13,6 +13,16 @@
     ],
     "homepage": "https://www.abantecart.com",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Suprunenko",
+            "email": "abolabo@gmail.com"
+        },
+        {
+            "name": "AbanteCart Team",
+            "email": "help@abantecart.com"
+        }
+    ],
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-curl": "*",
