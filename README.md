@@ -17,7 +17,7 @@ PHP 7.4 and later.
 You can install the bindings via [Composer](http://getcomposer.org/). To install all supported APIs run the following command:
 
 ```bash
-composer install
+composer require abantecart/ups-php
 ```
 If you prefer to install not all APIs you should to run this command inside selected API directory.
 
