@@ -1,13 +1,15 @@
 # UPS\AddressValidation\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/api*
+All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addressValidation**](DefaultApi.md#addressvalidation) | **POST** /addressvalidation/{version}/{requestoption} | The Address Validation Street Level API can be used to check addresses against the United States Postal Service database of valid addresses in the U.S. and Puerto Rico.
+[**addressValidation**](DefaultApi.md#addressvalidation) | **POST** /addressvalidation/{version}/{requestoption} | Address Validation
 
 # **addressValidation**
 > \UPS\AddressValidation\AddressValidation\XAVResponseWrapper addressValidation($body, $requestoption, $version, $regionalrequestindicator, $maximumcandidatelistsize)
+
+Address Validation
 
 The Address Validation Street Level API can be used to check addresses against the United States Postal Service database of valid addresses in the U.S. and Puerto Rico.
 

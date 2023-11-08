@@ -1,19 +1,75 @@
 # UPS\OAuthAuthCode\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/*
+All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**generateToken**](DefaultApi.md#generatetoken) | **POST** /security/v1/oauth/token | 
-[**refreshToken**](DefaultApi.md#refreshtoken) | **POST** /security/v1/oauth/refresh | 
-[**validateClient**](DefaultApi.md#validateclient) | **GET** /security/v1/oauth/validate-client | 
+[**authorizeClient**](DefaultApi.md#authorizeclient) | **GET** /v1/oauth/authorize | Authorize Client
+[**generateToken**](DefaultApi.md#generatetoken) | **POST** /v1/oauth/token | 
+[**refreshToken**](DefaultApi.md#refreshtoken) | **POST** /v1/oauth/refresh | Refresh Token
+
+# **authorizeClient**
+> authorizeClient($client_id, $redirect_uri, $response_type, $state, $scope)
+
+Authorize Client
+
+The Authorize Client endpoint initiates the OAuth flow by redirecting the user to UPS to log in and authorize the client application. It accepts the parameters listed below to facilitate the user authorization flow. A successful response redirects back to the client with an authorization code that can be exchanged for an access token.
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new UPS\OAuthAuthCode\Request\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$client_id = "client_id_example"; // string | Client id for the requesting application.
+$redirect_uri = "redirect_uri_example"; // string | Callback URL for the requesting application.
+$response_type = "response_type_example"; // string | Valid Values: code
+$state = "state_example"; // string | Optional value supplied by the client, will be returned during the redirection back to the client. Can be utilized to maintain state between Auth-Code request and callback event.
+$scope = "scope_example"; // string | Optional value supplied by the client, will be returned during the redirection back to the client.
+
+try {
+    $apiInstance->authorizeClient($client_id, $redirect_uri, $response_type, $state, $scope);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->authorizeClient: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **client_id** | **string**| Client id for the requesting application. |
+ **redirect_uri** | **string**| Callback URL for the requesting application. |
+ **response_type** | **string**| Valid Values: code |
+ **state** | **string**| Optional value supplied by the client, will be returned during the redirection back to the client. Can be utilized to maintain state between Auth-Code request and callback event. | [optional]
+ **scope** | **string**| Optional value supplied by the client, will be returned during the redirection back to the client. | [optional]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **generateToken**
 > \UPS\OAuthAuthCode\OAuthAuthCode\GenerateTokenSuccessResponse generateToken($grant_type, $code, $redirect_uri, $x_merchant_id)
 
 
 
-Generate Token
+The Generate Token endpoint exchanges the authorization code received from Authorize Client for an access token and a refresh token. The client uses the access token to make API requests on behalf of the user by including it in the Authorization header. The access token will expire after a certain period and can be refreshed by using the RefreshToken endpoint.
 
 ### Example
 ```php
@@ -72,9 +128,9 @@ Name | Type | Description  | Notes
 # **refreshToken**
 > \UPS\OAuthAuthCode\OAuthAuthCode\RefreshTokenSuccessResponse refreshToken($grant_type, $refresh_token)
 
-
-
 Refresh Token
+
+The RefreshToken endpoint is used to refresh an expired access token in order to continue accessing the UPS API on behalf of a user. The endpoint generates a new access/refresh token pair by exchanging a valid refresh token. A successful response returns new access and refresh tokens for ongoing API access without reprompting the user.
 
 ### Example
 ```php
@@ -122,57 +178,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **validateClient**
-> \UPS\OAuthAuthCode\OAuthAuthCode\ValidateSuccessResponse validateClient($client_id, $redirect_uri)
-
-
-
-Validate Client
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-$apiInstance = new UPS\OAuthAuthCode\Request\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-$client_id = "client_id_example"; // string | Client id for the requesting application.
-$redirect_uri = "redirect_uri_example"; // string | Callback URL for the requesting application.
-
-try {
-    $result = $apiInstance->validateClient($client_id, $redirect_uri);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->validateClient: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **client_id** | **string**| Client id for the requesting application. |
- **redirect_uri** | **string**| Callback URL for the requesting application. |
-
-### Return type
-
-[**\UPS\OAuthAuthCode\OAuthAuthCode\ValidateSuccessResponse**](../Model/ValidateSuccessResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

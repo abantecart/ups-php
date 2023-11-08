@@ -4,15 +4,15 @@ All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**acceptanceAuditPreCheck**](DefaultApi.md#acceptanceauditprecheck) | **POST** /dangerousgoods/{version}/acceptanceauditprecheck | The Dangerous Goods API provides the ability to determine what Dangerous Goods (also known as Hazardous Materials) can be carried by UPS.
-[**chemicalReferenceData**](DefaultApi.md#chemicalreferencedata) | **POST** /dangerousgoods/{version}/chemicalreferencedata | The Dangerous Goods API provides the ability to determine what Dangerous Goods (also known as Hazardous Materials) can be carried by UPS.
+[**acceptanceAuditPreCheck**](DefaultApi.md#acceptanceauditprecheck) | **POST** /dangerousgoods/{version}/acceptanceauditprecheck | Acceptance Audit Pre-check
+[**chemicalReferenceData**](DefaultApi.md#chemicalreferencedata) | **POST** /dangerousgoods/{version}/chemicalreferencedata | Chemical Reference Data
 
 # **acceptanceAuditPreCheck**
 > \UPS\DangerousGoods\DangerousGoods\DANGEROUSGOODSUTILITYAPCResponseWrapper acceptanceAuditPreCheck($body, $trans_id, $transaction_src, $version)
 
-The Dangerous Goods API provides the ability to determine what Dangerous Goods (also known as Hazardous Materials) can be carried by UPS.
-
 Acceptance Audit Pre-check
+
+The Dangerous Goods API provides the ability to determine what Dangerous Goods (also known as Hazardous Materials) can be carried by UPS.
 
 ### Example
 ```php
@@ -69,9 +69,9 @@ Name | Type | Description  | Notes
 # **chemicalReferenceData**
 > \UPS\DangerousGoods\DangerousGoods\DANGEROUSGOODSUTILITYResponseWrapper chemicalReferenceData($body, $trans_id, $transaction_src, $version)
 
-The Dangerous Goods API provides the ability to determine what Dangerous Goods (also known as Hazardous Materials) can be carried by UPS.
-
 Chemical Reference Data
+
+The Dangerous Goods API provides the ability to determine what Dangerous Goods (also known as Hazardous Materials) can be carried by UPS.
 
 ### Example
 ```php

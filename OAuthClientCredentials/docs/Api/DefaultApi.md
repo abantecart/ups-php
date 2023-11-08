@@ -1,13 +1,13 @@
 # UPS\OAuthClientCredentials\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/*
+All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**generateToken**](DefaultApi.md#generatetoken) | **POST** /security/v1/oauth/token | 
+[**createToken**](DefaultApi.md#createtoken) | **POST** /security/v1/oauth/token | 
 
-# **generateToken**
-> \UPS\OAuthClientCredentials\OAuthClientCredentials\GenerateTokenSuccessResponse generateToken($grant_type, $x_merchant_id)
+# **createToken**
+> \UPS\OAuthClientCredentials\OAuthClientCredentials\TokenSuccessResponse createToken($grant_type, $x_merchant_id)
 
 
 
@@ -31,10 +31,10 @@ $grant_type = "grant_type_example"; // string |
 $x_merchant_id = "x_merchant_id_example"; // string | Client merchant ID
 
 try {
-    $result = $apiInstance->generateToken($grant_type, $x_merchant_id);
+    $result = $apiInstance->createToken($grant_type, $x_merchant_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->generateToken: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DefaultApi->createToken: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\UPS\OAuthClientCredentials\OAuthClientCredentials\GenerateTokenSuccessResponse**](../Model/GenerateTokenSuccessResponse.md)
+[**\UPS\OAuthClientCredentials\OAuthClientCredentials\TokenSuccessResponse**](../Model/TokenSuccessResponse.md)
 
 ### Authorization
 

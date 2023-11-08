@@ -4,19 +4,19 @@ All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**pickupCancel**](DefaultApi.md#pickupcancel) | **DELETE** /shipments/{version}/pickup/{CancelBy} | Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-[**pickupCreation**](DefaultApi.md#pickupcreation) | **POST** /pickupcreation/{version}/pickup | Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-[**pickupGetPoliticalDivision1List**](DefaultApi.md#pickupgetpoliticaldivision1list) | **GET** /pickup/{version}/countries/{countrycode} | Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-[**pickupGetServiceCenterFacilities**](DefaultApi.md#pickupgetservicecenterfacilities) | **POST** /pickup/{version}/servicecenterlocations | Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-[**pickupPendingStatus**](DefaultApi.md#pickuppendingstatus) | **GET** /shipments/{version}/pickup/{pickuptype} | Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-[**pickupRate**](DefaultApi.md#pickuprate) | **POST** /shipments/{version}/pickup/{pickuptype} | Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
+[**pickupCancel**](DefaultApi.md#pickupcancel) | **DELETE** /shipments/{version}/pickup/{CancelBy} | Pickup Cancel
+[**pickupCreation**](DefaultApi.md#pickupcreation) | **POST** /pickupcreation/{version}/pickup | Pickup Creation
+[**pickupGetPoliticalDivision1List**](DefaultApi.md#pickupgetpoliticaldivision1list) | **GET** /pickup/{version}/countries/{countrycode} | Pickup Get Political Division1 List
+[**pickupGetServiceCenterFacilities**](DefaultApi.md#pickupgetservicecenterfacilities) | **POST** /pickup/{version}/servicecenterlocations | Pickup Get Service Center Facilities
+[**pickupPendingStatus**](DefaultApi.md#pickuppendingstatus) | **GET** /shipments/{version}/pickup/{pickuptype} | Pickup Pending Status
+[**pickupRate**](DefaultApi.md#pickuprate) | **POST** /shipments/{version}/pickup/{pickuptype} | Pickup Rate
 
 # **pickupCancel**
 > \UPS\Pickup\Pickup\PICKUPCancelResponseWrapper pickupCancel($cancel_by, $version, $trans_id, $transaction_src, $prn)
 
-Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-
 Pickup Cancel
+
+Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
 
 ### Example
 ```php
@@ -75,9 +75,9 @@ Name | Type | Description  | Notes
 # **pickupCreation**
 > \UPS\Pickup\Pickup\PICKUPCreationResponseWrapper pickupCreation($body, $version, $trans_id, $transaction_src)
 
-Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-
 Pickup Creation
+
+Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
 
 ### Example
 ```php
@@ -134,9 +134,9 @@ Name | Type | Description  | Notes
 # **pickupGetPoliticalDivision1List**
 > \UPS\Pickup\Pickup\PICKUPPolDivResponseWrapper pickupGetPoliticalDivision1List($trans_id, $transaction_src, $version, $countrycode)
 
-Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-
 Pickup Get Political Division1 List
+
+Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
 
 ### Example
 ```php
@@ -193,9 +193,9 @@ Name | Type | Description  | Notes
 # **pickupGetServiceCenterFacilities**
 > \UPS\Pickup\Pickup\PICKUPServCenterResponseWrapper pickupGetServiceCenterFacilities($body, $version, $trans_id, $transaction_src)
 
-Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-
 Pickup Get Service Center Facilities
+
+Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
 
 ### Example
 ```php
@@ -252,9 +252,9 @@ Name | Type | Description  | Notes
 # **pickupPendingStatus**
 > \UPS\Pickup\Pickup\PICKUPPendingResponseWrapper pickupPendingStatus($account_number, $version, $pickuptype, $trans_id, $transaction_src)
 
-Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-
 Pickup Pending Status
+
+Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
 
 ### Example
 ```php
@@ -313,9 +313,9 @@ Name | Type | Description  | Notes
 # **pickupRate**
 > \UPS\Pickup\Pickup\PICKUPResponseWrapper pickupRate($body, $version, $pickuptype, $trans_id, $transaction_src)
 
-Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
-
 Pickup Rate
+
+Using the Pickup API, applications can schedule pickups, manage previously scheduled pickups, or cancel previously scheduled pickups.
 
 ### Example
 ```php

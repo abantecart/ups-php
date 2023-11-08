@@ -4,10 +4,12 @@ All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**quantumView**](DefaultApi.md#quantumview) | **POST** /quantumview/{version}/events | Get Quantum View Response
+[**quantumView**](DefaultApi.md#quantumview) | **POST** /quantumview/{version}/events | Quantum View
 
 # **quantumView**
 > \UPS\QuantumView\QuantumView\QUANTUMVIEWResponseWrapper quantumView($body, $version)
+
+Quantum View
 
 Get Quantum View Response
 

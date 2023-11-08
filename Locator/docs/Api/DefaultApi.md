@@ -4,10 +4,12 @@ All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**locator**](DefaultApi.md#locator) | **POST** /locations/{version}/search/availabilities/{reqOption} | Get Locator Response
+[**locator**](DefaultApi.md#locator) | **POST** /locations/{version}/search/availabilities/{reqOption} | Locator
 
 # **locator**
 > \UPS\Locator\Locator\LOCATORResponseWrapper locator($body, $version, $req_option, $trans_id, $transaction_src, $locale)
+
+Locator
 
 Get Locator Response
 

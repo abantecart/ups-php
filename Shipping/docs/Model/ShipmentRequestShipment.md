@@ -40,8 +40,6 @@ Name | Type | Description | Notes
 **shipment_value_threshold_code** | **string** | Shipment Value Threshold Code. 01 &#x3D; Shipment value is below or equals to threshold value 02 &#x3D; Shipment value is above threshold value.     NA &#x3D; Not Applicable | [optional] 
 **master_carton_id** | **string** | Master Carton ID. If Economy Service (17 or 72) : Economy Shipment will be associated with given Master Carton ID. If Non-Economy Service: Master Carton Shipment will be created for given Master Carton ID. | [optional] 
 **master_carton_indicator** | **string** | Master Carton Indicator. Presence of the indicator means Master Carton ID will be created and returned to client.  This is an empty tag, any value inside is ignored.                                                                  MasterCartonIndicator is only valid with Econmoy Shipment (Service Code 17 or 72). Will be ignored if master carton id present. | [optional] 
-**bar_code_image_indicator** | **string** | Bar Code Image Indicator. Presence of this indicator means only bar code image will be created and returned to client. Shipping Label wont be returned when bar code image is returned. | [optional] 
-**bar_code_and_label_indicator** | **string** | Bar Code And Label Indicator. Presence of this indicator means both bar code image and shipping label will be returned. | [optional] 
 **shipment_date** | **string** | User can send up to 7 days in the future with current date as day zero. Format: YYYYMMDD | [optional] 
 **package** | [**\UPS\Shipping\Shipping\ShipmentPackage[]**](ShipmentPackage.md) |  | 
 

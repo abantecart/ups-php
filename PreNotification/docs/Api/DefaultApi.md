@@ -4,10 +4,12 @@ All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**preNotification**](DefaultApi.md#prenotification) | **POST** /dangerousgoods/{version}/prenotification | The Pre-Notification API allows customer applications to inform UPS operations of Dangerous Goods shipments as they are processed and will enter the UPS transportation network prior to an upload of manifest information at the end of the day.
+[**preNotification**](DefaultApi.md#prenotification) | **POST** /dangerousgoods/{version}/prenotification | Pre-Notification
 
 # **preNotification**
 > \UPS\PreNotification\PreNotification\PRENOTIFICATIONResponseWrapper preNotification($body, $version, $trans_id, $transaction_src)
+
+Pre-Notification
 
 The Pre-Notification API allows customer applications to inform UPS operations of Dangerous Goods shipments as they are processed and will enter the UPS transportation network prior to an upload of manifest information at the end of the day.
 

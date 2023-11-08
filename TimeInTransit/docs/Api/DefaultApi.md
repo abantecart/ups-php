@@ -4,10 +4,12 @@ All URIs are relative to *https://wwwcie.ups.com/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**timeInTransit**](DefaultApi.md#timeintransit) | **POST** /shipments/{version}/transittimes | Get Time and Transit Response
+[**timeInTransit**](DefaultApi.md#timeintransit) | **POST** /shipments/{version}/transittimes | TimeInTransit
 
 # **timeInTransit**
 > \UPS\TimeInTransit\TimeInTransit\TimeInTransitResponse timeInTransit($body, $trans_id, $transaction_src, $version)
+
+TimeInTransit
 
 Get Time and Transit Response
 

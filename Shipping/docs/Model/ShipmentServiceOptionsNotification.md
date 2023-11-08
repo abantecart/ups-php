@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**notification_code** | **string** | Notification Code.  Valid values: 3 - Receiver Return Notification 6 - QV Email Notification 7 - QV Exception Notification 8 - QV Delivery Notification  For Mail Innovations forward shipments, QV Email Notifications are allowed for First Class, Priority Mail, and Expedited Mail Innovation services. | 
+**notification_code** | **string** | The type of notification requested.  Valid values:  5 - QV In-transit Notification 6 - QV Ship Notification 7 - QV Exception Notification 8 - QV Delivery Notification 2 - Return Notification or Label Creation Notification 012 - Alternate Delivery Location Notification 013 - UAP Shipper Notification | 
 **e_mail** | [**\UPS\Shipping\Shipping\NotificationEMail**](NotificationEMail.md) |  | 
 **voice_message** | [**\UPS\Shipping\Shipping\NotificationVoiceMessage**](NotificationVoiceMessage.md) |  | [optional] 
 **text_message** | [**\UPS\Shipping\Shipping\NotificationTextMessage**](NotificationTextMessage.md) |  | [optional] 

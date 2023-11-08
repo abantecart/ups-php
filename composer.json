@@ -28,9 +28,10 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
+        "wikimedia/composer-merge-plugin": "2.0.1",
         "guzzlehttp/guzzle": "^7.3",
-        "guzzlehttp/psr7": "^1.7 || ^2.0",
-        "wikimedia/composer-merge-plugin": "2.0.1"
+        "guzzlehttp/psr7": "^1.7 || ^2.0"
+
     },
     "extra": {
         "merge-plugin": {

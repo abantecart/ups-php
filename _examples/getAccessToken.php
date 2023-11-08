@@ -21,7 +21,7 @@ $grant_type = "client_credentials"; // string |
 $x_merchant_id = $accNumber; // string | Client merchant ID
 
 try {
-    $result = $apiInstance->generateToken($grant_type, $x_merchant_id);
+    $result = $apiInstance->createToken($grant_type, $x_merchant_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->generateToken: ', $e->getMessage(), PHP_EOL;
