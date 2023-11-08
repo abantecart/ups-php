@@ -31,7 +31,11 @@
         "wikimedia/composer-merge-plugin": "2.0.1",
         "guzzlehttp/guzzle": "^7.3",
         "guzzlehttp/psr7": "^1.7 || ^2.0"
-
+    },
+    "config": {
+        "allow-plugins": {
+            "wikimedia/composer-merge-plugin": true
+        }
     },
     "extra": {
         "merge-plugin": {
@@ -39,11 +43,6 @@
                 "*/composer.json"
             ],
             "recurse": true
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "wikimedia/composer-merge-plugin": true
         }
     }
 }
