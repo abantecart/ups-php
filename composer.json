@@ -39,7 +39,7 @@
     },
     "extra": {
         "merge-plugin": {
-            "include": [
+            "require": [
                 "*/composer.json"
             ],
             "recurse": true
