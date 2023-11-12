@@ -89,6 +89,8 @@ class DefaultApi
     /**
      * Operation createToken
      *
+     * Create Token
+     *
      * @param  string $grant_type grant_type (required)
      * @param  string $x_merchant_id Client merchant ID (optional)
      *
@@ -104,6 +106,8 @@ class DefaultApi
 
     /**
      * Operation createTokenWithHttpInfo
+     *
+     * Create Token
      *
      * @param  string $grant_type (required)
      * @param  string $x_merchant_id Client merchant ID (optional)
@@ -211,7 +215,7 @@ class DefaultApi
     /**
      * Operation createTokenAsync
      *
-     * 
+     * Create Token
      *
      * @param  string $grant_type (required)
      * @param  string $x_merchant_id Client merchant ID (optional)
@@ -232,7 +236,7 @@ class DefaultApi
     /**
      * Operation createTokenAsyncWithHttpInfo
      *
-     * 
+     * Create Token
      *
      * @param  string $grant_type (required)
      * @param  string $x_merchant_id Client merchant ID (optional)

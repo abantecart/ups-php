@@ -1,15 +1,15 @@
 # UPS\OAuthClientCredentials\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/api/*
+All URIs are relative to *https://wwwcie.ups.com/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createToken**](DefaultApi.md#createtoken) | **POST** /security/v1/oauth/token | 
+[**createToken**](DefaultApi.md#createtoken) | **POST** /security/v1/oauth/token | Create Token
 
 # **createToken**
 > \UPS\OAuthClientCredentials\OAuthClientCredentials\TokenSuccessResponse createToken($grant_type, $x_merchant_id)
 
-
+Create Token
 
 ### Example
 ```php

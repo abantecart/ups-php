@@ -74,7 +74,7 @@ class DefaultApiTest extends TestCase
     /**
      * Test case for createToken
      *
-     * .
+     * Create Token.
      *
      */
     public function testCreateTokenForm()

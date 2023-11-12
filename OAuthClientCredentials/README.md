@@ -81,11 +81,11 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://wwwcie.ups.com/api/*
+All URIs are relative to *https://wwwcie.ups.com/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**createToken**](docs/Api/DefaultApi.md#createtoken) | **POST** /security/v1/oauth/token | 
+*DefaultApi* | [**createToken**](docs/Api/DefaultApi.md#createtoken) | **POST** /security/v1/oauth/token | Create Token
 
 ## Documentation For Models
 
