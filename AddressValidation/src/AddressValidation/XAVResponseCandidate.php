@@ -58,7 +58,7 @@ class XAVResponseCandidate implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'address_classification' => '\UPS\AddressValidation\AddressValidation\CandidateAddressClassification',
-        'address_key_format' => '\UPS\AddressValidation\AddressValidation\CandidateAddressKeyFormat[]'
+        'address_key_format' => 'OneOfXAVResponseCandidateAddressKeyFormat'
     ];
 
     /**
@@ -238,7 +238,7 @@ class XAVResponseCandidate implements ModelInterface, ArrayAccess
     /**
      * Gets address_key_format
      *
-     * @return \UPS\AddressValidation\AddressValidation\CandidateAddressKeyFormat[]
+     * @return OneOfXAVResponseCandidateAddressKeyFormat
      */
     public function getAddressKeyFormat()
     {
@@ -248,7 +248,7 @@ class XAVResponseCandidate implements ModelInterface, ArrayAccess
     /**
      * Sets address_key_format
      *
-     * @param \UPS\AddressValidation\AddressValidation\CandidateAddressKeyFormat[] $address_key_format address_key_format
+     * @param OneOfXAVResponseCandidateAddressKeyFormat $address_key_format address_key_format
      *
      * @return $this
      */

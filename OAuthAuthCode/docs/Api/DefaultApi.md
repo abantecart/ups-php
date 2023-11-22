@@ -1,12 +1,12 @@
 # UPS\OAuthAuthCode\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/api/*
+All URIs are relative to *https://wwwcie.ups.com/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authorizeClient**](DefaultApi.md#authorizeclient) | **GET** /v1/oauth/authorize | Authorize Client
-[**generateToken**](DefaultApi.md#generatetoken) | **POST** /v1/oauth/token | 
-[**refreshToken**](DefaultApi.md#refreshtoken) | **POST** /v1/oauth/refresh | Refresh Token
+[**authorizeClient**](DefaultApi.md#authorizeclient) | **GET** /security/v1/oauth/authorize | Authorize Client
+[**generateToken**](DefaultApi.md#generatetoken) | **POST** /security/v1/oauth/token | 
+[**refreshToken**](DefaultApi.md#refreshtoken) | **POST** /security/v1/oauth/refresh | Refresh Token
 
 # **authorizeClient**
 > authorizeClient($client_id, $redirect_uri, $response_type, $state, $scope)

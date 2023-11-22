@@ -1,6 +1,7 @@
 {
     "name": "abantecart/ups-php",
     "description": "UPS PHP SDK based on OAuth",
+    "version": "1.0.4",
     "keywords": [
         "ups",
         "api",

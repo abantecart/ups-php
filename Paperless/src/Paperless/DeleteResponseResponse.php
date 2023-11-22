@@ -58,7 +58,7 @@ class DeleteResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\Paperless\Paperless\ResponseResponseStatus',
-        'alert' => '\UPS\Paperless\Paperless\ResponseAlert[]',
+        'alert' => 'OneOfDeleteResponseResponseAlert',
         'transaction_reference' => '\UPS\Paperless\Paperless\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class DeleteResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return \UPS\Paperless\Paperless\ResponseAlert[]
+     * @return OneOfDeleteResponseResponseAlert
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class DeleteResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param \UPS\Paperless\Paperless\ResponseAlert[] $alert alert
+     * @param OneOfDeleteResponseResponseAlert $alert alert
      *
      * @return $this
      */

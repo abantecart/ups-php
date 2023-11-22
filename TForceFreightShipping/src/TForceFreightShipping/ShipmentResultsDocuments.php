@@ -57,8 +57,8 @@ class ShipmentResultsDocuments implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'image' => '\UPS\TForceFreightShipping\TForceFreightShipping\DocumentsImage[]',
-        'forms' => '\UPS\TForceFreightShipping\TForceFreightShipping\DocumentsForms[]'
+        'image' => 'OneOfShipmentResultsDocumentsImage',
+        'forms' => 'OneOfShipmentResultsDocumentsForms'
     ];
 
     /**
@@ -211,7 +211,7 @@ class ShipmentResultsDocuments implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return \UPS\TForceFreightShipping\TForceFreightShipping\DocumentsImage[]
+     * @return OneOfShipmentResultsDocumentsImage
      */
     public function getImage()
     {
@@ -221,7 +221,7 @@ class ShipmentResultsDocuments implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param \UPS\TForceFreightShipping\TForceFreightShipping\DocumentsImage[] $image image
+     * @param OneOfShipmentResultsDocumentsImage $image image
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class ShipmentResultsDocuments implements ModelInterface, ArrayAccess
     /**
      * Gets forms
      *
-     * @return \UPS\TForceFreightShipping\TForceFreightShipping\DocumentsForms[]
+     * @return OneOfShipmentResultsDocumentsForms
      */
     public function getForms()
     {
@@ -245,7 +245,7 @@ class ShipmentResultsDocuments implements ModelInterface, ArrayAccess
     /**
      * Sets forms
      *
-     * @param \UPS\TForceFreightShipping\TForceFreightShipping\DocumentsForms[] $forms forms
+     * @param OneOfShipmentResultsDocumentsForms $forms forms
      *
      * @return $this
      */

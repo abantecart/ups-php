@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address_line** | **string[]** | Address Line of the Facility. | 
+**address_line** | [**OneOfDropOffFacilitiesAddressAddressLine**](OneOfDropOffFacilitiesAddressAddressLine.md) | Address Line of the Facility. | 
 **city** | **string** | Facilities City. | 
 **state_province** | **string** | Facility state or province code. | 
 **postal_code** | **string** | Facility Postal Code. | 

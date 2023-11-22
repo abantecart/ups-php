@@ -58,7 +58,7 @@ class RateResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response' => '\UPS\Rating\Rating\RateResponseResponse',
-        'rated_shipment' => '\UPS\Rating\Rating\RateResponseRatedShipment[]'
+        'rated_shipment' => 'OneOfRateResponseRatedShipment'
     ];
 
     /**
@@ -241,7 +241,7 @@ class RateResponse implements ModelInterface, ArrayAccess
     /**
      * Gets rated_shipment
      *
-     * @return \UPS\Rating\Rating\RateResponseRatedShipment[]
+     * @return OneOfRateResponseRatedShipment
      */
     public function getRatedShipment()
     {
@@ -251,7 +251,7 @@ class RateResponse implements ModelInterface, ArrayAccess
     /**
      * Sets rated_shipment
      *
-     * @param \UPS\Rating\Rating\RateResponseRatedShipment[] $rated_shipment rated_shipment
+     * @param OneOfRateResponseRatedShipment $rated_shipment rated_shipment
      *
      * @return $this
      */

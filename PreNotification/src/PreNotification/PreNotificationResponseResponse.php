@@ -58,7 +58,7 @@ class PreNotificationResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\PreNotification\PreNotification\ResponseResponseStatus',
-        'alert' => '\UPS\PreNotification\PreNotification\ResponseAlert[]',
+        'alert' => 'OneOfPreNotificationResponseResponseAlert',
         'transaction_reference' => '\UPS\PreNotification\PreNotification\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class PreNotificationResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return \UPS\PreNotification\PreNotification\ResponseAlert[]
+     * @return OneOfPreNotificationResponseResponseAlert
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class PreNotificationResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param \UPS\PreNotification\PreNotification\ResponseAlert[] $alert alert
+     * @param OneOfPreNotificationResponseResponseAlert $alert alert
      *
      * @return $this
      */

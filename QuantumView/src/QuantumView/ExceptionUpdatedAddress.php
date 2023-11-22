@@ -63,7 +63,7 @@ class ExceptionUpdatedAddress implements ModelInterface, ArrayAccess
         'street_name' => 'string',
         'street_type' => 'string',
         'street_suffix' => 'string',
-        'address_extended_information' => '\UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[]',
+        'address_extended_information' => 'OneOfExceptionUpdatedAddressAddressExtendedInformation',
         'political_division3' => 'string',
         'political_division2' => 'string',
         'political_division1' => 'string',
@@ -415,7 +415,7 @@ class ExceptionUpdatedAddress implements ModelInterface, ArrayAccess
     /**
      * Gets address_extended_information
      *
-     * @return \UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[]
+     * @return OneOfExceptionUpdatedAddressAddressExtendedInformation
      */
     public function getAddressExtendedInformation()
     {
@@ -425,7 +425,7 @@ class ExceptionUpdatedAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_extended_information
      *
-     * @param \UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[] $address_extended_information address_extended_information
+     * @param OneOfExceptionUpdatedAddressAddressExtendedInformation $address_extended_information address_extended_information
      *
      * @return $this
      */

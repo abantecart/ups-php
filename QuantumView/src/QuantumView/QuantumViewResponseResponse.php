@@ -60,7 +60,7 @@ class QuantumViewResponseResponse implements ModelInterface, ArrayAccess
         'transaction_reference' => '\UPS\QuantumView\QuantumView\ResponseTransactionReference',
         'response_status_code' => 'string',
         'response_status_description' => 'string',
-        'error' => '\UPS\QuantumView\QuantumView\ResponseError[]'
+        'error' => 'OneOfQuantumViewResponseResponseError'
     ];
 
     /**
@@ -301,7 +301,7 @@ class QuantumViewResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \UPS\QuantumView\QuantumView\ResponseError[]
+     * @return OneOfQuantumViewResponseResponseError
      */
     public function getError()
     {
@@ -311,7 +311,7 @@ class QuantumViewResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \UPS\QuantumView\QuantumView\ResponseError[] $error error
+     * @param OneOfQuantumViewResponseResponseError $error error
      *
      * @return $this
      */

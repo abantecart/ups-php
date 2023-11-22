@@ -58,7 +58,7 @@ class DropLocationLocationAttribute implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'option_type' => '\UPS\Locator\Locator\LocationAttributeOptionType',
-        'option_code' => '\UPS\Locator\Locator\LocationAttributeOptionCode[]'
+        'option_code' => 'OneOfDropLocationLocationAttributeOptionCode'
     ];
 
     /**
@@ -241,7 +241,7 @@ class DropLocationLocationAttribute implements ModelInterface, ArrayAccess
     /**
      * Gets option_code
      *
-     * @return \UPS\Locator\Locator\LocationAttributeOptionCode[]
+     * @return OneOfDropLocationLocationAttributeOptionCode
      */
     public function getOptionCode()
     {
@@ -251,7 +251,7 @@ class DropLocationLocationAttribute implements ModelInterface, ArrayAccess
     /**
      * Sets option_code
      *
-     * @param \UPS\Locator\Locator\LocationAttributeOptionCode[] $option_code option_code
+     * @param OneOfDropLocationLocationAttributeOptionCode $option_code option_code
      *
      * @return $this
      */

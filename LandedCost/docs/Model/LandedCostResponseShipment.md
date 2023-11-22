@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **total_vat** | **float** | Total VAT of this shipment | 
 **total_duty_and_tax** | **float** | Grand Total combined duty, VAT, tax, and other fees of all commodities of this shipment including shipment level taxes and fee | 
 **grand_total** | **float** | (TotalDutyAndTax+ totalBrokerageFees) | 
-**shipment_items** | [**\UPS\LandedCost\LandedCost\ResponseShipmentItems[]**](ResponseShipmentItems.md) | An Array or List of Landed Cost result for all valid commodities | 
+**shipment_items** | [**OneOfLandedCostResponseShipmentShipmentItems**](OneOfLandedCostResponseShipmentShipmentItems.md) | An Array or List of Landed Cost result for all valid commodities | 
 **trans_id** | **string** | An identifier unique to the request | [optional] 
 **perf_stats** | [**\UPS\LandedCost\LandedCost\LandedCostResponseShipmentPerfStats**](LandedCostResponseShipmentPerfStats.md) |  | [optional] 
 **al_version** | **int** | Version number of the instance that processed this request. Default by 1 | [optional] 

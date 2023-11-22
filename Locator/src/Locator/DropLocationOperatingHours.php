@@ -57,7 +57,7 @@ class DropLocationOperatingHours implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'standard_hours' => '\UPS\Locator\Locator\OperatingHoursStandardHours[]'
+        'standard_hours' => 'OneOfDropLocationOperatingHoursStandardHours'
     ];
 
     /**
@@ -205,7 +205,7 @@ class DropLocationOperatingHours implements ModelInterface, ArrayAccess
     /**
      * Gets standard_hours
      *
-     * @return \UPS\Locator\Locator\OperatingHoursStandardHours[]
+     * @return OneOfDropLocationOperatingHoursStandardHours
      */
     public function getStandardHours()
     {
@@ -215,7 +215,7 @@ class DropLocationOperatingHours implements ModelInterface, ArrayAccess
     /**
      * Sets standard_hours
      *
-     * @param \UPS\Locator\Locator\OperatingHoursStandardHours[] $standard_hours standard_hours
+     * @param OneOfDropLocationOperatingHoursStandardHours $standard_hours standard_hours
      *
      * @return $this
      */

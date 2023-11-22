@@ -57,10 +57,10 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geocode_candidate' => '\UPS\Locator\Locator\SearchResultsGeocodeCandidate[]',
-        'disclaimer' => 'object[]',
+        'geocode_candidate' => 'OneOfLocatorResponseSearchResultsGeocodeCandidate',
+        'disclaimer' => 'OneOfLocatorResponseSearchResultsDisclaimer',
         'drop_location' => '\UPS\Locator\Locator\SearchResultsDropLocation',
-        'available_location_attributes' => '\UPS\Locator\Locator\SearchResultsAvailableLocationAttributes[]',
+        'available_location_attributes' => 'OneOfLocatorResponseSearchResultsAvailableLocationAttributes',
         'active_available_access_point_indicator' => 'string'
     ];
 
@@ -229,7 +229,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets geocode_candidate
      *
-     * @return \UPS\Locator\Locator\SearchResultsGeocodeCandidate[]
+     * @return OneOfLocatorResponseSearchResultsGeocodeCandidate
      */
     public function getGeocodeCandidate()
     {
@@ -239,7 +239,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets geocode_candidate
      *
-     * @param \UPS\Locator\Locator\SearchResultsGeocodeCandidate[] $geocode_candidate geocode_candidate
+     * @param OneOfLocatorResponseSearchResultsGeocodeCandidate $geocode_candidate geocode_candidate
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return object[]
+     * @return OneOfLocatorResponseSearchResultsDisclaimer
      */
     public function getDisclaimer()
     {
@@ -263,7 +263,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param object[] $disclaimer Disclaimer. In the event the user requested Ground and Air service types and the maximum UPS locations list size has not been met, the list of locations will continue with locations that provide either ground or air within the search radius.   The disclaimer will note this deviation from the requested search criteria. The disclaimer is also the location where the user will receive information regarding a one-time pickup option if the first location is greater than 20 miles from the origin.
+     * @param OneOfLocatorResponseSearchResultsDisclaimer $disclaimer Disclaimer. In the event the user requested Ground and Air service types and the maximum UPS locations list size has not been met, the list of locations will continue with locations that provide either ground or air within the search radius.   The disclaimer will note this deviation from the requested search criteria. The disclaimer is also the location where the user will receive information regarding a one-time pickup option if the first location is greater than 20 miles from the origin.
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets available_location_attributes
      *
-     * @return \UPS\Locator\Locator\SearchResultsAvailableLocationAttributes[]
+     * @return OneOfLocatorResponseSearchResultsAvailableLocationAttributes
      */
     public function getAvailableLocationAttributes()
     {
@@ -311,7 +311,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets available_location_attributes
      *
-     * @param \UPS\Locator\Locator\SearchResultsAvailableLocationAttributes[] $available_location_attributes available_location_attributes
+     * @param OneOfLocatorResponseSearchResultsAvailableLocationAttributes $available_location_attributes available_location_attributes
      *
      * @return $this
      */

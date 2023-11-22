@@ -58,7 +58,7 @@ class FreightRateResponseAlternateRatesResponse implements ModelInterface, Array
       */
     protected static $swaggerTypes = [
         'alternate_rate_type' => '\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseAlternateRateType',
-        'rate' => '\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseRate[]',
+        'rate' => 'OneOfFreightRateResponseAlternateRatesResponseRate',
         'freight_density_rate' => '\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseFreightDensityRate',
         'billable_shipment_weight' => '\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseBillableShipmentWeight',
         'time_in_transit' => '\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseTimeInTransit'
@@ -259,7 +259,7 @@ class FreightRateResponseAlternateRatesResponse implements ModelInterface, Array
     /**
      * Gets rate
      *
-     * @return \UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseRate[]
+     * @return OneOfFreightRateResponseAlternateRatesResponseRate
      */
     public function getRate()
     {
@@ -269,7 +269,7 @@ class FreightRateResponseAlternateRatesResponse implements ModelInterface, Array
     /**
      * Sets rate
      *
-     * @param \UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseRate[] $rate rate
+     * @param OneOfFreightRateResponseAlternateRatesResponseRate $rate rate
      *
      * @return $this
      */

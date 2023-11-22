@@ -58,7 +58,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'level' => 'string',
-        'element_identifier' => '\UPS\Rating\Rating\ElementLevelInformationElementIdentifier[]'
+        'element_identifier' => 'OneOfAlertDetailElementLevelInformationElementIdentifier'
     ];
 
     /**
@@ -238,7 +238,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
     /**
      * Gets element_identifier
      *
-     * @return \UPS\Rating\Rating\ElementLevelInformationElementIdentifier[]
+     * @return OneOfAlertDetailElementLevelInformationElementIdentifier
      */
     public function getElementIdentifier()
     {
@@ -248,7 +248,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
     /**
      * Sets element_identifier
      *
-     * @param \UPS\Rating\Rating\ElementLevelInformationElementIdentifier[] $element_identifier element_identifier
+     * @param OneOfAlertDetailElementLevelInformationElementIdentifier $element_identifier element_identifier
      *
      * @return $this
      */

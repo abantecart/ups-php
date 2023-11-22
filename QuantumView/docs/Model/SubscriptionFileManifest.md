@@ -5,13 +5,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **shipper** | [**\UPS\QuantumView\QuantumView\ManifestShipper**](ManifestShipper.md) |  | 
 **ship_to** | [**\UPS\QuantumView\QuantumView\ManifestShipTo**](ManifestShipTo.md) |  | 
-**reference_number** | [**\UPS\QuantumView\QuantumView\ManifestReferenceNumber[]**](ManifestReferenceNumber.md) |  | [optional] 
+**reference_number** | [**OneOfSubscriptionFileManifestReferenceNumber**](OneOfSubscriptionFileManifestReferenceNumber.md) |  | [optional] 
 **service** | [**\UPS\QuantumView\QuantumView\ManifestService**](ManifestService.md) |  | [optional] 
 **pickup_date** | **string** | Should be set equal to the date on while the packages were picked up (may be prior days date if the transmission occurs after midnight). Formatted as YYYYMMDD. | [optional] 
 **scheduled_delivery_date** | **string** | The date the shipment originally was scheduled for delivery. Formatted as YYYYMMDD. | [optional] 
 **scheduled_delivery_time** | **string** | Schedule delivery time. Time format is HHMMSS | [optional] 
 **documents_only** | **string** | If the tag is present then the shipment is a document, otherwise the shipment is a non-document.  Valid values:�  1 &#x3D; Letter 2 &#x3D; Document (Non-Letter Document) 3 &#x3D; Non-Document 4 &#x3D; Pallet | [optional] 
-**package** | [**\UPS\QuantumView\QuantumView\ManifestPackage[]**](ManifestPackage.md) |  | [optional] 
+**package** | [**OneOfSubscriptionFileManifestPackage**](OneOfSubscriptionFileManifestPackage.md) |  | [optional] 
 **shipment_service_options** | [**\UPS\QuantumView\QuantumView\ManifestShipmentServiceOptions**](ManifestShipmentServiceOptions.md) |  | [optional] 
 **manufacture_country** | **string** | Country or Territory  of Manufacture of the contents of the package. | [optional] 
 **harmonized_code** | **string** | Harmonized code of the package. | [optional] 

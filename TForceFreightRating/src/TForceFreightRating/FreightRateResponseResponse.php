@@ -58,7 +58,7 @@ class FreightRateResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\TForceFreightRating\TForceFreightRating\ResponseResponseStatus',
-        'alert' => '\UPS\TForceFreightRating\TForceFreightRating\ResponseAlert[]',
+        'alert' => 'OneOfFreightRateResponseResponseAlert',
         'transaction_reference' => '\UPS\TForceFreightRating\TForceFreightRating\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class FreightRateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return \UPS\TForceFreightRating\TForceFreightRating\ResponseAlert[]
+     * @return OneOfFreightRateResponseResponseAlert
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class FreightRateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param \UPS\TForceFreightRating\TForceFreightRating\ResponseAlert[] $alert alert
+     * @param OneOfFreightRateResponseResponseAlert $alert alert
      *
      * @return $this
      */

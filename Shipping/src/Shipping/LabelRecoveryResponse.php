@@ -59,11 +59,11 @@ class LabelRecoveryResponse implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'response' => '\UPS\Shipping\Shipping\LabelRecoveryResponseResponse',
         'shipment_identification_number' => 'string',
-        'label_results' => '\UPS\Shipping\Shipping\LabelRecoveryResponseLabelResults[]',
+        'label_results' => 'OneOfLabelRecoveryResponseLabelResults',
         'cod_turn_in_page' => '\UPS\Shipping\Shipping\LabelRecoveryResponseCODTurnInPage',
         'form' => '\UPS\Shipping\Shipping\LabelRecoveryResponseForm',
         'high_value_report' => '\UPS\Shipping\Shipping\LabelRecoveryResponseHighValueReport',
-        'tracking_candidate' => '\UPS\Shipping\Shipping\LabelRecoveryResponseTrackingCandidate[]'
+        'tracking_candidate' => 'OneOfLabelRecoveryResponseTrackingCandidate'
     ];
 
     /**
@@ -295,7 +295,7 @@ class LabelRecoveryResponse implements ModelInterface, ArrayAccess
     /**
      * Gets label_results
      *
-     * @return \UPS\Shipping\Shipping\LabelRecoveryResponseLabelResults[]
+     * @return OneOfLabelRecoveryResponseLabelResults
      */
     public function getLabelResults()
     {
@@ -305,7 +305,7 @@ class LabelRecoveryResponse implements ModelInterface, ArrayAccess
     /**
      * Sets label_results
      *
-     * @param \UPS\Shipping\Shipping\LabelRecoveryResponseLabelResults[] $label_results label_results
+     * @param OneOfLabelRecoveryResponseLabelResults $label_results label_results
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class LabelRecoveryResponse implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_candidate
      *
-     * @return \UPS\Shipping\Shipping\LabelRecoveryResponseTrackingCandidate[]
+     * @return OneOfLabelRecoveryResponseTrackingCandidate
      */
     public function getTrackingCandidate()
     {
@@ -401,7 +401,7 @@ class LabelRecoveryResponse implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_candidate
      *
-     * @param \UPS\Shipping\Shipping\LabelRecoveryResponseTrackingCandidate[] $tracking_candidate tracking_candidate
+     * @param OneOfLabelRecoveryResponseTrackingCandidate $tracking_candidate tracking_candidate
      *
      * @return $this
      */

@@ -59,7 +59,7 @@ class PackageResultsShippingLabel implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'image_format' => '\UPS\Shipping\Shipping\ShippingLabelImageFormat',
         'graphic_image' => 'string',
-        'graphic_image_part' => 'string[]',
+        'graphic_image_part' => 'OneOfPackageResultsShippingLabelGraphicImagePart',
         'international_signature_graphic_image' => 'string',
         'html_image' => 'string',
         'pdf417' => 'string'
@@ -289,7 +289,7 @@ class PackageResultsShippingLabel implements ModelInterface, ArrayAccess
     /**
      * Gets graphic_image_part
      *
-     * @return string[]
+     * @return OneOfPackageResultsShippingLabelGraphicImagePart
      */
     public function getGraphicImagePart()
     {
@@ -299,7 +299,7 @@ class PackageResultsShippingLabel implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image_part
      *
-     * @param string[] $graphic_image_part Base 64 encoded graphic image.  Applicable only for ShipmentResponse and ShipAcceptResponse for Mail Innovations CN22 Combination Forward Label with more than 3 commodities.
+     * @param OneOfPackageResultsShippingLabelGraphicImagePart $graphic_image_part Base 64 encoded graphic image.  Applicable only for ShipmentResponse and ShipAcceptResponse for Mail Innovations CN22 Combination Forward Label with more than 3 commodities.
      *
      * @return $this
      */

@@ -57,7 +57,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'activity' => '\UPS\QuantumView\QuantumView\PackageActivity[]',
+        'activity' => 'OneOfManifestPackageActivity',
         'description' => 'string',
         'dimensions' => '\UPS\QuantumView\QuantumView\PackageDimensions',
         'dimensional_weight' => '\UPS\QuantumView\QuantumView\PackageDimensionalWeight',
@@ -259,7 +259,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Gets activity
      *
-     * @return \UPS\QuantumView\QuantumView\PackageActivity[]
+     * @return OneOfManifestPackageActivity
      */
     public function getActivity()
     {
@@ -269,7 +269,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Sets activity
      *
-     * @param \UPS\QuantumView\QuantumView\PackageActivity[] $activity activity
+     * @param OneOfManifestPackageActivity $activity activity
      *
      * @return $this
      */

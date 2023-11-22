@@ -68,7 +68,7 @@ class LandedCostResponseShipment implements ModelInterface, ArrayAccess
         'total_vat' => 'float',
         'total_duty_and_tax' => 'float',
         'grand_total' => 'float',
-        'shipment_items' => '\UPS\LandedCost\LandedCost\ResponseShipmentItems[]',
+        'shipment_items' => 'OneOfLandedCostResponseShipmentShipmentItems',
         'trans_id' => 'string',
         'perf_stats' => '\UPS\LandedCost\LandedCost\LandedCostResponseShipmentPerfStats',
         'al_version' => 'int',
@@ -595,7 +595,7 @@ class LandedCostResponseShipment implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_items
      *
-     * @return \UPS\LandedCost\LandedCost\ResponseShipmentItems[]
+     * @return OneOfLandedCostResponseShipmentShipmentItems
      */
     public function getShipmentItems()
     {
@@ -605,7 +605,7 @@ class LandedCostResponseShipment implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_items
      *
-     * @param \UPS\LandedCost\LandedCost\ResponseShipmentItems[] $shipment_items An Array or List of Landed Cost result for all valid commodities
+     * @param OneOfLandedCostResponseShipmentShipmentItems $shipment_items An Array or List of Landed Cost result for all valid commodities
      *
      * @return $this
      */

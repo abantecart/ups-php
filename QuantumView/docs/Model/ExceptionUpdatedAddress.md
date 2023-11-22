@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **street_name** | **string** | Street name of updated shipping address. It will be returned if there is any update due to exception. | [optional] 
 **street_type** | **string** | Street type of updated shipping address, e.g. ST. It will be returned if there is any update due to exception. | [optional] 
 **street_suffix** | **string** | Street suffix of updated shipping address, e.g. N, SE. It will be returned if there is any update due to exception. | [optional] 
-**address_extended_information** | [**\UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[]**](UpdatedAddressAddressExtendedInformation.md) |  | [optional] 
+**address_extended_information** | [**OneOfExceptionUpdatedAddressAddressExtendedInformation**](OneOfExceptionUpdatedAddressAddressExtendedInformation.md) |  | [optional] 
 **political_division3** | **string** | The neighborhood, town, barrio etc. It will be returned if there is any update due to exception. | [optional] 
 **political_division2** | **string** | City name of updated shipping address. It will be returned if there is any update due to exception. | [optional] 
 **political_division1** | **string** | Abbreviated state or province name of updated shipping address. It will be returned if there is any update due to exception. | [optional] 

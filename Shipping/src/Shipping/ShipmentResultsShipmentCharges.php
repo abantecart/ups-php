@@ -60,9 +60,9 @@ class ShipmentResultsShipmentCharges implements ModelInterface, ArrayAccess
         'rate_chart' => 'string',
         'base_service_charge' => '\UPS\Shipping\Shipping\ShipmentChargesBaseServiceCharge',
         'transportation_charges' => '\UPS\Shipping\Shipping\ShipmentChargesTransportationCharges',
-        'itemized_charges' => '\UPS\Shipping\Shipping\ShipmentChargesItemizedCharges[]',
+        'itemized_charges' => 'OneOfShipmentResultsShipmentChargesItemizedCharges',
         'service_options_charges' => '\UPS\Shipping\Shipping\ShipmentChargesServiceOptionsCharges',
-        'tax_charges' => '\UPS\Shipping\Shipping\ShipmentChargesTaxCharges[]',
+        'tax_charges' => 'OneOfShipmentResultsShipmentChargesTaxCharges',
         'total_charges' => '\UPS\Shipping\Shipping\ShipmentChargesTotalCharges',
         'total_charges_with_taxes' => '\UPS\Shipping\Shipping\ShipmentChargesTotalChargesWithTaxes'
     ];
@@ -328,7 +328,7 @@ class ShipmentResultsShipmentCharges implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Shipping\Shipping\ShipmentChargesItemizedCharges[]
+     * @return OneOfShipmentResultsShipmentChargesItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -338,7 +338,7 @@ class ShipmentResultsShipmentCharges implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Shipping\Shipping\ShipmentChargesItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfShipmentResultsShipmentChargesItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class ShipmentResultsShipmentCharges implements ModelInterface, ArrayAccess
     /**
      * Gets tax_charges
      *
-     * @return \UPS\Shipping\Shipping\ShipmentChargesTaxCharges[]
+     * @return OneOfShipmentResultsShipmentChargesTaxCharges
      */
     public function getTaxCharges()
     {
@@ -386,7 +386,7 @@ class ShipmentResultsShipmentCharges implements ModelInterface, ArrayAccess
     /**
      * Sets tax_charges
      *
-     * @param \UPS\Shipping\Shipping\ShipmentChargesTaxCharges[] $tax_charges tax_charges
+     * @param OneOfShipmentResultsShipmentChargesTaxCharges $tax_charges tax_charges
      *
      * @return $this
      */

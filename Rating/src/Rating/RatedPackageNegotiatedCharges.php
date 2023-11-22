@@ -57,7 +57,7 @@ class RatedPackageNegotiatedCharges implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemized_charges' => '\UPS\Rating\Rating\NegotiatedChargesItemizedCharges[]'
+        'itemized_charges' => 'OneOfRatedPackageNegotiatedChargesItemizedCharges'
     ];
 
     /**
@@ -205,7 +205,7 @@ class RatedPackageNegotiatedCharges implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Rating\Rating\NegotiatedChargesItemizedCharges[]
+     * @return OneOfRatedPackageNegotiatedChargesItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -215,7 +215,7 @@ class RatedPackageNegotiatedCharges implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Rating\Rating\NegotiatedChargesItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfRatedPackageNegotiatedChargesItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */

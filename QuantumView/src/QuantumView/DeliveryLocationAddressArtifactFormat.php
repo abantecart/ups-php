@@ -64,7 +64,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
         'street_type' => 'string',
         'street_suffix' => 'string',
         'building_name' => 'string',
-        'address_extended_information' => '\UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[]',
+        'address_extended_information' => 'OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation',
         'political_division3' => 'string',
         'political_division2' => 'string',
         'political_division1' => 'string',
@@ -460,7 +460,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Gets address_extended_information
      *
-     * @return \UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[]
+     * @return OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation
      */
     public function getAddressExtendedInformation()
     {
@@ -470,7 +470,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Sets address_extended_information
      *
-     * @param \UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[] $address_extended_information address_extended_information
+     * @param OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation $address_extended_information address_extended_information
      *
      * @return $this
      */

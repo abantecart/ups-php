@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **fax** | **string** | Drop off Facilities Fax Number | 
 **facility_time** | [**\UPS\Pickup\Pickup\DropOffFacilitiesFacilityTime**](DropOffFacilitiesFacilityTime.md) |  | [optional] 
 **origin_or_destination** | **string** | Type of Facility. | 
-**localized_instruction** | [**\UPS\Pickup\Pickup\DropOffFacilitiesLocalizedInstruction[]**](DropOffFacilitiesLocalizedInstruction.md) |  | [optional] 
+**localized_instruction** | [**OneOfServiceCenterLocationDropOffFacilitiesLocalizedInstruction**](OneOfServiceCenterLocationDropOffFacilitiesLocalizedInstruction.md) |  | [optional] 
 **distance** | [**\UPS\Pickup\Pickup\DropOffFacilitiesDistance**](DropOffFacilitiesDistance.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -93,6 +93,7 @@ Class | Method | HTTP request | Description
 
  - [CandidateAddressClassification](docs/Model/CandidateAddressClassification.md)
  - [CandidateAddressKeyFormat](docs/Model/CandidateAddressKeyFormat.md)
+ - [OneOfXAVResponseCandidateAddressKeyFormat](docs/Model/OneOfXAVResponseCandidateAddressKeyFormat.md)
  - [RequestTransactionReference](docs/Model/RequestTransactionReference.md)
  - [ResponseAlert](docs/Model/ResponseAlert.md)
  - [ResponseResponseStatus](docs/Model/ResponseResponseStatus.md)

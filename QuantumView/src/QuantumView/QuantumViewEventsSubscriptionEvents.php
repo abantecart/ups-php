@@ -61,7 +61,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
         'number' => 'string',
         'subscription_status' => '\UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionStatus',
         'date_range' => '\UPS\QuantumView\QuantumView\SubscriptionEventsDateRange',
-        'subscription_file' => '\UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionFile[]'
+        'subscription_file' => 'OneOfQuantumViewEventsSubscriptionEventsSubscriptionFile'
     ];
 
     /**
@@ -328,7 +328,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
     /**
      * Gets subscription_file
      *
-     * @return \UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionFile[]
+     * @return OneOfQuantumViewEventsSubscriptionEventsSubscriptionFile
      */
     public function getSubscriptionFile()
     {
@@ -338,7 +338,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
     /**
      * Sets subscription_file
      *
-     * @param \UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionFile[] $subscription_file subscription_file
+     * @param OneOfQuantumViewEventsSubscriptionEventsSubscriptionFile $subscription_file subscription_file
      *
      * @return $this
      */

@@ -57,7 +57,7 @@ class OptionCodeTransportationPickUpSchedule implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pick_up' => '\UPS\Locator\Locator\TransportationPickUpSchedulePickUp[]'
+        'pick_up' => 'OneOfOptionCodeTransportationPickUpSchedulePickUp'
     ];
 
     /**
@@ -208,7 +208,7 @@ class OptionCodeTransportationPickUpSchedule implements ModelInterface, ArrayAcc
     /**
      * Gets pick_up
      *
-     * @return \UPS\Locator\Locator\TransportationPickUpSchedulePickUp[]
+     * @return OneOfOptionCodeTransportationPickUpSchedulePickUp
      */
     public function getPickUp()
     {
@@ -218,7 +218,7 @@ class OptionCodeTransportationPickUpSchedule implements ModelInterface, ArrayAcc
     /**
      * Sets pick_up
      *
-     * @param \UPS\Locator\Locator\TransportationPickUpSchedulePickUp[] $pick_up pick_up
+     * @param OneOfOptionCodeTransportationPickUpSchedulePickUp $pick_up pick_up
      *
      * @return $this
      */

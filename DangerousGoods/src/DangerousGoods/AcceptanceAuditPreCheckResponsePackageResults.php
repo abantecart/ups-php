@@ -60,7 +60,7 @@ class AcceptanceAuditPreCheckResponsePackageResults implements ModelInterface, A
         'package_identifier' => 'string',
         'accessible_indicator' => 'string',
         'europe_bu_indicator' => 'string',
-        'chemical_record_results' => '\UPS\DangerousGoods\DangerousGoods\PackageResultsChemicalRecordResults[]'
+        'chemical_record_results' => 'OneOfAcceptanceAuditPreCheckResponsePackageResultsChemicalRecordResults'
     ];
 
     /**
@@ -298,7 +298,7 @@ class AcceptanceAuditPreCheckResponsePackageResults implements ModelInterface, A
     /**
      * Gets chemical_record_results
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\PackageResultsChemicalRecordResults[]
+     * @return OneOfAcceptanceAuditPreCheckResponsePackageResultsChemicalRecordResults
      */
     public function getChemicalRecordResults()
     {
@@ -308,7 +308,7 @@ class AcceptanceAuditPreCheckResponsePackageResults implements ModelInterface, A
     /**
      * Sets chemical_record_results
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\PackageResultsChemicalRecordResults[] $chemical_record_results chemical_record_results
+     * @param OneOfAcceptanceAuditPreCheckResponsePackageResultsChemicalRecordResults $chemical_record_results chemical_record_results
      *
      * @return $this
      */

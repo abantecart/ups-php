@@ -57,7 +57,7 @@ class PickupGetServiceCenterFacilitiesResponseServiceCenterLocation implements M
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'drop_off_facilities' => '\UPS\Pickup\Pickup\ServiceCenterLocationDropOffFacilities[]',
+        'drop_off_facilities' => 'OneOfPickupGetServiceCenterFacilitiesResponseServiceCenterLocationDropOffFacilities',
         'pickup_facilities' => '\UPS\Pickup\Pickup\ServiceCenterLocationPickupFacilities'
     ];
 
@@ -211,7 +211,7 @@ class PickupGetServiceCenterFacilitiesResponseServiceCenterLocation implements M
     /**
      * Gets drop_off_facilities
      *
-     * @return \UPS\Pickup\Pickup\ServiceCenterLocationDropOffFacilities[]
+     * @return OneOfPickupGetServiceCenterFacilitiesResponseServiceCenterLocationDropOffFacilities
      */
     public function getDropOffFacilities()
     {
@@ -221,7 +221,7 @@ class PickupGetServiceCenterFacilitiesResponseServiceCenterLocation implements M
     /**
      * Sets drop_off_facilities
      *
-     * @param \UPS\Pickup\Pickup\ServiceCenterLocationDropOffFacilities[] $drop_off_facilities drop_off_facilities
+     * @param OneOfPickupGetServiceCenterFacilitiesResponseServiceCenterLocationDropOffFacilities $drop_off_facilities drop_off_facilities
      *
      * @return $this
      */

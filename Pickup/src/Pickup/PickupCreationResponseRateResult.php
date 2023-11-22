@@ -60,8 +60,8 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
         'disclaimer' => '\UPS\Pickup\Pickup\RateResultDisclaimer',
         'rate_type' => 'string',
         'currency_code' => 'string',
-        'charge_detail' => '\UPS\Pickup\Pickup\RateResultChargeDetail[]',
-        'tax_charges' => '\UPS\Pickup\Pickup\RateResultTaxCharges[]',
+        'charge_detail' => 'OneOfPickupCreationResponseRateResultChargeDetail',
+        'tax_charges' => 'OneOfPickupCreationResponseRateResultTaxCharges',
         'total_tax' => 'string',
         'grand_total_of_all_charge' => 'string',
         'grand_total_of_all_incented_charge' => 'string',
@@ -334,7 +334,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Gets charge_detail
      *
-     * @return \UPS\Pickup\Pickup\RateResultChargeDetail[]
+     * @return OneOfPickupCreationResponseRateResultChargeDetail
      */
     public function getChargeDetail()
     {
@@ -344,7 +344,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Sets charge_detail
      *
-     * @param \UPS\Pickup\Pickup\RateResultChargeDetail[] $charge_detail charge_detail
+     * @param OneOfPickupCreationResponseRateResultChargeDetail $charge_detail charge_detail
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Gets tax_charges
      *
-     * @return \UPS\Pickup\Pickup\RateResultTaxCharges[]
+     * @return OneOfPickupCreationResponseRateResultTaxCharges
      */
     public function getTaxCharges()
     {
@@ -368,7 +368,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Sets tax_charges
      *
-     * @param \UPS\Pickup\Pickup\RateResultTaxCharges[] $tax_charges tax_charges
+     * @param OneOfPickupCreationResponseRateResultTaxCharges $tax_charges tax_charges
      *
      * @return $this
      */

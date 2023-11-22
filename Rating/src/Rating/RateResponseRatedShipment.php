@@ -57,23 +57,23 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'disclaimer' => '\UPS\Rating\Rating\RatedShipmentDisclaimer[]',
+        'disclaimer' => 'OneOfRateResponseRatedShipmentDisclaimer',
         'service' => '\UPS\Rating\Rating\RatedShipmentService',
         'rate_chart' => 'string',
-        'rated_shipment_alert' => '\UPS\Rating\Rating\RatedShipmentRatedShipmentAlert[]',
+        'rated_shipment_alert' => 'OneOfRateResponseRatedShipmentRatedShipmentAlert',
         'billable_weight_calculation_method' => 'string',
         'rating_method' => 'string',
         'billing_weight' => '\UPS\Rating\Rating\RatedShipmentBillingWeight',
         'transportation_charges' => '\UPS\Rating\Rating\RatedShipmentTransportationCharges',
         'base_service_charge' => '\UPS\Rating\Rating\RatedShipmentBaseServiceCharge',
-        'itemized_charges' => '\UPS\Rating\Rating\RatedShipmentItemizedCharges[]',
+        'itemized_charges' => 'OneOfRateResponseRatedShipmentItemizedCharges',
         'frs_shipment_data' => '\UPS\Rating\Rating\RatedShipmentFRSShipmentData',
         'service_options_charges' => '\UPS\Rating\Rating\RatedShipmentServiceOptionsCharges',
-        'tax_charges' => '\UPS\Rating\Rating\RatedShipmentTaxCharges[]',
+        'tax_charges' => 'OneOfRateResponseRatedShipmentTaxCharges',
         'total_charges' => '\UPS\Rating\Rating\RatedShipmentTotalCharges',
         'total_charges_with_taxes' => '\UPS\Rating\Rating\RatedShipmentTotalChargesWithTaxes',
         'negotiated_rate_charges' => '\UPS\Rating\Rating\RatedShipmentNegotiatedRateCharges',
-        'rated_package' => '\UPS\Rating\Rating\RatedShipmentRatedPackage[]',
+        'rated_package' => 'OneOfRateResponseRatedShipmentRatedPackage',
         'time_in_transit' => '\UPS\Rating\Rating\RatedShipmentTimeInTransit',
         'scheduled_delivery_date' => 'string',
         'roar_rated_indicator' => 'string'
@@ -337,7 +337,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return \UPS\Rating\Rating\RatedShipmentDisclaimer[]
+     * @return OneOfRateResponseRatedShipmentDisclaimer
      */
     public function getDisclaimer()
     {
@@ -347,7 +347,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param \UPS\Rating\Rating\RatedShipmentDisclaimer[] $disclaimer disclaimer
+     * @param OneOfRateResponseRatedShipmentDisclaimer $disclaimer disclaimer
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets rated_shipment_alert
      *
-     * @return \UPS\Rating\Rating\RatedShipmentRatedShipmentAlert[]
+     * @return OneOfRateResponseRatedShipmentRatedShipmentAlert
      */
     public function getRatedShipmentAlert()
     {
@@ -419,7 +419,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets rated_shipment_alert
      *
-     * @param \UPS\Rating\Rating\RatedShipmentRatedShipmentAlert[] $rated_shipment_alert rated_shipment_alert
+     * @param OneOfRateResponseRatedShipmentRatedShipmentAlert $rated_shipment_alert rated_shipment_alert
      *
      * @return $this
      */
@@ -553,7 +553,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Rating\Rating\RatedShipmentItemizedCharges[]
+     * @return OneOfRateResponseRatedShipmentItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -563,7 +563,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Rating\Rating\RatedShipmentItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfRateResponseRatedShipmentItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */
@@ -625,7 +625,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets tax_charges
      *
-     * @return \UPS\Rating\Rating\RatedShipmentTaxCharges[]
+     * @return OneOfRateResponseRatedShipmentTaxCharges
      */
     public function getTaxCharges()
     {
@@ -635,7 +635,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets tax_charges
      *
-     * @param \UPS\Rating\Rating\RatedShipmentTaxCharges[] $tax_charges tax_charges
+     * @param OneOfRateResponseRatedShipmentTaxCharges $tax_charges tax_charges
      *
      * @return $this
      */
@@ -721,7 +721,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets rated_package
      *
-     * @return \UPS\Rating\Rating\RatedShipmentRatedPackage[]
+     * @return OneOfRateResponseRatedShipmentRatedPackage
      */
     public function getRatedPackage()
     {
@@ -731,7 +731,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets rated_package
      *
-     * @param \UPS\Rating\Rating\RatedShipmentRatedPackage[] $rated_package rated_package
+     * @param OneOfRateResponseRatedShipmentRatedPackage $rated_package rated_package
      *
      * @return $this
      */

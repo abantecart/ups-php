@@ -58,7 +58,7 @@ class ChemicalReferenceDataResponseResponse implements ModelInterface, ArrayAcce
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\DangerousGoods\DangerousGoods\ResponseResponseStatus',
-        'alert' => '\UPS\DangerousGoods\DangerousGoods\ResponseAlert[]',
+        'alert' => 'OneOfChemicalReferenceDataResponseResponseAlert',
         'transaction_reference' => '\UPS\DangerousGoods\DangerousGoods\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class ChemicalReferenceDataResponseResponse implements ModelInterface, ArrayAcce
     /**
      * Gets alert
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\ResponseAlert[]
+     * @return OneOfChemicalReferenceDataResponseResponseAlert
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class ChemicalReferenceDataResponseResponse implements ModelInterface, ArrayAcce
     /**
      * Sets alert
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\ResponseAlert[] $alert alert
+     * @param OneOfChemicalReferenceDataResponseResponseAlert $alert alert
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activity** | [**\UPS\QuantumView\QuantumView\PackageActivity[]**](PackageActivity.md) |  | [optional] 
+**activity** | [**OneOfManifestPackageActivity**](OneOfManifestPackageActivity.md) |  | [optional] 
 **description** | **string** | Description of package merchandise. | [optional] 
 **dimensions** | [**\UPS\QuantumView\QuantumView\PackageDimensions**](PackageDimensions.md) |  | [optional] 
 **dimensional_weight** | [**\UPS\QuantumView\QuantumView\PackageDimensionalWeight**](PackageDimensionalWeight.md) |  | [optional] 

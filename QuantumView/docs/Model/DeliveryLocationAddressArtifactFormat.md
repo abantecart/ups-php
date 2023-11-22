@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **street_type** | **string** | Street type where package is delivered. | [optional] 
 **street_suffix** | **string** | Street suffix where package is delivered, e.g. N, SE. | [optional] 
 **building_name** | **string** | Building name where package is delivered. | [optional] 
-**address_extended_information** | [**\UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[]**](AddressArtifactFormatAddressExtendedInformation.md) |  | [optional] 
+**address_extended_information** | [**OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation**](OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation.md) |  | [optional] 
 **political_division3** | **string** | The neighborhood, town, barrio etc. | [optional] 
 **political_division2** | **string** | City name where package is delivered. | [optional] 
 **political_division1** | **string** | Abbreviated state or province name where package is delivered. | [optional] 

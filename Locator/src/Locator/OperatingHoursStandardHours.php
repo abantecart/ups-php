@@ -58,7 +58,7 @@ class OperatingHoursStandardHours implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'hours_type' => 'string',
-        'day_of_week' => '\UPS\Locator\Locator\StandardHoursDayOfWeek[]'
+        'day_of_week' => 'OneOfOperatingHoursStandardHoursDayOfWeek'
     ];
 
     /**
@@ -241,7 +241,7 @@ class OperatingHoursStandardHours implements ModelInterface, ArrayAccess
     /**
      * Gets day_of_week
      *
-     * @return \UPS\Locator\Locator\StandardHoursDayOfWeek[]
+     * @return OneOfOperatingHoursStandardHoursDayOfWeek
      */
     public function getDayOfWeek()
     {
@@ -251,7 +251,7 @@ class OperatingHoursStandardHours implements ModelInterface, ArrayAccess
     /**
      * Sets day_of_week
      *
-     * @param \UPS\Locator\Locator\StandardHoursDayOfWeek[] $day_of_week day_of_week
+     * @param OneOfOperatingHoursStandardHoursDayOfWeek $day_of_week day_of_week
      *
      * @return $this
      */

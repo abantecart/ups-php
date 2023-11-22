@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **bolid** | **string** | The retrieval key for the stored BOL. | [optional] 
 **guaranteed_indicator** | **string** | This indicator indicates that the rate returned is guaranteed. Can only be returned if the billing option is prepaid. | [optional] 
 **minimum_charge_applied_indicator** | **string** | This is an empty tag. The presence of the tag indicates the rate returned has a minimum charge applied to it. Can only be returned if the billing option is prepaid. | [optional] 
-**rate** | [**\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsRate[]**](ShipmentResultsRate.md) |  | [optional] 
+**rate** | [**OneOfFreightShipResponseShipmentResultsRate**](OneOfFreightShipResponseShipmentResultsRate.md) |  | [optional] 
 **freight_density_rate** | [**\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsFreightDensityRate**](ShipmentResultsFreightDensityRate.md) |  | [optional] 
 **total_shipment_charge** | [**\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsTotalShipmentCharge**](ShipmentResultsTotalShipmentCharge.md) |  | [optional] 
 **billable_shipment_weight** | [**\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsBillableShipmentWeight**](ShipmentResultsBillableShipmentWeight.md) |  | [optional] 

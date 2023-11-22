@@ -63,7 +63,7 @@ class FreightShipResponseShipmentResults implements ModelInterface, ArrayAccess
         'bolid' => 'string',
         'guaranteed_indicator' => 'string',
         'minimum_charge_applied_indicator' => 'string',
-        'rate' => '\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsRate[]',
+        'rate' => 'OneOfFreightShipResponseShipmentResultsRate',
         'freight_density_rate' => '\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsFreightDensityRate',
         'total_shipment_charge' => '\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsTotalShipmentCharge',
         'billable_shipment_weight' => '\UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsBillableShipmentWeight',
@@ -421,7 +421,7 @@ class FreightShipResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Gets rate
      *
-     * @return \UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsRate[]
+     * @return OneOfFreightShipResponseShipmentResultsRate
      */
     public function getRate()
     {
@@ -431,7 +431,7 @@ class FreightShipResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Sets rate
      *
-     * @param \UPS\TForceFreightShipping\TForceFreightShipping\ShipmentResultsRate[] $rate rate
+     * @param OneOfFreightShipResponseShipmentResultsRate $rate rate
      *
      * @return $this
      */

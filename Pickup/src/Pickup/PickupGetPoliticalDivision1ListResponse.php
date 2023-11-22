@@ -58,7 +58,7 @@ class PickupGetPoliticalDivision1ListResponse implements ModelInterface, ArrayAc
       */
     protected static $swaggerTypes = [
         'response' => '\UPS\Pickup\Pickup\PickupGetPoliticalDivision1ListResponseResponse',
-        'political_division1' => 'string[]'
+        'political_division1' => 'OneOfPickupGetPoliticalDivision1ListResponsePoliticalDivision1'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PickupGetPoliticalDivision1ListResponse implements ModelInterface, ArrayAc
     /**
      * Gets political_division1
      *
-     * @return string[]
+     * @return OneOfPickupGetPoliticalDivision1ListResponsePoliticalDivision1
      */
     public function getPoliticalDivision1()
     {
@@ -248,7 +248,7 @@ class PickupGetPoliticalDivision1ListResponse implements ModelInterface, ArrayAc
     /**
      * Sets political_division1
      *
-     * @param string[] $political_division1 The Political Division 1/State Field.
+     * @param OneOfPickupGetPoliticalDivision1ListResponsePoliticalDivision1 $political_division1 The Political Division 1/State Field.
      *
      * @return $this
      */

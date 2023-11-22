@@ -57,8 +57,8 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemized_charges' => '\UPS\Shipping\Shipping\NegotiatedRateChargesItemizedCharges[]',
-        'tax_charges' => '\UPS\Shipping\Shipping\NegotiatedRateChargesTaxCharges[]',
+        'itemized_charges' => 'OneOfShipmentResultsNegotiatedRateChargesItemizedCharges',
+        'tax_charges' => 'OneOfShipmentResultsNegotiatedRateChargesTaxCharges',
         'total_charge' => '\UPS\Shipping\Shipping\NegotiatedRateChargesTotalCharge',
         'total_charges_with_taxes' => '\UPS\Shipping\Shipping\NegotiatedRateChargesTotalChargesWithTaxes'
     ];
@@ -223,7 +223,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Shipping\Shipping\NegotiatedRateChargesItemizedCharges[]
+     * @return OneOfShipmentResultsNegotiatedRateChargesItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -233,7 +233,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Shipping\Shipping\NegotiatedRateChargesItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfShipmentResultsNegotiatedRateChargesItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Gets tax_charges
      *
-     * @return \UPS\Shipping\Shipping\NegotiatedRateChargesTaxCharges[]
+     * @return OneOfShipmentResultsNegotiatedRateChargesTaxCharges
      */
     public function getTaxCharges()
     {
@@ -257,7 +257,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Sets tax_charges
      *
-     * @param \UPS\Shipping\Shipping\NegotiatedRateChargesTaxCharges[] $tax_charges tax_charges
+     * @param OneOfShipmentResultsNegotiatedRateChargesTaxCharges $tax_charges tax_charges
      *
      * @return $this
      */

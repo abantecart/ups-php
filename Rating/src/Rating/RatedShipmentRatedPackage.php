@@ -63,11 +63,11 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
         'total_charges' => '\UPS\Rating\Rating\RatedPackageTotalCharges',
         'weight' => 'string',
         'billing_weight' => '\UPS\Rating\Rating\RatedPackageBillingWeight',
-        'accessorial' => '\UPS\Rating\Rating\RatedPackageAccessorial[]',
-        'itemized_charges' => '\UPS\Rating\Rating\RatedPackageItemizedCharges[]',
+        'accessorial' => 'OneOfRatedShipmentRatedPackageAccessorial',
+        'itemized_charges' => 'OneOfRatedShipmentRatedPackageItemizedCharges',
         'negotiated_charges' => '\UPS\Rating\Rating\RatedPackageNegotiatedCharges',
         'simple_rate' => '\UPS\Rating\Rating\RatedPackageSimpleRate',
-        'rate_modifier' => '\UPS\Rating\Rating\RatedPackageRateModifier[]'
+        'rate_modifier' => 'OneOfRatedShipmentRatedPackageRateModifier'
     ];
 
     /**
@@ -409,7 +409,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Gets accessorial
      *
-     * @return \UPS\Rating\Rating\RatedPackageAccessorial[]
+     * @return OneOfRatedShipmentRatedPackageAccessorial
      */
     public function getAccessorial()
     {
@@ -419,7 +419,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Sets accessorial
      *
-     * @param \UPS\Rating\Rating\RatedPackageAccessorial[] $accessorial accessorial
+     * @param OneOfRatedShipmentRatedPackageAccessorial $accessorial accessorial
      *
      * @return $this
      */
@@ -433,7 +433,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Rating\Rating\RatedPackageItemizedCharges[]
+     * @return OneOfRatedShipmentRatedPackageItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -443,7 +443,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Rating\Rating\RatedPackageItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfRatedShipmentRatedPackageItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */
@@ -505,7 +505,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Gets rate_modifier
      *
-     * @return \UPS\Rating\Rating\RatedPackageRateModifier[]
+     * @return OneOfRatedShipmentRatedPackageRateModifier
      */
     public function getRateModifier()
     {
@@ -515,7 +515,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Sets rate_modifier
      *
-     * @param \UPS\Rating\Rating\RatedPackageRateModifier[] $rate_modifier rate_modifier
+     * @param OneOfRatedShipmentRatedPackageRateModifier $rate_modifier rate_modifier
      *
      * @return $this
      */

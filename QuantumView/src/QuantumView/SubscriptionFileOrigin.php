@@ -57,8 +57,8 @@ class SubscriptionFileOrigin implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_reference_number' => '\UPS\QuantumView\QuantumView\OriginPackageReferenceNumber[]',
-        'shipment_reference_number' => '\UPS\QuantumView\QuantumView\OriginShipmentReferenceNumber[]',
+        'package_reference_number' => 'OneOfSubscriptionFileOriginPackageReferenceNumber',
+        'shipment_reference_number' => 'OneOfSubscriptionFileOriginShipmentReferenceNumber',
         'shipper_number' => 'string',
         'tracking_number' => 'string',
         'date' => 'string',
@@ -271,7 +271,7 @@ class SubscriptionFileOrigin implements ModelInterface, ArrayAccess
     /**
      * Gets package_reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\OriginPackageReferenceNumber[]
+     * @return OneOfSubscriptionFileOriginPackageReferenceNumber
      */
     public function getPackageReferenceNumber()
     {
@@ -281,7 +281,7 @@ class SubscriptionFileOrigin implements ModelInterface, ArrayAccess
     /**
      * Sets package_reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\OriginPackageReferenceNumber[] $package_reference_number package_reference_number
+     * @param OneOfSubscriptionFileOriginPackageReferenceNumber $package_reference_number package_reference_number
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class SubscriptionFileOrigin implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\OriginShipmentReferenceNumber[]
+     * @return OneOfSubscriptionFileOriginShipmentReferenceNumber
      */
     public function getShipmentReferenceNumber()
     {
@@ -305,7 +305,7 @@ class SubscriptionFileOrigin implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\OriginShipmentReferenceNumber[] $shipment_reference_number shipment_reference_number
+     * @param OneOfSubscriptionFileOriginShipmentReferenceNumber $shipment_reference_number shipment_reference_number
      *
      * @return $this
      */

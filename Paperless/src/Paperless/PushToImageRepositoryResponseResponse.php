@@ -58,7 +58,7 @@ class PushToImageRepositoryResponseResponse implements ModelInterface, ArrayAcce
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\Paperless\Paperless\ResponseResponseStatus',
-        'alert' => '\UPS\Paperless\Paperless\ResponseAlert[]',
+        'alert' => 'OneOfPushToImageRepositoryResponseResponseAlert',
         'transaction_reference' => '\UPS\Paperless\Paperless\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class PushToImageRepositoryResponseResponse implements ModelInterface, ArrayAcce
     /**
      * Gets alert
      *
-     * @return \UPS\Paperless\Paperless\ResponseAlert[]
+     * @return OneOfPushToImageRepositoryResponseResponseAlert
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class PushToImageRepositoryResponseResponse implements ModelInterface, ArrayAcce
     /**
      * Sets alert
      *
-     * @param \UPS\Paperless\Paperless\ResponseAlert[] $alert alert
+     * @param OneOfPushToImageRepositoryResponseResponseAlert $alert alert
      *
      * @return $this
      */

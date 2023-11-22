@@ -59,13 +59,13 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipper' => '\UPS\QuantumView\QuantumView\ManifestShipper',
         'ship_to' => '\UPS\QuantumView\QuantumView\ManifestShipTo',
-        'reference_number' => '\UPS\QuantumView\QuantumView\ManifestReferenceNumber[]',
+        'reference_number' => 'OneOfSubscriptionFileManifestReferenceNumber',
         'service' => '\UPS\QuantumView\QuantumView\ManifestService',
         'pickup_date' => 'string',
         'scheduled_delivery_date' => 'string',
         'scheduled_delivery_time' => 'string',
         'documents_only' => 'string',
-        'package' => '\UPS\QuantumView\QuantumView\ManifestPackage[]',
+        'package' => 'OneOfSubscriptionFileManifestPackage',
         'shipment_service_options' => '\UPS\QuantumView\QuantumView\ManifestShipmentServiceOptions',
         'manufacture_country' => 'string',
         'harmonized_code' => 'string',
@@ -559,7 +559,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Gets reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\ManifestReferenceNumber[]
+     * @return OneOfSubscriptionFileManifestReferenceNumber
      */
     public function getReferenceNumber()
     {
@@ -569,7 +569,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\ManifestReferenceNumber[] $reference_number reference_number
+     * @param OneOfSubscriptionFileManifestReferenceNumber $reference_number reference_number
      *
      * @return $this
      */
@@ -703,7 +703,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Gets package
      *
-     * @return \UPS\QuantumView\QuantumView\ManifestPackage[]
+     * @return OneOfSubscriptionFileManifestPackage
      */
     public function getPackage()
     {
@@ -713,7 +713,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets package
      *
-     * @param \UPS\QuantumView\QuantumView\ManifestPackage[] $package package
+     * @param OneOfSubscriptionFileManifestPackage $package package
      *
      * @return $this
      */

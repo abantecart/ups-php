@@ -57,7 +57,7 @@ class DropOffFacilitiesFacilityTime implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'day_of_week' => '\UPS\Pickup\Pickup\FacilityTimeDayOfWeek[]'
+        'day_of_week' => 'OneOfDropOffFacilitiesFacilityTimeDayOfWeek'
     ];
 
     /**
@@ -208,7 +208,7 @@ class DropOffFacilitiesFacilityTime implements ModelInterface, ArrayAccess
     /**
      * Gets day_of_week
      *
-     * @return \UPS\Pickup\Pickup\FacilityTimeDayOfWeek[]
+     * @return OneOfDropOffFacilitiesFacilityTimeDayOfWeek
      */
     public function getDayOfWeek()
     {
@@ -218,7 +218,7 @@ class DropOffFacilitiesFacilityTime implements ModelInterface, ArrayAccess
     /**
      * Sets day_of_week
      *
-     * @param \UPS\Pickup\Pickup\FacilityTimeDayOfWeek[] $day_of_week day_of_week
+     * @param OneOfDropOffFacilitiesFacilityTimeDayOfWeek $day_of_week day_of_week
      *
      * @return $this
      */

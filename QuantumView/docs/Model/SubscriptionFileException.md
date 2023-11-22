@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**package_reference_number** | [**\UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[]**](ExceptionPackageReferenceNumber.md) |  | [optional] 
-**shipment_reference_number** | [**\UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[]**](ExceptionShipmentReferenceNumber.md) |  | [optional] 
+**package_reference_number** | [**OneOfSubscriptionFileExceptionPackageReferenceNumber**](OneOfSubscriptionFileExceptionPackageReferenceNumber.md) |  | [optional] 
+**shipment_reference_number** | [**OneOfSubscriptionFileExceptionShipmentReferenceNumber**](OneOfSubscriptionFileExceptionShipmentReferenceNumber.md) |  | [optional] 
 **shipper_number** | **string** | Shipper&#x27;s six digit alphanumeric account number. | 
 **tracking_number** | **string** | Package&#x27;s 1Z tracking number. | 
 **date** | **string** | Date that the package is delivered. Date format is YYYYMMDD. | 

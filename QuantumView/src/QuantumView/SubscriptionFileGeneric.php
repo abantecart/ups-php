@@ -60,8 +60,8 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
         'activity_type' => 'string',
         'tracking_number' => 'string',
         'shipper_number' => 'string',
-        'shipment_reference_number' => '\UPS\QuantumView\QuantumView\GenericShipmentReferenceNumber[]',
-        'package_reference_number' => '\UPS\QuantumView\QuantumView\GenericPackageReferenceNumber[]',
+        'shipment_reference_number' => 'OneOfSubscriptionFileGenericShipmentReferenceNumber',
+        'package_reference_number' => 'OneOfSubscriptionFileGenericPackageReferenceNumber',
         'service' => '\UPS\QuantumView\QuantumView\GenericService',
         'activity' => '\UPS\QuantumView\QuantumView\GenericActivity',
         'bill_to_account' => '\UPS\QuantumView\QuantumView\GenericBillToAccount',
@@ -343,7 +343,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\GenericShipmentReferenceNumber[]
+     * @return OneOfSubscriptionFileGenericShipmentReferenceNumber
      */
     public function getShipmentReferenceNumber()
     {
@@ -353,7 +353,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\GenericShipmentReferenceNumber[] $shipment_reference_number shipment_reference_number
+     * @param OneOfSubscriptionFileGenericShipmentReferenceNumber $shipment_reference_number shipment_reference_number
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Gets package_reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\GenericPackageReferenceNumber[]
+     * @return OneOfSubscriptionFileGenericPackageReferenceNumber
      */
     public function getPackageReferenceNumber()
     {
@@ -377,7 +377,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Sets package_reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\GenericPackageReferenceNumber[] $package_reference_number package_reference_number
+     * @param OneOfSubscriptionFileGenericPackageReferenceNumber $package_reference_number package_reference_number
      *
      * @return $this
      */

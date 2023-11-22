@@ -58,8 +58,8 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\DangerousGoods\DangerousGoods\ResponseResponseStatus',
-        'alert' => '\UPS\DangerousGoods\DangerousGoods\ResponseAlert[]',
-        'alert_detail' => '\UPS\DangerousGoods\DangerousGoods\ResponseAlertDetail[]',
+        'alert' => 'OneOfAcceptanceAuditPreCheckResponseResponseAlert',
+        'alert_detail' => 'OneOfAcceptanceAuditPreCheckResponseResponseAlertDetail',
         'transaction_reference' => '\UPS\DangerousGoods\DangerousGoods\ResponseTransactionReference'
     ];
 
@@ -250,7 +250,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Gets alert
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\ResponseAlert[]
+     * @return OneOfAcceptanceAuditPreCheckResponseResponseAlert
      */
     public function getAlert()
     {
@@ -260,7 +260,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Sets alert
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\ResponseAlert[] $alert alert
+     * @param OneOfAcceptanceAuditPreCheckResponseResponseAlert $alert alert
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Gets alert_detail
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\ResponseAlertDetail[]
+     * @return OneOfAcceptanceAuditPreCheckResponseResponseAlertDetail
      */
     public function getAlertDetail()
     {
@@ -284,7 +284,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Sets alert_detail
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\ResponseAlertDetail[] $alert_detail alert_detail
+     * @param OneOfAcceptanceAuditPreCheckResponseResponseAlertDetail $alert_detail alert_detail
      *
      * @return $this
      */

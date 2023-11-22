@@ -58,7 +58,7 @@ class QuantumViewResponseQuantumViewEvents implements ModelInterface, ArrayAcces
       */
     protected static $swaggerTypes = [
         'subscriber_id' => 'string',
-        'subscription_events' => '\UPS\QuantumView\QuantumView\QuantumViewEventsSubscriptionEvents[]'
+        'subscription_events' => 'OneOfQuantumViewResponseQuantumViewEventsSubscriptionEvents'
     ];
 
     /**
@@ -241,7 +241,7 @@ class QuantumViewResponseQuantumViewEvents implements ModelInterface, ArrayAcces
     /**
      * Gets subscription_events
      *
-     * @return \UPS\QuantumView\QuantumView\QuantumViewEventsSubscriptionEvents[]
+     * @return OneOfQuantumViewResponseQuantumViewEventsSubscriptionEvents
      */
     public function getSubscriptionEvents()
     {
@@ -251,7 +251,7 @@ class QuantumViewResponseQuantumViewEvents implements ModelInterface, ArrayAcces
     /**
      * Sets subscription_events
      *
-     * @param \UPS\QuantumView\QuantumView\QuantumViewEventsSubscriptionEvents[] $subscription_events subscription_events
+     * @param OneOfQuantumViewResponseQuantumViewEventsSubscriptionEvents $subscription_events subscription_events
      *
      * @return $this
      */

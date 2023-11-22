@@ -57,8 +57,8 @@ class RatedShipmentNegotiatedRateCharges implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemized_charges' => '\UPS\Rating\Rating\NegotiatedRateChargesItemizedCharges[]',
-        'tax_charges' => '\UPS\Rating\Rating\NegotiatedRateChargesTaxCharges[]',
+        'itemized_charges' => 'OneOfRatedShipmentNegotiatedRateChargesItemizedCharges',
+        'tax_charges' => 'OneOfRatedShipmentNegotiatedRateChargesTaxCharges',
         'total_charge' => '\UPS\Rating\Rating\NegotiatedRateChargesTotalCharge',
         'total_charges_with_taxes' => '\UPS\Rating\Rating\NegotiatedRateChargesTotalChargesWithTaxes'
     ];
@@ -226,7 +226,7 @@ class RatedShipmentNegotiatedRateCharges implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Rating\Rating\NegotiatedRateChargesItemizedCharges[]
+     * @return OneOfRatedShipmentNegotiatedRateChargesItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -236,7 +236,7 @@ class RatedShipmentNegotiatedRateCharges implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Rating\Rating\NegotiatedRateChargesItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfRatedShipmentNegotiatedRateChargesItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class RatedShipmentNegotiatedRateCharges implements ModelInterface, ArrayAccess
     /**
      * Gets tax_charges
      *
-     * @return \UPS\Rating\Rating\NegotiatedRateChargesTaxCharges[]
+     * @return OneOfRatedShipmentNegotiatedRateChargesTaxCharges
      */
     public function getTaxCharges()
     {
@@ -260,7 +260,7 @@ class RatedShipmentNegotiatedRateCharges implements ModelInterface, ArrayAccess
     /**
      * Sets tax_charges
      *
-     * @param \UPS\Rating\Rating\NegotiatedRateChargesTaxCharges[] $tax_charges tax_charges
+     * @param OneOfRatedShipmentNegotiatedRateChargesTaxCharges $tax_charges tax_charges
      *
      * @return $this
      */

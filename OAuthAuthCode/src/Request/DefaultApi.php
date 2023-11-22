@@ -278,7 +278,7 @@ class DefaultApi
             );
         }
 
-        $resourcePath = '/v1/oauth/authorize';
+        $resourcePath = '/security/v1/oauth/authorize';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -589,7 +589,7 @@ class DefaultApi
     protected function generateTokenRequest($grant_type = null, $code = null, $redirect_uri = null, $x_merchant_id = null)
     {
 
-        $resourcePath = '/v1/oauth/token';
+        $resourcePath = '/security/v1/oauth/token';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -886,7 +886,7 @@ class DefaultApi
     protected function refreshTokenRequest($grant_type = null, $refresh_token = null)
     {
 
-        $resourcePath = '/v1/oauth/refresh';
+        $resourcePath = '/security/v1/oauth/refresh';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

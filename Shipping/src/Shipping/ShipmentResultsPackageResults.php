@@ -65,10 +65,10 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
         'shipping_receipt' => '\UPS\Shipping\Shipping\PackageResultsShippingReceipt',
         'uspspic_number' => 'string',
         'cn22_number' => 'string',
-        'accessorial' => '\UPS\Shipping\Shipping\PackageResultsAccessorial[]',
+        'accessorial' => 'OneOfShipmentResultsPackageResultsAccessorial',
         'simple_rate' => '\UPS\Shipping\Shipping\PackageResultsSimpleRate',
         'form' => '\UPS\Shipping\Shipping\PackageResultsForm',
-        'itemized_charges' => '\UPS\Shipping\Shipping\PackageResultsItemizedCharges[]',
+        'itemized_charges' => 'OneOfShipmentResultsPackageResultsItemizedCharges',
         'negotiated_charges' => '\UPS\Shipping\Shipping\PackageResultsNegotiatedCharges'
     ];
 
@@ -472,7 +472,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Gets accessorial
      *
-     * @return \UPS\Shipping\Shipping\PackageResultsAccessorial[]
+     * @return OneOfShipmentResultsPackageResultsAccessorial
      */
     public function getAccessorial()
     {
@@ -482,7 +482,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Sets accessorial
      *
-     * @param \UPS\Shipping\Shipping\PackageResultsAccessorial[] $accessorial accessorial
+     * @param OneOfShipmentResultsPackageResultsAccessorial $accessorial accessorial
      *
      * @return $this
      */
@@ -544,7 +544,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return \UPS\Shipping\Shipping\PackageResultsItemizedCharges[]
+     * @return OneOfShipmentResultsPackageResultsItemizedCharges
      */
     public function getItemizedCharges()
     {
@@ -554,7 +554,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param \UPS\Shipping\Shipping\PackageResultsItemizedCharges[] $itemized_charges itemized_charges
+     * @param OneOfShipmentResultsPackageResultsItemizedCharges $itemized_charges itemized_charges
      *
      * @return $this
      */

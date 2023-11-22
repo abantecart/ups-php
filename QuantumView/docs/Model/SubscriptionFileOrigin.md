@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**package_reference_number** | [**\UPS\QuantumView\QuantumView\OriginPackageReferenceNumber[]**](OriginPackageReferenceNumber.md) |  | [optional] 
-**shipment_reference_number** | [**\UPS\QuantumView\QuantumView\OriginShipmentReferenceNumber[]**](OriginShipmentReferenceNumber.md) |  | [optional] 
+**package_reference_number** | [**OneOfSubscriptionFileOriginPackageReferenceNumber**](OneOfSubscriptionFileOriginPackageReferenceNumber.md) |  | [optional] 
+**shipment_reference_number** | [**OneOfSubscriptionFileOriginShipmentReferenceNumber**](OneOfSubscriptionFileOriginShipmentReferenceNumber.md) |  | [optional] 
 **shipper_number** | **string** | Shipper&#x27;s six digit alphanumeric account number. | 
 **tracking_number** | **string** | Package&#x27;s 1Z tracking number. | 
 **date** | **string** | Date that the package is picked up at the origin. Date format is YYYYMMDD. | 

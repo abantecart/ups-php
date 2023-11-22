@@ -58,8 +58,8 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\Rating\Rating\ResponseResponseStatus',
-        'alert' => '\UPS\Rating\Rating\ResponseAlert[]',
-        'alert_detail' => '\UPS\Rating\Rating\ResponseAlertDetail[]',
+        'alert' => 'OneOfRateResponseResponseAlert',
+        'alert_detail' => 'OneOfRateResponseResponseAlertDetail',
         'transaction_reference' => '\UPS\Rating\Rating\ResponseTransactionReference'
     ];
 
@@ -250,7 +250,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return \UPS\Rating\Rating\ResponseAlert[]
+     * @return OneOfRateResponseResponseAlert
      */
     public function getAlert()
     {
@@ -260,7 +260,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param \UPS\Rating\Rating\ResponseAlert[] $alert alert
+     * @param OneOfRateResponseResponseAlert $alert alert
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert_detail
      *
-     * @return \UPS\Rating\Rating\ResponseAlertDetail[]
+     * @return OneOfRateResponseResponseAlertDetail
      */
     public function getAlertDetail()
     {
@@ -284,7 +284,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert_detail
      *
-     * @param \UPS\Rating\Rating\ResponseAlertDetail[] $alert_detail alert_detail
+     * @param OneOfRateResponseResponseAlertDetail $alert_detail alert_detail
      *
      * @return $this
      */

@@ -58,7 +58,7 @@ class ChemicalReferenceDataResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response' => '\UPS\DangerousGoods\DangerousGoods\ChemicalReferenceDataResponseResponse',
-        'chemical_data' => '\UPS\DangerousGoods\DangerousGoods\ChemicalReferenceDataResponseChemicalData[]'
+        'chemical_data' => 'OneOfChemicalReferenceDataResponseChemicalData'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ChemicalReferenceDataResponse implements ModelInterface, ArrayAccess
     /**
      * Gets chemical_data
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\ChemicalReferenceDataResponseChemicalData[]
+     * @return OneOfChemicalReferenceDataResponseChemicalData
      */
     public function getChemicalData()
     {
@@ -248,7 +248,7 @@ class ChemicalReferenceDataResponse implements ModelInterface, ArrayAccess
     /**
      * Sets chemical_data
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\ChemicalReferenceDataResponseChemicalData[] $chemical_data chemical_data
+     * @param OneOfChemicalReferenceDataResponseChemicalData $chemical_data chemical_data
      *
      * @return $this
      */

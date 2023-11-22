@@ -57,7 +57,7 @@ class AccessPointInformationBusinessClassificationList implements ModelInterface
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'business_classification' => '\UPS\Locator\Locator\BusinessClassificationListBusinessClassification[]'
+        'business_classification' => 'OneOfAccessPointInformationBusinessClassificationListBusinessClassification'
     ];
 
     /**
@@ -208,7 +208,7 @@ class AccessPointInformationBusinessClassificationList implements ModelInterface
     /**
      * Gets business_classification
      *
-     * @return \UPS\Locator\Locator\BusinessClassificationListBusinessClassification[]
+     * @return OneOfAccessPointInformationBusinessClassificationListBusinessClassification
      */
     public function getBusinessClassification()
     {
@@ -218,7 +218,7 @@ class AccessPointInformationBusinessClassificationList implements ModelInterface
     /**
      * Sets business_classification
      *
-     * @param \UPS\Locator\Locator\BusinessClassificationListBusinessClassification[] $business_classification business_classification
+     * @param OneOfAccessPointInformationBusinessClassificationListBusinessClassification $business_classification business_classification
      *
      * @return $this
      */

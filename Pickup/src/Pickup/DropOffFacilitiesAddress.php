@@ -57,7 +57,7 @@ class DropOffFacilitiesAddress implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'address_line' => 'string[]',
+        'address_line' => 'OneOfDropOffFacilitiesAddressAddressLine',
         'city' => 'string',
         'state_province' => 'string',
         'postal_code' => 'string',
@@ -253,7 +253,7 @@ class DropOffFacilitiesAddress implements ModelInterface, ArrayAccess
     /**
      * Gets address_line
      *
-     * @return string[]
+     * @return OneOfDropOffFacilitiesAddressAddressLine
      */
     public function getAddressLine()
     {
@@ -263,7 +263,7 @@ class DropOffFacilitiesAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Address Line of the Facility.
+     * @param OneOfDropOffFacilitiesAddressAddressLine $address_line Address Line of the Facility.
      *
      * @return $this
      */

@@ -66,7 +66,7 @@ class ServiceCenterLocationDropOffFacilities implements ModelInterface, ArrayAcc
         'fax' => 'string',
         'facility_time' => '\UPS\Pickup\Pickup\DropOffFacilitiesFacilityTime',
         'origin_or_destination' => 'string',
-        'localized_instruction' => '\UPS\Pickup\Pickup\DropOffFacilitiesLocalizedInstruction[]',
+        'localized_instruction' => 'OneOfServiceCenterLocationDropOffFacilitiesLocalizedInstruction',
         'distance' => '\UPS\Pickup\Pickup\DropOffFacilitiesDistance'
     ];
 
@@ -505,7 +505,7 @@ class ServiceCenterLocationDropOffFacilities implements ModelInterface, ArrayAcc
     /**
      * Gets localized_instruction
      *
-     * @return \UPS\Pickup\Pickup\DropOffFacilitiesLocalizedInstruction[]
+     * @return OneOfServiceCenterLocationDropOffFacilitiesLocalizedInstruction
      */
     public function getLocalizedInstruction()
     {
@@ -515,7 +515,7 @@ class ServiceCenterLocationDropOffFacilities implements ModelInterface, ArrayAcc
     /**
      * Sets localized_instruction
      *
-     * @param \UPS\Pickup\Pickup\DropOffFacilitiesLocalizedInstruction[] $localized_instruction localized_instruction
+     * @param OneOfServiceCenterLocationDropOffFacilitiesLocalizedInstruction $localized_instruction localized_instruction
      *
      * @return $this
      */

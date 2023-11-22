@@ -61,7 +61,7 @@ class AcceptanceAuditPreCheckResponse implements ModelInterface, ArrayAccess
         'shipper_number' => 'string',
         'service' => '\UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponseService',
         'regulation_set' => 'string',
-        'package_results' => '\UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponsePackageResults[]'
+        'package_results' => 'OneOfAcceptanceAuditPreCheckResponsePackageResults'
     ];
 
     /**
@@ -328,7 +328,7 @@ class AcceptanceAuditPreCheckResponse implements ModelInterface, ArrayAccess
     /**
      * Gets package_results
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponsePackageResults[]
+     * @return OneOfAcceptanceAuditPreCheckResponsePackageResults
      */
     public function getPackageResults()
     {
@@ -338,7 +338,7 @@ class AcceptanceAuditPreCheckResponse implements ModelInterface, ArrayAccess
     /**
      * Sets package_results
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponsePackageResults[] $package_results package_results
+     * @param OneOfAcceptanceAuditPreCheckResponsePackageResults $package_results package_results
      *
      * @return $this
      */

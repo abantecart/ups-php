@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **shipping_receipt** | [**\UPS\Shipping\Shipping\PackageResultsShippingReceipt**](PackageResultsShippingReceipt.md) |  | [optional] 
 **uspspic_number** | **string** | USPSPICNumber is USPS Package Identification; it should be used for tracking Mail Innovations shipments. | [optional] 
 **cn22_number** | **string** | USPS defined CN22 ID number format varies based on destination country or territory.  Not applicable as of Jan 2015.  Mail Innovations shipments US to VI, PR, and GU are not considered international. | [optional] 
-**accessorial** | [**\UPS\Shipping\Shipping\PackageResultsAccessorial[]**](PackageResultsAccessorial.md) |  | [optional] 
+**accessorial** | [**OneOfShipmentResultsPackageResultsAccessorial**](OneOfShipmentResultsPackageResultsAccessorial.md) |  | [optional] 
 **simple_rate** | [**\UPS\Shipping\Shipping\PackageResultsSimpleRate**](PackageResultsSimpleRate.md) |  | [optional] 
 **form** | [**\UPS\Shipping\Shipping\PackageResultsForm**](PackageResultsForm.md) |  | [optional] 
-**itemized_charges** | [**\UPS\Shipping\Shipping\PackageResultsItemizedCharges[]**](PackageResultsItemizedCharges.md) |  | [optional] 
+**itemized_charges** | [**OneOfShipmentResultsPackageResultsItemizedCharges**](OneOfShipmentResultsPackageResultsItemizedCharges.md) |  | [optional] 
 **negotiated_charges** | [**\UPS\Shipping\Shipping\PackageResultsNegotiatedCharges**](PackageResultsNegotiatedCharges.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -98,6 +98,7 @@ Class | Method | HTTP request | Description
  - [LandedCostResponse](docs/Model/LandedCostResponse.md)
  - [LandedCostResponseShipment](docs/Model/LandedCostResponseShipment.md)
  - [LandedCostResponseShipmentPerfStats](docs/Model/LandedCostResponseShipmentPerfStats.md)
+ - [OneOfLandedCostResponseShipmentShipmentItems](docs/Model/OneOfLandedCostResponseShipmentShipmentItems.md)
  - [RequestShipmentItems](docs/Model/RequestShipmentItems.md)
  - [ResponseShipmentItems](docs/Model/ResponseShipmentItems.md)
 

@@ -62,14 +62,14 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
         'ivr' => '\UPS\Locator\Locator\DropLocationIVR',
         'geocode' => '\UPS\Locator\Locator\DropLocationGeocode',
         'address_key_format' => '\UPS\Locator\Locator\DropLocationAddressKeyFormat',
-        'phone_number' => 'string[]',
+        'phone_number' => 'OneOfSearchResultsDropLocationPhoneNumber',
         'fax_number' => 'string',
         'e_mail_address' => 'string',
-        'location_attribute' => '\UPS\Locator\Locator\DropLocationLocationAttribute[]',
+        'location_attribute' => 'OneOfSearchResultsDropLocationLocationAttribute',
         'distance' => '\UPS\Locator\Locator\DropLocationDistance',
-        'special_instructions' => '\UPS\Locator\Locator\DropLocationSpecialInstructions[]',
-        'latest_ground_drop_off_time' => 'string[]',
-        'latest_air_drop_off_time' => 'string[]',
+        'special_instructions' => 'OneOfSearchResultsDropLocationSpecialInstructions',
+        'latest_ground_drop_off_time' => 'OneOfSearchResultsDropLocationLatestGroundDropOffTime',
+        'latest_air_drop_off_time' => 'OneOfSearchResultsDropLocationLatestAirDropOffTime',
         'additional_charge_indicator' => 'string',
         'standard_hours_of_operation' => 'string',
         'non_standard_hours_of_operation' => 'string',
@@ -78,13 +78,13 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
         'home_page_url' => 'string',
         'comments' => 'string',
         'additional_comments' => '\UPS\Locator\Locator\DropLocationAdditionalComments',
-        'disclaimer' => 'string[]',
+        'disclaimer' => 'OneOfSearchResultsDropLocationDisclaimer',
         'slic' => 'string',
         'timezone' => 'string',
         'facility_type' => 'string',
         'operating_hours' => '\UPS\Locator\Locator\DropLocationOperatingHours',
-        'localized_instruction' => '\UPS\Locator\Locator\DropLocationLocalizedInstruction[]',
-        'promotion_information' => '\UPS\Locator\Locator\DropLocationPromotionInformation[]',
+        'localized_instruction' => 'OneOfSearchResultsDropLocationLocalizedInstruction',
+        'promotion_information' => 'OneOfSearchResultsDropLocationPromotionInformation',
         'sort_code' => '\UPS\Locator\Locator\DropLocationSortCode',
         'service_offering_list' => '\UPS\Locator\Locator\DropLocationServiceOfferingList',
         'display_phone_number_indicator' => 'string',
@@ -568,7 +568,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets phone_number
      *
-     * @return string[]
+     * @return OneOfSearchResultsDropLocationPhoneNumber
      */
     public function getPhoneNumber()
     {
@@ -578,7 +578,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets phone_number
      *
-     * @param string[] $phone_number The UPS locations Phone number. A phone number of the location will be returned.  10 digits allowed for US, otherwise 1..15 digits allowed.  The phone number will be returned as a string.
+     * @param OneOfSearchResultsDropLocationPhoneNumber $phone_number The UPS locations Phone number. A phone number of the location will be returned.  10 digits allowed for US, otherwise 1..15 digits allowed.  The phone number will be returned as a string.
      *
      * @return $this
      */
@@ -640,7 +640,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets location_attribute
      *
-     * @return \UPS\Locator\Locator\DropLocationLocationAttribute[]
+     * @return OneOfSearchResultsDropLocationLocationAttribute
      */
     public function getLocationAttribute()
     {
@@ -650,7 +650,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets location_attribute
      *
-     * @param \UPS\Locator\Locator\DropLocationLocationAttribute[] $location_attribute location_attribute
+     * @param OneOfSearchResultsDropLocationLocationAttribute $location_attribute location_attribute
      *
      * @return $this
      */
@@ -688,7 +688,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets special_instructions
      *
-     * @return \UPS\Locator\Locator\DropLocationSpecialInstructions[]
+     * @return OneOfSearchResultsDropLocationSpecialInstructions
      */
     public function getSpecialInstructions()
     {
@@ -698,7 +698,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets special_instructions
      *
-     * @param \UPS\Locator\Locator\DropLocationSpecialInstructions[] $special_instructions special_instructions
+     * @param OneOfSearchResultsDropLocationSpecialInstructions $special_instructions special_instructions
      *
      * @return $this
      */
@@ -712,7 +712,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets latest_ground_drop_off_time
      *
-     * @return string[]
+     * @return OneOfSearchResultsDropLocationLatestGroundDropOffTime
      */
     public function getLatestGroundDropOffTime()
     {
@@ -722,7 +722,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets latest_ground_drop_off_time
      *
-     * @param string[] $latest_ground_drop_off_time The latest ground time the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Ground as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.
+     * @param OneOfSearchResultsDropLocationLatestGroundDropOffTime $latest_ground_drop_off_time The latest ground time the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Ground as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.
      *
      * @return $this
      */
@@ -736,7 +736,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets latest_air_drop_off_time
      *
-     * @return string[]
+     * @return OneOfSearchResultsDropLocationLatestAirDropOffTime
      */
     public function getLatestAirDropOffTime()
     {
@@ -746,7 +746,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets latest_air_drop_off_time
      *
-     * @param string[] $latest_air_drop_off_time The latest airtime the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Air as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.
+     * @param OneOfSearchResultsDropLocationLatestAirDropOffTime $latest_air_drop_off_time The latest airtime the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Air as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.
      *
      * @return $this
      */
@@ -952,7 +952,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return string[]
+     * @return OneOfSearchResultsDropLocationDisclaimer
      */
     public function getDisclaimer()
     {
@@ -962,7 +962,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param string[] $disclaimer Textual disclaimer about the drop location.
+     * @param OneOfSearchResultsDropLocationDisclaimer $disclaimer Textual disclaimer about the drop location.
      *
      * @return $this
      */
@@ -1072,7 +1072,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets localized_instruction
      *
-     * @return \UPS\Locator\Locator\DropLocationLocalizedInstruction[]
+     * @return OneOfSearchResultsDropLocationLocalizedInstruction
      */
     public function getLocalizedInstruction()
     {
@@ -1082,7 +1082,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets localized_instruction
      *
-     * @param \UPS\Locator\Locator\DropLocationLocalizedInstruction[] $localized_instruction localized_instruction
+     * @param OneOfSearchResultsDropLocationLocalizedInstruction $localized_instruction localized_instruction
      *
      * @return $this
      */
@@ -1096,7 +1096,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets promotion_information
      *
-     * @return \UPS\Locator\Locator\DropLocationPromotionInformation[]
+     * @return OneOfSearchResultsDropLocationPromotionInformation
      */
     public function getPromotionInformation()
     {
@@ -1106,7 +1106,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets promotion_information
      *
-     * @param \UPS\Locator\Locator\DropLocationPromotionInformation[] $promotion_information promotion_information
+     * @param OneOfSearchResultsDropLocationPromotionInformation $promotion_information promotion_information
      *
      * @return $this
      */

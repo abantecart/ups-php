@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **alternate_rate_type** | [**\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseAlternateRateType**](AlternateRatesResponseAlternateRateType.md) |  | 
-**rate** | [**\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseRate[]**](AlternateRatesResponseRate.md) |  | 
+**rate** | [**OneOfFreightRateResponseAlternateRatesResponseRate**](OneOfFreightRateResponseAlternateRatesResponseRate.md) |  | 
 **freight_density_rate** | [**\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseFreightDensityRate**](AlternateRatesResponseFreightDensityRate.md) |  | [optional] 
 **billable_shipment_weight** | [**\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseBillableShipmentWeight**](AlternateRatesResponseBillableShipmentWeight.md) |  | [optional] 
 **time_in_transit** | [**\UPS\TForceFreightRating\TForceFreightRating\AlternateRatesResponseTimeInTransit**](AlternateRatesResponseTimeInTransit.md) |  | [optional] 

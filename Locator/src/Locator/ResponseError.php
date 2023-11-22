@@ -61,8 +61,8 @@ class ResponseError implements ModelInterface, ArrayAccess
         'error_code' => 'string',
         'error_description' => 'string',
         'minimum_retry_seconds' => 'string',
-        'error_location' => '\UPS\Locator\Locator\ErrorErrorLocation[]',
-        'error_digest' => 'string[]'
+        'error_location' => 'OneOfResponseErrorErrorLocation',
+        'error_digest' => 'OneOfResponseErrorErrorDigest'
     ];
 
     /**
@@ -337,7 +337,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Gets error_location
      *
-     * @return \UPS\Locator\Locator\ErrorErrorLocation[]
+     * @return OneOfResponseErrorErrorLocation
      */
     public function getErrorLocation()
     {
@@ -347,7 +347,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_location
      *
-     * @param \UPS\Locator\Locator\ErrorErrorLocation[] $error_location error_location
+     * @param OneOfResponseErrorErrorLocation $error_location error_location
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Gets error_digest
      *
-     * @return string[]
+     * @return OneOfResponseErrorErrorDigest
      */
     public function getErrorDigest()
     {
@@ -371,7 +371,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_digest
      *
-     * @param string[] $error_digest The contents of the element in error.
+     * @param OneOfResponseErrorErrorDigest $error_digest The contents of the element in error.
      *
      * @return $this
      */

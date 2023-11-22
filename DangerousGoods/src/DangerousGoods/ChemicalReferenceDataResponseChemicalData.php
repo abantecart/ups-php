@@ -59,7 +59,7 @@ class ChemicalReferenceDataResponseChemicalData implements ModelInterface, Array
     protected static $swaggerTypes = [
         'chemical_detail' => '\UPS\DangerousGoods\DangerousGoods\ChemicalDataChemicalDetail',
         'proper_shipping_name_detail' => '\UPS\DangerousGoods\DangerousGoods\ChemicalDataProperShippingNameDetail',
-        'package_quantity_limit_detail' => '\UPS\DangerousGoods\DangerousGoods\ChemicalDataPackageQuantityLimitDetail[]'
+        'package_quantity_limit_detail' => 'OneOfChemicalReferenceDataResponseChemicalDataPackageQuantityLimitDetail'
     ];
 
     /**
@@ -265,7 +265,7 @@ class ChemicalReferenceDataResponseChemicalData implements ModelInterface, Array
     /**
      * Gets package_quantity_limit_detail
      *
-     * @return \UPS\DangerousGoods\DangerousGoods\ChemicalDataPackageQuantityLimitDetail[]
+     * @return OneOfChemicalReferenceDataResponseChemicalDataPackageQuantityLimitDetail
      */
     public function getPackageQuantityLimitDetail()
     {
@@ -275,7 +275,7 @@ class ChemicalReferenceDataResponseChemicalData implements ModelInterface, Array
     /**
      * Sets package_quantity_limit_detail
      *
-     * @param \UPS\DangerousGoods\DangerousGoods\ChemicalDataPackageQuantityLimitDetail[] $package_quantity_limit_detail package_quantity_limit_detail
+     * @param OneOfChemicalReferenceDataResponseChemicalDataPackageQuantityLimitDetail $package_quantity_limit_detail package_quantity_limit_detail
      *
      * @return $this
      */

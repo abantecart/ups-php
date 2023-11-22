@@ -58,7 +58,7 @@ class PickupPendingStatusResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response' => '\UPS\Pickup\Pickup\PickupPendingStatusResponseResponse',
-        'pending_status' => '\UPS\Pickup\Pickup\PickupPendingStatusResponsePendingStatus[]'
+        'pending_status' => 'OneOfPickupPendingStatusResponsePendingStatus'
     ];
 
     /**
@@ -241,7 +241,7 @@ class PickupPendingStatusResponse implements ModelInterface, ArrayAccess
     /**
      * Gets pending_status
      *
-     * @return \UPS\Pickup\Pickup\PickupPendingStatusResponsePendingStatus[]
+     * @return OneOfPickupPendingStatusResponsePendingStatus
      */
     public function getPendingStatus()
     {
@@ -251,7 +251,7 @@ class PickupPendingStatusResponse implements ModelInterface, ArrayAccess
     /**
      * Sets pending_status
      *
-     * @param \UPS\Pickup\Pickup\PickupPendingStatusResponsePendingStatus[] $pending_status pending_status
+     * @param OneOfPickupPendingStatusResponsePendingStatus $pending_status pending_status
      *
      * @return $this
      */

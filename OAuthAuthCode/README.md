@@ -120,13 +120,13 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://wwwcie.ups.com/api/*
+All URIs are relative to *https://wwwcie.ups.com/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**authorizeClient**](docs/Api/DefaultApi.md#authorizeclient) | **GET** /v1/oauth/authorize | Authorize Client
-*DefaultApi* | [**generateToken**](docs/Api/DefaultApi.md#generatetoken) | **POST** /v1/oauth/token | 
-*DefaultApi* | [**refreshToken**](docs/Api/DefaultApi.md#refreshtoken) | **POST** /v1/oauth/refresh | Refresh Token
+*DefaultApi* | [**authorizeClient**](docs/Api/DefaultApi.md#authorizeclient) | **GET** /security/v1/oauth/authorize | Authorize Client
+*DefaultApi* | [**generateToken**](docs/Api/DefaultApi.md#generatetoken) | **POST** /security/v1/oauth/token | 
+*DefaultApi* | [**refreshToken**](docs/Api/DefaultApi.md#refreshtoken) | **POST** /security/v1/oauth/refresh | Refresh Token
 
 ## Documentation For Models
 

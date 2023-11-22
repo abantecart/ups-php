@@ -57,8 +57,8 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_reference_number' => '\UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[]',
-        'shipment_reference_number' => '\UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[]',
+        'package_reference_number' => 'OneOfSubscriptionFileExceptionPackageReferenceNumber',
+        'shipment_reference_number' => 'OneOfSubscriptionFileExceptionShipmentReferenceNumber',
         'shipper_number' => 'string',
         'tracking_number' => 'string',
         'date' => 'string',
@@ -313,7 +313,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Gets package_reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[]
+     * @return OneOfSubscriptionFileExceptionPackageReferenceNumber
      */
     public function getPackageReferenceNumber()
     {
@@ -323,7 +323,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Sets package_reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[] $package_reference_number package_reference_number
+     * @param OneOfSubscriptionFileExceptionPackageReferenceNumber $package_reference_number package_reference_number
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[]
+     * @return OneOfSubscriptionFileExceptionShipmentReferenceNumber
      */
     public function getShipmentReferenceNumber()
     {
@@ -347,7 +347,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[] $shipment_reference_number shipment_reference_number
+     * @param OneOfSubscriptionFileExceptionShipmentReferenceNumber $shipment_reference_number shipment_reference_number
      *
      * @return $this
      */
