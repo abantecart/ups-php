@@ -42,9 +42,13 @@
         "merge-plugin": {
             "include": [
                 "*/composer.json",
+                "OAuthClientCredentials/composer.json",
+                "Rating/composer.json",
                 "vendor/abantecart/ups-php/*/composer.json"
             ],
-            "recurse": true
+            "recurse": true,
+            "replace": false,
+            "merge-extra": false
         }
     }
 }
