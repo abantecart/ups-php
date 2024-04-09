@@ -215,7 +215,7 @@ class RequestTransactionReference implements ModelInterface, ArrayAccess
     /**
      * Sets customer_context
      *
-     * @param string $customer_context Customer provided data.� May be XML. If this data is present in the request, it is echoed back to the customer.
+     * @param string $customer_context The CustomerContext Information which will be echoed during response.
      *
      * @return $this
      */

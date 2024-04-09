@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * VoidRequestTransactionReference Class Doc Comment
  *
  * @category Class
- * @description TransactionReference identifies transactions between client and server.  N/A
+ * @description TransactionReference identifies transactions between client and server.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

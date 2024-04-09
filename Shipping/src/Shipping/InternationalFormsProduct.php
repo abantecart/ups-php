@@ -476,7 +476,7 @@ class InternationalFormsProduct implements ModelInterface, ArrayAccess
     /**
      * Sets net_cost_code
      *
-     * @param string $net_cost_code For each good described in the Description of Goods field, where the good is subject to a regional value content (RVC) requirement, indicate NC if the RVC is calculated according to the net cost method; otherwise, indicate NO. If the RVC is calculated over a period of time then indicate NC with begin/end date by passing code ND  Applies to NAFTA CO only. Required for NAFTA CO.  Valid values: NC, ND and NO.
+     * @param string $net_cost_code For each good described in the Description of Goods field, where the good is subject to a regional value content (RVC) requirement, indicate NC if the RVC is calculated according to the net cost method; otherwise, indicate NO. If the RVC is calculated over a period of time then indicate \"NC with begin/end date\" by passing code \"ND\"  Applies to NAFTA CO only. Required for NAFTA CO.  Valid values: - NC - ND - NO
      *
      * @return $this
      */
@@ -716,7 +716,7 @@ class InternationalFormsProduct implements ModelInterface, ArrayAccess
     /**
      * Sets sed_total_value
      *
-     * @param string $sed_total_value This amount will always be USD.  Applies to EEI forms only. Required for EEI form. Valid characters are 0-9 and \".\". (Decimal point). Limit to 2 digit after the decimal. The maximum length of the field is 15 including \".\" and can hold up to 2 decimal places.  Note: This value is calculated based on the Product/Unit/Value and /Product/Unit/Number (Number of Units * Price per Unit). If the total value is incorrect it will be replaced by the actual calculated total value.
+     * @param string $sed_total_value This amount will always be USD.  Applies to EEI forms only. Required for EEI form. Valid characters are 0-9 and \\'.\\' (Decimal point). Limit to 2 digit after the decimal. The maximum length of the field is 15 including \\'.\\' and can hold up to 2 decimal places.  Note: This value is calculated based on the Product/Unit/Value and /Product/Unit/Number (Number of Units * Price per Unit). If the total value is incorrect it will be replaced by the actual calculated total value.
      *
      * @return $this
      */

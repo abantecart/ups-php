@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * DropLocationSpecialInstructions Class Doc Comment
  *
  * @category Class
- * @description Walking directions.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

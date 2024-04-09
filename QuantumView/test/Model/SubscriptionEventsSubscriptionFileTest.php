@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SubscriptionEventsSubscriptionFileTest Class Doc Comment
  *
  * @category    Class
- * @description Container holds all of the unread files associated with the subscription.
+ * @description SubscriptionEventsSubscriptionFile
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -88,6 +88,41 @@ class SubscriptionEventsSubscriptionFileTest extends TestCase
      * Test attribute "status_type"
      */
     public function testPropertyStatusType()
+    {
+    }
+
+    /**
+     * Test attribute "manifest"
+     */
+    public function testPropertyManifest()
+    {
+    }
+
+    /**
+     * Test attribute "origin"
+     */
+    public function testPropertyOrigin()
+    {
+    }
+
+    /**
+     * Test attribute "exception"
+     */
+    public function testPropertyException()
+    {
+    }
+
+    /**
+     * Test attribute "delivery"
+     */
+    public function testPropertyDelivery()
+    {
+    }
+
+    /**
+     * Test attribute "generic"
+     */
+    public function testPropertyGeneric()
     {
     }
 }

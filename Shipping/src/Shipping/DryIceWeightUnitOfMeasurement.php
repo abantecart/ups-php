@@ -224,7 +224,7 @@ class DryIceWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code of the billing weight measurement units. Values are: KGS or LBS.
+     * @param string $code DryIce weight unit of measurement code. Valid values: - 00 = KG (Metric Unit of Measurements) or KGS - 01 = LB (English Unit of Measurements) or LBS  The following values are valid : 00, 01, KG, KGS, LBS.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DryIceWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description of the billing weight measurement units.
+     * @param string $description Description for unit of measurement for Dry Ice Weight.
      *
      * @return $this
      */

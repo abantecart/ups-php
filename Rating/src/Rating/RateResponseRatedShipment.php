@@ -35,7 +35,6 @@ use \UPS\Rating\ObjectSerializer;
  * RateResponseRatedShipment Class Doc Comment
  *
  * @category Class
- * @description RatedShipment Container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,23 +56,23 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'disclaimer' => 'OneOfRateResponseRatedShipmentDisclaimer',
+        'disclaimer' => '\UPS\Rating\Rating\RatedShipmentDisclaimer[]',
         'service' => '\UPS\Rating\Rating\RatedShipmentService',
         'rate_chart' => 'string',
-        'rated_shipment_alert' => 'OneOfRateResponseRatedShipmentRatedShipmentAlert',
+        'rated_shipment_alert' => '\UPS\Rating\Rating\RatedShipmentRatedShipmentAlert[]',
         'billable_weight_calculation_method' => 'string',
         'rating_method' => 'string',
         'billing_weight' => '\UPS\Rating\Rating\RatedShipmentBillingWeight',
         'transportation_charges' => '\UPS\Rating\Rating\RatedShipmentTransportationCharges',
         'base_service_charge' => '\UPS\Rating\Rating\RatedShipmentBaseServiceCharge',
-        'itemized_charges' => 'OneOfRateResponseRatedShipmentItemizedCharges',
+        'itemized_charges' => '\UPS\Rating\Rating\RatedShipmentItemizedCharges[]',
         'frs_shipment_data' => '\UPS\Rating\Rating\RatedShipmentFRSShipmentData',
         'service_options_charges' => '\UPS\Rating\Rating\RatedShipmentServiceOptionsCharges',
-        'tax_charges' => 'OneOfRateResponseRatedShipmentTaxCharges',
+        'tax_charges' => '\UPS\Rating\Rating\RatedShipmentTaxCharges[]',
         'total_charges' => '\UPS\Rating\Rating\RatedShipmentTotalCharges',
         'total_charges_with_taxes' => '\UPS\Rating\Rating\RatedShipmentTotalChargesWithTaxes',
         'negotiated_rate_charges' => '\UPS\Rating\Rating\RatedShipmentNegotiatedRateCharges',
-        'rated_package' => 'OneOfRateResponseRatedShipmentRatedPackage',
+        'rated_package' => '\UPS\Rating\Rating\RatedShipmentRatedPackage[]',
         'time_in_transit' => '\UPS\Rating\Rating\RatedShipmentTimeInTransit',
         'scheduled_delivery_date' => 'string',
         'roar_rated_indicator' => 'string'
@@ -337,7 +336,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return OneOfRateResponseRatedShipmentDisclaimer
+     * @return \UPS\Rating\Rating\RatedShipmentDisclaimer[]
      */
     public function getDisclaimer()
     {
@@ -347,7 +346,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param OneOfRateResponseRatedShipmentDisclaimer $disclaimer disclaimer
+     * @param \UPS\Rating\Rating\RatedShipmentDisclaimer[] $disclaimer Disclaimer is used to provide more information to the shipper regarding the processed shipment. It is used to notify the shipper about possible taxes and duties that might have been added or might apply to the shipment. Refer to the Appendix for various disclaimers. This field may be returned only if TaxInformationIndicator is present in the request.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -395,7 +394,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets rate_chart
      *
-     * @param string $rate_chart Rate Type with which Shipment is rated. Possible RateChart values for different regions will be: US 48 origin: 1 \" Daily Rates 3 \" Standard List Rates 4 \" Retail Rates. Alaska/Hawaii origin:1 \" Daily Rates 3 \" Standard List Rates 4 \" Retail Rates.  All Other origins:1 \" Rates 5 - Regional Rates 6 - General List Rates. 3 and 4 do not apply
+     * @param string $rate_chart Rate Type with which Shipment is rated. Possible RateChart values for different regions will be:  US 48 origin: - 1 – Daily Rates - 3 – Standard List Rates - 4 – Retail Rates.  Alaska/Hawaii origin: - 1 – Daily Rates - 3 – Standard List Rates - 4 – Retail Rates.  All Other origins: - 1 – Rates - 5 - Regional Rates - 6 - General List Rates. - 3 and 4 do not apply
      *
      * @return $this
      */
@@ -409,7 +408,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets rated_shipment_alert
      *
-     * @return OneOfRateResponseRatedShipmentRatedShipmentAlert
+     * @return \UPS\Rating\Rating\RatedShipmentRatedShipmentAlert[]
      */
     public function getRatedShipmentAlert()
     {
@@ -419,7 +418,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets rated_shipment_alert
      *
-     * @param OneOfRateResponseRatedShipmentRatedShipmentAlert $rated_shipment_alert rated_shipment_alert
+     * @param \UPS\Rating\Rating\RatedShipmentRatedShipmentAlert[] $rated_shipment_alert Rated Shipment Alert container. There can be zero to many RatedShipmentAlert containers with code and description.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -553,7 +552,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return OneOfRateResponseRatedShipmentItemizedCharges
+     * @return \UPS\Rating\Rating\RatedShipmentItemizedCharges[]
      */
     public function getItemizedCharges()
     {
@@ -563,7 +562,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param OneOfRateResponseRatedShipmentItemizedCharges $itemized_charges itemized_charges
+     * @param \UPS\Rating\Rating\RatedShipmentItemizedCharges[] $itemized_charges Itemized Charges are returned only when the subversion element is present and greater than or equal to '1601'. These charges would be returned only when subversion is greater than or equal to 1601.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -625,7 +624,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets tax_charges
      *
-     * @return OneOfRateResponseRatedShipmentTaxCharges
+     * @return \UPS\Rating\Rating\RatedShipmentTaxCharges[]
      */
     public function getTaxCharges()
     {
@@ -635,7 +634,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets tax_charges
      *
-     * @param OneOfRateResponseRatedShipmentTaxCharges $tax_charges tax_charges
+     * @param \UPS\Rating\Rating\RatedShipmentTaxCharges[] $tax_charges TaxCharges container are returned only when TaxInformationIndicator is present in request and when Negotiated Rates are not applicable. TaxCharges container contains Tax information for a given shipment.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -721,7 +720,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Gets rated_package
      *
-     * @return OneOfRateResponseRatedShipmentRatedPackage
+     * @return \UPS\Rating\Rating\RatedShipmentRatedPackage[]
      */
     public function getRatedPackage()
     {
@@ -731,7 +730,7 @@ class RateResponseRatedShipment implements ModelInterface, ArrayAccess
     /**
      * Sets rated_package
      *
-     * @param OneOfRateResponseRatedShipmentRatedPackage $rated_package rated_package
+     * @param \UPS\Rating\Rating\RatedShipmentRatedPackage[] $rated_package Rated Package Container.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

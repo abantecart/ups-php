@@ -227,7 +227,7 @@ class ShipmentChargesServiceOptionsCharges implements ModelInterface, ArrayAcces
     /**
      * Sets currency_code
      *
-     * @param string $currency_code Package accessorial charges currency code type. The currency code used in the Shipment request is returned.   Applicable only for ShipmentResponse and ShipAcceptResponse.
+     * @param string $currency_code Accessorial charges currency code type. The currency code used in the Shipment request is returned.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class ShipmentChargesServiceOptionsCharges implements ModelInterface, ArrayAcces
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value Package accessorial charges value amount.   Applicable only for ShipmentResponse and ShipAcceptResponse. Valid values are from 0 to 99999999999999.99
+     * @param string $monetary_value Accessorial charges value amount.  Valid values are from 0 to 99999999999999.99
      *
      * @return $this
      */

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ChemicalReferenceDataResponseChemicalDataTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold Chemical Data information.
+ * @description ChemicalReferenceDataResponseChemicalData
  * @package     UPS\DangerousGoods
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

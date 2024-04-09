@@ -72,6 +72,26 @@ class DefaultApiTest extends TestCase
     }
 
     /**
+     * Test case for deprecatedShipment
+     *
+     * Shipment.
+     *
+     */
+    public function testDeprecatedShipment()
+    {
+    }
+
+    /**
+     * Test case for deprecatedVoidShipment
+     *
+     * Void Shipment.
+     *
+     */
+    public function testDeprecatedVoidShipment()
+    {
+    }
+
+    /**
      * Test case for labelRecovery
      *
      * Label Recovery.

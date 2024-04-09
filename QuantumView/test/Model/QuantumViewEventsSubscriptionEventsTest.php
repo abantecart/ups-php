@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * QuantumViewEventsSubscriptionEventsTest Class Doc Comment
  *
  * @category    Class
- * @description The event that a user receives a subset of Tracking information specific to either packages coming or packages going, after subscription request is made.
+ * @description QuantumViewEventsSubscriptionEvents
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -90,4 +90,24 @@ class DefaultApiTest extends TestCase
     public function testChemicalReferenceData()
     {
     }
+
+    /**
+     * Test case for deprecatedAcceptanceAuditPreCheck
+     *
+     * Acceptance Audit Pre-check.
+     *
+     */
+    public function testDeprecatedAcceptanceAuditPreCheck()
+    {
+    }
+
+    /**
+     * Test case for deprecatedChemicalReferenceData
+     *
+     * Chemical Reference Data.
+     *
+     */
+    public function testDeprecatedChemicalReferenceData()
+    {
+    }
 }

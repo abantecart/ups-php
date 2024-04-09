@@ -224,7 +224,7 @@ class PickupCancelResponseGWNStatus implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The status code defined by operation system. 001 = User Triggered 002 = User Cancelled 003 = Completed 004 = Missed 005 = Not In 006 = Not Ready 007 = Closed 008 = Cancelled By Driver 999 = Unknown
+     * @param string $code The status code defined by operation system. - 001 = User Triggered - 002 = User Cancelled - 003 = Completed - 004 = Missed - 005 = Not In - 006 = Not Ready - 007 = Closed - 008 = Cancelled By Driver - 999 = Unknown
      *
      * @return $this
      */

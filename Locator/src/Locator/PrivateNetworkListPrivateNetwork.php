@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * PrivateNetworkListPrivateNetwork Class Doc Comment
  *
  * @category Class
- * @description Container to hold the private network details.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

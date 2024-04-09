@@ -371,7 +371,7 @@ class HazMatHazMatChemicalRecord implements ModelInterface, ArrayAccess
     /**
      * Sets class_division_number
      *
-     * @param string $class_division_number This is the hazard class associated to the specified commodity. Required if CommodityRegulatedLevelCode is \"LQ\" or \"FR\"  Applies only if SubVersion is greater than or equal to 1701.
+     * @param string $class_division_number This is the hazard class associated to the specified commodity. Required if CommodityRegulatedLevelCode is 'LQ' or 'FR'  Applies only if SubVersion is greater than or equal to 1701.
      *
      * @return $this
      */
@@ -539,7 +539,7 @@ class HazMatHazMatChemicalRecord implements ModelInterface, ArrayAccess
     /**
      * Sets sub_risk_class
      *
-     * @param string $sub_risk_class Required if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation. Secondary hazardous characteristics of a package. (There can be more than one \" separate each with a comma).  Applies only if SubVersion is greater than or equal to 1701.
+     * @param string $sub_risk_class Required if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation. Secondary hazardous characteristics of a package. (There can be more than one – separate each with a comma).  Applies only if SubVersion is greater than or equal to 1701.
      *
      * @return $this
      */
@@ -707,7 +707,7 @@ class HazMatHazMatChemicalRecord implements ModelInterface, ArrayAccess
     /**
      * Sets additional_description
      *
-     * @param string $additional_description Additional remarks or special provision information. Required if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation. Additional information that may be required by regulation about a hazardous material, such as, \"Limited Quantity\", DOT-SP numbers, EX numbers.  Applies only if SubVersion is greater than or equal to 1701.
+     * @param string $additional_description Additional remarks or special provision information. Required if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation.  Additional information that may be required by regulation about a hazardous material, such as, \"Limited Quantity\", DOT-SP numbers, EX numbers.  Applies only if SubVersion is greater than or equal to 1701.
      *
      * @return $this
      */

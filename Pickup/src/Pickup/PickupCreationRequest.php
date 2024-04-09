@@ -59,6 +59,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'request' => '\UPS\Pickup\Pickup\PickupCreationRequestRequest',
         'rate_pickup_indicator' => 'string',
+        'rate_chart_type' => 'string',
         'tax_information_indicator' => 'string',
         'user_level_discount_indicator' => 'string',
         'shipper' => '\UPS\Pickup\Pickup\PickupCreationRequestShipper',
@@ -87,6 +88,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'request' => null,
         'rate_pickup_indicator' => null,
+        'rate_chart_type' => null,
         'tax_information_indicator' => null,
         'user_level_discount_indicator' => null,
         'shipper' => null,
@@ -136,6 +138,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'request' => 'Request',
         'rate_pickup_indicator' => 'RatePickupIndicator',
+        'rate_chart_type' => 'RateChartType',
         'tax_information_indicator' => 'TaxInformationIndicator',
         'user_level_discount_indicator' => 'UserLevelDiscountIndicator',
         'shipper' => 'Shipper',
@@ -164,6 +167,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'request' => 'setRequest',
         'rate_pickup_indicator' => 'setRatePickupIndicator',
+        'rate_chart_type' => 'setRateChartType',
         'tax_information_indicator' => 'setTaxInformationIndicator',
         'user_level_discount_indicator' => 'setUserLevelDiscountIndicator',
         'shipper' => 'setShipper',
@@ -192,6 +196,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'request' => 'getRequest',
         'rate_pickup_indicator' => 'getRatePickupIndicator',
+        'rate_chart_type' => 'getRateChartType',
         'tax_information_indicator' => 'getTaxInformationIndicator',
         'user_level_discount_indicator' => 'getUserLevelDiscountIndicator',
         'shipper' => 'getShipper',
@@ -272,6 +277,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     {
         $this->container['request'] = isset($data['request']) ? $data['request'] : null;
         $this->container['rate_pickup_indicator'] = isset($data['rate_pickup_indicator']) ? $data['rate_pickup_indicator'] : null;
+        $this->container['rate_chart_type'] = isset($data['rate_chart_type']) ? $data['rate_chart_type'] : null;
         $this->container['tax_information_indicator'] = isset($data['tax_information_indicator']) ? $data['tax_information_indicator'] : null;
         $this->container['user_level_discount_indicator'] = isset($data['user_level_discount_indicator']) ? $data['user_level_discount_indicator'] : null;
         $this->container['shipper'] = isset($data['shipper']) ? $data['shipper'] : null;
@@ -381,6 +387,30 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     public function setRatePickupIndicator($rate_pickup_indicator)
     {
         $this->container['rate_pickup_indicator'] = $rate_pickup_indicator;
+
+        return $this;
+    }
+
+    /**
+     * Gets rate_chart_type
+     *
+     * @return string
+     */
+    public function getRateChartType()
+    {
+        return $this->container['rate_chart_type'];
+    }
+
+    /**
+     * Sets rate_chart_type
+     *
+     * @param string $rate_chart_type Rate Type with which pickup is rated. Possible RateChart values for different regions will be:  US 48 origin: - 1 – Daily Rates - 3 – Standard List Rates - 4 – Retail Rates.   Alaska/Hawaii origin: - 1 – Daily Rates - 3 – Standard List Rates - 4 – Retail Rates.  All Other origins: - 1 – Rates - 5 - Regional Rates - 6 - General List Rates.  3 and 4 do not apply
+     *
+     * @return $this
+     */
+    public function setRateChartType($rate_chart_type)
+    {
+        $this->container['rate_chart_type'] = $rate_chart_type;
 
         return $this;
     }
@@ -806,7 +836,7 @@ class PickupCreationRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_labels_available
      *
-     * @param string $shipping_labels_available This element should be set to �Y� in the request to indicate that user has pre-printed shipping labels for all the packages, otherwise this will be treated as false.
+     * @param string $shipping_labels_available This element should be set to \"Y\" in the request to indicate that user has pre-printed shipping labels for all the packages, otherwise this will be treated as false.
      *
      * @return $this
      */

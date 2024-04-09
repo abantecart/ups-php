@@ -245,7 +245,7 @@ class RateResultChargeDetail implements ModelInterface, ArrayAccess
     /**
      * Sets charge_code
      *
-     * @param string $charge_code Indicates the general charge type A = ACCESSORIAL TYPE B = BASE CHARGE TYPE S = SURCHARGE TYPE
+     * @param string $charge_code Indicates the general charge type - A = ACCESSORIAL TYPE - B = BASE CHARGE TYPE - S = SURCHARGE TYPE
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class RateResultChargeDetail implements ModelInterface, ArrayAccess
     /**
      * Sets charge_description
      *
-     * @param string $charge_description Description of each charge.The possible descriptions are: BASE CHARGE EXTENDED AREA SURCHARGE FUEL SURCHARGE REMOTE AREA SURCHARGE RESIDENTIAL SURCHARGE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      SATURDAY ON-CALL STOP CHARGE
+     * @param string $charge_description Description of each charge.The possible descriptions are: - BASE CHARGE - EXTENDED AREA SURCHARGE - FUEL SURCHARGE - REMOTE AREA SURCHARGE - RESIDENTIAL SURCHARGE - SATURDAY ON-CALL STOP CHARGE
      *
      * @return $this
      */

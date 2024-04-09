@@ -224,7 +224,7 @@ class DimensionsUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code IN = Inches CM = Centimeters
+     * @param string $code - IN = Inches - CM = Centimeters
      *
      * @return $this
      */

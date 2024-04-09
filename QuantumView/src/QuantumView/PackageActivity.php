@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * PackageActivity Class Doc Comment
  *
  * @category Class
- * @description Information about package delivery activity.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -221,7 +220,7 @@ class PackageActivity implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date Date of package activity (i.e. YYYYMMDD).� If generic record ActivityType is TC then event date is the date of first USPS scan.
+     * @param string $date Date of package delivery activity. Date format: YYYYMMDD.
      *
      * @return $this
      */
@@ -245,7 +244,7 @@ class PackageActivity implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param string $time Time of package activity(i.e. HHMMSS).� If generic record ActivityType is TC then event time is the time of first USPS scan.
+     * @param string $time Time of package delivery activity. Time format: HHMMSS
      *
      * @return $this
      */

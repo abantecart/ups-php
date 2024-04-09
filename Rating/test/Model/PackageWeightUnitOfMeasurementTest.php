@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageWeightUnitOfMeasurementTest Class Doc Comment
  *
  * @category    Class
- * @description UnitOfMeasurement Container.  N/A
+ * @description UnitOfMeasurement Container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

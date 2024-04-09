@@ -293,7 +293,7 @@ class ShipmentShipTo implements ModelInterface, ArrayAccess
     /**
      * Sets attention_name
      *
-     * @param string $attention_name Contact name at the consignee's location.  Required for: UPS Next Day Air Early service, and when ShipTo country or territory is different than ShipFrom country or territory.   Required if Invoice International form is requested.
+     * @param string $attention_name Contact name at the consignee's location.  Required for: UPS Next Day Air® Early service, and when ShipTo country or territory is different than ShipFrom country or territory.  Required if Invoice International form is requested.
      *
      * @return $this
      */

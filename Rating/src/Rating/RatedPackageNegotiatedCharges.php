@@ -57,7 +57,7 @@ class RatedPackageNegotiatedCharges implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemized_charges' => 'OneOfRatedPackageNegotiatedChargesItemizedCharges'
+        'itemized_charges' => '\UPS\Rating\Rating\NegotiatedChargesItemizedCharges[]'
     ];
 
     /**
@@ -205,7 +205,7 @@ class RatedPackageNegotiatedCharges implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return OneOfRatedPackageNegotiatedChargesItemizedCharges
+     * @return \UPS\Rating\Rating\NegotiatedChargesItemizedCharges[]
      */
     public function getItemizedCharges()
     {
@@ -215,7 +215,7 @@ class RatedPackageNegotiatedCharges implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param OneOfRatedPackageNegotiatedChargesItemizedCharges $itemized_charges itemized_charges
+     * @param \UPS\Rating\Rating\NegotiatedChargesItemizedCharges[] $itemized_charges Negotiated Itemized Accessorial and Sur Charges.  These charges would be returned only when subversion is greater than or equal to 1607.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

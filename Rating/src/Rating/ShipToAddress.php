@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * ShipToAddress Class Doc Comment
  *
  * @category Class
- * @description Address Container.  N/A
+ * @description Address Container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -251,7 +251,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Destination street address including name and number (when applicable).
+     * @param string[] $address_line Destination street address including name and number (when applicable).  Max Occurrence can be 3. Length is not validated.
      *
      * @return $this
      */
@@ -275,7 +275,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city UPS Access Point city.
+     * @param string $city Destination city.  Required if country or territory does not utilize postal codes. Length is not validated.
      *
      * @return $this
      */
@@ -299,7 +299,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code UPS Access Point State or Province code.
+     * @param string $state_province_code Destination state code.
      *
      * @return $this
      */
@@ -323,7 +323,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal Code for UPS accounts billing address.  Postal Code  may be present when the FRS Payment Information type = 02 and type = 03.
+     * @param string $postal_code Destination postal code.  Required if country or territory utilizes postal codes (i.e. US and PR).
      *
      * @return $this
      */
@@ -347,7 +347,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code for the  UPS accounts & billing address.  Country or Territory Code is required when the FRS Payment Information type = 02 and type= 03.
+     * @param string $country_code Destination country or territory code. Refer to the Supported Country or Territory Tables located in the Appendix.
      *
      * @return $this
      */
@@ -371,7 +371,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets residential_address_indicator
      *
-     * @param string $residential_address_indicator Presence/Absence Indicator. Any value inside is ignored.This field is a flag to indicate if the Alternate Delivery location is a residential location. True if ResidentialAddressIndicator tag exists.  For future use.
+     * @param string $residential_address_indicator Residential Address flag. This field is a flag to indicate if the destination is a residential location. True if ResidentialAddressIndicator tag exists; false otherwise. This element does not require a value and if one is entered it will be ignored.  Note: When requesting TimeInTransit information, this indicator must be passed to determine if Three Day Select or Ground shipment is eligible for Saturday Delivery at no charge. If this indicator is not present, address will be considered as commercial. Empty Tag.
      *
      * @return $this
      */

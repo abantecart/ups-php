@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ExceptionPackageReferenceNumberTest Class Doc Comment
  *
  * @category    Class
- * @description Package-level reference number.
+ * @description ExceptionPackageReferenceNumber
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

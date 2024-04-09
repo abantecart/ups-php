@@ -269,7 +269,7 @@ class PackageDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets length
      *
-     * @param string $length The length of the line item used to determine dimensional weight. 6 digits in length with 2 digits of significance after the decimal point.
+     * @param string $length Length of the package used to determine dimensional weight.  Required for GB to GB and Poland to Poland shipments.  6 digits in length with 2 digits of significance after the decimal point.
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class PackageDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param string $width The width of the line item used to determine dimensional weight. 6 digits in length with 2 digits of significance after the decimal point.
+     * @param string $width Width of the package used to determine dimensional weight.  Required for GB to GB and Poland to Poland shipments.  6 digits in length with 2 digits of significance after the decimal point.
      *
      * @return $this
      */
@@ -317,7 +317,7 @@ class PackageDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param string $height The height of the line item used to determine dimensional weight. 6 digits in length with 2 digits of significance after the decimal point.
+     * @param string $height Height of the package used to determine dimensional weight.  Required for GB to GB and Poland to Poland shipments.  6 digits in length with 2 digits of significance after the decimal point.
      *
      * @return $this
      */

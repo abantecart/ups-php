@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * LocationAttributeOptionType Class Doc Comment
  *
  * @category Class
- * @description OptionType is a container that indicates the type of the location attribute.  There are 4 types of attributes.  They are: Location, Retail Location, Additional Services and Program Type.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -227,7 +226,7 @@ class LocationAttributeOptionType implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code for Option type.
+     * @param string $code Code for Option type. Valid values: - 01 - Location - 02 - Retail Location - 03 - Additional Services - 04 - Program Type
      *
      * @return $this
      */
@@ -251,7 +250,7 @@ class LocationAttributeOptionType implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description for Option type such as RetailLocation, AdditionalServices and ProgramType.
+     * @param string $description Description for Option type such as Location, RetailLocation, AdditionalServices and ProgramType.
      *
      * @return $this
      */

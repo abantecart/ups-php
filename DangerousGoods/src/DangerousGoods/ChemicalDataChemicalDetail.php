@@ -395,7 +395,7 @@ class ChemicalDataChemicalDetail implements ModelInterface, ArrayAccess
     /**
      * Sets sub_risk_class
      *
-     * @param string $sub_risk_class Secondary hazardous characteristics of a package. (There can be more than one separate each with a comma).  It will be returned if applies for a given chemical record.
+     * @param string $sub_risk_class Secondary hazardous characteristics of a package. (There can be more than one – separate each with a comma).  It will be returned if applies for a given chemical record.
      *
      * @return $this
      */

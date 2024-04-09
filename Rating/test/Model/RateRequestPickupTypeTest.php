@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * RateRequestPickupTypeTest Class Doc Comment
  *
  * @category    Class
- * @description Pickup Type container tag.  N/A
+ * @description Pickup Type container tag.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

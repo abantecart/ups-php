@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * FormImage Class Doc Comment
  *
  * @category Class
- * @description Container tag for the International forms image.     Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Container tag for the International forms image.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -251,7 +251,7 @@ class FormImage implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image
      *
-     * @param string $graphic_image Base 64 Encoded PDF Image.
+     * @param string $graphic_image Base 64 encoded International forms image.
      *
      * @return $this
      */

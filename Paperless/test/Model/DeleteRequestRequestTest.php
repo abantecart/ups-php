@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * DeleteRequestRequestTest Class Doc Comment
  *
  * @category    Class
- * @description Contains Paperless Document API deleted request criteria components.  N/A
+ * @description Contains Paperless Document API deleted request criteria components.
  * @package     UPS\Paperless
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

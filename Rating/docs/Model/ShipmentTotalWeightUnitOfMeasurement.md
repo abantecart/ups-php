@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **string** | The code associated with the unit of measure for the billable weight of a package. | 
-**description** | **string** | The Description for the Unit Of Measurement. | 
+**code** | **string** | Code representing the unit of measure associated with the package weight.  Valid values: - LBS &#x3D; Pounds - KGS &#x3D; Kilograms. | 
+**description** | **string** | Text description of the code representing the unit of measure associated with the shipment weight. | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

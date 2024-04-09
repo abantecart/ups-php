@@ -57,7 +57,7 @@ class LabelRecoveryResponseForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'image' => '\UPS\Shipping\Shipping\FormImage'
+        'image' => '\UPS\Shipping\Shipping\LabelRecoveryFormImage'
     ];
 
     /**
@@ -208,7 +208,7 @@ class LabelRecoveryResponseForm implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return \UPS\Shipping\Shipping\FormImage
+     * @return \UPS\Shipping\Shipping\LabelRecoveryFormImage
      */
     public function getImage()
     {
@@ -218,7 +218,7 @@ class LabelRecoveryResponseForm implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param \UPS\Shipping\Shipping\FormImage $image image
+     * @param \UPS\Shipping\Shipping\LabelRecoveryFormImage $image image
      *
      * @return $this
      */

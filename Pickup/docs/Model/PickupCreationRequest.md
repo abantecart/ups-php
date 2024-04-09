@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **request** | [**\UPS\Pickup\Pickup\PickupCreationRequestRequest**](PickupCreationRequestRequest.md) |  | 
 **rate_pickup_indicator** | **string** | Indicates whether to rate the on-callpickup or not.  Valid values: Y &#x3D; Rate this pickup N &#x3D; Do not rate this pickup (default) | 
+**rate_chart_type** | **string** | Rate Type with which pickup is rated. Possible RateChart values for different regions will be:  US 48 origin: - 1 – Daily Rates - 3 – Standard List Rates - 4 – Retail Rates.   Alaska/Hawaii origin: - 1 – Daily Rates - 3 – Standard List Rates - 4 – Retail Rates.  All Other origins: - 1 – Rates - 5 - Regional Rates - 6 - General List Rates.  3 and 4 do not apply | [optional] 
 **tax_information_indicator** | **string** | Indicates whether to return detailed taxes for the on-callpickups.  Valid values: Y &#x3D; Rate this pickup with taxes N &#x3D; Do not rate this pickup with taxes (default) | [optional] 
 **user_level_discount_indicator** | **string** | Indicates whether to return user level promo discount for the on-callpickups.  Valid values: Y &#x3D; Rate this pickup with user level promo discount N &#x3D; Do not rate this pickup with user level promo discount(default) | [optional] 
 **shipper** | [**\UPS\Pickup\Pickup\PickupCreationRequestShipper**](PickupCreationRequestShipper.md) |  | [optional] 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 **freight_options** | [**\UPS\Pickup\Pickup\PickupCreationRequestFreightOptions**](PickupCreationRequestFreightOptions.md) |  | [optional] 
 **service_category** | **string** | Service Category. Applicable to the following countries: BE, FR, DE, IT, MX, NL, PL, ES, GB  Valid values:  01 - domestic (default) 02 - international 03 - transborder | [optional] 
 **cash_type** | **string** | Describes the type of cash funds that the driver will collect. Applicable to the following countries: BE,FR,DE,IT,MX,NL,PL,ES,GB Valid values:  01 - Pickup only (default) 02 - Transportation only 03 - Pickup and Transportation | [optional] 
-**shipping_labels_available** | **string** | This element should be set to �Y� in the request to indicate that user has pre-printed shipping labels for all the packages, otherwise this will be treated as false. | [optional] 
+**shipping_labels_available** | **string** | This element should be set to \&quot;Y\&quot; in the request to indicate that user has pre-printed shipping labels for all the packages, otherwise this will be treated as false. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

@@ -61,7 +61,7 @@ class AvailableLocationAttributesOptionCode implements ModelInterface, ArrayAcce
         'description' => 'string',
         'name' => 'string',
         'category' => 'string',
-        'transportation_pick_up_schedule' => '\UPS\Locator\Locator\OptionCodeTransportationPickUpSchedule'
+        'transportation_pick_up_schedule' => '\UPS\Locator\Locator\AvailableLocationAttributesOptionCodeTransportationPickUpSchedule'
     ];
 
     /**
@@ -331,7 +331,7 @@ class AvailableLocationAttributesOptionCode implements ModelInterface, ArrayAcce
     /**
      * Gets transportation_pick_up_schedule
      *
-     * @return \UPS\Locator\Locator\OptionCodeTransportationPickUpSchedule
+     * @return \UPS\Locator\Locator\AvailableLocationAttributesOptionCodeTransportationPickUpSchedule
      */
     public function getTransportationPickUpSchedule()
     {
@@ -341,7 +341,7 @@ class AvailableLocationAttributesOptionCode implements ModelInterface, ArrayAcce
     /**
      * Sets transportation_pick_up_schedule
      *
-     * @param \UPS\Locator\Locator\OptionCodeTransportationPickUpSchedule $transportation_pick_up_schedule transportation_pick_up_schedule
+     * @param \UPS\Locator\Locator\AvailableLocationAttributesOptionCodeTransportationPickUpSchedule $transportation_pick_up_schedule transportation_pick_up_schedule
      *
      * @return $this
      */

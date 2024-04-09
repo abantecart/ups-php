@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * UploadRequestUserCreatedForm Class Doc Comment
  *
  * @category Class
- * @description The container for User Created Form. The container holds the file. Total number of allowed files per shipment is 13.  N/A
+ * @description The container for User Created Form. The container holds the file. Total number of allowed files per shipment is 13.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -245,7 +245,7 @@ class UploadRequestUserCreatedForm implements ModelInterface, ArrayAccess
     /**
      * Sets user_created_form_file_name
      *
-     * @param string $user_created_form_file_name The name of the file.  N/A
+     * @param string $user_created_form_file_name The name of the file.
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class UploadRequestUserCreatedForm implements ModelInterface, ArrayAccess
     /**
      * Sets user_created_form_file
      *
-     * @param string $user_created_form_file The user created form file.  The maximum allowable size of each file is restricted to 10 MB.                                                                                                                                                                                                         Note: The maximum allowable size of each file is restriced to 1MB in CIE (Customer Integration Environment).
+     * @param string $user_created_form_file The user created form file.  The maximum allowable size of each file is restricted to 10 MB. Should be a base64 encoded string.  Note: The maximum allowable size of each file is restriced to 1MB in CIE (Customer Integration Environment).
      *
      * @return $this
      */

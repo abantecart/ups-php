@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * PushToImageRepositoryRequestFormsHistoryDocumentID Class Doc Comment
  *
  * @category Class
- * @description The container for DocumentID(s).  N/A
+ * @description The container for DocumentID(s).
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -218,7 +218,7 @@ class PushToImageRepositoryRequestFormsHistoryDocumentID implements ModelInterfa
     /**
      * Sets document_id
      *
-     * @param string[] $document_id DocumentID represents a document uploaded to Forms History.  N/A
+     * @param string[] $document_id DocumentID represents a document uploaded to Forms History.
      *
      * @return $this
      */

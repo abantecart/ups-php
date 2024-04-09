@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * SubscriptionEventsSubscriptionFile Class Doc Comment
  *
  * @category Class
- * @description Container holds all of the unread files associated with the subscription.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -58,7 +57,12 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'file_name' => 'string',
-        'status_type' => '\UPS\QuantumView\QuantumView\SubscriptionFileStatusType'
+        'status_type' => '\UPS\QuantumView\QuantumView\SubscriptionFileStatusType',
+        'manifest' => '\UPS\QuantumView\QuantumView\SubscriptionFileManifest[]',
+        'origin' => '\UPS\QuantumView\QuantumView\SubscriptionFileOrigin[]',
+        'exception' => '\UPS\QuantumView\QuantumView\SubscriptionFileException[]',
+        'delivery' => '\UPS\QuantumView\QuantumView\SubscriptionFileDelivery[]',
+        'generic' => '\UPS\QuantumView\QuantumView\SubscriptionFileGeneric[]'
     ];
 
     /**
@@ -68,7 +72,12 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'file_name' => null,
-        'status_type' => null
+        'status_type' => null,
+        'manifest' => null,
+        'origin' => null,
+        'exception' => null,
+        'delivery' => null,
+        'generic' => null
     ];
 
     /**
@@ -99,7 +108,12 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'file_name' => 'FileName',
-        'status_type' => 'StatusType'
+        'status_type' => 'StatusType',
+        'manifest' => 'Manifest',
+        'origin' => 'Origin',
+        'exception' => 'Exception',
+        'delivery' => 'Delivery',
+        'generic' => 'Generic'
     ];
 
     /**
@@ -109,7 +123,12 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'file_name' => 'setFileName',
-        'status_type' => 'setStatusType'
+        'status_type' => 'setStatusType',
+        'manifest' => 'setManifest',
+        'origin' => 'setOrigin',
+        'exception' => 'setException',
+        'delivery' => 'setDelivery',
+        'generic' => 'setGeneric'
     ];
 
     /**
@@ -119,7 +138,12 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'file_name' => 'getFileName',
-        'status_type' => 'getStatusType'
+        'status_type' => 'getStatusType',
+        'manifest' => 'getManifest',
+        'origin' => 'getOrigin',
+        'exception' => 'getException',
+        'delivery' => 'getDelivery',
+        'generic' => 'getGeneric'
     ];
 
     /**
@@ -182,6 +206,11 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
     {
         $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
         $this->container['status_type'] = isset($data['status_type']) ? $data['status_type'] : null;
+        $this->container['manifest'] = isset($data['manifest']) ? $data['manifest'] : null;
+        $this->container['origin'] = isset($data['origin']) ? $data['origin'] : null;
+        $this->container['exception'] = isset($data['exception']) ? $data['exception'] : null;
+        $this->container['delivery'] = isset($data['delivery']) ? $data['delivery'] : null;
+        $this->container['generic'] = isset($data['generic']) ? $data['generic'] : null;
     }
 
     /**
@@ -258,6 +287,126 @@ class SubscriptionEventsSubscriptionFile implements ModelInterface, ArrayAccess
     public function setStatusType($status_type)
     {
         $this->container['status_type'] = $status_type;
+
+        return $this;
+    }
+
+    /**
+     * Gets manifest
+     *
+     * @return \UPS\QuantumView\QuantumView\SubscriptionFileManifest[]
+     */
+    public function getManifest()
+    {
+        return $this->container['manifest'];
+    }
+
+    /**
+     * Sets manifest
+     *
+     * @param \UPS\QuantumView\QuantumView\SubscriptionFileManifest[] $manifest Container represents all data that is relevant for the shipment, such as origin, destination, shipper, payment method etc. It will be returned when available.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
+     *
+     * @return $this
+     */
+    public function setManifest($manifest)
+    {
+        $this->container['manifest'] = $manifest;
+
+        return $this;
+    }
+
+    /**
+     * Gets origin
+     *
+     * @return \UPS\QuantumView\QuantumView\SubscriptionFileOrigin[]
+     */
+    public function getOrigin()
+    {
+        return $this->container['origin'];
+    }
+
+    /**
+     * Sets origin
+     *
+     * @param \UPS\QuantumView\QuantumView\SubscriptionFileOrigin[] $origin Information about shipment's origin.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
+     *
+     * @return $this
+     */
+    public function setOrigin($origin)
+    {
+        $this->container['origin'] = $origin;
+
+        return $this;
+    }
+
+    /**
+     * Gets exception
+     *
+     * @return \UPS\QuantumView\QuantumView\SubscriptionFileException[]
+     */
+    public function getException()
+    {
+        return $this->container['exception'];
+    }
+
+    /**
+     * Sets exception
+     *
+     * @param \UPS\QuantumView\QuantumView\SubscriptionFileException[] $exception Shipment exception data.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
+     *
+     * @return $this
+     */
+    public function setException($exception)
+    {
+        $this->container['exception'] = $exception;
+
+        return $this;
+    }
+
+    /**
+     * Gets delivery
+     *
+     * @return \UPS\QuantumView\QuantumView\SubscriptionFileDelivery[]
+     */
+    public function getDelivery()
+    {
+        return $this->container['delivery'];
+    }
+
+    /**
+     * Sets delivery
+     *
+     * @param \UPS\QuantumView\QuantumView\SubscriptionFileDelivery[] $delivery Container for delivery information.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
+     *
+     * @return $this
+     */
+    public function setDelivery($delivery)
+    {
+        $this->container['delivery'] = $delivery;
+
+        return $this;
+    }
+
+    /**
+     * Gets generic
+     *
+     * @return \UPS\QuantumView\QuantumView\SubscriptionFileGeneric[]
+     */
+    public function getGeneric()
+    {
+        return $this->container['generic'];
+    }
+
+    /**
+     * Sets generic
+     *
+     * @param \UPS\QuantumView\QuantumView\SubscriptionFileGeneric[] $generic Container for generic record information.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
+     *
+     * @return $this
+     */
+    public function setGeneric($generic)
+    {
+        $this->container['generic'] = $generic;
 
         return $this;
     }

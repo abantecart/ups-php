@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * RateRequestShipment Class Doc Comment
  *
  * @category Class
- * @description Container for Shipment Information.  N/A
+ * @description Container for Shipment Information.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

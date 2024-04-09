@@ -251,7 +251,7 @@ class LRFormImage implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image
      *
-     * @param string $graphic_image Base 64 encoded High Value Report image.
+     * @param string $graphic_image Base 64 encoded International Forms image.
      *
      * @return $this
      */

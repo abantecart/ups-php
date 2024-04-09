@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * PackagePackageServiceOptions Class Doc Comment
  *
  * @category Class
- * @description PackageServiceOptions container.  N/A
+ * @description PackageServiceOptions container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -65,6 +65,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
         'shipper_release_indicator' => 'string',
         'proactive_indicator' => 'string',
         'refrigeration_indicator' => 'string',
+        'insurance' => '\UPS\Rating\Rating\PackageServiceOptionsInsurance',
         'ups_premium_care_indicator' => 'string',
         'haz_mat' => '\UPS\Rating\Rating\PackageServiceOptionsHazMat',
         'dry_ice' => '\UPS\Rating\Rating\PackageServiceOptionsDryIce'
@@ -84,6 +85,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
         'shipper_release_indicator' => null,
         'proactive_indicator' => null,
         'refrigeration_indicator' => null,
+        'insurance' => null,
         'ups_premium_care_indicator' => null,
         'haz_mat' => null,
         'dry_ice' => null
@@ -124,6 +126,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
         'shipper_release_indicator' => 'ShipperReleaseIndicator',
         'proactive_indicator' => 'ProactiveIndicator',
         'refrigeration_indicator' => 'RefrigerationIndicator',
+        'insurance' => 'Insurance',
         'ups_premium_care_indicator' => 'UPSPremiumCareIndicator',
         'haz_mat' => 'HazMat',
         'dry_ice' => 'DryIce'
@@ -143,6 +146,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
         'shipper_release_indicator' => 'setShipperReleaseIndicator',
         'proactive_indicator' => 'setProactiveIndicator',
         'refrigeration_indicator' => 'setRefrigerationIndicator',
+        'insurance' => 'setInsurance',
         'ups_premium_care_indicator' => 'setUpsPremiumCareIndicator',
         'haz_mat' => 'setHazMat',
         'dry_ice' => 'setDryIce'
@@ -162,6 +166,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
         'shipper_release_indicator' => 'getShipperReleaseIndicator',
         'proactive_indicator' => 'getProactiveIndicator',
         'refrigeration_indicator' => 'getRefrigerationIndicator',
+        'insurance' => 'getInsurance',
         'ups_premium_care_indicator' => 'getUpsPremiumCareIndicator',
         'haz_mat' => 'getHazMat',
         'dry_ice' => 'getDryIce'
@@ -233,6 +238,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
         $this->container['shipper_release_indicator'] = isset($data['shipper_release_indicator']) ? $data['shipper_release_indicator'] : null;
         $this->container['proactive_indicator'] = isset($data['proactive_indicator']) ? $data['proactive_indicator'] : null;
         $this->container['refrigeration_indicator'] = isset($data['refrigeration_indicator']) ? $data['refrigeration_indicator'] : null;
+        $this->container['insurance'] = isset($data['insurance']) ? $data['insurance'] : null;
         $this->container['ups_premium_care_indicator'] = isset($data['ups_premium_care_indicator']) ? $data['ups_premium_care_indicator'] : null;
         $this->container['haz_mat'] = isset($data['haz_mat']) ? $data['haz_mat'] : null;
         $this->container['dry_ice'] = isset($data['dry_ice']) ? $data['dry_ice'] : null;
@@ -455,6 +461,30 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets insurance
+     *
+     * @return \UPS\Rating\Rating\PackageServiceOptionsInsurance
+     */
+    public function getInsurance()
+    {
+        return $this->container['insurance'];
+    }
+
+    /**
+     * Sets insurance
+     *
+     * @param \UPS\Rating\Rating\PackageServiceOptionsInsurance $insurance insurance
+     *
+     * @return $this
+     */
+    public function setInsurance($insurance)
+    {
+        $this->container['insurance'] = $insurance;
+
+        return $this;
+    }
+
+    /**
      * Gets ups_premium_care_indicator
      *
      * @return string
@@ -467,7 +497,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
     /**
      * Sets ups_premium_care_indicator
      *
-     * @param string $ups_premium_care_indicator An UPSPremiumCareIndicator indicates special handling is required for shipment having controlled substances.  Empty Tag means indicator is present. Valid only for Canada to Canada movements.Available for the following Return Services:Returns Exchange (available with a contract)Print Return LabelPrint and MailElectronic Return LabelReturn Service Three AttemptMay be requested with following UPS services: UPS Express\" EarlyUPS ExpressUPS Express SaverUPS Standard. Not available for packages with the following:Delivery Confirmation - Signature RequiredDelivery Confirmation - Adult Signature Required.
+     * @param string $ups_premium_care_indicator The UPSPremiumCareIndicator indicates special handling is required for shipment having controlled substances.  Empty Tag means indicator is present.  Valid only for Canada to Canada movements.  Available for the following Return Services: - Returns Exchange (available with a contract) - Print Return Label - Print and Mail - Electronic Return Label - Return Service Three Attempt  May be requested with following UPS services: - UPS Express® Early - UPS Express - UPS Express Saver - UPS Standard.  Not available for packages with the following: - Delivery Confirmation - Signature Required - Delivery Confirmation - Adult Signature Required.
      *
      * @return $this
      */

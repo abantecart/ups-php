@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * LabelRecoveryRequestRequest Class Doc Comment
  *
  * @category Class
- * @description Request Container.  N/A
+ * @description Request Container.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

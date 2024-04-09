@@ -35,7 +35,6 @@ use \UPS\DangerousGoods\ObjectSerializer;
  * AcceptanceAuditPreCheckResponsePackageResults Class Doc Comment
  *
  * @category Class
- * @description Package Results container.
  * @package  UPS\DangerousGoods
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,7 +59,7 @@ class AcceptanceAuditPreCheckResponsePackageResults implements ModelInterface, A
         'package_identifier' => 'string',
         'accessible_indicator' => 'string',
         'europe_bu_indicator' => 'string',
-        'chemical_record_results' => 'OneOfAcceptanceAuditPreCheckResponsePackageResultsChemicalRecordResults'
+        'chemical_record_results' => '\UPS\DangerousGoods\DangerousGoods\PackageResultsChemicalRecordResults[]'
     ];
 
     /**
@@ -298,7 +297,7 @@ class AcceptanceAuditPreCheckResponsePackageResults implements ModelInterface, A
     /**
      * Gets chemical_record_results
      *
-     * @return OneOfAcceptanceAuditPreCheckResponsePackageResultsChemicalRecordResults
+     * @return \UPS\DangerousGoods\DangerousGoods\PackageResultsChemicalRecordResults[]
      */
     public function getChemicalRecordResults()
     {
@@ -308,7 +307,7 @@ class AcceptanceAuditPreCheckResponsePackageResults implements ModelInterface, A
     /**
      * Sets chemical_record_results
      *
-     * @param OneOfAcceptanceAuditPreCheckResponsePackageResultsChemicalRecordResults $chemical_record_results chemical_record_results
+     * @param \UPS\DangerousGoods\DangerousGoods\PackageResultsChemicalRecordResults[] $chemical_record_results Chemical Records Results container.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

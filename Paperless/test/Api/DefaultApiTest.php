@@ -82,6 +82,36 @@ class DefaultApiTest extends TestCase
     }
 
     /**
+     * Test case for deprecatedDelete
+     *
+     * Delete Paperless Document.
+     *
+     */
+    public function testDeprecatedDelete()
+    {
+    }
+
+    /**
+     * Test case for deprecatedPushToImageRepository
+     *
+     * Paperless Document Push Image.
+     *
+     */
+    public function testDeprecatedPushToImageRepository()
+    {
+    }
+
+    /**
+     * Test case for deprecatedUpload
+     *
+     * Upload Paperless Document.
+     *
+     */
+    public function testDeprecatedUpload()
+    {
+    }
+
+    /**
      * Test case for pushToImageRepository
      *
      * Paperless Document Push Image.

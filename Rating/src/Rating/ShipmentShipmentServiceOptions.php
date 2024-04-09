@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * ShipmentShipmentServiceOptions Class Doc Comment
  *
  * @category Class
- * @description Shipment level Accessorials are included in this container.  N/A
+ * @description Shipment level Accessorials are included in this container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -467,7 +467,7 @@ class ShipmentShipmentServiceOptions implements ModelInterface, ArrayAccess
     /**
      * Sets deliver_to_addressee_only_indicator
      *
-     * @param string $deliver_to_addressee_only_indicator Presence/Absence Indicator. Any value inside is ignored. DeliverToAddresseeOnlyIndicator is shipper specified restriction that requires the addressee to be the one who takes final delivery of the \"Hold For PickUp at UPS Access Point package.  Presence of indicator means shipper restriction will apply to the shipment.  Only valid for Shipment Indication type \"01 - Hold For PickUp at UPS Access Point.
+     * @param string $deliver_to_addressee_only_indicator Presence/Absence Indicator. Any value inside is ignored.  DeliverToAddresseeOnlyIndicator is shipper specified restriction that requires the addressee to be the one who takes final delivery of the \"Hold For PickUp at UPS Access Point\" package.  Presence of indicator means shipper restriction will apply to the shipment.  Only valid for Shipment Indication type \"01 - Hold For PickUp at UPS Access Point\".
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class ShipmentShipmentServiceOptions implements ModelInterface, ArrayAccess
     /**
      * Sets direct_delivery_only_indicator
      *
-     * @param string $direct_delivery_only_indicator Presence/Absence Indicator. Any value inside is ignored. Direct Delivery Only (DDO) accessorial in a request would ensure that delivery is made only to the Ship To address on the shipping label.  This accessorial is not valid with Shipment Indication Types:01 - Hold For Pickup At UPS Access Point 02 - UPS Access Point Delivery\"
+     * @param string $direct_delivery_only_indicator Presence/Absence Indicator. Any value inside is ignored. Direct Delivery Only (DDO) accessorial in a request would ensure that delivery is made only to the Ship To address on the shipping label.  This accessorial is not valid with Shipment Indication Types: - 01 - Hold For Pickup At UPS Access Point - 02 - UPS Access Point™ Delivery
      *
      * @return $this
      */
@@ -827,7 +827,7 @@ class ShipmentShipmentServiceOptions implements ModelInterface, ArrayAccess
     /**
      * Sets epra_indicator
      *
-     * @param string $epra_indicator Presence/Absence Indicator. Any value inside is ignored. This field is a flag to indicate Package Release Code is requested for shipment. This accessorial is only valid with ShipmentIndicationType \"01\" - Hold for Pickup at UPS Access Point.
+     * @param string $epra_indicator For valid values, refer to Rating and Shipping COD Supported Countries or Territories in the Appendix.Presence/Absence Indicator. Any value inside is ignored. This field is a flag to indicate Package Release Code is requested for shipment.  This accessorial is only valid with ShipmentIndicationType '01' - Hold for Pickup at UPS Access Point™.
      *
      * @return $this
      */
@@ -851,7 +851,7 @@ class ShipmentShipmentServiceOptions implements ModelInterface, ArrayAccess
     /**
      * Sets inside_delivery
      *
-     * @param string $inside_delivery Inside Delivery accessory. Valide values:                                         01- White Glove                        02 - Room of Choice                   03 - Installation  Shippers account needs to have a valid contract for Heavy Goods Service.
+     * @param string $inside_delivery Inside Delivery accessory. Valid values: - 01 - White Glove - 02 - Room of Choice - 03 - Installation  Shippers account needs to have a valid contract for Heavy Goods Service.
      *
      * @return $this
      */

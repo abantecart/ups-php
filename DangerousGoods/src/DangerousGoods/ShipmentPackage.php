@@ -386,7 +386,7 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
     /**
      * Sets emergency_phone
      *
-     * @param string $emergency_phone 24 Hour Emergency Phone Number of the shipper.   Valid values for this field are (0) through (9) with trailing blanks.   For numbers within the U.S., the layout is 1, area code, 7-digit number. For all other countries or territories the layout is country or territory code, area code, number.  The Emergency Phone Number can only include the following allowable characters   period., dash -, plus sign + and conventional parentheses ( and ), EXT or OPT  Required when (TDG regulation set and CommodityRegulatedLevelCode = FR)
+     * @param string $emergency_phone 24 Hour Emergency Phone Number of the shipper.  Valid values for this field are (0) through (9) with trailing blanks.  For numbers within the U.S., the layout is 1, area code, 7-digit number. For all other countries or territories the layout is country or territory code, area code, number.  The Emergency Phone Number can only include the following allowable characters “period “.”, dash “-“, plus sign “+” and conventional parentheses “(“ and “)”, “EXT or OPT”  Required when (TDG regulation set and CommodityRegulatedLevelCode = FR)
      *
      * @return $this
      */

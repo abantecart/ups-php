@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * ShipmentAlternateDeliveryAddress Class Doc Comment
  *
  * @category Class
- * @description Alternate Delivery Address container. Applies for deliveries to UPS Access Point locations.Required for the following ShipmentIndicationType values:01 - Hold for Pickup at UPS Access Point02 - UPS Access Point Delivery
+ * @description Alternate Delivery Address container. Applies for deliveries to UPS Access Point™ locations.  Required for the following ShipmentIndicationType values: - 01 - Hold for Pickup at UPS Access Point™ - 02 - UPS Access Point™ Delivery
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

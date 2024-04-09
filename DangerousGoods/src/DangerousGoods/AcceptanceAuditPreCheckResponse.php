@@ -61,7 +61,7 @@ class AcceptanceAuditPreCheckResponse implements ModelInterface, ArrayAccess
         'shipper_number' => 'string',
         'service' => '\UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponseService',
         'regulation_set' => 'string',
-        'package_results' => 'OneOfAcceptanceAuditPreCheckResponsePackageResults'
+        'package_results' => '\UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponsePackageResults[]'
     ];
 
     /**
@@ -328,7 +328,7 @@ class AcceptanceAuditPreCheckResponse implements ModelInterface, ArrayAccess
     /**
      * Gets package_results
      *
-     * @return OneOfAcceptanceAuditPreCheckResponsePackageResults
+     * @return \UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponsePackageResults[]
      */
     public function getPackageResults()
     {
@@ -338,7 +338,7 @@ class AcceptanceAuditPreCheckResponse implements ModelInterface, ArrayAccess
     /**
      * Sets package_results
      *
-     * @param OneOfAcceptanceAuditPreCheckResponsePackageResults $package_results package_results
+     * @param \UPS\DangerousGoods\DangerousGoods\AcceptanceAuditPreCheckResponsePackageResults[] $package_results Package Results container.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

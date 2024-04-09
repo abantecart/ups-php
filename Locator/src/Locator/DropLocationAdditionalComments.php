@@ -57,7 +57,7 @@ class DropLocationAdditionalComments implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'comment_type' => 'OneOfDropLocationAdditionalCommentsCommentType'
+        'comment_type' => '\UPS\Locator\Locator\AdditionalCommentsCommentType[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class DropLocationAdditionalComments implements ModelInterface, ArrayAccess
     /**
      * Gets comment_type
      *
-     * @return OneOfDropLocationAdditionalCommentsCommentType
+     * @return \UPS\Locator\Locator\AdditionalCommentsCommentType[]
      */
     public function getCommentType()
     {
@@ -218,7 +218,7 @@ class DropLocationAdditionalComments implements ModelInterface, ArrayAccess
     /**
      * Sets comment_type
      *
-     * @param OneOfDropLocationAdditionalCommentsCommentType $comment_type comment_type
+     * @param \UPS\Locator\Locator\AdditionalCommentsCommentType[] $comment_type Container for CommentType Code and Text.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

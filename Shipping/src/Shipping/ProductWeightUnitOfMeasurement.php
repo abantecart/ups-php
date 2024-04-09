@@ -224,7 +224,7 @@ class ProductWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code for unit of Measurement of weight.
+     * @param string $code Code for unit of Measurement of weight.  Applies to CO and EEI forms only.  Valid values: - KGS - LBS
      *
      * @return $this
      */

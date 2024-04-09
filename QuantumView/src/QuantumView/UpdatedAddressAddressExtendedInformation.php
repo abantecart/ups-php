@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * UpdatedAddressAddressExtendedInformation Class Doc Comment
  *
  * @category Class
- * @description Container for information about updated shipping address. It will be returned if there is any update due to exception.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -227,7 +226,7 @@ class UpdatedAddressAddressExtendedInformation implements ModelInterface, ArrayA
     /**
      * Sets type
      *
-     * @param string $type Allows for secondary address information such as a suite or apartment.
+     * @param string $type Allows for secondary address information such as s suite or apartment. It will be returned if there is any update due to exception.
      *
      * @return $this
      */
@@ -251,7 +250,7 @@ class UpdatedAddressAddressExtendedInformation implements ModelInterface, ArrayA
     /**
      * Sets low
      *
-     * @param string $low The low number associated with an extended address.
+     * @param string $low The lower limit associated with the extended address type. It will be returned if there is any update due to exception.
      *
      * @return $this
      */
@@ -275,7 +274,7 @@ class UpdatedAddressAddressExtendedInformation implements ModelInterface, ArrayA
     /**
      * Sets high
      *
-     * @param string $high The high number associated with an extended address.
+     * @param string $high The higher limit associated with the extended address type. It will be returned if there is any update due to exception.
      *
      * @return $this
      */

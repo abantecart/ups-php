@@ -230,7 +230,7 @@ class ShipmentReferenceNumber implements ModelInterface, ArrayAccess
     /**
      * Sets bar_code_indicator
      *
-     * @param string $bar_code_indicator If the indicator is present then the reference numbers value will be bar coded on the label.  This is an empty tag, any value inside is ignored.   Only one shipment-level or package-level reference number can be bar coded per shipment.   In order to barcode a reference number, its value must be no longer than 14 alphanumeric characters or 24 numeric characters and cannot contain spaces.
+     * @param string $bar_code_indicator If the indicator is present then the reference number's value will be bar coded on the label.  This is an empty tag, any value inside is ignored. Only one shipment-level or package-level reference number can be bar coded per shipment. In order to barcode a reference number, its value must be no longer than 14 alphanumeric characters or 24 numeric characters and cannot contain spaces.
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ShipmentReferenceNumber implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Reference number type code, for the entire shipment. The code specifies the Reference name.   Refer to the Reference Number Code table.  Valid if the origin/destination pair is US/US or PR/PR and character should be alpha-numeric.
+     * @param string $code Shipment Reference number type code. The code specifies the Reference name. Refer to the Reference Number Code table.  Valid if the origin/destination pair is not US/US or PR/PR and character should be alpha-numeric.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ShipmentReferenceNumber implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param string $value Customer supplied reference number.  Valid if the origin/destination pair is US/US or PR/PR.
+     * @param string $value Customer supplied reference number.  Valid if the origin/destination pair is not US/US or PR/PR
      *
      * @return $this
      */

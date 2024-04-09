@@ -59,7 +59,7 @@ class RatedShipmentFRSShipmentData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'transportation_charges' => '\UPS\Rating\Rating\FRSShipmentDataTransportationCharges',
         'freight_density_rate' => '\UPS\Rating\Rating\FRSShipmentDataFreightDensityRate',
-        'handling_units' => 'OneOfRatedShipmentFRSShipmentDataHandlingUnits'
+        'handling_units' => '\UPS\Rating\Rating\FRSShipmentDataHandlingUnits[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class RatedShipmentFRSShipmentData implements ModelInterface, ArrayAccess
     /**
      * Gets handling_units
      *
-     * @return OneOfRatedShipmentFRSShipmentDataHandlingUnits
+     * @return \UPS\Rating\Rating\FRSShipmentDataHandlingUnits[]
      */
     public function getHandlingUnits()
     {
@@ -278,7 +278,7 @@ class RatedShipmentFRSShipmentData implements ModelInterface, ArrayAccess
     /**
      * Sets handling_units
      *
-     * @param OneOfRatedShipmentFRSShipmentDataHandlingUnits $handling_units handling_units
+     * @param \UPS\Rating\Rating\FRSShipmentDataHandlingUnits[] $handling_units Handling Unit for Density based rating container.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

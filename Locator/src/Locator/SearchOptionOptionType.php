@@ -218,7 +218,7 @@ class SearchOptionOptionType implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code for Option type.
+     * @param string $code Code for Option type valid values are:  - 01-Location - 02-Retail Location - 03-Additional Services - 04-Program Type - 05-Service Level Option. - 06-End Point Service Offering
      *
      * @return $this
      */

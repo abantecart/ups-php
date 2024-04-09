@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SubscriptionFileManifestTest Class Doc Comment
  *
  * @category    Class
- * @description Container represents all data that is relevant for the shipment, such as origin, destination, shipper, payment method etc. It will be return when available.
+ * @description SubscriptionFileManifest
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

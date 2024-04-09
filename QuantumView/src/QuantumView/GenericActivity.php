@@ -221,7 +221,7 @@ class GenericActivity implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date Date of package activity (i.e. YYYYMMDD).� If generic record ActivityType is TC then event date is the date of first USPS scan.
+     * @param string $date Date of package activity (i.e. YYYYMMDD). If generic record ActivityType is TC then event date is the date of first USPS scan.
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class GenericActivity implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param string $time Time of package activity(i.e. HHMMSS).� If generic record ActivityType is TC then event time is the time of first USPS scan.
+     * @param string $time Time of package activity(i.e. HHMMSS). If generic record ActivityType is TC then event time is the time of first USPS scan.
      *
      * @return $this
      */

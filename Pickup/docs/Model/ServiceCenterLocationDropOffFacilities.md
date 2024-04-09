@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **address** | [**\UPS\Pickup\Pickup\DropOffFacilitiesAddress**](DropOffFacilitiesAddress.md) |  | 
 **slic** | **string** | SLIC code for the UPS Drop off facility. | 
 **type** | **string** | FRT for Freight or PKG for Package | 
-**timezone** | **string** | Facility�s Timezone Format: America/New_York Asia/Hong_Kong Europe/London | 
+**timezone** | **string** | Facility&#x27;s Timezone. Format: - America/New_York - Asia/Hong_Kong - Europe/London | 
 **phone** | **string** | Phone Number of the Drop off Facility | 
 **fax** | **string** | Drop off Facilities Fax Number | 
 **facility_time** | [**\UPS\Pickup\Pickup\DropOffFacilitiesFacilityTime**](DropOffFacilitiesFacilityTime.md) |  | [optional] 

@@ -227,7 +227,7 @@ class AdjustedHeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code associated with Unit of Measurement for the Adjusted height. Valid value is IN.
+     * @param string $code Code associated with Unit of Measurement for the Adjusted height. Valid value is IN  Unit of measurement code for Adjusted height is validated only when Handling unit type is SKD = Skid or PLT = Pallet.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class AdjustedHeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description The Description for the Unit Of Measurement.
+     * @param string $description Description for Code associated with Unit of Measurement for the Adjusted height.
      *
      * @return $this
      */

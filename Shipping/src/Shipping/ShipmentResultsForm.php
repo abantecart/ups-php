@@ -59,7 +59,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'code' => 'string',
         'description' => 'string',
-        'image' => '\UPS\Shipping\Shipping\FormImage',
+        'image' => '\UPS\Shipping\Shipping\ShipmentResultsFormImage',
         'form_group_id' => 'string',
         'form_group_id_name' => 'string'
     ];
@@ -245,7 +245,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code that indicates the type of form. Applicable only for ShipmentResponse and ShipAcceptResponse.  Valid values: 01 - All Requested International Forms.
+     * @param string $code Code that indicates the type of form.  Valid values: 01 - All Requested International Forms.
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description that indicates the type of form. Possible Values. All Requested International Forms.     Applicable only for ShipmentResponse and ShipAcceptResponse.
+     * @param string $description Description that indicates the type of form. Possible Values. All Requested International Forms.
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return \UPS\Shipping\Shipping\FormImage
+     * @return \UPS\Shipping\Shipping\ShipmentResultsFormImage
      */
     public function getImage()
     {
@@ -293,7 +293,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param \UPS\Shipping\Shipping\FormImage $image image
+     * @param \UPS\Shipping\Shipping\ShipmentResultsFormImage $image image
      *
      * @return $this
      */
@@ -317,7 +317,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     /**
      * Sets form_group_id
      *
-     * @param string $form_group_id Unique Id for later retrieval of saved version of the completed international forms. Always returned when code = 01. 01 represents international forms.     Applicable only for ShipmentResponse and ShipAcceptResponse.
+     * @param string $form_group_id Unique Id for later retrieval of saved version of the completed international forms. Always returned when code = 01. 01 represents international forms.
      *
      * @return $this
      */
@@ -341,7 +341,7 @@ class ShipmentResultsForm implements ModelInterface, ArrayAccess
     /**
      * Sets form_group_id_name
      *
-     * @param string $form_group_id_name Contains description text which identifies the group of International forms. This element is part of both request and response. This element does not appear on the forms.    Applicable only for ShipmentResponse and ShipAcceptResponse.
+     * @param string $form_group_id_name Contains description text which identifies the group of International forms. This element is part of both request and response. This element does not appear on the forms.
      *
      * @return $this
      */

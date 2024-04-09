@@ -60,8 +60,8 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
         'disclaimer' => '\UPS\Pickup\Pickup\RateResultDisclaimer',
         'rate_type' => 'string',
         'currency_code' => 'string',
-        'charge_detail' => 'OneOfPickupCreationResponseRateResultChargeDetail',
-        'tax_charges' => 'OneOfPickupCreationResponseRateResultTaxCharges',
+        'charge_detail' => '\UPS\Pickup\Pickup\RateResultChargeDetail[]',
+        'tax_charges' => '\UPS\Pickup\Pickup\RateResultTaxCharges[]',
         'total_tax' => 'string',
         'grand_total_of_all_charge' => 'string',
         'grand_total_of_all_incented_charge' => 'string',
@@ -296,7 +296,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Sets rate_type
      *
-     * @param string $rate_type Indicates this pickup is rated as same-day or future-day pickup. SD = Same-day Pickup FD = Future-day Pickup
+     * @param string $rate_type Indicates this pickup is rated as same-day or future-day pickup. - SD = Same-day Pickup - FD = Future-day Pickup
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Gets charge_detail
      *
-     * @return OneOfPickupCreationResponseRateResultChargeDetail
+     * @return \UPS\Pickup\Pickup\RateResultChargeDetail[]
      */
     public function getChargeDetail()
     {
@@ -344,7 +344,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Sets charge_detail
      *
-     * @param OneOfPickupCreationResponseRateResultChargeDetail $charge_detail charge_detail
+     * @param \UPS\Pickup\Pickup\RateResultChargeDetail[] $charge_detail Container to hold taxes when, detailed taxes are request via RateTaxIndicator.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Gets tax_charges
      *
-     * @return OneOfPickupCreationResponseRateResultTaxCharges
+     * @return \UPS\Pickup\Pickup\RateResultTaxCharges[]
      */
     public function getTaxCharges()
     {
@@ -368,7 +368,7 @@ class PickupCreationResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Sets tax_charges
      *
-     * @param OneOfPickupCreationResponseRateResultTaxCharges $tax_charges tax_charges
+     * @param \UPS\Pickup\Pickup\RateResultTaxCharges[] $tax_charges Container to hold taxes when, detailed taxes are request via RateTaxIndicator.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

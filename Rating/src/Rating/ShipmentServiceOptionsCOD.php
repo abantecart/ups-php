@@ -58,7 +58,7 @@ class ShipmentServiceOptionsCOD implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'cod_funds_code' => 'string',
-        'cod_amount' => '\UPS\Rating\Rating\CODCODAmount'
+        'cod_amount' => '\UPS\Rating\Rating\ShipmentServiceOptionsCODCODAmount'
     ];
 
     /**
@@ -227,7 +227,7 @@ class ShipmentServiceOptionsCOD implements ModelInterface, ArrayAccess
     /**
      * Sets cod_funds_code
      *
-     * @param string $cod_funds_code For valid values, refer to\"Rating and Shipping COD Supported Countries or Territories in the Appendix.
+     * @param string $cod_funds_code For valid values, refer to Rating and Shipping COD Supported Countries or Territories in the Appendix.
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class ShipmentServiceOptionsCOD implements ModelInterface, ArrayAccess
     /**
      * Gets cod_amount
      *
-     * @return \UPS\Rating\Rating\CODCODAmount
+     * @return \UPS\Rating\Rating\ShipmentServiceOptionsCODCODAmount
      */
     public function getCodAmount()
     {
@@ -251,7 +251,7 @@ class ShipmentServiceOptionsCOD implements ModelInterface, ArrayAccess
     /**
      * Sets cod_amount
      *
-     * @param \UPS\Rating\Rating\CODCODAmount $cod_amount cod_amount
+     * @param \UPS\Rating\Rating\ShipmentServiceOptionsCODCODAmount $cod_amount cod_amount
      *
      * @return $this
      */

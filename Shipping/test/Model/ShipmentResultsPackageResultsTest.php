@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentResultsPackageResultsTest Class Doc Comment
  *
  * @category    Class
- * @description Returned Package Information.   Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description ShipmentResultsPackageResults
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

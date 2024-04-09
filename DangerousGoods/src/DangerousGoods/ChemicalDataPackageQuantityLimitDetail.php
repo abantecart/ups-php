@@ -35,7 +35,6 @@ use \UPS\DangerousGoods\ObjectSerializer;
  * ChemicalDataPackageQuantityLimitDetail Class Doc Comment
  *
  * @category Class
- * @description Container to hold Package Quantity Limit Detail information.  It will be returned if applies for a given chemical record.
  * @package  UPS\DangerousGoods
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

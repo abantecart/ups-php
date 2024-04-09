@@ -374,7 +374,7 @@ class PickupGetServiceCenterFacilitiesRequest implements ModelInterface, ArrayAc
     /**
      * Sets proximity_search_indicator
      *
-     * @param string $proximity_search_indicator Proximity Indicator.  Indicates the� user requested the proximity search for UPS Worldwide Express Freight and UPS Worldwide Express Freight Midday locations for the origin address and/or the airport code, and the sort code for destination address.
+     * @param string $proximity_search_indicator Proximity Indicator. Indicates the user requested the proximity search for UPS Worldwide Express Freight and UPS Worldwide Express Freight Midday locations for the origin address and/or the airport code, and the sort code for destination address.
      *
      * @return $this
      */

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * RateRequestCustomerClassificationTest Class Doc Comment
  *
  * @category    Class
- * @description Customer classification container. Valid if ShipFrom country or territory  is \&quot;US\&quot;  N/A
+ * @description Customer classification container. Valid if ShipFrom country or territory  is \&quot;US\&quot;
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

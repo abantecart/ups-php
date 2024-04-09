@@ -236,7 +236,7 @@ class LabelRecoveryRequestTranslate implements ModelInterface, ArrayAccess
     /**
      * Sets language_code
      *
-     * @param string $language_code The Language code. The language codes are three letter language codes.  Supported languages are:  eng - English  spa - Spanish  ita - Italian fra - French  deu - German  por -Portuguese  nld  Dutch dan - Danish  fin - Finnish  swe  Swedish  nor  Norwegian
+     * @param string $language_code The Language code. The language codes are three letter language codes. Supported languages are: - eng - English - spa - Spanish - ita - Italian - fra - French - deu - German - por -Portuguese - nld – Dutch - dan - Danish - fin - Finnish - swe – Swedish - nor – Norwegian
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LabelRecoveryRequestTranslate implements ModelInterface, ArrayAccess
     /**
      * Sets dialect_code
      *
-     * @param string $dialect_code Valid dialect codes are:  CA - Canada GB - Great Britain US - United States 97  Not Applicable
+     * @param string $dialect_code Valid dialect codes are: - CA - Canada - GB - Great Britain - US - United States - 97 – Not Applicable
      *
      * @return $this
      */

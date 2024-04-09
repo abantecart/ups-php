@@ -224,7 +224,7 @@ class CN22ContentWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Required if weight is provided, valid values are lbs. and ozs.
+     * @param string $code Required if weight is provided, valid values are lbs. and ozs.  Required if weight is provided.
      *
      * @return $this
      */

@@ -78,156 +78,156 @@ class PackageChemicalRecordTest extends TestCase
     }
 
     /**
-     * Test attribute "chemical_record_reportable_quantity"
+     * Test attribute "reportable_quantity"
      */
-    public function testPropertyChemicalRecordReportableQuantity()
+    public function testPropertyReportableQuantity()
     {
     }
 
     /**
-     * Test attribute "chemical_record_class_division_number"
+     * Test attribute "class_division_number"
      */
-    public function testPropertyChemicalRecordClassDivisionNumber()
+    public function testPropertyClassDivisionNumber()
     {
     }
 
     /**
-     * Test attribute "chemical_record_sub_risk_class"
+     * Test attribute "sub_risk_class"
      */
-    public function testPropertyChemicalRecordSubRiskClass()
+    public function testPropertySubRiskClass()
     {
     }
 
     /**
-     * Test attribute "chemical_record_id_number"
+     * Test attribute "id_number"
      */
-    public function testPropertyChemicalRecordIdNumber()
+    public function testPropertyIdNumber()
     {
     }
 
     /**
-     * Test attribute "chemical_record_packaging_group_type"
+     * Test attribute "packaging_group_type"
      */
-    public function testPropertyChemicalRecordPackagingGroupType()
+    public function testPropertyPackagingGroupType()
     {
     }
 
     /**
-     * Test attribute "chemical_record_quantity"
+     * Test attribute "quantity"
      */
-    public function testPropertyChemicalRecordQuantity()
+    public function testPropertyQuantity()
     {
     }
 
     /**
-     * Test attribute "chemical_record_uom"
+     * Test attribute "uom"
      */
-    public function testPropertyChemicalRecordUom()
+    public function testPropertyUom()
     {
     }
 
     /**
-     * Test attribute "chemical_record_packaging_instruction_code"
+     * Test attribute "packaging_instruction_code"
      */
-    public function testPropertyChemicalRecordPackagingInstructionCode()
+    public function testPropertyPackagingInstructionCode()
     {
     }
 
     /**
-     * Test attribute "chemical_record_emergency_phone"
+     * Test attribute "emergency_phone"
      */
-    public function testPropertyChemicalRecordEmergencyPhone()
+    public function testPropertyEmergencyPhone()
     {
     }
 
     /**
-     * Test attribute "chemical_record_emergency_contact"
+     * Test attribute "emergency_contact"
      */
-    public function testPropertyChemicalRecordEmergencyContact()
+    public function testPropertyEmergencyContact()
     {
     }
 
     /**
-     * Test attribute "chemical_record_proper_shipping_name"
+     * Test attribute "proper_shipping_name"
      */
-    public function testPropertyChemicalRecordProperShippingName()
+    public function testPropertyProperShippingName()
     {
     }
 
     /**
-     * Test attribute "chemical_record_technical_name"
+     * Test attribute "technical_name"
      */
-    public function testPropertyChemicalRecordTechnicalName()
+    public function testPropertyTechnicalName()
     {
     }
 
     /**
-     * Test attribute "chemical_record_additional_description"
+     * Test attribute "additional_description"
      */
-    public function testPropertyChemicalRecordAdditionalDescription()
+    public function testPropertyAdditionalDescription()
     {
     }
 
     /**
-     * Test attribute "chemical_record_packaging_type"
+     * Test attribute "packaging_type"
      */
-    public function testPropertyChemicalRecordPackagingType()
+    public function testPropertyPackagingType()
     {
     }
 
     /**
-     * Test attribute "chemical_record_hazard_label_required"
+     * Test attribute "hazard_label_required"
      */
-    public function testPropertyChemicalRecordHazardLabelRequired()
+    public function testPropertyHazardLabelRequired()
     {
     }
 
     /**
-     * Test attribute "chemical_record_packaging_type_quantity"
+     * Test attribute "packaging_type_quantity"
      */
-    public function testPropertyChemicalRecordPackagingTypeQuantity()
+    public function testPropertyPackagingTypeQuantity()
     {
     }
 
     /**
-     * Test attribute "chemical_record_commodity_regulated_level_code"
+     * Test attribute "commodity_regulated_level_code"
      */
-    public function testPropertyChemicalRecordCommodityRegulatedLevelCode()
+    public function testPropertyCommodityRegulatedLevelCode()
     {
     }
 
     /**
-     * Test attribute "chemical_record_transport_category"
+     * Test attribute "transport_category"
      */
-    public function testPropertyChemicalRecordTransportCategory()
+    public function testPropertyTransportCategory()
     {
     }
 
     /**
-     * Test attribute "chemical_record_tunnel_restriction_code"
+     * Test attribute "tunnel_restriction_code"
      */
-    public function testPropertyChemicalRecordTunnelRestrictionCode()
+    public function testPropertyTunnelRestrictionCode()
     {
     }
 
     /**
-     * Test attribute "chemical_record_q_value"
+     * Test attribute "q_value"
      */
-    public function testPropertyChemicalRecordQValue()
+    public function testPropertyQValue()
     {
     }
 
     /**
-     * Test attribute "chemical_record_over_packed_indicator"
+     * Test attribute "over_packed_indicator"
      */
-    public function testPropertyChemicalRecordOverPackedIndicator()
+    public function testPropertyOverPackedIndicator()
     {
     }
 
     /**
-     * Test attribute "chemical_record_all_packed_in_one_indicator"
+     * Test attribute "all_packed_in_one_indicator"
      */
-    public function testPropertyChemicalRecordAllPackedInOneIndicator()
+    public function testPropertyAllPackedInOneIndicator()
     {
     }
 }

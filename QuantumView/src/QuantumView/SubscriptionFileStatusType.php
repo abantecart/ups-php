@@ -227,7 +227,7 @@ class SubscriptionFileStatusType implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Status types of subscription file. Valid values: R � Read, U - Unread
+     * @param string $code Status types of subscription file. Valid values: - R – Read - U - Unread
      *
      * @return $this
      */

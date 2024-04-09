@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * DimWeightUnitOfMeasurement Class Doc Comment
  *
  * @category Class
- * @description UnitOfMeasurement Container.  N/A
+ * @description UnitOfMeasurement Container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -227,7 +227,7 @@ class DimWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The code associated with the unit of measure for the billable weight of a package.
+     * @param string $code Code representing the unit of measure associated with the package weight.  Valid values: - LBS - Pounds - KGS - Kilograms.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class DimWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description The Description for the Unit Of Measurement.
+     * @param string $description Text description of the code representing the unit of measure associated with the package weight.  Length and value are not validated.
      *
      * @return $this
      */

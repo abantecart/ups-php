@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * ShippingLabelImageFormat Class Doc Comment
  *
  * @category Class
- * @description The container image format.   Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description The container image format.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -224,7 +224,7 @@ class ShippingLabelImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Label image code that the labels are generated. Valid values: EPL = EPL2 SPL = SPL ZPL = ZPL GIF = gif images PNG = PNG images. Only EPL, SPL, ZPL and GIF are currently supported. For multi piece COD shipments, the label image format for the first package will always be a GIF for any form of label requested. Applicable only for ShipmentResponse and ShipAcceptResponse.
+     * @param string $code Label image code that the labels are generated. Valid values: EPL = EPL2 SPL = SPL ZPL = ZPL GIF = gif images PNG = PNG images. Only EPL, SPL, ZPL and GIF are currently supported. For multi piece COD shipments, the label image format for the first package will always be a GIF for any form of label requested.
      *
      * @return $this
      */

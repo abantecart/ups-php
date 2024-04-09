@@ -317,7 +317,7 @@ class PickupCreationRequestPickupPiece implements ModelInterface, ArrayAccess
     /**
      * Sets container_code
      *
-     * @param string $container_code Container type.  Valid values: 01 = PACKAGE 02 = UPS LETTER 03 = PALLET Note: 03 is used for only WWEF services
+     * @param string $container_code Container type. Valid values: - 01 = PACKAGE - 02 = UPS LETTER - 03 = PALLET  Note: 03 is used for only WWEF services
      *
      * @return $this
      */

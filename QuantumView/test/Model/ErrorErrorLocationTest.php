@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ErrorErrorLocationTest Class Doc Comment
  *
  * @category    Class
- * @description Identifies the element in error.
+ * @description ErrorErrorLocation
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

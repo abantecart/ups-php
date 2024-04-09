@@ -248,7 +248,7 @@ class ShipmentServiceOptionsDeliveryConfirmation implements ModelInterface, Arra
     /**
      * Sets dcis_number
      *
-     * @param string $dcis_number Delivery Confirmation Control number associated with the delivery confirmation for the package.  Valid for forward shipments only.
+     * @param string $dcis_number DCIS Number.
      *
      * @return $this
      */

@@ -58,7 +58,7 @@ class PickupRateResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\Pickup\Pickup\ResponseResponseStatus',
-        'alert' => '\UPS\Pickup\Pickup\ResponseAlert',
+        'alert' => 'OneOfPickupRateResponseResponseAlert',
         'transaction_reference' => '\UPS\Pickup\Pickup\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class PickupRateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return \UPS\Pickup\Pickup\ResponseAlert
+     * @return OneOfPickupRateResponseResponseAlert
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class PickupRateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param \UPS\Pickup\Pickup\ResponseAlert $alert alert
+     * @param OneOfPickupRateResponseResponseAlert $alert alert
      *
      * @return $this
      */

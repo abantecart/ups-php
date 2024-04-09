@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * AddressArtifactFormatAddressExtendedInformation Class Doc Comment
  *
  * @category Class
- * @description Container tag for additional address information where package is delivered.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

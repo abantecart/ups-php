@@ -248,7 +248,7 @@ class RatedShipmentService implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Optional. Description of service. Example, UPS Next Day Air, UPS Ground etc, as referenced by the Service Code.
+     * @param string $description The UPS service Description.
      *
      * @return $this
      */

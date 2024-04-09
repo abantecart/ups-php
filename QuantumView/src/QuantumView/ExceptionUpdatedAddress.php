@@ -63,7 +63,7 @@ class ExceptionUpdatedAddress implements ModelInterface, ArrayAccess
         'street_name' => 'string',
         'street_type' => 'string',
         'street_suffix' => 'string',
-        'address_extended_information' => 'OneOfExceptionUpdatedAddressAddressExtendedInformation',
+        'address_extended_information' => '\UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[]',
         'political_division3' => 'string',
         'political_division2' => 'string',
         'political_division1' => 'string',
@@ -415,7 +415,7 @@ class ExceptionUpdatedAddress implements ModelInterface, ArrayAccess
     /**
      * Gets address_extended_information
      *
-     * @return OneOfExceptionUpdatedAddressAddressExtendedInformation
+     * @return \UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[]
      */
     public function getAddressExtendedInformation()
     {
@@ -425,7 +425,7 @@ class ExceptionUpdatedAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_extended_information
      *
-     * @param OneOfExceptionUpdatedAddressAddressExtendedInformation $address_extended_information address_extended_information
+     * @param \UPS\QuantumView\QuantumView\UpdatedAddressAddressExtendedInformation[] $address_extended_information Container for information about updated shipping address. It will be returned if there is any update due to exception.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

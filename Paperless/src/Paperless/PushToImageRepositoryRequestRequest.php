@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * PushToImageRepositoryRequestRequest Class Doc Comment
  *
  * @category Class
- * @description Contains Paperless Document API PushToImageRepository request criteria components.  N/A
+ * @description Contains Paperless Document API PushToImageRepository request criteria components.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -227,7 +227,7 @@ class PushToImageRepositoryRequestRequest implements ModelInterface, ArrayAccess
     /**
      * Sets request_option
      *
-     * @param string $request_option Enables the user to specify optional processing. Currently, there is no optional process in Paperless Document API.  N/A
+     * @param string $request_option Enables the user to specify optional processing. Currently, there is no optional process in Paperless Document API.
      *
      * @return $this
      */

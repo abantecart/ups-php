@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * NegotiatedChargesItemizedChargesTest Class Doc Comment
  *
  * @category    Class
- * @description Negotiated Itemized Accessorial and Sur Charges.  These charges would be returned only when subversion is greater than or equal to 1607.
+ * @description NegotiatedChargesItemizedCharges
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

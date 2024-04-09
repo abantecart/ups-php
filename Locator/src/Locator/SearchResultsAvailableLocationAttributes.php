@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * SearchResultsAvailableLocationAttributes Class Doc Comment
  *
  * @category Class
- * @description This container contains the information about the currently existing Retail Locations or Additional Services or Program types.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentShipmentIndicationTypeTest Class Doc Comment
  *
  * @category    Class
- * @description Container for Shipment Indication Type.  Required to indicate whether shipment is \&quot;Hold For Pickup At UPS Access Point\&quot; for use by approved shippers to identify a UPS Access Point location as an alternate delivery option during shipment preparation or UPS Access Point Delivery, ship parcels directly to a UPS Access Point location for collection by the receiver.
+ * @description Container for Shipment Indication Type.  Required to indicate whether shipment is \&quot;Hold For Pickup At UPS Access Point\&quot; for use by approved shippers to identify a UPS Access Point location as an alternate delivery option during shipment preparation or \&quot;UPS Access Point™ Delivery\&quot;, ship parcels directly to a UPS Access Point location for collection by the receiver.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

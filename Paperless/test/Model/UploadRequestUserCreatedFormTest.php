@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * UploadRequestUserCreatedFormTest Class Doc Comment
  *
  * @category    Class
- * @description The container for User Created Form. The container holds the file. Total number of allowed files per shipment is 13.  N/A
+ * @description The container for User Created Form. The container holds the file. Total number of allowed files per shipment is 13.
  * @package     UPS\Paperless
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

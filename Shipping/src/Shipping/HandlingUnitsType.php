@@ -224,7 +224,7 @@ class HandlingUnitsType implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The code associated with Handling Unit Type.  Valid values: SKD = Skid CBY = Carboy  PLT = Pallet TOT = Totes  LOO = Loose OTH = Other
+     * @param string $code Handling Unit Code for Density based rating.  Valid values: - SKD = Skid - CBY = Carboy - PLT = Pallet - TOT = Totes - LOO = Loose - OTH = Other
      *
      * @return $this
      */

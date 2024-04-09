@@ -392,7 +392,7 @@ class CandidateAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division1
      *
-     * @param string $political_division1 State/Province.  Returned if the location is within a State/Province/Territory.  For International: returned if user enters valid Country or Territory Code, and City/postal code and it has a match.  For Domestic addresses, the value must be a valid 2-character value (per US Mail standards).  For International the full State or Province name will be returned.
+     * @param string $political_division1 State/Province.  Returned if the location is within a State/Province/Territory. For International: returned if user enters valid Country or Territory Code, and City/postal code and it has a match.  For Domestic addresses, the value must be a valid 2-character value (per US Mail standards).  For International the full State or Province name will be returned.
      *
      * @return $this
      */

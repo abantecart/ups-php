@@ -58,7 +58,7 @@ class PackageServiceOptionsNotification implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'notification_code' => 'string',
-        'e_mail' => '\UPS\Shipping\Shipping\NotificationEMail'
+        'e_mail' => '\UPS\Shipping\Shipping\PackageServiceOptionsNotificationEMail'
     ];
 
     /**
@@ -241,7 +241,7 @@ class PackageServiceOptionsNotification implements ModelInterface, ArrayAccess
     /**
      * Gets e_mail
      *
-     * @return \UPS\Shipping\Shipping\NotificationEMail
+     * @return \UPS\Shipping\Shipping\PackageServiceOptionsNotificationEMail
      */
     public function getEMail()
     {
@@ -251,7 +251,7 @@ class PackageServiceOptionsNotification implements ModelInterface, ArrayAccess
     /**
      * Sets e_mail
      *
-     * @param \UPS\Shipping\Shipping\NotificationEMail $e_mail e_mail
+     * @param \UPS\Shipping\Shipping\PackageServiceOptionsNotificationEMail $e_mail e_mail
      *
      * @return $this
      */

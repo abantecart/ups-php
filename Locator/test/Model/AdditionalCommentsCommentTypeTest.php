@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * AdditionalCommentsCommentTypeTest Class Doc Comment
  *
  * @category    Class
- * @description Container for CommentType Code and Text.
+ * @description AdditionalCommentsCommentType
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

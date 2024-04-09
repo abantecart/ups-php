@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipToAddressTest Class Doc Comment
  *
  * @category    Class
- * @description Address Container.  N/A
+ * @description Address Container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

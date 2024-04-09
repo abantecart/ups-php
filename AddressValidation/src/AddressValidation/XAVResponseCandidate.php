@@ -35,7 +35,6 @@ use \UPS\AddressValidation\ObjectSerializer;
  * XAVResponseCandidate Class Doc Comment
  *
  * @category Class
- * @description Candidate Container.
  * @package  UPS\AddressValidation
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -58,7 +57,7 @@ class XAVResponseCandidate implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'address_classification' => '\UPS\AddressValidation\AddressValidation\CandidateAddressClassification',
-        'address_key_format' => 'OneOfXAVResponseCandidateAddressKeyFormat'
+        'address_key_format' => '\UPS\AddressValidation\AddressValidation\CandidateAddressKeyFormat'
     ];
 
     /**
@@ -238,7 +237,7 @@ class XAVResponseCandidate implements ModelInterface, ArrayAccess
     /**
      * Gets address_key_format
      *
-     * @return OneOfXAVResponseCandidateAddressKeyFormat
+     * @return \UPS\AddressValidation\AddressValidation\CandidateAddressKeyFormat
      */
     public function getAddressKeyFormat()
     {
@@ -248,7 +247,7 @@ class XAVResponseCandidate implements ModelInterface, ArrayAccess
     /**
      * Sets address_key_format
      *
-     * @param OneOfXAVResponseCandidateAddressKeyFormat $address_key_format address_key_format
+     * @param \UPS\AddressValidation\AddressValidation\CandidateAddressKeyFormat $address_key_format address_key_format
      *
      * @return $this
      */

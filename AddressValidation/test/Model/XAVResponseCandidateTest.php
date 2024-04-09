@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * XAVResponseCandidateTest Class Doc Comment
  *
  * @category    Class
- * @description Candidate Container.
+ * @description XAVResponseCandidate
  * @package     UPS\AddressValidation
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

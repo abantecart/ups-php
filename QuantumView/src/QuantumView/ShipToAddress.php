@@ -281,7 +281,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line1
      *
-     * @param string $address_line1 Address Line 1 of the UPS Access Point.
+     * @param string $address_line1 Address Line 1 of the Consignee.
      *
      * @return $this
      */
@@ -305,7 +305,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line2
      *
-     * @param string $address_line2 Address Line 2 of the UPS Access Point. Usually room/floor information.
+     * @param string $address_line2 Address Line 2 of the Consignee.
      *
      * @return $this
      */
@@ -329,7 +329,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line3
      *
-     * @param string $address_line3 Address Line 3 of the UPS Access Point. Usually department information.
+     * @param string $address_line3 Address Line 3 of the Consignee.
      *
      * @return $this
      */
@@ -353,7 +353,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city UPS Access Point City.
+     * @param string $city Consignee's City.
      *
      * @return $this
      */
@@ -377,7 +377,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code UPS Access Point's state or province code. Must be valid US state. If the UPS Access Point country or territory is US or CA a two character code is required, otherwise, the StateProvinceCode is optional.
+     * @param string $state_province_code Consignee's state or province code. Must be valid US state. If the consignee's country or territory  is US or CA a two character code is required. Otherwise, the StateProvinceCode is optional.
      *
      * @return $this
      */
@@ -401,7 +401,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code UPS Access Point's postal code. If the address is US then 5 or 9 digits are required. CA addresses must provide a 6 character postal code that has the format of A#A#A#, where A is an alphabetic character and # is numeric digit. Otherwise, 1 to 16 alphanumeric characters are allowed.
+     * @param string $postal_code Consignee's postal code. If the address is US then 5 or 9 digits are required. CA addresses must provide a 6 character postal code that has the format of A#A#A#, where A is a alphabetic character and # is numeric digit. Otherwise, 1 to 9 alphanumeric characters are allowed.
      *
      * @return $this
      */
@@ -425,7 +425,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code UPS Access Point's country or territory code. Valid values: CA,MX, PR, US, AT, BE, DE, DK, ES, FI, FR, GB, IE, IT, NL, PT, SE, MC, and VA
+     * @param string $country_code Consignee's country or territory  code.  Valid values: CA,MX, PR, US, AT, BE, DE, DK, ES, FI, FR, GB, IE, IT, NL, PT, SE, MC and VA
      *
      * @return $this
      */

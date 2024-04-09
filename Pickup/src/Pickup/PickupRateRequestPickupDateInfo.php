@@ -236,7 +236,7 @@ class PickupRateRequestPickupDateInfo implements ModelInterface, ArrayAccess
     /**
      * Sets close_time
      *
-     * @param string $close_time The latest local close time. Format: HHmm Hour: 0-23 Minute: 0-59
+     * @param string $close_time The latest local close time. Format: HHmm - Hour: 0-23 - Minute: 0-59
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class PickupRateRequestPickupDateInfo implements ModelInterface, ArrayAccess
     /**
      * Sets ready_time
      *
-     * @param string $ready_time The earliest local ready Time. Format: HHmm Hour: 0-23 Minute: 0-59
+     * @param string $ready_time The earliest local ready Time. Format: HHmm - Hour: 0-23 - Minute: 0-59
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class PickupRateRequestPickupDateInfo implements ModelInterface, ArrayAccess
     /**
      * Sets pickup_date
      *
-     * @param string $pickup_date The specific local pickup date. Format: yyyyMMdd yyyy = Year Applicable MM = 01�12 dd = 01�31
+     * @param string $pickup_date The specific local pickup date. Format: yyyyMMdd - yyyy = Year Applicable - MM = 01-12 - dd = 01-31
      *
      * @return $this
      */

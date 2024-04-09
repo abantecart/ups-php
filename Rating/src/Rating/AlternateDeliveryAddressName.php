@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * AlternateDeliveryAddressName Class Doc Comment
  *
  * @category Class
- * @description UPS Access Point location name.
+ * @description UPS Access Point™ location name.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

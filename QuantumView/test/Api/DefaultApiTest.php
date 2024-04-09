@@ -80,4 +80,14 @@ class DefaultApiTest extends TestCase
     public function testQuantumView()
     {
     }
+
+    /**
+     * Test case for quantumView_0
+     *
+     * Quantum View.
+     *
+     */
+    public function testQuantumView0()
+    {
+    }
 }

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * BusinessClassificationListBusinessClassificationTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold Business classification of UPS access point.
+ * @description BusinessClassificationListBusinessClassification
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

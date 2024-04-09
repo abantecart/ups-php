@@ -35,7 +35,7 @@ use \UPS\Locator\ObjectSerializer;
  * OptionCodeTransportationPickUpSchedule Class Doc Comment
  *
  * @category Class
- * @description Container to hold information regarding pickup details for each day of the week.
+ * @description TransportationPickUpSchedule container contains details of Latest Drop Off time/Pickup Time for the transportation services (Ground/Air/Standard/Express/International) of the location.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,7 +57,7 @@ class OptionCodeTransportationPickUpSchedule implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pick_up' => 'OneOfOptionCodeTransportationPickUpSchedulePickUp'
+        'pick_up' => '\UPS\Locator\Locator\TransportationPickUpSchedulePickUp[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class OptionCodeTransportationPickUpSchedule implements ModelInterface, ArrayAcc
     /**
      * Gets pick_up
      *
-     * @return OneOfOptionCodeTransportationPickUpSchedulePickUp
+     * @return \UPS\Locator\Locator\TransportationPickUpSchedulePickUp[]
      */
     public function getPickUp()
     {
@@ -218,7 +218,7 @@ class OptionCodeTransportationPickUpSchedule implements ModelInterface, ArrayAcc
     /**
      * Sets pick_up
      *
-     * @param OneOfOptionCodeTransportationPickUpSchedulePickUp $pick_up pick_up
+     * @param \UPS\Locator\Locator\TransportationPickUpSchedulePickUp[] $pick_up PickUp container contains details of day of week and corresponding pickup times for that service.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

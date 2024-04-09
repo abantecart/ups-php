@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ResponseAlertDetailTest Class Doc Comment
  *
  * @category    Class
- * @description Alert Detail Container.
+ * @description ResponseAlertDetail
  * @package     UPS\DangerousGoods
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

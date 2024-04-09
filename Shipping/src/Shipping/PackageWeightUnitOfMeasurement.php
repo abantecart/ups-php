@@ -224,7 +224,7 @@ class PackageWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Package weight unit of measurement code. Valid values: LBS = Pounds KGS = Kilograms OZS = Ounces Unit of Measurement OZS is the only valid UOM for some of the Mail Innovations Forward and Worldwide Economy DDU Shipments. Please refer to Appendix for more details regarding the valid combination of Mail Innovation Forward Shipment services, Package Type and Unit of Measurement.
+     * @param string $code Package weight unit of measurement code.  Valid values: - LBS = Pounds - KGS = Kilograms - OZS = Ounces  Unit of Measurement \"OZS\" is the only valid UOM for some of the Mail Innovations Forward and Worldwide Economy DDU Shipments.  Please refer to Appendix for more details regarding the valid combination of Mail Innovation Forward Shipment services, Package Type and Unit of Measurement.
      *
      * @return $this
      */

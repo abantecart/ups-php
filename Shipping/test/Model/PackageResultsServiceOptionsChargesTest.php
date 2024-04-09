@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageResultsServiceOptionsChargesTest Class Doc Comment
  *
  * @category    Class
- * @description Shipment charges info. Shipment charges are only guaranteed to be returned for shipments whose origin country or territory is US or Puerto Rico. Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Shipment charges info. Shipment charges are only guaranteed to be returned for shipments whose origin country or territory is US or Puerto Rico.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

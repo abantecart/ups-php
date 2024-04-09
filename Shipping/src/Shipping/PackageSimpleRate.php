@@ -224,7 +224,7 @@ class PackageSimpleRate implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Simple Rate Package Size Valid values: XS -  Extra Small S -  Small M -  Medium L - Large XL - Extra Large
+     * @param string $code SimpleRate code.  Valid Values - XS =  Extra Small - S =  Small - M = Medium - L = Large - XL = Extra Large
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class PackageSimpleRate implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Simple Rate Package Size Description
+     * @param string $description Simple Rate description of the code above.  Currently ignored if provided in the Request. Length is not validated.
      *
      * @return $this
      */

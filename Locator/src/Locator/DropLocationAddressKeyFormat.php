@@ -320,7 +320,7 @@ class DropLocationAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division3
      *
-     * @param string $political_division3 Subdivision within a City.� e.g., a Barrio.
+     * @param string $political_division3 Subdivision within a City. e.g., a Barrio.
      *
      * @return $this
      */

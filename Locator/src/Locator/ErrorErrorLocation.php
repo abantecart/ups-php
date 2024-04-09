@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * ErrorErrorLocation Class Doc Comment
  *
  * @category Class
- * @description Identifies the element in error.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

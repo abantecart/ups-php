@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * OriginPackageReferenceNumberTest Class Doc Comment
  *
  * @category    Class
- * @description Package-level reference number.
+ * @description OriginPackageReferenceNumber
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

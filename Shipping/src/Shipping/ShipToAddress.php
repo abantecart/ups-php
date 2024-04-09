@@ -254,7 +254,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Address Line of the consignee.
+     * @param string[] $address_line Address Line of the consignee. Only first two Address Lines will be printed on the label.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code Consignee's state or province code. Required for US or Canada.
+     * @param string $state_province_code Consignee's state or province code. Required for US or Canada.  If destination is US or CA, then the value must be a valid US State/ Canadian Province code.  If the country or territory is Ireland, the StateProvinceCode will contain the county.
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Consignee's postal code.
+     * @param string $postal_code Consignee's postal code.  If the ShipTo country or territory is US or Puerto Rico, 5 or 9 digits are required.  If the ShipTo country or territory is CA, then the postal code is required and must be 6 alphanumeric characters whose format is A#A#A# where A is an uppercase letter and # is a digit.  Otherwise optional. For all other countries or territories the postal code is optional and must be no more than 9 alphanumeric characters long.
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Consignee's country or territory code.
+     * @param string $country_code Consignee's country or territory code.  Must be a valid UPS Billing country or territory code. For Return Shipment the country or territory code must meet the following conditions: - At least two of the following country or territory codes are the same: ShipTo, ShipFrom, and Shipper. - None of the following country or territory codes are the same and are a member of the EU: ShipTo, ShipFrom, and Shipper. - If any of the two following country or territory codes: ShipTo/ ShipFrom/ Shipper are members in EU otherwise check if the shipper has Third country or territory Contract.
      *
      * @return $this
      */

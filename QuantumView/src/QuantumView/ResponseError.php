@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * ResponseError Class Doc Comment
  *
  * @category Class
- * @description If an error is encountered during the interchange, the Response contains an error.� If the error is present, then the ErrorSeverity and ErrorCodes are required.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -61,8 +60,8 @@ class ResponseError implements ModelInterface, ArrayAccess
         'error_code' => 'string',
         'error_description' => 'string',
         'minimum_retry_seconds' => 'string',
-        'error_location' => 'OneOfResponseErrorErrorLocation',
-        'error_digest' => 'OneOfResponseErrorErrorDigest'
+        'error_location' => '\UPS\QuantumView\QuantumView\ErrorErrorLocation[]',
+        'error_digest' => 'string[]'
     ];
 
     /**
@@ -248,7 +247,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_severity
      *
-     * @param string $error_severity Describes the severity of the error.�� Required if the error is present.
+     * @param string $error_severity Describes the severity of the error. Required if the error is present.
      *
      * @return $this
      */
@@ -272,7 +271,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_code
      *
-     * @param string $error_code A numeric value that describes the error.� Each tool defines a range of error codes. Required if the error is present.
+     * @param string $error_code A numeric value that describes the error. Each tool defines a range of error codes. Required if the error is present.
      *
      * @return $this
      */
@@ -320,7 +319,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets minimum_retry_seconds
      *
-     * @param string $minimum_retry_seconds Number of seconds to wait until retry.� This field is populated on special conditions of the Transient Error only, as defined by the service.� A number between 1 and 86400 (24 hours)
+     * @param string $minimum_retry_seconds Number of seconds to wait until retry. This field is populated on special conditions of the Transient Error only, as defined by the service. A number between 1 and 86400 (24 hours)
      *
      * @return $this
      */
@@ -334,7 +333,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Gets error_location
      *
-     * @return OneOfResponseErrorErrorLocation
+     * @return \UPS\QuantumView\QuantumView\ErrorErrorLocation[]
      */
     public function getErrorLocation()
     {
@@ -344,7 +343,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_location
      *
-     * @param OneOfResponseErrorErrorLocation $error_location error_location
+     * @param \UPS\QuantumView\QuantumView\ErrorErrorLocation[] $error_location Identifies the element in error.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -358,7 +357,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Gets error_digest
      *
-     * @return OneOfResponseErrorErrorDigest
+     * @return string[]
      */
     public function getErrorDigest()
     {
@@ -368,7 +367,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_digest
      *
-     * @param OneOfResponseErrorErrorDigest $error_digest The contents of the element in error.
+     * @param string[] $error_digest The contents of the element in error.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

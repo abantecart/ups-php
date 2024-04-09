@@ -254,7 +254,7 @@ class SoldToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line SoldTo location's street address.
+     * @param string[] $address_line SoldTo location's street address.  Applies to NAFTA CO.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class SoldToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code SoldTo location's state or province code.
+     * @param string $state_province_code SoldTo location's state or province code.  Required for certain countries or territories.
      *
      * @return $this
      */

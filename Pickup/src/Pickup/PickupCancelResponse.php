@@ -257,7 +257,7 @@ class PickupCancelResponse implements ModelInterface, ArrayAccess
     /**
      * Sets pickup_type
      *
-     * @param string $pickup_type The type of pickup that has been cancelled. 01 = On-Call Pickup
+     * @param string $pickup_type The type of pickup that has been cancelled. - 01 = On-Call Pickup
      *
      * @return $this
      */

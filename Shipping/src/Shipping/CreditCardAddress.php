@@ -344,7 +344,7 @@ class CreditCardAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Credit card billing address country or territory code.
+     * @param string $country_code Credit card billing address country or territory code. Must be a valid UPS Billing country or territory code.
      *
      * @return $this
      */

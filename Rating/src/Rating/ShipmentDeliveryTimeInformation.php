@@ -230,7 +230,7 @@ class ShipmentDeliveryTimeInformation implements ModelInterface, ArrayAccess
     /**
      * Sets package_bill_type
      *
-     * @param string $package_bill_type Valid values are:02 - Document only 03 - Non-Document04 - WWEF Pallet07 - Domestic PalletIf 04 is included, Worldwide Express Freight and UPS Worldwide Express Freight Midday services (if applicable) will be included in the response.
+     * @param string $package_bill_type Valid values are: - 02 - Document only - 03 - Non-Document - 04 - WWEF Pallet - 07 - Domestic Pallet  If 04 is included, Worldwide Express Freight and UPS Worldwide Express Freight Midday services (if applicable) will be included in the response.
      *
      * @return $this
      */

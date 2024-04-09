@@ -449,7 +449,7 @@ class ShipmentServiceOptionsInternationalForms implements ModelInterface, ArrayA
     /**
      * Sets form_type
      *
-     * @param string[] $form_type Indicates the name of the International Form requested. Valid values:   01 - Invoice 03 - CO 04 - NAFTA CO 05 - Partial Invoice 06 - Packinglist 07 - Customer Generated Forms 08 - Air Freight Packing List 09 - CN22 Form 10 - UPS Premium Care Form 11 - EEI For shipment with return service, 01, 05 or 10 are the only valid values.  Note: 01 and 05 are mutually exclusive and 05 are only valid for return shipments only.
+     * @param string[] $form_type Indicates the name of the International Form requested.  Valid values: - 01 - Invoice - 03 - CO - 04 - NAFTA CO - 05 - Partial Invoice - 06 - Packinglist - 07 - Customer Generated Forms - 08 – Air Freight Packing List - 09 - CN22 Form - 10 – UPS Premium Care Form - 11 - EEI  For shipment with return service, 05 or 10 are the only valid values.  Note: 01 and 05 are mutually exclusive and 05 are only valid for return shipments only.
      *
      * @return $this
      */
@@ -1001,7 +1001,7 @@ class ShipmentServiceOptionsInternationalForms implements ModelInterface, ArrayA
     /**
      * Sets exporting_carrier
      *
-     * @param string $exporting_carrier The name of the carrier that is exporting the shipment. The vessels flag number should also be entered, if the carrier is a vessel.  Applies to CO and EEI forms only. Required for CO and EEI forms.
+     * @param string $exporting_carrier The name of the carrier that is exporting the shipment. The vessels flag number should also be entered, if the carrier is a vessel.  If value is empty, it will be set to default value as 'UPS' for EEI forms.  Applies to CO and EEI forms only. Required for CO forms.
      *
      * @return $this
      */
@@ -1241,7 +1241,7 @@ class ShipmentServiceOptionsInternationalForms implements ModelInterface, ArrayA
     /**
      * Sets parties_to_transaction
      *
-     * @param string $parties_to_transaction Information about parties to transaction. Use Related, if the parties to the transaction are related. A related party is an export from a U.S. businessperson or business to a foreign business or from a U.S. business to a foreign person or business where the person has at least 10 percent of the voting shares of the business during the fiscal year. If unincorporated, then an equivalent interest in the business.  Applies to EEI forms only.   Valid values: R - Related, N - Non-related.
+     * @param string $parties_to_transaction Information about parties to transaction. Use Related, if the parties to the transaction are related. A related party is an export from a U.S. businessperson or business to a foreign business or from a U.S. business to a foreign person or business where the person has at least 10 percent of the voting shares of the business during the fiscal year. If unincorporated, then an equivalent interest in the business.  Applies to EEI forms only.  Valid values: - R - Related - N - Non-related.  Parties to transaction is required if EEIFilingOption Code is 3 and if valid UPSFiled POA Code present in request.  Default will be set to N - Non-related if invalid code present with length of one.
      *
      * @return $this
      */

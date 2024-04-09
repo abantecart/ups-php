@@ -227,7 +227,7 @@ class ResponseResponseStatus implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Identifies the success of the transaction.1 = Success
+     * @param string $code Identifies the success of the transaction. - 1=Success - 0=failed
      *
      * @return $this
      */

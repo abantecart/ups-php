@@ -485,7 +485,7 @@ class ManifestShipTo implements ModelInterface, ArrayAccess
     /**
      * Sets receiving_address_name
      *
-     * @param string $receiving_address_name Alias of the location where the package is received.
+     * @param string $receiving_address_name Name of the location where the package is received.
      *
      * @return $this
      */

@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * ServiceOfferingListServiceOffering Class Doc Comment
  *
  * @category Class
- * @description Container to hold the end point service offering code and description.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

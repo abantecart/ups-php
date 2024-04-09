@@ -35,7 +35,7 @@ use \UPS\Locator\ObjectSerializer;
  * PickUpPickUpDetails Class Doc Comment
  *
  * @category Class
- * @description Container to hold information regarding pickup time and pickup availability indicator.
+ * @description PickUpDetails container contains either pickup time or NoPickupIndicator. Either PickUpTime or NoPickupIndicator
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -224,7 +224,7 @@ class PickUpPickUpDetails implements ModelInterface, ArrayAccess
     /**
      * Sets pick_up_time
      *
-     * @param string $pick_up_time Time of pickup in military format (HHMM) e.g. 0930, 1700, 1845 etc. with exception for midnight. For midnight the time will be returned as 0.
+     * @param string $pick_up_time Pickup time of transportation service for a location in military format (HHMM) e.g. 0930, 1700, 1845 etc. with exception for midnight. For midnight the time will be returned as 0.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class PickUpPickUpDetails implements ModelInterface, ArrayAccess
     /**
      * Sets no_pick_up_indicator
      *
-     * @param string $no_pick_up_indicator Indicates whether or not there is a pickup time for the specified day of the week. Valid values:  True-there is a pickup time False-there is not a pickup time.
+     * @param string $no_pick_up_indicator Presence or Absence Indicator. If present, Indicates that there is no pickup time for the day.
      *
      * @return $this
      */

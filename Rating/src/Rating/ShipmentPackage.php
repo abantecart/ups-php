@@ -449,7 +449,7 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
     /**
      * Sets additional_handling_indicator
      *
-     * @param string $additional_handling_indicator A flag indicating if the packages require additional handling. True if AdditionalHandlingIndicator tag exists; false otherwise. Additional Handling indicator indicates it\"s a non-corrugated package.  Empty Tag.
+     * @param string $additional_handling_indicator A flag indicating if the packages require additional handling. True if AdditionalHandlingIndicator tag exists; false otherwise. Additional Handling indicator indicates it's a non-corrugated package.  Empty Tag.
      *
      * @return $this
      */

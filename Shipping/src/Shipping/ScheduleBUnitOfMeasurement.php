@@ -224,7 +224,7 @@ class ScheduleBUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The unit of measure indicated on the Export License. Enter an X if there is no unit of measure in the Schedule B Unit field.
+     * @param string $code The unit of measure indicated on the Export License. Enter an X if there is no unit of measure in the Schedule B Unit field.  Applies to EEI forms only. Required for the EEI form.  Refer to ScheduleB Unit of Measure Codes in the Appendix for valid values.
      *
      * @return $this
      */

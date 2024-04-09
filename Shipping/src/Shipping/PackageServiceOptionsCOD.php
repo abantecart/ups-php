@@ -58,7 +58,7 @@ class PackageServiceOptionsCOD implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'cod_funds_code' => 'string',
-        'cod_amount' => '\UPS\Shipping\Shipping\CODCODAmount'
+        'cod_amount' => '\UPS\Shipping\Shipping\PackageServiceOptionsCODCODAmount'
     ];
 
     /**
@@ -241,7 +241,7 @@ class PackageServiceOptionsCOD implements ModelInterface, ArrayAccess
     /**
      * Gets cod_amount
      *
-     * @return \UPS\Shipping\Shipping\CODCODAmount
+     * @return \UPS\Shipping\Shipping\PackageServiceOptionsCODCODAmount
      */
     public function getCodAmount()
     {
@@ -251,7 +251,7 @@ class PackageServiceOptionsCOD implements ModelInterface, ArrayAccess
     /**
      * Sets cod_amount
      *
-     * @param \UPS\Shipping\Shipping\CODCODAmount $cod_amount cod_amount
+     * @param \UPS\Shipping\Shipping\PackageServiceOptionsCODCODAmount $cod_amount cod_amount
      *
      * @return $this
      */

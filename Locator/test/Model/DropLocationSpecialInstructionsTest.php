@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * DropLocationSpecialInstructionsTest Class Doc Comment
  *
  * @category    Class
- * @description Walking directions.
+ * @description DropLocationSpecialInstructions
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

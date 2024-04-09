@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * RatedPackageItemizedChargesTest Class Doc Comment
  *
  * @category    Class
- * @description Itemized Charges are returned only when the subversion element is present and greater than or equal to &#x27;1607&#x27;.  These charges would be returned only when subversion is greater than or equal to 1607.
+ * @description RatedPackageItemizedCharges
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

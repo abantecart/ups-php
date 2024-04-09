@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * PushToImageRepositoryRequest Class Doc Comment
  *
  * @category Class
- * @description Paperless Document API request container for push to Image Repository.  N/A
+ * @description Paperless Document API request container for push to Image Repository.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -350,7 +350,7 @@ class PushToImageRepositoryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets forms_group_id
      *
-     * @param string $forms_group_id FormsGroupID would be required in Push Request if user needs to update uploaded DocumentID(s) in Forms History.  N/A
+     * @param string $forms_group_id FormsGroupID would be required in Push Request if user needs to update uploaded DocumentID(s) in Forms History.
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class PushToImageRepositoryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_identifier
      *
-     * @param string $shipment_identifier Shipment Identifier is required for this request.  N/A
+     * @param string $shipment_identifier Shipment Identifier is required for this request.
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class PushToImageRepositoryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_date_and_time
      *
-     * @param string $shipment_date_and_time The date and time of the processed shipment. Required only for small package shipments. The valid format is yyyy-MM-dd-HH.mm.ss  N/A
+     * @param string $shipment_date_and_time The date and time of the processed shipment. Required only for small package shipments. The valid format is yyyy-MM-dd-HH.mm.ss
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class PushToImageRepositoryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_type
      *
-     * @param string $shipment_type Valid values are: 1 = small package, 2 = freight.  N/A
+     * @param string $shipment_type Valid values are: 1 = small package, 2 = freight.
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class PushToImageRepositoryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets prq_confirmation_number
      *
-     * @param string $prq_confirmation_number PRQ Confirmation being specified by client. Required for freight shipments.  N/A
+     * @param string $prq_confirmation_number PRQ Confirmation being specified by client. Required for freight shipments.
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class PushToImageRepositoryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_number
      *
-     * @param string[] $tracking_number UPS Tracking Number associated with this shipment. Required only for small package shipment.  N/A
+     * @param string[] $tracking_number UPS Tracking Number associated with this shipment. Required only for small package shipment.
      *
      * @return $this
      */

@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * CODTurnInPageImage Class Doc Comment
  *
  * @category Class
- * @description The container of the image for COD Turn In Page.    Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description The container of the image for COD Turn In Page.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,7 +57,7 @@ class CODTurnInPageImage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'image_format' => '\UPS\Shipping\Shipping\ImageImageFormat',
+        'image_format' => '\UPS\Shipping\Shipping\CODTurnInPageImageImageFormat',
         'graphic_image' => 'string'
     ];
 
@@ -217,7 +217,7 @@ class CODTurnInPageImage implements ModelInterface, ArrayAccess
     /**
      * Gets image_format
      *
-     * @return \UPS\Shipping\Shipping\ImageImageFormat
+     * @return \UPS\Shipping\Shipping\CODTurnInPageImageImageFormat
      */
     public function getImageFormat()
     {
@@ -227,7 +227,7 @@ class CODTurnInPageImage implements ModelInterface, ArrayAccess
     /**
      * Sets image_format
      *
-     * @param \UPS\Shipping\Shipping\ImageImageFormat $image_format image_format
+     * @param \UPS\Shipping\Shipping\CODTurnInPageImageImageFormat $image_format image_format
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class CODTurnInPageImage implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image
      *
-     * @param string $graphic_image Base 64 Encoded PDF Image.
+     * @param string $graphic_image Base 64 encoded html browser image rendering software
      *
      * @return $this
      */

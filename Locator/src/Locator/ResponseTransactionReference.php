@@ -221,7 +221,7 @@ class ResponseTransactionReference implements ModelInterface, ArrayAccess
     /**
      * Sets customer_context
      *
-     * @param string $customer_context The client uses CustomerContext to synchronize request/response pairs. The client establishes CustomerContext, which can contain any information client want, as long as it is valid XML; it is echoed back by the server
+     * @param string $customer_context Customer provided data. If this data is present in the request, it is echoed back to the customer.
      *
      * @return $this
      */

@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * DropLocationPromotionInformation Class Doc Comment
  *
  * @category Class
- * @description Container to hold any promotion text for the location. Text will be displayed in English or the locale given in the request
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

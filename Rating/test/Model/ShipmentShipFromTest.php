@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentShipFromTest Class Doc Comment
  *
  * @category    Class
- * @description Ship From Container.  N/A
+ * @description Ship From Container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

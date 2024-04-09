@@ -257,7 +257,7 @@ class PickupCancelRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cancel_by
      *
-     * @param string $cancel_by Cancel pickup by Pickup Request Number (PRN). 01= Account Number                                             02 = PRN
+     * @param string $cancel_by Cancel pickup by Pickup Request Number (PRN). - 01= Account Number - 02 = PRN
      *
      * @return $this
      */

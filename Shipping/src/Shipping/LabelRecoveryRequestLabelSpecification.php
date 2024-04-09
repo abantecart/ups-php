@@ -58,8 +58,8 @@ class LabelRecoveryRequestLabelSpecification implements ModelInterface, ArrayAcc
       */
     protected static $swaggerTypes = [
         'http_user_agent' => 'string',
-        'label_image_format' => '\UPS\Shipping\Shipping\LabelSpecificationLabelImageFormat',
-        'label_stock_size' => '\UPS\Shipping\Shipping\LabelSpecificationLabelStockSize'
+        'label_image_format' => '\UPS\Shipping\Shipping\LabelRecoveryLabelSpecificationLabelImageFormat',
+        'label_stock_size' => '\UPS\Shipping\Shipping\LabelRecoveryLabelSpecificationLabelStockSize'
     ];
 
     /**
@@ -241,7 +241,7 @@ class LabelRecoveryRequestLabelSpecification implements ModelInterface, ArrayAcc
     /**
      * Gets label_image_format
      *
-     * @return \UPS\Shipping\Shipping\LabelSpecificationLabelImageFormat
+     * @return \UPS\Shipping\Shipping\LabelRecoveryLabelSpecificationLabelImageFormat
      */
     public function getLabelImageFormat()
     {
@@ -251,7 +251,7 @@ class LabelRecoveryRequestLabelSpecification implements ModelInterface, ArrayAcc
     /**
      * Sets label_image_format
      *
-     * @param \UPS\Shipping\Shipping\LabelSpecificationLabelImageFormat $label_image_format label_image_format
+     * @param \UPS\Shipping\Shipping\LabelRecoveryLabelSpecificationLabelImageFormat $label_image_format label_image_format
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class LabelRecoveryRequestLabelSpecification implements ModelInterface, ArrayAcc
     /**
      * Gets label_stock_size
      *
-     * @return \UPS\Shipping\Shipping\LabelSpecificationLabelStockSize
+     * @return \UPS\Shipping\Shipping\LabelRecoveryLabelSpecificationLabelStockSize
      */
     public function getLabelStockSize()
     {
@@ -275,7 +275,7 @@ class LabelRecoveryRequestLabelSpecification implements ModelInterface, ArrayAcc
     /**
      * Sets label_stock_size
      *
-     * @param \UPS\Shipping\Shipping\LabelSpecificationLabelStockSize $label_stock_size label_stock_size
+     * @param \UPS\Shipping\Shipping\LabelRecoveryLabelSpecificationLabelStockSize $label_stock_size label_stock_size
      *
      * @return $this
      */

@@ -80,4 +80,14 @@ class DefaultApiTest extends TestCase
     public function testAddressValidation()
     {
     }
+
+    /**
+     * Test case for deprecatedAddressValidation
+     *
+     * Address Validation.
+     *
+     */
+    public function testDeprecatedAddressValidation()
+    {
+    }
 }

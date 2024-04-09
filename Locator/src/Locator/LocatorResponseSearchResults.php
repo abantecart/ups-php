@@ -57,10 +57,10 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geocode_candidate' => 'OneOfLocatorResponseSearchResultsGeocodeCandidate',
-        'disclaimer' => 'OneOfLocatorResponseSearchResultsDisclaimer',
-        'drop_location' => '\UPS\Locator\Locator\SearchResultsDropLocation',
-        'available_location_attributes' => 'OneOfLocatorResponseSearchResultsAvailableLocationAttributes',
+        'geocode_candidate' => '\UPS\Locator\Locator\SearchResultsGeocodeCandidate[]',
+        'disclaimer' => 'string',
+        'drop_location' => '\UPS\Locator\Locator\SearchResultsDropLocation[]',
+        'available_location_attributes' => '\UPS\Locator\Locator\SearchResultsAvailableLocationAttributes[]',
         'active_available_access_point_indicator' => 'string'
     ];
 
@@ -229,7 +229,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets geocode_candidate
      *
-     * @return OneOfLocatorResponseSearchResultsGeocodeCandidate
+     * @return \UPS\Locator\Locator\SearchResultsGeocodeCandidate[]
      */
     public function getGeocodeCandidate()
     {
@@ -239,7 +239,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets geocode_candidate
      *
-     * @param OneOfLocatorResponseSearchResultsGeocodeCandidate $geocode_candidate geocode_candidate
+     * @param \UPS\Locator\Locator\SearchResultsGeocodeCandidate[] $geocode_candidate If the origin address provided in the location request document does not have a match, a list of candidate addresses, geocodes and optionally a landmark will be returned.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return OneOfLocatorResponseSearchResultsDisclaimer
+     * @return string
      */
     public function getDisclaimer()
     {
@@ -263,7 +263,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param OneOfLocatorResponseSearchResultsDisclaimer $disclaimer Disclaimer. In the event the user requested Ground and Air service types and the maximum UPS locations list size has not been met, the list of locations will continue with locations that provide either ground or air within the search radius.   The disclaimer will note this deviation from the requested search criteria. The disclaimer is also the location where the user will receive information regarding a one-time pickup option if the first location is greater than 20 miles from the origin.
+     * @param string $disclaimer Disclaimer. In the event the user requested Ground and Air service types and the maximum UPS locations list size has not been met, the list of locations will continue with locations that provide either ground or air within the search radius.   The disclaimer will note this deviation from the requested search criteria. The disclaimer is also the location where the user will receive information regarding a one-time pickup option if the first location is greater than 20 miles from the origin.
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets drop_location
      *
-     * @return \UPS\Locator\Locator\SearchResultsDropLocation
+     * @return \UPS\Locator\Locator\SearchResultsDropLocation[]
      */
     public function getDropLocation()
     {
@@ -287,7 +287,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets drop_location
      *
-     * @param \UPS\Locator\Locator\SearchResultsDropLocation $drop_location drop_location
+     * @param \UPS\Locator\Locator\SearchResultsDropLocation[] $drop_location When a location request is submitted with a valid origin address, UPS locations will be returned.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Gets available_location_attributes
      *
-     * @return OneOfLocatorResponseSearchResultsAvailableLocationAttributes
+     * @return \UPS\Locator\Locator\SearchResultsAvailableLocationAttributes[]
      */
     public function getAvailableLocationAttributes()
     {
@@ -311,7 +311,7 @@ class LocatorResponseSearchResults implements ModelInterface, ArrayAccess
     /**
      * Sets available_location_attributes
      *
-     * @param OneOfLocatorResponseSearchResultsAvailableLocationAttributes $available_location_attributes available_location_attributes
+     * @param \UPS\Locator\Locator\SearchResultsAvailableLocationAttributes[] $available_location_attributes This container contains the information about the currently existing Retail Locations or Additional Services or Program types.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

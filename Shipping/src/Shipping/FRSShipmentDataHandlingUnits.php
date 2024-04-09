@@ -35,7 +35,6 @@ use \UPS\Shipping\ObjectSerializer;
  * FRSShipmentDataHandlingUnits Class Doc Comment
  *
  * @category Class
- * @description Handling Unit for Density based rating container.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

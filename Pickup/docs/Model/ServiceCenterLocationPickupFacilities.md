@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **address** | [**\UPS\Pickup\Pickup\PickupFacilitiesAddress**](PickupFacilitiesAddress.md) |  | 
 **slic** | **string** | SLIC code for the UPS Pickup facility | 
 **type** | **string** | Freight or Package. | 
-**timezone** | **string** | Facility�s Timezone. Format: America/New_York Asia/Hong_Kong Europe/London | 
+**timezone** | **string** | Facility&#x27;s Timezone. Format: - America/New_York - Asia/Hong_Kong - Europe/London | 
 **phone** | **string** | Phone Number of the Pickup Facility | 
 **fax** | **string** | Pickup Facilities Fax Number | 
 **facility_time** | [**\UPS\Pickup\Pickup\PickupFacilitiesFacilityTime**](PickupFacilitiesFacilityTime.md) |  | [optional] 

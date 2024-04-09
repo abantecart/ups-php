@@ -125,4 +125,11 @@ class ContactsSoldToTest extends TestCase
     public function testPropertyEMailAddress()
     {
     }
+
+    /**
+     * Test attribute "account_number"
+     */
+    public function testPropertyAccountNumber()
+    {
+    }
 }

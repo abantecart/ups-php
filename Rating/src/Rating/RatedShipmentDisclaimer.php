@@ -35,7 +35,6 @@ use \UPS\Rating\ObjectSerializer;
  * RatedShipmentDisclaimer Class Doc Comment
  *
  * @category Class
- * @description Disclaimer is used to provide more information to the shipper regarding the processed shipment. It is used to notify the shipper about possible taxes and duties that might have been added or might apply to the shipment. Refer to the Appendix for various disclaimers. This field may be returned only if TaxInformationIndicator is present in the request.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

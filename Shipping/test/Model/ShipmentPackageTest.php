@@ -141,6 +141,20 @@ class ShipmentPackageTest extends TestCase
     }
 
     /**
+     * Test attribute "oversize_indicator"
+     */
+    public function testPropertyOversizeIndicator()
+    {
+    }
+
+    /**
+     * Test attribute "minimum_billable_weight_indicator"
+     */
+    public function testPropertyMinimumBillableWeightIndicator()
+    {
+    }
+
+    /**
      * Test attribute "reference_number"
      */
     public function testPropertyReferenceNumber()

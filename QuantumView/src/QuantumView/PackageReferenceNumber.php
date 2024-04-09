@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * PackageReferenceNumber Class Doc Comment
  *
  * @category Class
- * @description Container tag for information about the package-level reference number.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

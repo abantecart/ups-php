@@ -72,6 +72,26 @@ class DefaultApiTest extends TestCase
     }
 
     /**
+     * Test case for deprecatedPickupCancel
+     *
+     * Pickup Cancel.
+     *
+     */
+    public function testDeprecatedPickupCancel()
+    {
+    }
+
+    /**
+     * Test case for deprecatedPickupCreation
+     *
+     * Pickup Creation.
+     *
+     */
+    public function testDeprecatedPickupCreation()
+    {
+    }
+
+    /**
      * Test case for pickupCancel
      *
      * Pickup Cancel.

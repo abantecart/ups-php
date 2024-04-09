@@ -227,7 +227,7 @@ class SummaryResultStatus implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The Package Level void status code.  A numeric value that describes the status code. 1 = Voided or Already Voided;  0 = Not Voided
+     * @param string $code Code for the status of the Summary Result
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class SummaryResultStatus implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description A text description of the status code.
+     * @param string $description Description of the status of the Summary Result
      *
      * @return $this
      */

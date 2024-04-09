@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * PaymentInformationShipmentCharge Class Doc Comment
  *
  * @category Class
- * @description Shipment charge container.  If Duty and Tax charges are applicable to a shipment and a payer is not specified, the default payer of Duty and Tax charges is Bill to Receiver.
+ * @description Shipment charge container.  If Duty and Tax charges are applicable to a shipment and a payer is not specified, the default payer of Duty and Tax charges is Bill to Receiver. There will be no default payer of Duty and Tax charges for DDU and DDP service.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

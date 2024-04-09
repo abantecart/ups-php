@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SubscriptionFileExceptionTest Class Doc Comment
  *
  * @category    Class
- * @description Shipment exception data.
+ * @description SubscriptionFileException
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

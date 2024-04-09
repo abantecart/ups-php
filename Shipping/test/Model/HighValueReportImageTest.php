@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * HighValueReportImageTest Class Doc Comment
  *
  * @category    Class
- * @description Container for the High Value Report image for Import Control Shipments.
+ * @description Container tag for the High Value Report image.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

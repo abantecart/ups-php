@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ExceptionShipmentReferenceNumberTest Class Doc Comment
  *
  * @category    Class
- * @description Container tag for shipment reference number.
+ * @description ExceptionShipmentReferenceNumber
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

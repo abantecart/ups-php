@@ -35,7 +35,6 @@ use \UPS\Shipping\ObjectSerializer;
  * VoidShipmentResponsePackageLevelResult Class Doc Comment
  *
  * @category Class
- * @description Contains the Package Level Results
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

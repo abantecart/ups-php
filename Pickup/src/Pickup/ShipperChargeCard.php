@@ -284,7 +284,7 @@ class ShipperChargeCard implements ModelInterface, ArrayAccess
     /**
      * Sets card_type
      *
-     * @param string $card_type Charge card type. Valid values: 01 = American Express 03 = Discover 04 = Mastercard 06 = VISA  Discover card Pickup country US only.
+     * @param string $card_type Charge card type. Valid values: - 01 = American Express - 03 = Discover - 04 = Mastercard - 06 = VISA  Discover card Pickup country US only.
      *
      * @return $this
      */

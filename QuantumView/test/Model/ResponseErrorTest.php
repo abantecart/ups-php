@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ResponseErrorTest Class Doc Comment
  *
  * @category    Class
- * @description If an error is encountered during the interchange, the Response contains an error.� If the error is present, then the ErrorSeverity and ErrorCodes are required.
+ * @description ResponseError
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * OperatingHoursStandardHours Class Doc Comment
  *
  * @category Class
- * @description StandardHours Container.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -58,7 +57,7 @@ class OperatingHoursStandardHours implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'hours_type' => 'string',
-        'day_of_week' => 'OneOfOperatingHoursStandardHoursDayOfWeek'
+        'day_of_week' => '\UPS\Locator\Locator\StandardHoursDayOfWeek[]'
     ];
 
     /**
@@ -241,7 +240,7 @@ class OperatingHoursStandardHours implements ModelInterface, ArrayAccess
     /**
      * Gets day_of_week
      *
-     * @return OneOfOperatingHoursStandardHoursDayOfWeek
+     * @return \UPS\Locator\Locator\StandardHoursDayOfWeek[]
      */
     public function getDayOfWeek()
     {
@@ -251,7 +250,7 @@ class OperatingHoursStandardHours implements ModelInterface, ArrayAccess
     /**
      * Sets day_of_week
      *
-     * @param OneOfOperatingHoursStandardHoursDayOfWeek $day_of_week day_of_week
+     * @param \UPS\Locator\Locator\StandardHoursDayOfWeek[] $day_of_week Container for the Day of Week.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

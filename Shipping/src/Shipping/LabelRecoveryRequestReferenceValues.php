@@ -251,7 +251,7 @@ class LabelRecoveryRequestReferenceValues implements ModelInterface, ArrayAccess
     /**
      * Sets shipper_number
      *
-     * @param string $shipper_number Required if ReferenceNumber/Value is populated. Shippers six digit account number. Must be six alphanumeric characters. Must be associated with the Internet account used to login.
+     * @param string $shipper_number Required if ReferenceNumber/Value is populated. Shipper's six digit account number. Must be six alphanumeric characters. Must be associated with the Internet account used to login.
      *
      * @return $this
      */

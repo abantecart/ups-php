@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * CODCODAmountTest Class Doc Comment
  *
  * @category    Class
- * @description CODAmount Container.  UPS does not support all international currency codes. Refer to the appendix for a list of valid codes.
+ * @description CODAmount Container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * AdjustedHeightUnitOfMeasurementTest Class Doc Comment
  *
  * @category    Class
- * @description Unit of Measurement container for the Adjusted height.
+ * @description Container for UnitOfMeasurement for the adjusted height.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

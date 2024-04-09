@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * ResponseAlert Class Doc Comment
  *
  * @category Class
- * @description Alert Container. There can be zero to many alert containers with code and description.  N/A
+ * @description Alert Container. There can be zero to many alert containers with code and description.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

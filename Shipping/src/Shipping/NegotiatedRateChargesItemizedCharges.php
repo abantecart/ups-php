@@ -35,7 +35,6 @@ use \UPS\Shipping\ObjectSerializer;
  * NegotiatedRateChargesItemizedCharges Class Doc Comment
  *
  * @category Class
- * @description Itemized Charges are returned only when the Subversion element is present and greater than or equal to 1601.  Negotiated itemized charges are only returned for certain contract-only shipments as well as Worldwide Express Freight, Ground Freight Pricing, and Hazmat movements.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -296,7 +295,7 @@ class NegotiatedRateChargesItemizedCharges implements ModelInterface, ArrayAcces
     /**
      * Sets currency_code
      *
-     * @param string $currency_code The IATA currency code associated with the Itemized Charge costs for the shipment.
+     * @param string $currency_code Itemized Charges currency code type. The currency code used in the Shipment request is returned.
      *
      * @return $this
      */
@@ -320,7 +319,7 @@ class NegotiatedRateChargesItemizedCharges implements ModelInterface, ArrayAcces
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value Itemized Charges value amount.
+     * @param string $monetary_value Itemized Charges value amount.  Valid values are from 0 to 99999999999999.99
      *
      * @return $this
      */

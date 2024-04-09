@@ -63,6 +63,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
         'alternate_address_indicator' => 'string',
         'service_date_option' => 'string',
         'pickup_date_info' => '\UPS\Pickup\Pickup\PickupRateRequestPickupDateInfo',
+        'rate_chart_type' => 'string',
         'tax_information_indicator' => 'string',
         'user_level_discount_indicator' => 'string'
     ];
@@ -79,6 +80,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
         'alternate_address_indicator' => null,
         'service_date_option' => null,
         'pickup_date_info' => null,
+        'rate_chart_type' => null,
         'tax_information_indicator' => null,
         'user_level_discount_indicator' => null
     ];
@@ -116,6 +118,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
         'alternate_address_indicator' => 'AlternateAddressIndicator',
         'service_date_option' => 'ServiceDateOption',
         'pickup_date_info' => 'PickupDateInfo',
+        'rate_chart_type' => 'RateChartType',
         'tax_information_indicator' => 'TaxInformationIndicator',
         'user_level_discount_indicator' => 'UserLevelDiscountIndicator'
     ];
@@ -132,6 +135,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
         'alternate_address_indicator' => 'setAlternateAddressIndicator',
         'service_date_option' => 'setServiceDateOption',
         'pickup_date_info' => 'setPickupDateInfo',
+        'rate_chart_type' => 'setRateChartType',
         'tax_information_indicator' => 'setTaxInformationIndicator',
         'user_level_discount_indicator' => 'setUserLevelDiscountIndicator'
     ];
@@ -148,6 +152,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
         'alternate_address_indicator' => 'getAlternateAddressIndicator',
         'service_date_option' => 'getServiceDateOption',
         'pickup_date_info' => 'getPickupDateInfo',
+        'rate_chart_type' => 'getRateChartType',
         'tax_information_indicator' => 'getTaxInformationIndicator',
         'user_level_discount_indicator' => 'getUserLevelDiscountIndicator'
     ];
@@ -216,6 +221,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
         $this->container['alternate_address_indicator'] = isset($data['alternate_address_indicator']) ? $data['alternate_address_indicator'] : null;
         $this->container['service_date_option'] = isset($data['service_date_option']) ? $data['service_date_option'] : null;
         $this->container['pickup_date_info'] = isset($data['pickup_date_info']) ? $data['pickup_date_info'] : null;
+        $this->container['rate_chart_type'] = isset($data['rate_chart_type']) ? $data['rate_chart_type'] : null;
         $this->container['tax_information_indicator'] = isset($data['tax_information_indicator']) ? $data['tax_information_indicator'] : null;
         $this->container['user_level_discount_indicator'] = isset($data['user_level_discount_indicator']) ? $data['user_level_discount_indicator'] : null;
     }
@@ -365,7 +371,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets service_date_option
      *
-     * @param string $service_date_option Indicates the pickup timeframe. 01 = Same-Day Pickup 02 = Future-Day Pickup 03 = A Specific-Day Pickup  If 03 is selected, then PickupDate, EarliestReadyTime, and LatestClosetime must be specified.
+     * @param string $service_date_option Indicates the pickup timeframe. - 01 = Same-Day Pickup - 02 = Future-Day Pickup - 03 = A Specific-Day Pickup  If 03 is selected, then PickupDate, EarliestReadyTime, and LatestClosetime must be specified.
      *
      * @return $this
      */
@@ -401,6 +407,30 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets rate_chart_type
+     *
+     * @return string
+     */
+    public function getRateChartType()
+    {
+        return $this->container['rate_chart_type'];
+    }
+
+    /**
+     * Sets rate_chart_type
+     *
+     * @param string $rate_chart_type Rate Type with which pickup is rated. Possible RateChart values for different regions will be:  US 48 origin: 1 – Daily Rates 3 – Standard List Rates 4 – Retail Rates.   Alaska/Hawaii origin: 1 – Daily Rates 3 – Standard List Rates 4 – Retail Rates.  All Other origins: 1 – Rates 5 - Regional Rates 6 - General List Rates.  3 and 4 do not apply
+     *
+     * @return $this
+     */
+    public function setRateChartType($rate_chart_type)
+    {
+        $this->container['rate_chart_type'] = $rate_chart_type;
+
+        return $this;
+    }
+
+    /**
      * Gets tax_information_indicator
      *
      * @return string
@@ -413,7 +443,7 @@ class PickupRateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets tax_information_indicator
      *
-     * @param string $tax_information_indicator Indicates whether to return detailed taxes for on-callpickups. Valid values: Y = Rate this pickup with taxes N = Do not rate this pickup with taxes (default)
+     * @param string $tax_information_indicator Indicates whether to return detailed taxes for on-callpickups. Valid values: - Y = Rate this pickup with taxes - N = Do not rate this pickup with taxes (default)
      *
      * @return $this
      */

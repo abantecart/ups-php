@@ -35,7 +35,6 @@ use \UPS\Rating\ObjectSerializer;
  * NegotiatedRateChargesTaxCharges Class Doc Comment
  *
  * @category Class
- * @description TaxCharges container are returned only when TaxInformationIndicator is present in request. TaxCharges container contains Tax information for a given shipment.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

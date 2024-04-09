@@ -323,7 +323,7 @@ class PickupCreationResponse implements ModelInterface, ArrayAccess
     /**
      * Sets weekend_service_territory_indicator
      *
-     * @param string $weekend_service_territory_indicator Indicates if the pickup address qualifies for WST (Weekend Service Territory). Returned if the pickup date is Saturday and subversion greater or equal to 1607.                                                                                                                                                                                                                          Valid Values:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Y = WST N = Non-WST
+     * @param string $weekend_service_territory_indicator Indicates if the pickup address qualifies for WST (Weekend Service Territory). Returned if the pickup date is Saturday and subversion greater or equal to 1607. Valid Values: - Y = WST - N = Non-WST
      *
      * @return $this
      */

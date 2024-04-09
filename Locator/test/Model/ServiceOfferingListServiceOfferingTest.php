@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ServiceOfferingListServiceOfferingTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold the end point service offering code and description.
+ * @description ServiceOfferingListServiceOffering
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

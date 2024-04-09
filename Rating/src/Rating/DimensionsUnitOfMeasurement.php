@@ -227,7 +227,7 @@ class DimensionsUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The code associated with the unit of measure for the billable weight of a package.
+     * @param string $code Package dimensions unit of measurement code.  Valid values: - IN - CM
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class DimensionsUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description The Description for the Unit Of Measurement.
+     * @param string $description Text description of the code representing the UnitOfMeasurement associated with the package.  This element is not validated.
      *
      * @return $this
      */

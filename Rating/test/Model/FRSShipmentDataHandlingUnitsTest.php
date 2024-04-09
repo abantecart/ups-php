@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * FRSShipmentDataHandlingUnitsTest Class Doc Comment
  *
  * @category    Class
- * @description Handling Unit for Density based rating container.
+ * @description FRSShipmentDataHandlingUnits
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

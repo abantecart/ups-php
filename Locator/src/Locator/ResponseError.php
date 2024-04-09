@@ -61,8 +61,8 @@ class ResponseError implements ModelInterface, ArrayAccess
         'error_code' => 'string',
         'error_description' => 'string',
         'minimum_retry_seconds' => 'string',
-        'error_location' => 'OneOfResponseErrorErrorLocation',
-        'error_digest' => 'OneOfResponseErrorErrorDigest'
+        'error_location' => '\UPS\Locator\Locator\ErrorErrorLocation[]',
+        'error_digest' => 'string[]'
     ];
 
     /**
@@ -337,7 +337,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Gets error_location
      *
-     * @return OneOfResponseErrorErrorLocation
+     * @return \UPS\Locator\Locator\ErrorErrorLocation[]
      */
     public function getErrorLocation()
     {
@@ -347,7 +347,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_location
      *
-     * @param OneOfResponseErrorErrorLocation $error_location error_location
+     * @param \UPS\Locator\Locator\ErrorErrorLocation[] $error_location Identifies the element in error.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Gets error_digest
      *
-     * @return OneOfResponseErrorErrorDigest
+     * @return string[]
      */
     public function getErrorDigest()
     {
@@ -371,7 +371,7 @@ class ResponseError implements ModelInterface, ArrayAccess
     /**
      * Sets error_digest
      *
-     * @param OneOfResponseErrorErrorDigest $error_digest The contents of the element in error.
+     * @param string[] $error_digest The contents of the element in error.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

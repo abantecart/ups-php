@@ -58,7 +58,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'level' => 'string',
-        'element_identifier' => 'OneOfAlertDetailElementLevelInformationElementIdentifier'
+        'element_identifier' => '\UPS\Rating\Rating\ElementLevelInformationElementIdentifier[]'
     ];
 
     /**
@@ -224,7 +224,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param string $level Define type of element in request. Possible values are - 'H\" for the header details level,  \"S\" for the shipment level, \"P\" for the package level, \"C\" for the commodity level.
+     * @param string $level Define type of element in request. Possible values are - - 'H' for the header details level, - 'S' for the shipment level, - 'P' for the package level, - 'C' for the commodity level.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
     /**
      * Gets element_identifier
      *
-     * @return OneOfAlertDetailElementLevelInformationElementIdentifier
+     * @return \UPS\Rating\Rating\ElementLevelInformationElementIdentifier[]
      */
     public function getElementIdentifier()
     {
@@ -248,7 +248,7 @@ class AlertDetailElementLevelInformation implements ModelInterface, ArrayAccess
     /**
      * Sets element_identifier
      *
-     * @param OneOfAlertDetailElementLevelInformationElementIdentifier $element_identifier element_identifier
+     * @param \UPS\Rating\Rating\ElementLevelInformationElementIdentifier[] $element_identifier Contains more information about the type of element. Returned if Level is 'P' or 'C'.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

@@ -58,8 +58,8 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\Rating\Rating\ResponseResponseStatus',
-        'alert' => 'OneOfRateResponseResponseAlert',
-        'alert_detail' => 'OneOfRateResponseResponseAlertDetail',
+        'alert' => '\UPS\Rating\Rating\ResponseAlert[]',
+        'alert_detail' => '\UPS\Rating\Rating\ResponseAlertDetail[]',
         'transaction_reference' => '\UPS\Rating\Rating\ResponseTransactionReference'
     ];
 
@@ -250,7 +250,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return OneOfRateResponseResponseAlert
+     * @return \UPS\Rating\Rating\ResponseAlert[]
      */
     public function getAlert()
     {
@@ -260,7 +260,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param OneOfRateResponseResponseAlert $alert alert
+     * @param \UPS\Rating\Rating\ResponseAlert[] $alert Alert Container.  There can be zero to many alert containers with code and description.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert_detail
      *
-     * @return OneOfRateResponseResponseAlertDetail
+     * @return \UPS\Rating\Rating\ResponseAlertDetail[]
      */
     public function getAlertDetail()
     {
@@ -284,7 +284,7 @@ class RateResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert_detail
      *
-     * @param OneOfRateResponseResponseAlertDetail $alert_detail alert_detail
+     * @param \UPS\Rating\Rating\ResponseAlertDetail[] $alert_detail Alert Detail Container. Currently applies to and returned only for request containing HazMat and SubVersion greater than or equal to 1701.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

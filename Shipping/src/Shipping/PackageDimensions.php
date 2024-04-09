@@ -269,7 +269,7 @@ class PackageDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets length
      *
-     * @param string $length The length of the line item used to determine dimensional weight.
+     * @param string $length Package length. Length must be the longest dimension of the container.  Valid values are 0 to 108 IN and 0 to 270 CM.
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class PackageDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param string $width The width of the line item used to determine dimensional weight.
+     * @param string $width Package width.
      *
      * @return $this
      */
@@ -317,7 +317,7 @@ class PackageDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param string $height The height of the line item used to determine dimensional weight.
+     * @param string $height Package height.
      *
      * @return $this
      */

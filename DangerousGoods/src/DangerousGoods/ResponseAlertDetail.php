@@ -35,7 +35,6 @@ use \UPS\DangerousGoods\ObjectSerializer;
  * ResponseAlertDetail Class Doc Comment
  *
  * @category Class
- * @description Alert Detail Container.
  * @package  UPS\DangerousGoods
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

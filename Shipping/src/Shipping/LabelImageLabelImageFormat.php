@@ -218,7 +218,7 @@ class LabelImageLabelImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code type that the label image is to be generated in. Valid value returned is gif, pdf, zpl. Spl, epl2
+     * @param string $code The format of a label image byte stream.  Code type that the label image is to be generated in. Valid value returned is GIF or PDF
      *
      * @return $this
      */

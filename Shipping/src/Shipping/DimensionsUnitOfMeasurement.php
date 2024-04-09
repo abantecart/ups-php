@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * DimensionsUnitOfMeasurement Class Doc Comment
  *
  * @category Class
- * @description Dimensions information container. Note: Currently dimensions are not applicable to Ground Freight Pricing. Length + 2*(Width + Height) must be less than or equal to 165 IN or 330 CM.Required for Heavy Goods service. Package Dimension will be ignored for Simple Rate
+ * @description UnitOfMeasurement container for dimensions.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

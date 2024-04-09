@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * AddressArtifactFormatAddressExtendedInformationTest Class Doc Comment
  *
  * @category    Class
- * @description Container tag for additional address information where package is delivered.
+ * @description AddressArtifactFormatAddressExtendedInformation
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

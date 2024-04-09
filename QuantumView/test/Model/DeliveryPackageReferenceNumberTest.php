@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * DeliveryPackageReferenceNumberTest Class Doc Comment
  *
  * @category    Class
- * @description Package-level reference number.
+ * @description DeliveryPackageReferenceNumber
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

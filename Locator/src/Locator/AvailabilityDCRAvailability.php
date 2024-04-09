@@ -35,7 +35,7 @@ use \UPS\Locator\ObjectSerializer;
  * AvailabilityDCRAvailability Class Doc Comment
  *
  * @category Class
- * @description Holds status of DCR/DCO�availability.
+ * @description Holds status of DCR/DCO availability.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

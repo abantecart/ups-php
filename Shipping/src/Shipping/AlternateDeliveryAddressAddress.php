@@ -296,7 +296,7 @@ class AlternateDeliveryAddressAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code Retail Location state or province code. Required for US or Canada.
+     * @param string $state_province_code Retail Location state or province code. Required for US or Canada.  If destination is US or CA, then the value must be a valid US State/Canadian Province code.  If the country or territory is Ireland, the StateProvinceCode will contain the county.
      *
      * @return $this
      */

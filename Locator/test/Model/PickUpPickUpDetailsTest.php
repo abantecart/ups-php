@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PickUpPickUpDetailsTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold information regarding pickup time and pickup availability indicator.
+ * @description PickUpDetails container contains either pickup time or NoPickupIndicator. Either PickUpTime or NoPickupIndicator
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

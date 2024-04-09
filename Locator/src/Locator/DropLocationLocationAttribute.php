@@ -58,7 +58,7 @@ class DropLocationLocationAttribute implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'option_type' => '\UPS\Locator\Locator\LocationAttributeOptionType',
-        'option_code' => 'OneOfDropLocationLocationAttributeOptionCode'
+        'option_code' => '\UPS\Locator\Locator\LocationAttributeOptionCode[]'
     ];
 
     /**
@@ -241,7 +241,7 @@ class DropLocationLocationAttribute implements ModelInterface, ArrayAccess
     /**
      * Gets option_code
      *
-     * @return OneOfDropLocationLocationAttributeOptionCode
+     * @return \UPS\Locator\Locator\LocationAttributeOptionCode[]
      */
     public function getOptionCode()
     {
@@ -251,7 +251,7 @@ class DropLocationLocationAttribute implements ModelInterface, ArrayAccess
     /**
      * Sets option_code
      *
-     * @param OneOfDropLocationLocationAttributeOptionCode $option_code option_code
+     * @param \UPS\Locator\Locator\LocationAttributeOptionCode[] $option_code Option code is a container that contains the information of a particular type of Location or retail location or additional service or program type that the drop location contains.  If the OptionType is Location or Retail Location Type there will be one code since each location has only one location type or retail location type.  If the Option type is additional services or program types there can be one or more option codes.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

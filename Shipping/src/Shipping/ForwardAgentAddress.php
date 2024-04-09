@@ -254,7 +254,7 @@ class ForwardAgentAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Address line of the Forwarding agent.
+     * @param string[] $address_line Address line of the Forwarding agent.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ForwardAgentAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city City of the Forwarding agent.
+     * @param string $city City of the Forwarding agent.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class ForwardAgentAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code State of the Forwarding agent.
+     * @param string $state_province_code State of the Forwarding agent.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class ForwardAgentAddress implements ModelInterface, ArrayAccess
     /**
      * Sets town
      *
-     * @param string $town Town of the Forwarding Agent.
+     * @param string $town Town of the Forwarding Agent.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ForwardAgentAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal code of the Forwarding agent.
+     * @param string $postal_code Postal code of the Forwarding agent.  Applicable for EEI form only. Required for certain countries or territories. The length of the postal code depends on the country or territory code
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ForwardAgentAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code of the Forwarding agent.
+     * @param string $country_code Country or Territory code of the Forwarding agent.  Applicable for EEI form only.
      *
      * @return $this
      */

@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * SubscriptionFileException Class Doc Comment
  *
  * @category Class
- * @description Shipment exception data.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,8 +56,8 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_reference_number' => 'OneOfSubscriptionFileExceptionPackageReferenceNumber',
-        'shipment_reference_number' => 'OneOfSubscriptionFileExceptionShipmentReferenceNumber',
+        'package_reference_number' => '\UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[]',
+        'shipment_reference_number' => '\UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[]',
         'shipper_number' => 'string',
         'tracking_number' => 'string',
         'date' => 'string',
@@ -313,7 +312,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Gets package_reference_number
      *
-     * @return OneOfSubscriptionFileExceptionPackageReferenceNumber
+     * @return \UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[]
      */
     public function getPackageReferenceNumber()
     {
@@ -323,7 +322,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Sets package_reference_number
      *
-     * @param OneOfSubscriptionFileExceptionPackageReferenceNumber $package_reference_number package_reference_number
+     * @param \UPS\QuantumView\QuantumView\ExceptionPackageReferenceNumber[] $package_reference_number Package-level reference number.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -337,7 +336,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_reference_number
      *
-     * @return OneOfSubscriptionFileExceptionShipmentReferenceNumber
+     * @return \UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[]
      */
     public function getShipmentReferenceNumber()
     {
@@ -347,7 +346,7 @@ class SubscriptionFileException implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_reference_number
      *
-     * @param OneOfSubscriptionFileExceptionShipmentReferenceNumber $shipment_reference_number shipment_reference_number
+     * @param \UPS\QuantumView\QuantumView\ExceptionShipmentReferenceNumber[] $shipment_reference_number Container tag for shipment reference number.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

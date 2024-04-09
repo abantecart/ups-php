@@ -57,7 +57,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'disclaimer' => 'OneOfShipmentResponseShipmentResultsDisclaimer',
+        'disclaimer' => '\UPS\Shipping\Shipping\ShipmentResultsDisclaimer[]',
         'shipment_charges' => '\UPS\Shipping\Shipping\ShipmentResultsShipmentCharges',
         'negotiated_rate_charges' => '\UPS\Shipping\Shipping\ShipmentResultsNegotiatedRateCharges',
         'frs_shipment_data' => '\UPS\Shipping\Shipping\ShipmentResultsFRSShipmentData',
@@ -67,8 +67,8 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
         'shipment_identification_number' => 'string',
         'mi_dual_return_shipment_key' => 'string',
         'bar_code_image' => 'string',
-        'package_results' => 'OneOfShipmentResponseShipmentResultsPackageResults',
-        'control_log_receipt' => 'OneOfShipmentResponseShipmentResultsControlLogReceipt',
+        'package_results' => '\UPS\Shipping\Shipping\ShipmentResultsPackageResults[]',
+        'control_log_receipt' => '\UPS\Shipping\Shipping\ShipmentResultsControlLogReceipt[]',
         'form' => '\UPS\Shipping\Shipping\ShipmentResultsForm',
         'cod_turn_in_page' => '\UPS\Shipping\Shipping\ShipmentResultsCODTurnInPage',
         'high_value_report' => '\UPS\Shipping\Shipping\ShipmentResultsHighValueReport',
@@ -76,7 +76,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
         'local_language_label_url' => 'string',
         'receipt_url' => 'string',
         'local_language_receipt_url' => 'string',
-        'dg_paper_image' => 'OneOfShipmentResponseShipmentResultsDgPaperImage',
+        'dg_paper_image' => 'string[]',
         'master_carton_id' => 'string',
         'roar_rated_indicator' => 'string'
     ];
@@ -334,7 +334,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return OneOfShipmentResponseShipmentResultsDisclaimer
+     * @return \UPS\Shipping\Shipping\ShipmentResultsDisclaimer[]
      */
     public function getDisclaimer()
     {
@@ -344,7 +344,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param OneOfShipmentResponseShipmentResultsDisclaimer $disclaimer disclaimer
+     * @param \UPS\Shipping\Shipping\ShipmentResultsDisclaimer[] $disclaimer Disclaimer would be used to provide more information to shipper regarding the processed shipment. This would be used to notify shipper about possible taxes and duties that might have been added or might apply to the shipment. This field would be returned only if TaxInformationIndicator is present in a request.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -574,7 +574,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Gets package_results
      *
-     * @return OneOfShipmentResponseShipmentResultsPackageResults
+     * @return \UPS\Shipping\Shipping\ShipmentResultsPackageResults[]
      */
     public function getPackageResults()
     {
@@ -584,7 +584,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Sets package_results
      *
-     * @param OneOfShipmentResponseShipmentResultsPackageResults $package_results package_results
+     * @param \UPS\Shipping\Shipping\ShipmentResultsPackageResults[] $package_results Returned Package Information.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -598,7 +598,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Gets control_log_receipt
      *
-     * @return OneOfShipmentResponseShipmentResultsControlLogReceipt
+     * @return \UPS\Shipping\Shipping\ShipmentResultsControlLogReceipt[]
      */
     public function getControlLogReceipt()
     {
@@ -608,7 +608,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Sets control_log_receipt
      *
-     * @param OneOfShipmentResponseShipmentResultsControlLogReceipt $control_log_receipt control_log_receipt
+     * @param \UPS\Shipping\Shipping\ShipmentResultsControlLogReceipt[] $control_log_receipt Container for the High Value reports when forward shipments have declared value between $999 and $50,000 USD. \\nTwo copies of high value report needs to be pointed out.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -790,7 +790,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Gets dg_paper_image
      *
-     * @return OneOfShipmentResponseShipmentResultsDgPaperImage
+     * @return string[]
      */
     public function getDgPaperImage()
     {
@@ -800,7 +800,7 @@ class ShipmentResponseShipmentResults implements ModelInterface, ArrayAccess
     /**
      * Sets dg_paper_image
      *
-     * @param OneOfShipmentResponseShipmentResultsDgPaperImage $dg_paper_image Dangrous Good Paper Image in pdf format. One multipage PDF document will be returned that will contain all required Dangrous Goods shipping paper copies for all Dangerous Goods packages.  Only returned when DGSignatoryInfo is present.
+     * @param string[] $dg_paper_image Dangerous Good Paper Image in pdf format. One multipage PDF document will be returned that will contain all required Dangrous Goods shipping paper copies for all Dangerous Goods packages. Only returned when DGSignatoryInfo is present.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

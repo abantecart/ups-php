@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * OptionCodeTransportationPickUpScheduleTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold information regarding pickup details for each day of the week.
+ * @description TransportationPickUpSchedule container contains details of Latest Drop Off time/Pickup Time for the transportation services (Ground/Air/Standard/Express/International) of the location.
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

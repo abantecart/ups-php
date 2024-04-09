@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**package_bill_type** | **string** | Valid values are:02 - Document only 03 - Non-Document04 - WWEF Pallet07 - Domestic PalletIf 04 is included, Worldwide Express Freight and UPS Worldwide Express Freight Midday services (if applicable) will be included in the response. | 
+**package_bill_type** | **string** | Valid values are: - 02 - Document only - 03 - Non-Document - 04 - WWEF Pallet - 07 - Domestic Pallet  If 04 is included, Worldwide Express Freight and UPS Worldwide Express Freight Midday services (if applicable) will be included in the response. | 
 **pickup** | [**\UPS\Rating\Rating\DeliveryTimeInformationPickup**](DeliveryTimeInformationPickup.md) |  | [optional] 
 **return_contract_services** | [**\UPS\Rating\Rating\DeliveryTimeInformationReturnContractServices[]**](DeliveryTimeInformationReturnContractServices.md) |  | [optional] 
 

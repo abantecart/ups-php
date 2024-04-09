@@ -224,7 +224,7 @@ class SubscriptionEventsSubscriptionStatus implements ModelInterface, ArrayAcces
     /**
      * Sets code
      *
-     * @param string $code Status types of subscription.  Valid values: UN � Unknown AT � Activate P � Pending A �Active I � Inactive S - Suspended
+     * @param string $code Status types of subscription. Valid values: - UN – Unknown - AT – Activate - P – Pending - A –Active - I – Inactive - S - Suspended
      *
      * @return $this
      */

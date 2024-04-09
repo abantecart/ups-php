@@ -272,7 +272,7 @@ class GeocodeCandidateAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets consignee_name
      *
-     * @param string $consignee_name Name. (Also includes the building name)Return if available.
+     * @param string $consignee_name Name. Not relevant for candidate list.
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class GeocodeCandidateAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string $address_line Address Line Information of the UPS location The address level or Intersection information. Only two address lines will be returned. The second line may contain such information as the building name, the suite, and room.
+     * @param string $address_line Address Line Information. The address level or Intersection information must be returned if provided in the request. The AddressLine will be a combination of up to 3 separate address lines, each separated by a new line character.
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class GeocodeCandidateAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division3
      *
-     * @param string $political_division3 Subdivision within a City.� e.g., a Barrio.
+     * @param string $political_division3 Subdivision within a City. e.g., a Barrio.
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class GeocodeCandidateAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code A country or territory code. Valid values to be returned are: US-United States (meaning US 50).
+     * @param string $country_code A country or territory code. Valid values for candidates to be returned are: US-United States (meaning US 50)
      *
      * @return $this
      */

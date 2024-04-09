@@ -245,7 +245,7 @@ class ShipperAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Shipper's street address including name and number (when applicable).
+     * @param string[] $address_line Shipper's street address including name and number (when applicable).  Maximum Occurrence should be three. Length is not validated.
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class ShipperAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city UPS Access Point city.
+     * @param string $city Shipper's city.  Required if country or territory does not utilize postal codes. Length is not validated.
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class ShipperAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code UPS Access Point State or Province code.
+     * @param string $state_province_code Shipper's state code.  Length is not validated.
      *
      * @return $this
      */
@@ -317,7 +317,7 @@ class ShipperAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal Code for UPS accounts billing address.  Postal Code  may be present when the FRS Payment Information type = 02 and type = 03.
+     * @param string $postal_code Shipper's postal code.  Length is not validated.
      *
      * @return $this
      */
@@ -341,7 +341,7 @@ class ShipperAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code for the  UPS accounts & billing address.  Country or Territory Code is required when the FRS Payment Information type = 02 and type= 03.
+     * @param string $country_code Country or Territory code. Refer to the Supported Country or Territory Tables located in Appendix.
      *
      * @return $this
      */

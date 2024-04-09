@@ -35,7 +35,6 @@ use \UPS\Shipping\ObjectSerializer;
  * ShipmentResultsPackageResults Class Doc Comment
  *
  * @category Class
- * @description Returned Package Information.   Applicable only for ShipmentResponse and ShipAcceptResponse.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -65,10 +64,10 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
         'shipping_receipt' => '\UPS\Shipping\Shipping\PackageResultsShippingReceipt',
         'uspspic_number' => 'string',
         'cn22_number' => 'string',
-        'accessorial' => 'OneOfShipmentResultsPackageResultsAccessorial',
+        'accessorial' => '\UPS\Shipping\Shipping\PackageResultsAccessorial[]',
         'simple_rate' => '\UPS\Shipping\Shipping\PackageResultsSimpleRate',
         'form' => '\UPS\Shipping\Shipping\PackageResultsForm',
-        'itemized_charges' => 'OneOfShipmentResultsPackageResultsItemizedCharges',
+        'itemized_charges' => '\UPS\Shipping\Shipping\PackageResultsItemizedCharges[]',
         'negotiated_charges' => '\UPS\Shipping\Shipping\PackageResultsNegotiatedCharges'
     ];
 
@@ -290,7 +289,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_number
      *
-     * @param string $tracking_number Package 1Z number.   For Mail Innovations shipments, please use the USPSPICNumber when tracking packages (a non-1Z number Mail Manifest Id is returned).  Applicable only for ShipmentResponse and ShipAcceptResponse.
+     * @param string $tracking_number Package 1Z number.   For Mail Innovations shipments, please use the USPSPICNumber when tracking packages (a non-1Z number Mail Manifest Id is returned).
      *
      * @return $this
      */
@@ -472,7 +471,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Gets accessorial
      *
-     * @return OneOfShipmentResultsPackageResultsAccessorial
+     * @return \UPS\Shipping\Shipping\PackageResultsAccessorial[]
      */
     public function getAccessorial()
     {
@@ -482,7 +481,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Sets accessorial
      *
-     * @param OneOfShipmentResultsPackageResultsAccessorial $accessorial accessorial
+     * @param \UPS\Shipping\Shipping\PackageResultsAccessorial[] $accessorial The container for Accessorial indicators. This information would be returned only for UPS Worldwide Express Freight and UPS Worldwide Express Freight Mid-day service request with Dry Ice or Oversize Pallet and SubVersion greater than or equal to 1707. This is valid only for UPS Worldwide Express Freight and UPS Worldwide Express Freight Mid-day service.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -544,7 +543,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return OneOfShipmentResultsPackageResultsItemizedCharges
+     * @return \UPS\Shipping\Shipping\PackageResultsItemizedCharges[]
      */
     public function getItemizedCharges()
     {
@@ -554,7 +553,7 @@ class ShipmentResultsPackageResults implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param OneOfShipmentResultsPackageResultsItemizedCharges $itemized_charges itemized_charges
+     * @param \UPS\Shipping\Shipping\PackageResultsItemizedCharges[] $itemized_charges Itemized Charges are returned only when the subversion element is present and greater than or equal to 1607. Package level itemized charges are only returned for US domestic movements.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

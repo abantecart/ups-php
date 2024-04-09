@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * RequestTransactionReference Class Doc Comment
  *
  * @category Class
- * @description TransactionReference identifies transactions between client and server.  N/A
+ * @description TransactionReference identifies transactions between client and server.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -215,7 +215,7 @@ class RequestTransactionReference implements ModelInterface, ArrayAccess
     /**
      * Sets customer_context
      *
-     * @param string $customer_context The CustomerContext Information which will be echoed during response.
+     * @param string $customer_context The client uses CustomerContext to synchronize request/response pairs. The client establishes CustomerContext, which can contain any information you want; it is echoed back by the server.
      *
      * @return $this
      */

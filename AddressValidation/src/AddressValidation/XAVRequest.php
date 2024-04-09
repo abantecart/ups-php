@@ -59,7 +59,7 @@ class XAVRequest implements ModelInterface, ArrayAccess
         'request' => '\UPS\AddressValidation\AddressValidation\XAVRequestRequest',
         'regional_request_indicator' => 'string',
         'maximum_candidate_list_size' => 'string',
-        'address_key_format' => '\UPS\AddressValidation\AddressValidation\XAVRequestAddressKeyFormat[]'
+        'address_key_format' => '\UPS\AddressValidation\AddressValidation\XAVRequestAddressKeyFormat'
     ];
 
     /**
@@ -286,7 +286,7 @@ class XAVRequest implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_candidate_list_size
      *
-     * @param string $maximum_candidate_list_size The maximum number of Candidates to return for this request. Valid values: 0 - 50 Default: 15
+     * @param string $maximum_candidate_list_size The maximum number of Candidates to return for this request.  - Valid values: 0 - 50 - Default: 15
      *
      * @return $this
      */
@@ -300,7 +300,7 @@ class XAVRequest implements ModelInterface, ArrayAccess
     /**
      * Gets address_key_format
      *
-     * @return \UPS\AddressValidation\AddressValidation\XAVRequestAddressKeyFormat[]
+     * @return \UPS\AddressValidation\AddressValidation\XAVRequestAddressKeyFormat
      */
     public function getAddressKeyFormat()
     {
@@ -310,7 +310,7 @@ class XAVRequest implements ModelInterface, ArrayAccess
     /**
      * Sets address_key_format
      *
-     * @param \UPS\AddressValidation\AddressValidation\XAVRequestAddressKeyFormat[] $address_key_format address_key_format
+     * @param \UPS\AddressValidation\AddressValidation\XAVRequestAddressKeyFormat $address_key_format address_key_format
      *
      * @return $this
      */

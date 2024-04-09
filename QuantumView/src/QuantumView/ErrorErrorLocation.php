@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * ErrorErrorLocation Class Doc Comment
  *
  * @category Class
- * @description Identifies the element in error.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -221,7 +220,7 @@ class ErrorErrorLocation implements ModelInterface, ArrayAccess
     /**
      * Sets error_location_element_name
      *
-     * @param string $error_location_element_name The Xpath name of the element in error.� This is a valid Xpath pointing to an element in the request document.
+     * @param string $error_location_element_name The Xpath name of the element in error. This is a valid Xpath pointing to an element in the request document.
      *
      * @return $this
      */
@@ -245,7 +244,7 @@ class ErrorErrorLocation implements ModelInterface, ArrayAccess
     /**
      * Sets error_location_attribute_name
      *
-     * @param string $error_location_attribute_name The name of the attribute in error.� This is the name of the attribute contained by the Error Location element.
+     * @param string $error_location_attribute_name The name of the attribute in error. This is the name of the attribute contained by the Error Location element.
      *
      * @return $this
      */

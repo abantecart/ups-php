@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ControlLogReceiptImageFormatTest Class Doc Comment
  *
  * @category    Class
- * @description Container for the High Value report format required if parent exist.    Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Container for the High Value report format required if parent exist.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

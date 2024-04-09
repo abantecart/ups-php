@@ -248,7 +248,7 @@ class ManifestService implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Not used.
+     * @param string $description Description of the service code. Examples are Next Day Air, Worldwide Express, and Ground.
      *
      * @return $this
      */

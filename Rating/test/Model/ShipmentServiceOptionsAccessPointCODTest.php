@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentServiceOptionsAccessPointCODTest Class Doc Comment
  *
  * @category    Class
- * @description Access Point COD indicates Shipment level Access Point COD is requested for a shipment.  Valid only for \&quot;01 - Hold For Pickup At UPS Access Point Shipment Indication type. Shipment Access Point COD is valid only for countries or territories within E.U. Not valid with (Shipment) COD. Not available to shipment with return service.
+ * @description Access Point COD indicates Shipment level Access Point COD is requested for a shipment.  Valid only for \&quot;01 - Hold For Pickup At UPS Access Point\&quot; Shipment Indication type.  Shipment Access Point COD is valid only for countries or territories within E.U.  Not valid with (Shipment) COD.  Not available to shipment with return service.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

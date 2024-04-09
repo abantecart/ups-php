@@ -227,7 +227,7 @@ class ActivityLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Sets political_division2
      *
-     * @param string $political_division2 City name where package is delivered.
+     * @param string $political_division2 City of an activity occurred during a package shipment.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class ActivityLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Sets political_division1
      *
-     * @param string $political_division1 Abbreviated state or province name where package is delivered.
+     * @param string $political_division1 State or province code of an activity occurred during a package shipment. Must be valid US state. If the country or territory is US or CA a two character code is required, otherwise, the StateProvinceCode is optional.
      *
      * @return $this
      */
@@ -275,7 +275,7 @@ class ActivityLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Sets country_code
      *
-     * @param string $country_code Abbreviated country or territory name where package is delivered.
+     * @param string $country_code Country or Territory code of an activity occurred during a package shipment. Valid values: CA, MX, PR, US, AT, BE, DE, DK, ES, FI, FR, GB, IE, IT, NL, PT, SE, MC, and VA
      *
      * @return $this
      */

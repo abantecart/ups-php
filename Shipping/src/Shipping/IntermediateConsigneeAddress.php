@@ -254,7 +254,7 @@ class IntermediateConsigneeAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Address information of the Intermediate Consignee.
+     * @param string[] $address_line Address line of the Intermediate Consignee.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class IntermediateConsigneeAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city Address line of the Intermediate Consignee.
+     * @param string $city City of the Intermediate Consignee.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class IntermediateConsigneeAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code State of the Intermediate Consignee.
+     * @param string $state_province_code State of the Intermediate Consignee.  Applicable for EEI form only. Required for certain countries or territories.
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class IntermediateConsigneeAddress implements ModelInterface, ArrayAccess
     /**
      * Sets town
      *
-     * @param string $town Town of the Intermediate Consignee.
+     * @param string $town Town of the Intermediate consignee.  Applicable for EEI form only.
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class IntermediateConsigneeAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal code of the Intermediate Consignee.
+     * @param string $postal_code Postal code of the Intermediate Consignee.  Applicable for EEI form only. Required for certain countries or territories. The length of the postal code depends on the country or territory code.
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class IntermediateConsigneeAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code of the Intermediate Consignee.
+     * @param string $country_code Country or Territory code of the Intermediate Consignee.  Applicable for EEI form only.
      *
      * @return $this
      */

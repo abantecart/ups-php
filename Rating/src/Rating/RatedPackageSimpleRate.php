@@ -218,7 +218,7 @@ class RatedPackageSimpleRate implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Simple Rate Package Size Valid values: XS -  Extra Small S -  Small M -  Medium L - Large XL - Extra Large
+     * @param string $code Simple Rate Code - XS =  Extra Small - S =  Small - M = Medium - L = Large - XL = Extra Large
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class ServiceSearchServiceOptionCode implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code that defines the optional service. Valid values: 01-Saturday pickup. Only valid for air service.
+     * @param string $code Code that defines the optional service.  Valid values: - 01 - Saturday pickup.  Only valid for air service.
      *
      * @return $this
      */

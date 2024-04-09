@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **e_mail_address** | **string** | Consignee&#x27;s email address. | [optional] 
 **address** | [**\UPS\QuantumView\QuantumView\ShipToAddress**](ShipToAddress.md) |  | [optional] 
 **location_id** | **string** | Location name that the package is shipped to. | [optional] 
-**receiving_address_name** | **string** | Alias of the location where the package is received. | [optional] 
+**receiving_address_name** | **string** | Name of the location where the package is received. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

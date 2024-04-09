@@ -272,7 +272,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets consignee_name
      *
-     * @param string $consignee_name Name of business, company or person. Not returned if user selects the RegionalRequestIndicator.
+     * @param string $consignee_name Name of business, company or person. Ignored if user selects the RegionalRequestIndicator.
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets attention_name
      *
-     * @param string $attention_name Name of building. Not returned if user selects the RegionalRequestIndicator.
+     * @param string $attention_name Name of the building. Ignored if user selects the RegionalRequestIndicator.
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Address line (street number, street name and street type, and political division 1, political division 2 and postal code) used for street level information. Additional secondary information (apartment, suite, floor, etc.) Applicable to US and PR only.  Not returned if user selects the RegionalRequestIndicator.
+     * @param string[] $address_line Address line (street number, street name and street type) used for street level information. Additional secondary information (apartment, suite, floor, etc.). Applicable to US and PR only. Ignored if user selects the RegionalRequestIndicator.
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets region
      *
-     * @param string $region Single entry containing in this order  Political Division 2, Political Division 1 and Post Code Primary Low and/or PostcodeExtendedLow.
+     * @param string $region If this node is present the following tags will be ignored:  - Political Division 2 - Political Division 1 - PostcodePrimaryLow - PostcodeExtendedLow  Valid only for US or PR origins only.  Using this tag for non US/PR origins may cause address format errors.
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division1
      *
-     * @param string $political_division1 State/Province.  Returned if the location is within a State/Province/Territory.  For International: returned if user enters valid Country or Territory Code, and City/postal code and it has a match.  For Domestic addresses, the value must be a valid 2-character value (per US Mail standards).  For International the full State or Province name will be returned.
+     * @param string $political_division1 State or Province/Territory name.
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets postcode_primary_low
      *
-     * @param string $postcode_primary_low Low-end Postal Code. Returned for countries or territories with Postal Codes. May be alphanumeric.
+     * @param string $postcode_primary_low Postal Code.
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets postcode_extended_low
      *
-     * @param string $postcode_extended_low Low-end extended postal code in a range. Example in quotes: Postal Code 30076-'1234'.  Only returned in candidate list. May be alphanumeric
+     * @param string $postcode_extended_low 4 digit Postal Code extension. For US use only.
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class XAVRequestAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code A country or territory code. Required to be returned.
+     * @param string $country_code Country or Territory Code. For a list of valid values, refer to the Address Validation API Supported Countries or Territories table in the Appendix.
      *
      * @return $this
      */

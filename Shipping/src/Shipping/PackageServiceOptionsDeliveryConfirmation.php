@@ -224,7 +224,7 @@ class PackageServiceOptionsDeliveryConfirmation implements ModelInterface, Array
     /**
      * Sets dcis_type
      *
-     * @param string $dcis_type Type of delivery confirmation.  Valid values: 1 - Unsupported  2 - Delivery Confirmation Signature Required 3 - Delivery Confirmation Adult Signature Required
+     * @param string $dcis_type Type of delivery confirmation.  Valid values: - 1 - Unsupported - 2 - Delivery Confirmation Signature Required - 3 - Delivery Confirmation Adult Signature Required
      *
      * @return $this
      */

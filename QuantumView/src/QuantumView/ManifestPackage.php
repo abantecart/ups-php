@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * ManifestPackage Class Doc Comment
  *
  * @category Class
- * @description Defines a package.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,14 +56,14 @@ class ManifestPackage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'activity' => 'OneOfManifestPackageActivity',
+        'activity' => '\UPS\QuantumView\QuantumView\PackageActivity[]',
         'description' => 'string',
         'dimensions' => '\UPS\QuantumView\QuantumView\PackageDimensions',
         'dimensional_weight' => '\UPS\QuantumView\QuantumView\PackageDimensionalWeight',
         'package_weight' => '\UPS\QuantumView\QuantumView\PackagePackageWeight',
         'large_package' => 'string',
         'tracking_number' => 'string',
-        'reference_number' => '\UPS\QuantumView\QuantumView\PackageReferenceNumber',
+        'reference_number' => '\UPS\QuantumView\QuantumView\PackageReferenceNumber[]',
         'package_service_options' => '\UPS\QuantumView\QuantumView\PackagePackageServiceOptions',
         'ups_premium_care_indicator' => 'string'
     ];
@@ -259,7 +258,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Gets activity
      *
-     * @return OneOfManifestPackageActivity
+     * @return \UPS\QuantumView\QuantumView\PackageActivity[]
      */
     public function getActivity()
     {
@@ -269,7 +268,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Sets activity
      *
-     * @param OneOfManifestPackageActivity $activity activity
+     * @param \UPS\QuantumView\QuantumView\PackageActivity[] $activity Information about package delivery activity.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -389,7 +388,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Sets large_package
      *
-     * @param string $large_package Values for LargePackage are:1 - Oversize 1,� 2 - Oversize 2,� 4 - Large package
+     * @param string $large_package Values for LargePackage are: - 1 - Oversize 1 - 2 - Oversize 2 - 4 - Large package
      *
      * @return $this
      */
@@ -427,7 +426,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Gets reference_number
      *
-     * @return \UPS\QuantumView\QuantumView\PackageReferenceNumber
+     * @return \UPS\QuantumView\QuantumView\PackageReferenceNumber[]
      */
     public function getReferenceNumber()
     {
@@ -437,7 +436,7 @@ class ManifestPackage implements ModelInterface, ArrayAccess
     /**
      * Sets reference_number
      *
-     * @param \UPS\QuantumView\QuantumView\PackageReferenceNumber $reference_number reference_number
+     * @param \UPS\QuantumView\QuantumView\PackageReferenceNumber[] $reference_number Container tag for information about the package-level reference number.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * LocationAttributeOptionCode Class Doc Comment
  *
  * @category Class
- * @description Option code is a container that contains the information of a particular type of Location or retail location or additional service or program type that the drop location contains.  If the OptionType is Location or Retail Location Type there will be one code since each location has only one location type or retail location type.  If the Option type is additional services or program types there can be one or more option codes.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -245,7 +244,7 @@ class LocationAttributeOptionCode implements ModelInterface, ArrayAccess
     /**
      * Sets category
      *
-     * @param string $category N/A
+     * @param string $category Only applicabe for OptionType = 03 (Additional Services). Valid values: - 06 - Non transportation - 07 - Transportation
      *
      * @return $this
      */
@@ -269,7 +268,7 @@ class LocationAttributeOptionCode implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The valid list of codes and description for Retail Locations or Additional Services or Pro-gram Types that are currently available in the database. This can be obtained by a separate type of request (Request Option 8, 16, 24, 32, 40, 48 and 56).
+     * @param string $code These codes vary by country or territory. It is strongly recommended that clients contact UPS to retrieve the primary search indicator and the valid Location Types and Service Level Options for each country. Refer to Location Search Option Codes in the Appendix for additional information.
      *
      * @return $this
      */
@@ -293,7 +292,7 @@ class LocationAttributeOptionCode implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description is only applicable for Program types and Additional Services. It is not provided with Location detail. It is only provided when the request is for All available additional ser-vices or all available Program types. Text will be displayed in the locale requested.
+     * @param string $description Description is only applicable for Location and Retail Location. The description for Program types and additional service is not provided with Location detail.  It is only provided when the request is for 8, 24, 40, 56-All available additional services or 16, 24, 48, 56-all available Program types.
      *
      * @return $this
      */
@@ -317,7 +316,7 @@ class LocationAttributeOptionCode implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name Name will indicate the name of Location/Retail Location or Additional Services or Program Types depending on the option code. Text will be displayed in the locale requested.
+     * @param string $name Name will indicate the name of any Additional Services/ Program Types depending on the option code. Text will be displayed in the locale selected.
      *
      * @return $this
      */

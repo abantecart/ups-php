@@ -35,7 +35,6 @@ use \UPS\DangerousGoods\ObjectSerializer;
  * ChemicalReferenceDataResponseChemicalData Class Doc Comment
  *
  * @category Class
- * @description Container to hold Chemical Data information.
  * @package  UPS\DangerousGoods
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -59,7 +58,7 @@ class ChemicalReferenceDataResponseChemicalData implements ModelInterface, Array
     protected static $swaggerTypes = [
         'chemical_detail' => '\UPS\DangerousGoods\DangerousGoods\ChemicalDataChemicalDetail',
         'proper_shipping_name_detail' => '\UPS\DangerousGoods\DangerousGoods\ChemicalDataProperShippingNameDetail',
-        'package_quantity_limit_detail' => 'OneOfChemicalReferenceDataResponseChemicalDataPackageQuantityLimitDetail'
+        'package_quantity_limit_detail' => '\UPS\DangerousGoods\DangerousGoods\ChemicalDataPackageQuantityLimitDetail[]'
     ];
 
     /**
@@ -265,7 +264,7 @@ class ChemicalReferenceDataResponseChemicalData implements ModelInterface, Array
     /**
      * Gets package_quantity_limit_detail
      *
-     * @return OneOfChemicalReferenceDataResponseChemicalDataPackageQuantityLimitDetail
+     * @return \UPS\DangerousGoods\DangerousGoods\ChemicalDataPackageQuantityLimitDetail[]
      */
     public function getPackageQuantityLimitDetail()
     {
@@ -275,7 +274,7 @@ class ChemicalReferenceDataResponseChemicalData implements ModelInterface, Array
     /**
      * Sets package_quantity_limit_detail
      *
-     * @param OneOfChemicalReferenceDataResponseChemicalDataPackageQuantityLimitDetail $package_quantity_limit_detail package_quantity_limit_detail
+     * @param \UPS\DangerousGoods\DangerousGoods\ChemicalDataPackageQuantityLimitDetail[] $package_quantity_limit_detail Container to hold Package Quantity Limit Detail information.  It will be returned if applies for a given chemical record.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

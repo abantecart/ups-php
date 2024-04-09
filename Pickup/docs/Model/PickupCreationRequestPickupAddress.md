@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **floor** | **string** | Floor number | [optional] 
 **city** | **string** | City or equivalent | 
 **state_province** | **string** | State or province for postal countries; county for Ireland (IE) and district code for Hong Kong (HK) | [optional] 
-**urbanization** | **string** | Barrio for Mexico (MX) Urbanization for Puerto Rico (PR) Shire for United Kingdom (UK) | [optional] 
+**urbanization** | **string** | - Barrio for Mexico (MX) - Urbanization for Puerto Rico (PR) - Shire for United Kingdom (UK) | [optional] 
 **postal_code** | **string** | Postal code or equivalent for postal countries | [optional] 
 **country_code** | **string** | The pickup country or territory code as defined by ISO-3166.  Refer to Country or Territory Codes in the Appendix for valid values. | 
 **residential_indicator** | **string** | Indicates if the pickup address is commercial or residential.  Valid values: Y &#x3D; Residential address N &#x3D; Non-residential (Commercial) address (default) | 

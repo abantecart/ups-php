@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * DropLocationLocalizedInstruction Class Doc Comment
  *
  * @category Class
- * @description LocalizedInstruction container. Applicable for SearchOptionCode 01,02,03.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

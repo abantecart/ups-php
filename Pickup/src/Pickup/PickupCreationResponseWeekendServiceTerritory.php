@@ -227,7 +227,7 @@ class PickupCreationResponseWeekendServiceTerritory implements ModelInterface, A
     /**
      * Sets sat_wst
      *
-     * @param string $sat_wst Indicates if the pickup address qualifies for WST (Weekend Service Territory). Returned if the pickup date is Saturday and subversion greater or equal to 2007.                                                                                                                                                                                                                          Valid Values:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Y = Saturday WST  N = Non-Saturday WST
+     * @param string $sat_wst Indicates if the pickup address qualifies for WST (Weekend Service Territory). Returned if the pickup date is Saturday and subversion greater or equal to 2007. Valid Values: - Y = Saturday WST - N = Non-Saturday WST
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class PickupCreationResponseWeekendServiceTerritory implements ModelInterface, A
     /**
      * Sets sun_wst
      *
-     * @param string $sun_wst Indicates if the pickup address qualifies for WST (Weekend Service Territory). Returned if the pickup date is Sunday and subversion greater or equal to 2007.                                                                                                                                                                                                                          Valid Values:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Y = Sunday WST  N = Non-Sunday WST
+     * @param string $sun_wst Indicates if the pickup address qualifies for WST (Weekend Service Territory). Returned if the pickup date is Sunday and subversion greater or equal to 2007. Valid Values: - Y = Sunday WST - N = Non-Sunday WST
      *
      * @return $this
      */

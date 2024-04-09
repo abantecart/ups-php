@@ -359,7 +359,7 @@ class DropOffFacilitiesAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code UPS Pickup facility country or territory code.
+     * @param string $country_code UPS Drop Off facility country or territory code.
      *
      * @return $this
      */

@@ -1,6 +1,6 @@
 # UPS\OAuthClientCredentials\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/*
+All URIs are relative to *https://wwwcie.ups.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,7 +28,7 @@ $apiInstance = new UPS\OAuthClientCredentials\Request\DefaultApi(
     $config
 );
 $grant_type = "grant_type_example"; // string | 
-$x_merchant_id = "x_merchant_id_example"; // string | Client merchant ID
+$x_merchant_id = "x_merchant_id_example"; // string | 6-digit UPS account number.
 
 try {
     $result = $apiInstance->createToken($grant_type, $x_merchant_id);
@@ -44,7 +44,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **grant_type** | **string**|  |
- **x_merchant_id** | **string**| Client merchant ID | [optional]
+ **x_merchant_id** | **string**| 6-digit UPS account number. | [optional]
 
 ### Return type
 

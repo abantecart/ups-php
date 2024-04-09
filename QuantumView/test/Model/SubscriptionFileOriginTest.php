@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SubscriptionFileOriginTest Class Doc Comment
  *
  * @category    Class
- * @description Information about shipment&#x27;s origin.
+ * @description SubscriptionFileOrigin
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * RateRequest Class Doc Comment
  *
  * @category Class
- * @description Rate Request container.  N/A
+ * @description Rate Request container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

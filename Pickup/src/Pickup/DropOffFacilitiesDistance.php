@@ -35,7 +35,7 @@ use \UPS\Pickup\ObjectSerializer;
  * DropOffFacilitiesDistance Class Doc Comment
  *
  * @category Class
- * @description Distance from origin  Distance will be retuned for�drop off location search by proximity order.
+ * @description Distance from origin  Distance will be retuned for drop off location search by proximity order.
  * @package  UPS\Pickup
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -221,7 +221,7 @@ class DropOffFacilitiesDistance implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param string $value Distance from origin address. Distance based on distance UOM in request. Numeric value up to 200 and .2� decimal positions  Distance will be retuned for�drop off location search by proximity order.
+     * @param string $value Distance from origin address. Distance based on distance UOM in request.  Numeric value up to 200 and .2 decimal positions. Distance will be retuned for drop off location search by proximity order.
      *
      * @return $this
      */

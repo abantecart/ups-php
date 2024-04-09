@@ -227,7 +227,7 @@ class RatedShipmentServiceOptionsCharges implements ModelInterface, ArrayAccess
     /**
      * Sets currency_code
      *
-     * @param string $currency_code The IATA currency code associated with the accessorial charges for the package.
+     * @param string $currency_code The IATA currency code associated with the accessorial charges for the shipment.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class RatedShipmentServiceOptionsCharges implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value The value for the accessorial charges associated with the package.
+     * @param string $monetary_value The value for the accessorial charges associated with the shipment.
      *
      * @return $this
      */

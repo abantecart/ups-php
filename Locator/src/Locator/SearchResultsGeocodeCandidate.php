@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * SearchResultsGeocodeCandidate Class Doc Comment
  *
  * @category Class
- * @description If the origin address provided in the location request document does not have a match, a list of candidate addresses, geocodes and optionally a landmark will be returned.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

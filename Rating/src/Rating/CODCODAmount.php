@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * CODCODAmount Class Doc Comment
  *
  * @category Class
- * @description CODAmount Container.  UPS does not support all international currency codes. Refer to the appendix for a list of valid codes.
+ * @description CODAmount Container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -227,7 +227,7 @@ class CODCODAmount implements ModelInterface, ArrayAccess
     /**
      * Sets currency_code
      *
-     * @param string $currency_code COD amount currency code type.  N/A
+     * @param string $currency_code Currency Code.  Required if a value for the COD amount exists in the MonetaryValue tag. Must match one of the IATA currency codes. UPS does not support all international currency codes. Refer to Currency Codes in the Appendix for a list of valid codes.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class CODCODAmount implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value COD Amount.
+     * @param string $monetary_value The COD value for the package.  Required if COD option is present. The maximum amount allowed is 50,000 USD.
      *
      * @return $this
      */

@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * StandardHoursDayOfWeek Class Doc Comment
  *
  * @category Class
- * @description Container for the Day of Week.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

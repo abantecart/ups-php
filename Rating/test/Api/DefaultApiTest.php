@@ -72,6 +72,16 @@ class DefaultApiTest extends TestCase
     }
 
     /**
+     * Test case for deprecatedRate
+     *
+     * Rating.
+     *
+     */
+    public function testDeprecatedRate()
+    {
+    }
+
+    /**
      * Test case for rate
      *
      * Rating.

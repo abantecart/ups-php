@@ -251,7 +251,7 @@ class PackageServiceOptionsAccessPointCOD implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value Access Point COD Monetary Value.  Required if Access Point COD container is present. 8 digits prior to the decimal place and 2 after.
+     * @param string $monetary_value Access Point COD Monetary Value.  Required if Access Point COD container is present.  8 digits prior to the decimal place and 2 after.
      *
      * @return $this
      */

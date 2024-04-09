@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentShipmentRatingOptionsTest Class Doc Comment
  *
  * @category    Class
- * @description Shipment Rating Options container.  N/A
+ * @description Shipment Rating Options container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

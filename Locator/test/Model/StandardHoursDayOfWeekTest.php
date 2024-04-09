@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * StandardHoursDayOfWeekTest Class Doc Comment
  *
  * @category    Class
- * @description Container for the Day of Week.
+ * @description StandardHoursDayOfWeek
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

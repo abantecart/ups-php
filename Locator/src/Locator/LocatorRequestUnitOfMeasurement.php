@@ -218,7 +218,7 @@ class LocatorRequestUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The distance unit of measurement code. The unit of measurement used in the search request is returned.   Valid values: MI-Miles or KM-Kilometers
+     * @param string $code Valid values are:  - MI-Miles - KM-Kilometers
      *
      * @return $this
      */

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SearchResultsGeocodeCandidateTest Class Doc Comment
  *
  * @category    Class
- * @description If the origin address provided in the location request document does not have a match, a list of candidate addresses, geocodes and optionally a landmark will be returned.
+ * @description SearchResultsGeocodeCandidate
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -57,7 +57,7 @@ class HandlingUnitsDimensions implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'unit_of_measurement' => '\UPS\Rating\Rating\AdjustedHeightUnitOfMeasurement',
+        'unit_of_measurement' => '\UPS\Rating\Rating\HandlingUnitsUnitOfMeasurement',
         'length' => 'string',
         'width' => 'string',
         'height' => 'string'
@@ -235,7 +235,7 @@ class HandlingUnitsDimensions implements ModelInterface, ArrayAccess
     /**
      * Gets unit_of_measurement
      *
-     * @return \UPS\Rating\Rating\AdjustedHeightUnitOfMeasurement
+     * @return \UPS\Rating\Rating\HandlingUnitsUnitOfMeasurement
      */
     public function getUnitOfMeasurement()
     {
@@ -245,7 +245,7 @@ class HandlingUnitsDimensions implements ModelInterface, ArrayAccess
     /**
      * Sets unit_of_measurement
      *
-     * @param \UPS\Rating\Rating\AdjustedHeightUnitOfMeasurement $unit_of_measurement unit_of_measurement
+     * @param \UPS\Rating\Rating\HandlingUnitsUnitOfMeasurement $unit_of_measurement unit_of_measurement
      *
      * @return $this
      */

@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * ShipmentResultsHighValueReport Class Doc Comment
  *
  * @category Class
- * @description Container for the High Value Report generated for ImportControl or Return shipments with high package declared value.  Applicable for one pass ShipmentResponse and two-pass ShipAcceptResponse
+ * @description Container for the High Value Report generated for ImportControl or Return shipments with high package declared value.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

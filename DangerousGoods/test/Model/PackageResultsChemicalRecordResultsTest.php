@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageResultsChemicalRecordResultsTest Class Doc Comment
  *
  * @category    Class
- * @description Chemical Records Results container.
+ * @description PackageResultsChemicalRecordResults
  * @package     UPS\DangerousGoods
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

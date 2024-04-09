@@ -320,7 +320,7 @@ class PackagePackageServiceOptions implements ModelInterface, ArrayAccess
     /**
      * Sets hazardous_materials_code
      *
-     * @param string $hazardous_materials_code Indicates if the package contains hazardous materials.  Valid values:  1 - Hazardous Material 2 - Electronically billed hazardous material.� If present, only one package may exist in the shipment.
+     * @param string $hazardous_materials_code Indicates if the package contains hazardous materials. Valid values: - 1 - Hazardous Material - 2 - Electronically billed hazardous material.  If present, only one package may exist in the shipment.
      *
      * @return $this
      */

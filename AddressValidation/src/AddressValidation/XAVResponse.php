@@ -62,7 +62,7 @@ class XAVResponse implements ModelInterface, ArrayAccess
         'ambiguous_address_indicator' => 'string',
         'no_candidates_indicator' => 'string',
         'address_classification' => '\UPS\AddressValidation\AddressValidation\XAVResponseAddressClassification',
-        'candidate' => '\UPS\AddressValidation\AddressValidation\XAVResponseCandidate'
+        'candidate' => '\UPS\AddressValidation\AddressValidation\XAVResponseCandidate[]'
     ];
 
     /**
@@ -358,7 +358,7 @@ class XAVResponse implements ModelInterface, ArrayAccess
     /**
      * Gets candidate
      *
-     * @return \UPS\AddressValidation\AddressValidation\XAVResponseCandidate
+     * @return \UPS\AddressValidation\AddressValidation\XAVResponseCandidate[]
      */
     public function getCandidate()
     {
@@ -368,7 +368,7 @@ class XAVResponse implements ModelInterface, ArrayAccess
     /**
      * Sets candidate
      *
-     * @param \UPS\AddressValidation\AddressValidation\XAVResponseCandidate $candidate candidate
+     * @param \UPS\AddressValidation\AddressValidation\XAVResponseCandidate[] $candidate Candidate Container.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

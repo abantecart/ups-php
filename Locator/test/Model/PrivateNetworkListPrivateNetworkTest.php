@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PrivateNetworkListPrivateNetworkTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold the private network details.
+ * @description PrivateNetworkListPrivateNetwork
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

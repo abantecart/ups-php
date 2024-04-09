@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * AcceptanceAuditPreCheckResponsePackageResultsTest Class Doc Comment
  *
  * @category    Class
- * @description Package Results container.
+ * @description AcceptanceAuditPreCheckResponsePackageResults
  * @package     UPS\DangerousGoods
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

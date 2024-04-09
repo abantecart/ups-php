@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * DropLocationLocalizedInstructionTest Class Doc Comment
  *
  * @category    Class
- * @description LocalizedInstruction container. Applicable for SearchOptionCode 01,02,03.
+ * @description DropLocationLocalizedInstruction
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

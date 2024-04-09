@@ -63,7 +63,8 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
         'phone' => '\UPS\Shipping\Shipping\SoldToPhone',
         'option' => 'string',
         'address' => '\UPS\Shipping\Shipping\SoldToAddress',
-        'e_mail_address' => 'string'
+        'e_mail_address' => 'string',
+        'account_number' => 'string'
     ];
 
     /**
@@ -78,7 +79,8 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
         'phone' => null,
         'option' => null,
         'address' => null,
-        'e_mail_address' => null
+        'e_mail_address' => null,
+        'account_number' => null
     ];
 
     /**
@@ -114,7 +116,8 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
         'phone' => 'Phone',
         'option' => 'Option',
         'address' => 'Address',
-        'e_mail_address' => 'EMailAddress'
+        'e_mail_address' => 'EMailAddress',
+        'account_number' => 'AccountNumber'
     ];
 
     /**
@@ -129,7 +132,8 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
         'phone' => 'setPhone',
         'option' => 'setOption',
         'address' => 'setAddress',
-        'e_mail_address' => 'setEMailAddress'
+        'e_mail_address' => 'setEMailAddress',
+        'account_number' => 'setAccountNumber'
     ];
 
     /**
@@ -144,7 +148,8 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
         'phone' => 'getPhone',
         'option' => 'getOption',
         'address' => 'getAddress',
-        'e_mail_address' => 'getEMailAddress'
+        'e_mail_address' => 'getEMailAddress',
+        'account_number' => 'getAccountNumber'
     ];
 
     /**
@@ -212,6 +217,7 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
         $this->container['option'] = isset($data['option']) ? $data['option'] : null;
         $this->container['address'] = isset($data['address']) ? $data['address'] : null;
         $this->container['e_mail_address'] = isset($data['e_mail_address']) ? $data['e_mail_address'] : null;
+        $this->container['account_number'] = isset($data['account_number']) ? $data['account_number'] : null;
     }
 
     /**
@@ -356,7 +362,7 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
     /**
      * Sets option
      *
-     * @param string $option The text associated with the code will be printed in the sold to section of the NAFTA CO form.  The values indicate the following: 01 - Unknown.  Applies to NAFTA CO form. Possible Values are 01 and 02.
+     * @param string $option The text associated with the code will be printed in the sold to section of the NAFTA CO form.  The values indicate the following: 01 – Unknown.  Applies to NAFTA CO form. Possible Values are 01 and 02.
      *
      * @return $this
      */
@@ -411,6 +417,30 @@ class ContactsSoldTo implements ModelInterface, ArrayAccess
     public function setEMailAddress($e_mail_address)
     {
         $this->container['e_mail_address'] = $e_mail_address;
+
+        return $this;
+    }
+
+    /**
+     * Gets account_number
+     *
+     * @return string
+     */
+    public function getAccountNumber()
+    {
+        return $this->container['account_number'];
+    }
+
+    /**
+     * Sets account_number
+     *
+     * @param string $account_number SoldTo AccountNumber
+     *
+     * @return $this
+     */
+    public function setAccountNumber($account_number)
+    {
+        $this->container['account_number'] = $account_number;
 
         return $this;
     }

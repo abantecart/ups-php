@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentShipmentServiceOptionsTest Class Doc Comment
  *
  * @category    Class
- * @description Shipment level Accessorials are included in this container.  N/A
+ * @description Shipment level Accessorials are included in this container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * DeleteRequest Class Doc Comment
  *
  * @category Class
- * @description Paperless Document API Request container for deleting user created forms.  N/A
+ * @description Paperless Document API Request container for deleting user created forms.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

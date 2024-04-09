@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageResultsShippingReceiptTest Class Doc Comment
  *
  * @category    Class
- * @description Supported for following shipments - PRL shipments, Electronic Return Label or Electronic Import Control Label shipments with SubVersion greater than or equal to 1707.  Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Supported for following shipments - PRL shipments, Electronic Return Label or Electronic Import Control Label shipments with SubVersion greater than or equal to 1707.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

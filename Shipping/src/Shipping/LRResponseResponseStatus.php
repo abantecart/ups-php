@@ -227,7 +227,7 @@ class LRResponseResponseStatus implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Identifies the success or failure of the transaction. 1 = Successful
+     * @param string $code Identifies the success status of the transaction. 1= Success
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class LRResponseResponseStatus implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Describes Response Status Code. Returns text of Success.
+     * @param string $description Describes Response Status Code. Returns the text \"Success\"
      *
      * @return $this
      */

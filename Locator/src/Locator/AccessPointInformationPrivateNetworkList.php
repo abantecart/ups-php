@@ -57,7 +57,7 @@ class AccessPointInformationPrivateNetworkList implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'private_network' => 'OneOfAccessPointInformationPrivateNetworkListPrivateNetwork'
+        'private_network' => '\UPS\Locator\Locator\PrivateNetworkListPrivateNetwork[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class AccessPointInformationPrivateNetworkList implements ModelInterface, ArrayA
     /**
      * Gets private_network
      *
-     * @return OneOfAccessPointInformationPrivateNetworkListPrivateNetwork
+     * @return \UPS\Locator\Locator\PrivateNetworkListPrivateNetwork[]
      */
     public function getPrivateNetwork()
     {
@@ -218,7 +218,7 @@ class AccessPointInformationPrivateNetworkList implements ModelInterface, ArrayA
     /**
      * Sets private_network
      *
-     * @param OneOfAccessPointInformationPrivateNetworkListPrivateNetwork $private_network private_network
+     * @param \UPS\Locator\Locator\PrivateNetworkListPrivateNetwork[] $private_network Container to hold the private network details.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

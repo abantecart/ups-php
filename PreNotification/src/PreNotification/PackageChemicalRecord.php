@@ -57,28 +57,28 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'chemical_record_reportable_quantity' => 'string',
-        'chemical_record_class_division_number' => 'string',
-        'chemical_record_sub_risk_class' => 'string',
-        'chemical_record_id_number' => 'string',
-        'chemical_record_packaging_group_type' => 'string',
-        'chemical_record_quantity' => 'string',
-        'chemical_record_uom' => 'string',
-        'chemical_record_packaging_instruction_code' => 'string',
-        'chemical_record_emergency_phone' => 'string',
-        'chemical_record_emergency_contact' => 'string',
-        'chemical_record_proper_shipping_name' => 'string',
-        'chemical_record_technical_name' => 'string',
-        'chemical_record_additional_description' => 'string',
-        'chemical_record_packaging_type' => 'string',
-        'chemical_record_hazard_label_required' => 'string',
-        'chemical_record_packaging_type_quantity' => 'string',
-        'chemical_record_commodity_regulated_level_code' => 'string',
-        'chemical_record_transport_category' => 'string',
-        'chemical_record_tunnel_restriction_code' => 'string',
-        'chemical_record_q_value' => 'string',
-        'chemical_record_over_packed_indicator' => 'string',
-        'chemical_record_all_packed_in_one_indicator' => 'string'
+        'reportable_quantity' => 'string',
+        'class_division_number' => 'string',
+        'sub_risk_class' => 'string',
+        'id_number' => 'string',
+        'packaging_group_type' => 'string',
+        'quantity' => 'string',
+        'uom' => 'string',
+        'packaging_instruction_code' => 'string',
+        'emergency_phone' => 'string',
+        'emergency_contact' => 'string',
+        'proper_shipping_name' => 'string',
+        'technical_name' => 'string',
+        'additional_description' => 'string',
+        'packaging_type' => 'string',
+        'hazard_label_required' => 'string',
+        'packaging_type_quantity' => 'string',
+        'commodity_regulated_level_code' => 'string',
+        'transport_category' => 'string',
+        'tunnel_restriction_code' => 'string',
+        'q_value' => 'string',
+        'over_packed_indicator' => 'string',
+        'all_packed_in_one_indicator' => 'string'
     ];
 
     /**
@@ -87,28 +87,28 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'chemical_record_reportable_quantity' => null,
-        'chemical_record_class_division_number' => null,
-        'chemical_record_sub_risk_class' => null,
-        'chemical_record_id_number' => null,
-        'chemical_record_packaging_group_type' => null,
-        'chemical_record_quantity' => null,
-        'chemical_record_uom' => null,
-        'chemical_record_packaging_instruction_code' => null,
-        'chemical_record_emergency_phone' => null,
-        'chemical_record_emergency_contact' => null,
-        'chemical_record_proper_shipping_name' => null,
-        'chemical_record_technical_name' => null,
-        'chemical_record_additional_description' => null,
-        'chemical_record_packaging_type' => null,
-        'chemical_record_hazard_label_required' => null,
-        'chemical_record_packaging_type_quantity' => null,
-        'chemical_record_commodity_regulated_level_code' => null,
-        'chemical_record_transport_category' => null,
-        'chemical_record_tunnel_restriction_code' => null,
-        'chemical_record_q_value' => null,
-        'chemical_record_over_packed_indicator' => null,
-        'chemical_record_all_packed_in_one_indicator' => null
+        'reportable_quantity' => null,
+        'class_division_number' => null,
+        'sub_risk_class' => null,
+        'id_number' => null,
+        'packaging_group_type' => null,
+        'quantity' => null,
+        'uom' => null,
+        'packaging_instruction_code' => null,
+        'emergency_phone' => null,
+        'emergency_contact' => null,
+        'proper_shipping_name' => null,
+        'technical_name' => null,
+        'additional_description' => null,
+        'packaging_type' => null,
+        'hazard_label_required' => null,
+        'packaging_type_quantity' => null,
+        'commodity_regulated_level_code' => null,
+        'transport_category' => null,
+        'tunnel_restriction_code' => null,
+        'q_value' => null,
+        'over_packed_indicator' => null,
+        'all_packed_in_one_indicator' => null
     ];
 
     /**
@@ -138,28 +138,28 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'chemical_record_reportable_quantity' => 'ChemicalRecord_ReportableQuantity',
-        'chemical_record_class_division_number' => 'ChemicalRecord_ClassDivisionNumber',
-        'chemical_record_sub_risk_class' => 'ChemicalRecord_SubRiskClass',
-        'chemical_record_id_number' => 'ChemicalRecord_IDNumber',
-        'chemical_record_packaging_group_type' => 'ChemicalRecord_PackagingGroupType',
-        'chemical_record_quantity' => 'ChemicalRecord_Quantity',
-        'chemical_record_uom' => 'ChemicalRecord_UOM',
-        'chemical_record_packaging_instruction_code' => 'ChemicalRecord_PackagingInstructionCode',
-        'chemical_record_emergency_phone' => 'ChemicalRecord_EmergencyPhone',
-        'chemical_record_emergency_contact' => 'ChemicalRecord_EmergencyContact',
-        'chemical_record_proper_shipping_name' => 'ChemicalRecord_ProperShippingName',
-        'chemical_record_technical_name' => 'ChemicalRecord_TechnicalName',
-        'chemical_record_additional_description' => 'ChemicalRecord_AdditionalDescription',
-        'chemical_record_packaging_type' => 'ChemicalRecord_PackagingType',
-        'chemical_record_hazard_label_required' => 'ChemicalRecord_HazardLabelRequired',
-        'chemical_record_packaging_type_quantity' => 'ChemicalRecord_PackagingTypeQuantity',
-        'chemical_record_commodity_regulated_level_code' => 'ChemicalRecord_CommodityRegulatedLevelCode',
-        'chemical_record_transport_category' => 'ChemicalRecord_TransportCategory',
-        'chemical_record_tunnel_restriction_code' => 'ChemicalRecord_TunnelRestrictionCode',
-        'chemical_record_q_value' => 'ChemicalRecord_QValue',
-        'chemical_record_over_packed_indicator' => 'ChemicalRecord_OverPackedIndicator',
-        'chemical_record_all_packed_in_one_indicator' => 'ChemicalRecord_AllPackedInOneIndicator'
+        'reportable_quantity' => 'ReportableQuantity',
+        'class_division_number' => 'ClassDivisionNumber',
+        'sub_risk_class' => 'SubRiskClass',
+        'id_number' => 'IDNumber',
+        'packaging_group_type' => 'PackagingGroupType',
+        'quantity' => 'Quantity',
+        'uom' => 'UOM',
+        'packaging_instruction_code' => 'PackagingInstructionCode',
+        'emergency_phone' => 'EmergencyPhone',
+        'emergency_contact' => 'EmergencyContact',
+        'proper_shipping_name' => 'ProperShippingName',
+        'technical_name' => 'TechnicalName',
+        'additional_description' => 'AdditionalDescription',
+        'packaging_type' => 'PackagingType',
+        'hazard_label_required' => 'HazardLabelRequired',
+        'packaging_type_quantity' => 'PackagingTypeQuantity',
+        'commodity_regulated_level_code' => 'CommodityRegulatedLevelCode',
+        'transport_category' => 'TransportCategory',
+        'tunnel_restriction_code' => 'TunnelRestrictionCode',
+        'q_value' => 'QValue',
+        'over_packed_indicator' => 'OverPackedIndicator',
+        'all_packed_in_one_indicator' => 'AllPackedInOneIndicator'
     ];
 
     /**
@@ -168,28 +168,28 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'chemical_record_reportable_quantity' => 'setChemicalRecordReportableQuantity',
-        'chemical_record_class_division_number' => 'setChemicalRecordClassDivisionNumber',
-        'chemical_record_sub_risk_class' => 'setChemicalRecordSubRiskClass',
-        'chemical_record_id_number' => 'setChemicalRecordIdNumber',
-        'chemical_record_packaging_group_type' => 'setChemicalRecordPackagingGroupType',
-        'chemical_record_quantity' => 'setChemicalRecordQuantity',
-        'chemical_record_uom' => 'setChemicalRecordUom',
-        'chemical_record_packaging_instruction_code' => 'setChemicalRecordPackagingInstructionCode',
-        'chemical_record_emergency_phone' => 'setChemicalRecordEmergencyPhone',
-        'chemical_record_emergency_contact' => 'setChemicalRecordEmergencyContact',
-        'chemical_record_proper_shipping_name' => 'setChemicalRecordProperShippingName',
-        'chemical_record_technical_name' => 'setChemicalRecordTechnicalName',
-        'chemical_record_additional_description' => 'setChemicalRecordAdditionalDescription',
-        'chemical_record_packaging_type' => 'setChemicalRecordPackagingType',
-        'chemical_record_hazard_label_required' => 'setChemicalRecordHazardLabelRequired',
-        'chemical_record_packaging_type_quantity' => 'setChemicalRecordPackagingTypeQuantity',
-        'chemical_record_commodity_regulated_level_code' => 'setChemicalRecordCommodityRegulatedLevelCode',
-        'chemical_record_transport_category' => 'setChemicalRecordTransportCategory',
-        'chemical_record_tunnel_restriction_code' => 'setChemicalRecordTunnelRestrictionCode',
-        'chemical_record_q_value' => 'setChemicalRecordQValue',
-        'chemical_record_over_packed_indicator' => 'setChemicalRecordOverPackedIndicator',
-        'chemical_record_all_packed_in_one_indicator' => 'setChemicalRecordAllPackedInOneIndicator'
+        'reportable_quantity' => 'setReportableQuantity',
+        'class_division_number' => 'setClassDivisionNumber',
+        'sub_risk_class' => 'setSubRiskClass',
+        'id_number' => 'setIdNumber',
+        'packaging_group_type' => 'setPackagingGroupType',
+        'quantity' => 'setQuantity',
+        'uom' => 'setUom',
+        'packaging_instruction_code' => 'setPackagingInstructionCode',
+        'emergency_phone' => 'setEmergencyPhone',
+        'emergency_contact' => 'setEmergencyContact',
+        'proper_shipping_name' => 'setProperShippingName',
+        'technical_name' => 'setTechnicalName',
+        'additional_description' => 'setAdditionalDescription',
+        'packaging_type' => 'setPackagingType',
+        'hazard_label_required' => 'setHazardLabelRequired',
+        'packaging_type_quantity' => 'setPackagingTypeQuantity',
+        'commodity_regulated_level_code' => 'setCommodityRegulatedLevelCode',
+        'transport_category' => 'setTransportCategory',
+        'tunnel_restriction_code' => 'setTunnelRestrictionCode',
+        'q_value' => 'setQValue',
+        'over_packed_indicator' => 'setOverPackedIndicator',
+        'all_packed_in_one_indicator' => 'setAllPackedInOneIndicator'
     ];
 
     /**
@@ -198,28 +198,28 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'chemical_record_reportable_quantity' => 'getChemicalRecordReportableQuantity',
-        'chemical_record_class_division_number' => 'getChemicalRecordClassDivisionNumber',
-        'chemical_record_sub_risk_class' => 'getChemicalRecordSubRiskClass',
-        'chemical_record_id_number' => 'getChemicalRecordIdNumber',
-        'chemical_record_packaging_group_type' => 'getChemicalRecordPackagingGroupType',
-        'chemical_record_quantity' => 'getChemicalRecordQuantity',
-        'chemical_record_uom' => 'getChemicalRecordUom',
-        'chemical_record_packaging_instruction_code' => 'getChemicalRecordPackagingInstructionCode',
-        'chemical_record_emergency_phone' => 'getChemicalRecordEmergencyPhone',
-        'chemical_record_emergency_contact' => 'getChemicalRecordEmergencyContact',
-        'chemical_record_proper_shipping_name' => 'getChemicalRecordProperShippingName',
-        'chemical_record_technical_name' => 'getChemicalRecordTechnicalName',
-        'chemical_record_additional_description' => 'getChemicalRecordAdditionalDescription',
-        'chemical_record_packaging_type' => 'getChemicalRecordPackagingType',
-        'chemical_record_hazard_label_required' => 'getChemicalRecordHazardLabelRequired',
-        'chemical_record_packaging_type_quantity' => 'getChemicalRecordPackagingTypeQuantity',
-        'chemical_record_commodity_regulated_level_code' => 'getChemicalRecordCommodityRegulatedLevelCode',
-        'chemical_record_transport_category' => 'getChemicalRecordTransportCategory',
-        'chemical_record_tunnel_restriction_code' => 'getChemicalRecordTunnelRestrictionCode',
-        'chemical_record_q_value' => 'getChemicalRecordQValue',
-        'chemical_record_over_packed_indicator' => 'getChemicalRecordOverPackedIndicator',
-        'chemical_record_all_packed_in_one_indicator' => 'getChemicalRecordAllPackedInOneIndicator'
+        'reportable_quantity' => 'getReportableQuantity',
+        'class_division_number' => 'getClassDivisionNumber',
+        'sub_risk_class' => 'getSubRiskClass',
+        'id_number' => 'getIdNumber',
+        'packaging_group_type' => 'getPackagingGroupType',
+        'quantity' => 'getQuantity',
+        'uom' => 'getUom',
+        'packaging_instruction_code' => 'getPackagingInstructionCode',
+        'emergency_phone' => 'getEmergencyPhone',
+        'emergency_contact' => 'getEmergencyContact',
+        'proper_shipping_name' => 'getProperShippingName',
+        'technical_name' => 'getTechnicalName',
+        'additional_description' => 'getAdditionalDescription',
+        'packaging_type' => 'getPackagingType',
+        'hazard_label_required' => 'getHazardLabelRequired',
+        'packaging_type_quantity' => 'getPackagingTypeQuantity',
+        'commodity_regulated_level_code' => 'getCommodityRegulatedLevelCode',
+        'transport_category' => 'getTransportCategory',
+        'tunnel_restriction_code' => 'getTunnelRestrictionCode',
+        'q_value' => 'getQValue',
+        'over_packed_indicator' => 'getOverPackedIndicator',
+        'all_packed_in_one_indicator' => 'getAllPackedInOneIndicator'
     ];
 
     /**
@@ -280,28 +280,28 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['chemical_record_reportable_quantity'] = isset($data['chemical_record_reportable_quantity']) ? $data['chemical_record_reportable_quantity'] : null;
-        $this->container['chemical_record_class_division_number'] = isset($data['chemical_record_class_division_number']) ? $data['chemical_record_class_division_number'] : null;
-        $this->container['chemical_record_sub_risk_class'] = isset($data['chemical_record_sub_risk_class']) ? $data['chemical_record_sub_risk_class'] : null;
-        $this->container['chemical_record_id_number'] = isset($data['chemical_record_id_number']) ? $data['chemical_record_id_number'] : null;
-        $this->container['chemical_record_packaging_group_type'] = isset($data['chemical_record_packaging_group_type']) ? $data['chemical_record_packaging_group_type'] : null;
-        $this->container['chemical_record_quantity'] = isset($data['chemical_record_quantity']) ? $data['chemical_record_quantity'] : null;
-        $this->container['chemical_record_uom'] = isset($data['chemical_record_uom']) ? $data['chemical_record_uom'] : null;
-        $this->container['chemical_record_packaging_instruction_code'] = isset($data['chemical_record_packaging_instruction_code']) ? $data['chemical_record_packaging_instruction_code'] : null;
-        $this->container['chemical_record_emergency_phone'] = isset($data['chemical_record_emergency_phone']) ? $data['chemical_record_emergency_phone'] : null;
-        $this->container['chemical_record_emergency_contact'] = isset($data['chemical_record_emergency_contact']) ? $data['chemical_record_emergency_contact'] : null;
-        $this->container['chemical_record_proper_shipping_name'] = isset($data['chemical_record_proper_shipping_name']) ? $data['chemical_record_proper_shipping_name'] : null;
-        $this->container['chemical_record_technical_name'] = isset($data['chemical_record_technical_name']) ? $data['chemical_record_technical_name'] : null;
-        $this->container['chemical_record_additional_description'] = isset($data['chemical_record_additional_description']) ? $data['chemical_record_additional_description'] : null;
-        $this->container['chemical_record_packaging_type'] = isset($data['chemical_record_packaging_type']) ? $data['chemical_record_packaging_type'] : null;
-        $this->container['chemical_record_hazard_label_required'] = isset($data['chemical_record_hazard_label_required']) ? $data['chemical_record_hazard_label_required'] : null;
-        $this->container['chemical_record_packaging_type_quantity'] = isset($data['chemical_record_packaging_type_quantity']) ? $data['chemical_record_packaging_type_quantity'] : null;
-        $this->container['chemical_record_commodity_regulated_level_code'] = isset($data['chemical_record_commodity_regulated_level_code']) ? $data['chemical_record_commodity_regulated_level_code'] : null;
-        $this->container['chemical_record_transport_category'] = isset($data['chemical_record_transport_category']) ? $data['chemical_record_transport_category'] : null;
-        $this->container['chemical_record_tunnel_restriction_code'] = isset($data['chemical_record_tunnel_restriction_code']) ? $data['chemical_record_tunnel_restriction_code'] : null;
-        $this->container['chemical_record_q_value'] = isset($data['chemical_record_q_value']) ? $data['chemical_record_q_value'] : null;
-        $this->container['chemical_record_over_packed_indicator'] = isset($data['chemical_record_over_packed_indicator']) ? $data['chemical_record_over_packed_indicator'] : null;
-        $this->container['chemical_record_all_packed_in_one_indicator'] = isset($data['chemical_record_all_packed_in_one_indicator']) ? $data['chemical_record_all_packed_in_one_indicator'] : null;
+        $this->container['reportable_quantity'] = isset($data['reportable_quantity']) ? $data['reportable_quantity'] : null;
+        $this->container['class_division_number'] = isset($data['class_division_number']) ? $data['class_division_number'] : null;
+        $this->container['sub_risk_class'] = isset($data['sub_risk_class']) ? $data['sub_risk_class'] : null;
+        $this->container['id_number'] = isset($data['id_number']) ? $data['id_number'] : null;
+        $this->container['packaging_group_type'] = isset($data['packaging_group_type']) ? $data['packaging_group_type'] : null;
+        $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
+        $this->container['uom'] = isset($data['uom']) ? $data['uom'] : null;
+        $this->container['packaging_instruction_code'] = isset($data['packaging_instruction_code']) ? $data['packaging_instruction_code'] : null;
+        $this->container['emergency_phone'] = isset($data['emergency_phone']) ? $data['emergency_phone'] : null;
+        $this->container['emergency_contact'] = isset($data['emergency_contact']) ? $data['emergency_contact'] : null;
+        $this->container['proper_shipping_name'] = isset($data['proper_shipping_name']) ? $data['proper_shipping_name'] : null;
+        $this->container['technical_name'] = isset($data['technical_name']) ? $data['technical_name'] : null;
+        $this->container['additional_description'] = isset($data['additional_description']) ? $data['additional_description'] : null;
+        $this->container['packaging_type'] = isset($data['packaging_type']) ? $data['packaging_type'] : null;
+        $this->container['hazard_label_required'] = isset($data['hazard_label_required']) ? $data['hazard_label_required'] : null;
+        $this->container['packaging_type_quantity'] = isset($data['packaging_type_quantity']) ? $data['packaging_type_quantity'] : null;
+        $this->container['commodity_regulated_level_code'] = isset($data['commodity_regulated_level_code']) ? $data['commodity_regulated_level_code'] : null;
+        $this->container['transport_category'] = isset($data['transport_category']) ? $data['transport_category'] : null;
+        $this->container['tunnel_restriction_code'] = isset($data['tunnel_restriction_code']) ? $data['tunnel_restriction_code'] : null;
+        $this->container['q_value'] = isset($data['q_value']) ? $data['q_value'] : null;
+        $this->container['over_packed_indicator'] = isset($data['over_packed_indicator']) ? $data['over_packed_indicator'] : null;
+        $this->container['all_packed_in_one_indicator'] = isset($data['all_packed_in_one_indicator']) ? $data['all_packed_in_one_indicator'] : null;
     }
 
     /**
@@ -313,6 +313,9 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
+        if ($this->container['commodity_regulated_level_code'] === null) {
+            $invalidProperties[] = "'commodity_regulated_level_code' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -329,529 +332,529 @@ class PackageChemicalRecord implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets chemical_record_reportable_quantity
+     * Gets reportable_quantity
      *
      * @return string
      */
-    public function getChemicalRecordReportableQuantity()
+    public function getReportableQuantity()
     {
-        return $this->container['chemical_record_reportable_quantity'];
+        return $this->container['reportable_quantity'];
     }
 
     /**
-     * Sets chemical_record_reportable_quantity
+     * Sets reportable_quantity
      *
-     * @param string $chemical_record_reportable_quantity Indicates whether or not a material being transported meets the definition of a hazardous material and meets or exceeds a reportable quantity threshold. If reportable quantity is met, \"RQ\" should be entered.  Any other value will be  interpreted as \"Non Reportable\" quantity.
+     * @param string $reportable_quantity Indicates whether or not a material being transported meets the definition of a hazardous material and meets or exceeds a reportable quantity threshold. If reportable quantity is met, \"RQ\" should be entered.  Any other value will be  interpreted as \"Non Reportable\" quantity.
      *
      * @return $this
      */
-    public function setChemicalRecordReportableQuantity($chemical_record_reportable_quantity)
+    public function setReportableQuantity($reportable_quantity)
     {
-        $this->container['chemical_record_reportable_quantity'] = $chemical_record_reportable_quantity;
+        $this->container['reportable_quantity'] = $reportable_quantity;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_class_division_number
+     * Gets class_division_number
      *
      * @return string
      */
-    public function getChemicalRecordClassDivisionNumber()
+    public function getClassDivisionNumber()
     {
-        return $this->container['chemical_record_class_division_number'];
+        return $this->container['class_division_number'];
     }
 
     /**
-     * Sets chemical_record_class_division_number
+     * Sets class_division_number
      *
-     * @param string $chemical_record_class_division_number This is the hazard class associated to the specified commodity. Required if CommodityRegulatedLevelCode is \"LQ\" or \"FR\"
+     * @param string $class_division_number This is the hazard class associated to the specified commodity. Required if CommodityRegulatedLevelCode is 'LQ' or 'FR'
      *
      * @return $this
      */
-    public function setChemicalRecordClassDivisionNumber($chemical_record_class_division_number)
+    public function setClassDivisionNumber($class_division_number)
     {
-        $this->container['chemical_record_class_division_number'] = $chemical_record_class_division_number;
+        $this->container['class_division_number'] = $class_division_number;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_sub_risk_class
+     * Gets sub_risk_class
      *
      * @return string
      */
-    public function getChemicalRecordSubRiskClass()
+    public function getSubRiskClass()
     {
-        return $this->container['chemical_record_sub_risk_class'];
+        return $this->container['sub_risk_class'];
     }
 
     /**
-     * Sets chemical_record_sub_risk_class
+     * Sets sub_risk_class
      *
-     * @param string $chemical_record_sub_risk_class Secondary hazardous characteristics of a package. (There can be more than one, separate each with a comma.)
+     * @param string $sub_risk_class Secondary hazardous characteristics of a package. (There can be more than one – separate each with a comma.)
      *
      * @return $this
      */
-    public function setChemicalRecordSubRiskClass($chemical_record_sub_risk_class)
+    public function setSubRiskClass($sub_risk_class)
     {
-        $this->container['chemical_record_sub_risk_class'] = $chemical_record_sub_risk_class;
+        $this->container['sub_risk_class'] = $sub_risk_class;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_id_number
+     * Gets id_number
      *
      * @return string
      */
-    public function getChemicalRecordIdNumber()
+    public function getIdNumber()
     {
-        return $this->container['chemical_record_id_number'];
+        return $this->container['id_number'];
     }
 
     /**
-     * Sets chemical_record_id_number
+     * Sets id_number
      *
-     * @param string $chemical_record_id_number This is the ID number (UN/NA/ID) for the specified commodity.  UN/NA/ID Identification Number assigned to the specified regulated good. (Include the UN/NA/ID as part of the entry).
+     * @param string $id_number This is the ID number (UN/NA/ID) for the specified commodity.  UN/NA/ID Identification Number assigned to the specified regulated good. (Include the UN/NA/ID as part of the entry).
      *
      * @return $this
      */
-    public function setChemicalRecordIdNumber($chemical_record_id_number)
+    public function setIdNumber($id_number)
     {
-        $this->container['chemical_record_id_number'] = $chemical_record_id_number;
+        $this->container['id_number'] = $id_number;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_packaging_group_type
+     * Gets packaging_group_type
      *
      * @return string
      */
-    public function getChemicalRecordPackagingGroupType()
+    public function getPackagingGroupType()
     {
-        return $this->container['chemical_record_packaging_group_type'];
+        return $this->container['packaging_group_type'];
     }
 
     /**
-     * Sets chemical_record_packaging_group_type
+     * Sets packaging_group_type
      *
-     * @param string $chemical_record_packaging_group_type This is the packing group category associated to the specified commodity.  Must be shown in Roman Numerals.  Valid values are: I, II, III and blank.
+     * @param string $packaging_group_type This is the packing group category associated to the specified commodity. Must be shown in Roman Numerals. Valid values are: - I - II - III - blank
      *
      * @return $this
      */
-    public function setChemicalRecordPackagingGroupType($chemical_record_packaging_group_type)
+    public function setPackagingGroupType($packaging_group_type)
     {
-        $this->container['chemical_record_packaging_group_type'] = $chemical_record_packaging_group_type;
+        $this->container['packaging_group_type'] = $packaging_group_type;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_quantity
+     * Gets quantity
      *
      * @return string
      */
-    public function getChemicalRecordQuantity()
+    public function getQuantity()
     {
-        return $this->container['chemical_record_quantity'];
+        return $this->container['quantity'];
     }
 
     /**
-     * Sets chemical_record_quantity
+     * Sets quantity
      *
-     * @param string $chemical_record_quantity Required if CommodityRegulatedLevelCode = LQ or FR. The numerical value of the mass capacity of the regulated good.
+     * @param string $quantity Required if CommodityRegulatedLevelCode = LQ or FR. The numerical value of the mass capacity of the regulated good.
      *
      * @return $this
      */
-    public function setChemicalRecordQuantity($chemical_record_quantity)
+    public function setQuantity($quantity)
     {
-        $this->container['chemical_record_quantity'] = $chemical_record_quantity;
+        $this->container['quantity'] = $quantity;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_uom
+     * Gets uom
      *
      * @return string
      */
-    public function getChemicalRecordUom()
+    public function getUom()
     {
-        return $this->container['chemical_record_uom'];
+        return $this->container['uom'];
     }
 
     /**
-     * Sets chemical_record_uom
+     * Sets uom
      *
-     * @param string $chemical_record_uom Required if CommodityRegulatedLevelCode = LQ or FR. The unit of measure used for the mass capacity of the regulated good.
+     * @param string $uom Required if CommodityRegulatedLevelCode = LQ or FR. The unit of measure used for the mass capacity of the regulated good.
      *
      * @return $this
      */
-    public function setChemicalRecordUom($chemical_record_uom)
+    public function setUom($uom)
     {
-        $this->container['chemical_record_uom'] = $chemical_record_uom;
+        $this->container['uom'] = $uom;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_packaging_instruction_code
+     * Gets packaging_instruction_code
      *
      * @return string
      */
-    public function getChemicalRecordPackagingInstructionCode()
+    public function getPackagingInstructionCode()
     {
-        return $this->container['chemical_record_packaging_instruction_code'];
+        return $this->container['packaging_instruction_code'];
     }
 
     /**
-     * Sets chemical_record_packaging_instruction_code
+     * Sets packaging_instruction_code
      *
-     * @param string $chemical_record_packaging_instruction_code The packing instructions related to the chemical record.
+     * @param string $packaging_instruction_code The packing instructions related to the chemical record.
      *
      * @return $this
      */
-    public function setChemicalRecordPackagingInstructionCode($chemical_record_packaging_instruction_code)
+    public function setPackagingInstructionCode($packaging_instruction_code)
     {
-        $this->container['chemical_record_packaging_instruction_code'] = $chemical_record_packaging_instruction_code;
+        $this->container['packaging_instruction_code'] = $packaging_instruction_code;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_emergency_phone
+     * Gets emergency_phone
      *
      * @return string
      */
-    public function getChemicalRecordEmergencyPhone()
+    public function getEmergencyPhone()
     {
-        return $this->container['chemical_record_emergency_phone'];
+        return $this->container['emergency_phone'];
     }
 
     /**
-     * Sets chemical_record_emergency_phone
+     * Sets emergency_phone
      *
-     * @param string $chemical_record_emergency_phone 24 Hour Emergency Phone Number of the shipper.   Valid values for this field are (0) through (9) with trailing blanks.   For numbers within the U.S., the layout is 1, area code, 7-digit number. For all other countries the layout is country code, area code, number. The following are restricted in the phone number   period \".\", dash \"-\", plus sign \"+\" and conventional parentheses \"(\" and \")\", \"EXT\" or \"OPT\"  The following are restricted in the phone number   period \".\", dash \"-\", plus sign \"+\" and conventional parentheses \"(\" and \")\", \"EXT\" or \"OPT\"
+     * @param string $emergency_phone 24 Hour Emergency Phone Number of the shipper.  Valid values for this field are (0) through (9) with trailing blanks.  For numbers within the U.S., the layout is 1, area code, 7-digit number. For all other countries the layout is country code, area code, number.                                                                                                                                                                                                                                                                       The following are restricted in the phone number period \".\", dash \"-\", plus sign \"+\" and conventional parentheses \"(\" and \")\", \"EXT\" or \"OPT\"  The following are restricted in the phone number period \".\", dash \"-\", plus sign \"+\" and conventional parentheses \"(\" and \")\", \"EXT\" or \"OPT\"
      *
      * @return $this
      */
-    public function setChemicalRecordEmergencyPhone($chemical_record_emergency_phone)
+    public function setEmergencyPhone($emergency_phone)
     {
-        $this->container['chemical_record_emergency_phone'] = $chemical_record_emergency_phone;
+        $this->container['emergency_phone'] = $emergency_phone;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_emergency_contact
+     * Gets emergency_contact
      *
      * @return string
      */
-    public function getChemicalRecordEmergencyContact()
+    public function getEmergencyContact()
     {
-        return $this->container['chemical_record_emergency_contact'];
+        return $this->container['emergency_contact'];
     }
 
     /**
-     * Sets chemical_record_emergency_contact
+     * Sets emergency_contact
      *
-     * @param string $chemical_record_emergency_contact The emergency information, contact name and/or contract number, required to be communicated when a call is placed to the EmergencyPhoneNumber.
+     * @param string $emergency_contact The emergency information, contact name and/or contract number, required to be communicated when a call is placed to the EmergencyPhoneNumber.
      *
      * @return $this
      */
-    public function setChemicalRecordEmergencyContact($chemical_record_emergency_contact)
+    public function setEmergencyContact($emergency_contact)
     {
-        $this->container['chemical_record_emergency_contact'] = $chemical_record_emergency_contact;
+        $this->container['emergency_contact'] = $emergency_contact;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_proper_shipping_name
+     * Gets proper_shipping_name
      *
      * @return string
      */
-    public function getChemicalRecordProperShippingName()
+    public function getProperShippingName()
     {
-        return $this->container['chemical_record_proper_shipping_name'];
+        return $this->container['proper_shipping_name'];
     }
 
     /**
-     * Sets chemical_record_proper_shipping_name
+     * Sets proper_shipping_name
      *
-     * @param string $chemical_record_proper_shipping_name The Proper Shipping Name assigned by ADR, CFR or IATA. Required if CommodityRegulatedLevelCode = LQ or FR.
+     * @param string $proper_shipping_name The Proper Shipping Name assigned by ADR, CFR or IATA. Required if CommodityRegulatedLevelCode = LQ or FR.
      *
      * @return $this
      */
-    public function setChemicalRecordProperShippingName($chemical_record_proper_shipping_name)
+    public function setProperShippingName($proper_shipping_name)
     {
-        $this->container['chemical_record_proper_shipping_name'] = $chemical_record_proper_shipping_name;
+        $this->container['proper_shipping_name'] = $proper_shipping_name;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_technical_name
+     * Gets technical_name
      *
      * @return string
      */
-    public function getChemicalRecordTechnicalName()
+    public function getTechnicalName()
     {
-        return $this->container['chemical_record_technical_name'];
+        return $this->container['technical_name'];
     }
 
     /**
-     * Sets chemical_record_technical_name
+     * Sets technical_name
      *
-     * @param string $chemical_record_technical_name The technical name (when required) for the specified commodity.
+     * @param string $technical_name The technical name (when required) for the specified commodity.
      *
      * @return $this
      */
-    public function setChemicalRecordTechnicalName($chemical_record_technical_name)
+    public function setTechnicalName($technical_name)
     {
-        $this->container['chemical_record_technical_name'] = $chemical_record_technical_name;
+        $this->container['technical_name'] = $technical_name;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_additional_description
+     * Gets additional_description
      *
      * @return string
      */
-    public function getChemicalRecordAdditionalDescription()
+    public function getAdditionalDescription()
     {
-        return $this->container['chemical_record_additional_description'];
+        return $this->container['additional_description'];
     }
 
     /**
-     * Sets chemical_record_additional_description
+     * Sets additional_description
      *
-     * @param string $chemical_record_additional_description Additional remarks or special provision information.
+     * @param string $additional_description Additional remarks or special provision information.
      *
      * @return $this
      */
-    public function setChemicalRecordAdditionalDescription($chemical_record_additional_description)
+    public function setAdditionalDescription($additional_description)
     {
-        $this->container['chemical_record_additional_description'] = $chemical_record_additional_description;
+        $this->container['additional_description'] = $additional_description;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_packaging_type
+     * Gets packaging_type
      *
      * @return string
      */
-    public function getChemicalRecordPackagingType()
+    public function getPackagingType()
     {
-        return $this->container['chemical_record_packaging_type'];
+        return $this->container['packaging_type'];
     }
 
     /**
-     * Sets chemical_record_packaging_type
+     * Sets packaging_type
      *
-     * @param string $chemical_record_packaging_type The type of package used to contain the regulated good. (Ex: Fiberboard Box).
+     * @param string $packaging_type The type of package used to contain the regulated good. (Ex: Fiberboard Box).
      *
      * @return $this
      */
-    public function setChemicalRecordPackagingType($chemical_record_packaging_type)
+    public function setPackagingType($packaging_type)
     {
-        $this->container['chemical_record_packaging_type'] = $chemical_record_packaging_type;
+        $this->container['packaging_type'] = $packaging_type;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_hazard_label_required
+     * Gets hazard_label_required
      *
      * @return string
      */
-    public function getChemicalRecordHazardLabelRequired()
+    public function getHazardLabelRequired()
     {
-        return $this->container['chemical_record_hazard_label_required'];
+        return $this->container['hazard_label_required'];
     }
 
     /**
-     * Sets chemical_record_hazard_label_required
+     * Sets hazard_label_required
      *
-     * @param string $chemical_record_hazard_label_required Defines the type of label that is required on the package for the commodity.
+     * @param string $hazard_label_required Defines the type of label that is required on the package for the commodity.
      *
      * @return $this
      */
-    public function setChemicalRecordHazardLabelRequired($chemical_record_hazard_label_required)
+    public function setHazardLabelRequired($hazard_label_required)
     {
-        $this->container['chemical_record_hazard_label_required'] = $chemical_record_hazard_label_required;
+        $this->container['hazard_label_required'] = $hazard_label_required;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_packaging_type_quantity
+     * Gets packaging_type_quantity
      *
      * @return string
      */
-    public function getChemicalRecordPackagingTypeQuantity()
+    public function getPackagingTypeQuantity()
     {
-        return $this->container['chemical_record_packaging_type_quantity'];
+        return $this->container['packaging_type_quantity'];
     }
 
     /**
-     * Sets chemical_record_packaging_type_quantity
+     * Sets packaging_type_quantity
      *
-     * @param string $chemical_record_packaging_type_quantity The number of pieces of the specific commodity. Required if CommodityRegulatedLevelCode = LQ or FR.  Valid values are 1 to 999.
+     * @param string $packaging_type_quantity The number of pieces of the specific commodity. Required if CommodityRegulatedLevelCode = LQ or FR.  Valid values are 1 to 999.
      *
      * @return $this
      */
-    public function setChemicalRecordPackagingTypeQuantity($chemical_record_packaging_type_quantity)
+    public function setPackagingTypeQuantity($packaging_type_quantity)
     {
-        $this->container['chemical_record_packaging_type_quantity'] = $chemical_record_packaging_type_quantity;
+        $this->container['packaging_type_quantity'] = $packaging_type_quantity;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_commodity_regulated_level_code
+     * Gets commodity_regulated_level_code
      *
      * @return string
      */
-    public function getChemicalRecordCommodityRegulatedLevelCode()
+    public function getCommodityRegulatedLevelCode()
     {
-        return $this->container['chemical_record_commodity_regulated_level_code'];
+        return $this->container['commodity_regulated_level_code'];
     }
 
     /**
-     * Sets chemical_record_commodity_regulated_level_code
+     * Sets commodity_regulated_level_code
      *
-     * @param string $chemical_record_commodity_regulated_level_code Indicates the type of commodity, Fully Regulated (FR), Limited Quantity (LQ), Lightly Regulated (LR)  Valid values are LR, FR and LQ.
+     * @param string $commodity_regulated_level_code Indicates the type of commodity, Fully Regulated (FR), Limited Quantity (LQ), Lightly Regulated (LR)  Valid values are LR, FR and LQ.
      *
      * @return $this
      */
-    public function setChemicalRecordCommodityRegulatedLevelCode($chemical_record_commodity_regulated_level_code)
+    public function setCommodityRegulatedLevelCode($commodity_regulated_level_code)
     {
-        $this->container['chemical_record_commodity_regulated_level_code'] = $chemical_record_commodity_regulated_level_code;
+        $this->container['commodity_regulated_level_code'] = $commodity_regulated_level_code;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_transport_category
+     * Gets transport_category
      *
      * @return string
      */
-    public function getChemicalRecordTransportCategory()
+    public function getTransportCategory()
     {
-        return $this->container['chemical_record_transport_category'];
+        return $this->container['transport_category'];
     }
 
     /**
-     * Sets chemical_record_transport_category
+     * Sets transport_category
      *
-     * @param string $chemical_record_transport_category Transport Category.   Valid values are 0 to 4.
+     * @param string $transport_category Transport Category. Valid values are 0 to 4.
      *
      * @return $this
      */
-    public function setChemicalRecordTransportCategory($chemical_record_transport_category)
+    public function setTransportCategory($transport_category)
     {
-        $this->container['chemical_record_transport_category'] = $chemical_record_transport_category;
+        $this->container['transport_category'] = $transport_category;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_tunnel_restriction_code
+     * Gets tunnel_restriction_code
      *
      * @return string
      */
-    public function getChemicalRecordTunnelRestrictionCode()
+    public function getTunnelRestrictionCode()
     {
-        return $this->container['chemical_record_tunnel_restriction_code'];
+        return $this->container['tunnel_restriction_code'];
     }
 
     /**
-     * Sets chemical_record_tunnel_restriction_code
+     * Sets tunnel_restriction_code
      *
-     * @param string $chemical_record_tunnel_restriction_code Defines what is restricted to pass through a tunnel.
+     * @param string $tunnel_restriction_code Defines what is restricted to pass through a tunnel.
      *
      * @return $this
      */
-    public function setChemicalRecordTunnelRestrictionCode($chemical_record_tunnel_restriction_code)
+    public function setTunnelRestrictionCode($tunnel_restriction_code)
     {
-        $this->container['chemical_record_tunnel_restriction_code'] = $chemical_record_tunnel_restriction_code;
+        $this->container['tunnel_restriction_code'] = $tunnel_restriction_code;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_q_value
+     * Gets q_value
      *
      * @return string
      */
-    public function getChemicalRecordQValue()
+    public function getQValue()
     {
-        return $this->container['chemical_record_q_value'];
+        return $this->container['q_value'];
     }
 
     /**
-     * Sets chemical_record_q_value
+     * Sets q_value
      *
-     * @param string $chemical_record_q_value When a HazMat shipment specifies AllPackedInOneIndicator and the regulation set for that shipment is IATA,  Q-Value specifies exactly one of the following values: 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1.0  Valid values are : 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1.0
+     * @param string $q_value When a HazMat shipment specifies AllPackedInOneIndicator and the regulation set for that shipment is IATA,  Q-Value specifies exactly one of the following values: 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1.0  Valid values are : 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1.0
      *
      * @return $this
      */
-    public function setChemicalRecordQValue($chemical_record_q_value)
+    public function setQValue($q_value)
     {
-        $this->container['chemical_record_q_value'] = $chemical_record_q_value;
+        $this->container['q_value'] = $q_value;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_over_packed_indicator
+     * Gets over_packed_indicator
      *
      * @return string
      */
-    public function getChemicalRecordOverPackedIndicator()
+    public function getOverPackedIndicator()
     {
-        return $this->container['chemical_record_over_packed_indicator'];
+        return $this->container['over_packed_indicator'];
     }
 
     /**
-     * Sets chemical_record_over_packed_indicator
+     * Sets over_packed_indicator
      *
-     * @param string $chemical_record_over_packed_indicator Presence/Absence Indicator. Any value is ignored. Presence indicates that shipment is overpack.
+     * @param string $over_packed_indicator Presence/Absence Indicator. Any value is ignored. Presence indicates that shipment is overpack.
      *
      * @return $this
      */
-    public function setChemicalRecordOverPackedIndicator($chemical_record_over_packed_indicator)
+    public function setOverPackedIndicator($over_packed_indicator)
     {
-        $this->container['chemical_record_over_packed_indicator'] = $chemical_record_over_packed_indicator;
+        $this->container['over_packed_indicator'] = $over_packed_indicator;
 
         return $this;
     }
 
     /**
-     * Gets chemical_record_all_packed_in_one_indicator
+     * Gets all_packed_in_one_indicator
      *
      * @return string
      */
-    public function getChemicalRecordAllPackedInOneIndicator()
+    public function getAllPackedInOneIndicator()
     {
-        return $this->container['chemical_record_all_packed_in_one_indicator'];
+        return $this->container['all_packed_in_one_indicator'];
     }
 
     /**
-     * Sets chemical_record_all_packed_in_one_indicator
+     * Sets all_packed_in_one_indicator
      *
-     * @param string $chemical_record_all_packed_in_one_indicator Presence/Absence Indicator. Any value is ignored. Presence indicates if multiple, different hazmat/chemicals are contained within one box in a package
+     * @param string $all_packed_in_one_indicator Presence/Absence Indicator. Any value is ignored. Presence indicates if multiple, different hazmat/chemicals are contained within one box in a package
      *
      * @return $this
      */
-    public function setChemicalRecordAllPackedInOneIndicator($chemical_record_all_packed_in_one_indicator)
+    public function setAllPackedInOneIndicator($all_packed_in_one_indicator)
     {
-        $this->container['chemical_record_all_packed_in_one_indicator'] = $chemical_record_all_packed_in_one_indicator;
+        $this->container['all_packed_in_one_indicator'] = $all_packed_in_one_indicator;
 
         return $this;
     }

@@ -227,7 +227,7 @@ class FreightDensityInfoAdjustedHeight implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param string $value Adjusted Height value for the handling unit.  Height Adjustment is done only when Handling unit type is SKD = Skid or PLT = Pallet.
+     * @param string $value Adjusted height value.
      *
      * @return $this
      */

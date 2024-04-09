@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * UploadResponseFormsHistoryDocumentID Class Doc Comment
  *
  * @category Class
- * @description The container for DocumentID(s).  N/A
+ * @description The container for DocumentID(s).
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,7 +57,7 @@ class UploadResponseFormsHistoryDocumentID implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'document_id' => 'string'
+        'document_id' => 'string[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class UploadResponseFormsHistoryDocumentID implements ModelInterface, ArrayAcces
     /**
      * Gets document_id
      *
-     * @return string
+     * @return string[]
      */
     public function getDocumentId()
     {
@@ -218,7 +218,7 @@ class UploadResponseFormsHistoryDocumentID implements ModelInterface, ArrayAcces
     /**
      * Sets document_id
      *
-     * @param string $document_id DocumentID represents a document uploaded to Forms History.  N/A
+     * @param string[] $document_id DocumentID represents a document uploaded to Forms History.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

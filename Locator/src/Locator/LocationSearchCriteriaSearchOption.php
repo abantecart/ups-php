@@ -35,7 +35,7 @@ use \UPS\Locator\ObjectSerializer;
  * LocationSearchCriteriaSearchOption Class Doc Comment
  *
  * @category Class
- * @description SearchOption contains the information that forms the basis of the location search, It contains the criteria for search by Locations, Retail Locations, Additional Services, or Program Types.  There should be one container for each type of search the user may wish to do. The user can specify either search by Locations or Retail Locations, but not both.  If this container is missing, the default search would be for The UPS Store, UPS Center,� UPS Drop Box, and Authorized Shipping Outlet location types.
+ * @description SearchOption contains the information that forms the basis of the location search, It contains the criteria for search by Locations, Retail Locations, Additional Services, or Program Types.  There should be one container for each type of search the user may wish to do. The user can specify either search by Locations or Retail Locations, but not both.  If this container is missing, the default search would be for The UPS Store, UPS Center, UPS Drop Box, and Authorized Shipping Outlet location types.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

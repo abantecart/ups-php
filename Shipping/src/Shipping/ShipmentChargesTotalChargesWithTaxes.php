@@ -251,7 +251,7 @@ class ShipmentChargesTotalChargesWithTaxes implements ModelInterface, ArrayAcces
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value TotalChargesWithTaxes monetary value amount.  Valid values are from 0 to 9999999999999999.99
+     * @param string $monetary_value TotalChargesWithTaxes monetary value amount.  Valid values are from 0 to 99999999999999.99
      *
      * @return $this
      */

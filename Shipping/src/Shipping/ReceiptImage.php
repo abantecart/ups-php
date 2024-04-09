@@ -57,7 +57,7 @@ class ReceiptImage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'image_format' => '\UPS\Shipping\Shipping\ImageImageFormat',
+        'image_format' => '\UPS\Shipping\Shipping\ReceiptImageImageFormat',
         'graphic_image' => 'string'
     ];
 
@@ -217,7 +217,7 @@ class ReceiptImage implements ModelInterface, ArrayAccess
     /**
      * Gets image_format
      *
-     * @return \UPS\Shipping\Shipping\ImageImageFormat
+     * @return \UPS\Shipping\Shipping\ReceiptImageImageFormat
      */
     public function getImageFormat()
     {
@@ -227,7 +227,7 @@ class ReceiptImage implements ModelInterface, ArrayAccess
     /**
      * Sets image_format
      *
-     * @param \UPS\Shipping\Shipping\ImageImageFormat $image_format image_format
+     * @param \UPS\Shipping\Shipping\ReceiptImageImageFormat $image_format image_format
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class ReceiptImage implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image
      *
-     * @param string $graphic_image Base 64 encoded High Value Report image.
+     * @param string $graphic_image Base 64 encoded graphic image
      *
      * @return $this
      */

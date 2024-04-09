@@ -58,8 +58,8 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\DangerousGoods\DangerousGoods\ResponseResponseStatus',
-        'alert' => 'OneOfAcceptanceAuditPreCheckResponseResponseAlert',
-        'alert_detail' => 'OneOfAcceptanceAuditPreCheckResponseResponseAlertDetail',
+        'alert' => '\UPS\DangerousGoods\DangerousGoods\ResponseAlert[]',
+        'alert_detail' => '\UPS\DangerousGoods\DangerousGoods\ResponseAlertDetail[]',
         'transaction_reference' => '\UPS\DangerousGoods\DangerousGoods\ResponseTransactionReference'
     ];
 
@@ -250,7 +250,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Gets alert
      *
-     * @return OneOfAcceptanceAuditPreCheckResponseResponseAlert
+     * @return \UPS\DangerousGoods\DangerousGoods\ResponseAlert[]
      */
     public function getAlert()
     {
@@ -260,7 +260,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Sets alert
      *
-     * @param OneOfAcceptanceAuditPreCheckResponseResponseAlert $alert alert
+     * @param \UPS\DangerousGoods\DangerousGoods\ResponseAlert[] $alert Alert Container.  There can be zero to many alert containers with code and description.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Gets alert_detail
      *
-     * @return OneOfAcceptanceAuditPreCheckResponseResponseAlertDetail
+     * @return \UPS\DangerousGoods\DangerousGoods\ResponseAlertDetail[]
      */
     public function getAlertDetail()
     {
@@ -284,7 +284,7 @@ class AcceptanceAuditPreCheckResponseResponse implements ModelInterface, ArrayAc
     /**
      * Sets alert_detail
      *
-     * @param OneOfAcceptanceAuditPreCheckResponseResponseAlertDetail $alert_detail alert_detail
+     * @param \UPS\DangerousGoods\DangerousGoods\ResponseAlertDetail[] $alert_detail Alert Detail Container.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

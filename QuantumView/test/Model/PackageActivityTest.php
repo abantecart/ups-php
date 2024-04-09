@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageActivityTest Class Doc Comment
  *
  * @category    Class
- * @description Information about package delivery activity.
+ * @description PackageActivity
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

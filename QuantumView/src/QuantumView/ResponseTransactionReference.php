@@ -227,7 +227,7 @@ class ResponseTransactionReference implements ModelInterface, ArrayAccess
     /**
      * Sets customer_context
      *
-     * @param string $customer_context Customer provided data.� May be XML. If this data is present in the request, it is echoed back to the customer.
+     * @param string $customer_context The CustomerContext Information which will be echoed during response.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class ResponseTransactionReference implements ModelInterface, ArrayAccess
     /**
      * Sets xpci_version
      *
-     * @param string $xpci_version XPCI version.� Current version: 1.0007
+     * @param string $xpci_version XPCI version. Current version: 1.0007
      *
      * @return $this
      */

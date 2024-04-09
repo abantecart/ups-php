@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * DropOffFacilitiesDistanceTest Class Doc Comment
  *
  * @category    Class
- * @description Distance from origin  Distance will be retuned for�drop off location search by proximity order.
+ * @description Distance from origin  Distance will be retuned for drop off location search by proximity order.
  * @package     UPS\Pickup
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

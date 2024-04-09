@@ -395,7 +395,7 @@ class ServiceCenterLocationDropOffFacilities implements ModelInterface, ArrayAcc
     /**
      * Sets timezone
      *
-     * @param string $timezone Facility�s Timezone Format: America/New_York Asia/Hong_Kong Europe/London
+     * @param string $timezone Facility's Timezone. Format: - America/New_York - Asia/Hong_Kong - Europe/London
      *
      * @return $this
      */

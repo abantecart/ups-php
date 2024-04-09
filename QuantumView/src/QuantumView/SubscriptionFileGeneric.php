@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * SubscriptionFileGeneric Class Doc Comment
  *
  * @category Class
- * @description Container for generic record information.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,8 +59,8 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
         'activity_type' => 'string',
         'tracking_number' => 'string',
         'shipper_number' => 'string',
-        'shipment_reference_number' => 'OneOfSubscriptionFileGenericShipmentReferenceNumber',
-        'package_reference_number' => 'OneOfSubscriptionFileGenericPackageReferenceNumber',
+        'shipment_reference_number' => '\UPS\QuantumView\QuantumView\GenericShipmentReferenceNumber[]',
+        'package_reference_number' => '\UPS\QuantumView\QuantumView\GenericPackageReferenceNumber[]',
         'service' => '\UPS\QuantumView\QuantumView\GenericService',
         'activity' => '\UPS\QuantumView\QuantumView\GenericActivity',
         'bill_to_account' => '\UPS\QuantumView\QuantumView\GenericBillToAccount',
@@ -281,7 +280,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Sets activity_type
      *
-     * @param string $activity_type Unique identifier that defines the type of activity.  VM = Void for Manifest  UR = Undeliverable Returns IR = Invoice Removal Successful  TC = Transport Company USPS scan PS = 'Postal Service Possession Scan' FN = UPS Access Point/Alternate Delivery Location Email Notification Failure DS = Destination Scan AG = Package is in transit to a UPS facility RE = UPS Returns Exchange  RP = Retail Pickup UD = Updated delivery date                                                                                              OD = Out for Delivery                                                                                                        SD = Scheduled for Delivery                                                                                              FM = Tendered to FMP
+     * @param string $activity_type Unique identifier that defines the type of activity. - VM = Void for Manifest - UR = Undeliverable Returns - IR = Invoice Removal Successful - TC = Transport Company USPS scan PS = 'Postal Service Possession Scan' - FN = UPS Access Point/Alternate Delivery Location Email Notification Failure - DS = Destination Scan - AG = Package is in transit to a UPS facility - RE = UPS Returns Exchange - RP = Retail Pickup - UD = Updated delivery date - OD = Out for Delivery - SD = Scheduled for Delivery - FM = Tendered to FMP - PT = UPS Courier Handoff (Package Tendered) DIALS -VX - PC = UPS Courier Confirmation – XPLD -VX
      *
      * @return $this
      */
@@ -343,7 +342,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_reference_number
      *
-     * @return OneOfSubscriptionFileGenericShipmentReferenceNumber
+     * @return \UPS\QuantumView\QuantumView\GenericShipmentReferenceNumber[]
      */
     public function getShipmentReferenceNumber()
     {
@@ -353,7 +352,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_reference_number
      *
-     * @param OneOfSubscriptionFileGenericShipmentReferenceNumber $shipment_reference_number shipment_reference_number
+     * @param \UPS\QuantumView\QuantumView\GenericShipmentReferenceNumber[] $shipment_reference_number Container tag for shipment reference number.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -367,7 +366,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Gets package_reference_number
      *
-     * @return OneOfSubscriptionFileGenericPackageReferenceNumber
+     * @return \UPS\QuantumView\QuantumView\GenericPackageReferenceNumber[]
      */
     public function getPackageReferenceNumber()
     {
@@ -377,7 +376,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Sets package_reference_number
      *
-     * @param OneOfSubscriptionFileGenericPackageReferenceNumber $package_reference_number package_reference_number
+     * @param \UPS\QuantumView\QuantumView\GenericPackageReferenceNumber[] $package_reference_number Package-level reference number.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -497,7 +496,7 @@ class SubscriptionFileGeneric implements ModelInterface, ArrayAccess
     /**
      * Sets rescheduled_delivery_date
      *
-     * @param string $rescheduled_delivery_date If Activity Type is \"DS\" or \"UD\", this element will contain Rescheduled Delivery Date.  Format will be YYYYMMDD.                                                                                               If Activity Type is \"OD\", this element will contain Rescheduled Delivery Date. Format will be YYYYMMDD.                                                                                                                     If Activity Type is \"SD\", this element will contain agreed upon date with Customer for delivery Date . Format will be YYYYMMDD.
+     * @param string $rescheduled_delivery_date If Activity Type is \"DS\" or \"UD\", this element will contain Rescheduled Delivery Date. Format will be YYYYMMDD.  If Activity Type is \"OD\", this element will contain Rescheduled Delivery Date. Format will be YYYYMMDD.  If Activity Type is \"SD\", this element will contain agreed upon date with Customer for delivery Date. Format will be YYYYMMDD.
      *
      * @return $this
      */

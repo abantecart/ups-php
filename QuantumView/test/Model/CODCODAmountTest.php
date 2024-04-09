@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * CODCODAmountTest Class Doc Comment
  *
  * @category    Class
- * @description The monetary amount of the COD.
+ * @description The amount of the COD that is to be collected for the shipment.
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

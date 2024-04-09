@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * UploadResponse Class Doc Comment
  *
  * @category Class
- * @description Paperless Document API Response Container for upload request.  N/A
+ * @description Paperless Document API Response Container for upload request.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

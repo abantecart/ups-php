@@ -494,7 +494,7 @@ class PackageServiceOptionsHazMat implements ModelInterface, ArrayAccess
     /**
      * Sets sub_risk_class
      *
-     * @param string $sub_risk_class Recommended if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation.   Secondary hazardous characteristics of a package. (There can be more than one separate each with a comma).
+     * @param string $sub_risk_class Recommended if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation.  Secondary hazardous characteristics of a package. (There can be more than one – separate each with a comma).
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class PackageServiceOptionsHazMat implements ModelInterface, ArrayAccess
     /**
      * Sets a_dr_packing_group_letter
      *
-     * @param string $a_dr_packing_group_letter Required if the field applies to the material by regulation. Field input is Arabic numerals, output is Roman numerals. Will be shown in Roman Numerals.  Valid values:  1 = I,  2 = II,  3 = III,  and blank.
+     * @param string $a_dr_packing_group_letter Required if the field applies to the material by regulation. Field input is Arabic numerals, output is Roman numerals. Will be shown in Roman Numerals.  Valid values: - \"1\" = \"I\", - \"2\" = \"II\", - \"3\" = \"III\", - and blank.
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class PackageServiceOptionsHazMat implements ModelInterface, ArrayAccess
     /**
      * Sets class_division_number
      *
-     * @param string $class_division_number This is the hazard class associated to the specified commodity.   Required if CommodityRegulatedLevelCode is 'EQ', 'LQ' or 'FR'
+     * @param string $class_division_number This is the hazard class associated to the specified commodity.  Required if CommodityRegulatedLevelCode is 'EQ', 'LQ' or 'FR'
      *
      * @return $this
      */
@@ -782,7 +782,7 @@ class PackageServiceOptionsHazMat implements ModelInterface, ArrayAccess
     /**
      * Sets additional_description
      *
-     * @param string $additional_description Additional remarks or special provision information. Recommended if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation.  Additional information that may be required by regulation about a hazardous material, such as, 'Limited Quantity', DOT-SP numbers, EX numbers.
+     * @param string $additional_description Additional remarks or special provision information. Recommended if CommodityRegulatedLevelCode = LQ or FR and if the field applies to the material by regulation.  Additional information that may be required by regulation about a hazardous material, such as, \"Limited Quantity\", DOT-SP numbers, EX numbers.
      *
      * @return $this
      */
@@ -854,7 +854,7 @@ class PackageServiceOptionsHazMat implements ModelInterface, ArrayAccess
     /**
      * Sets emergency_phone
      *
-     * @param string $emergency_phone 24 Hour Emergency Phone Number of the shipper. Valid values for this field are (0) through (9) with trailing blanks. For numbers within the U.S., the layout is 1, area code, 7-digit number. For all other countries or territories the layout is country or territory code, area code, number.                        The following are restricted in the phone number   period '.', dash '-', plus sign '+' and conventional parentheses '(' and ')', 'EXT' or 'OPT'
+     * @param string $emergency_phone 24 Hour Emergency Phone Number of the shipper. Valid values for this field are (0) through (9) with trailing blanks. For numbers within the U.S., the layout is 1, area code, 7-digit number. For all other countries or territories the layout is country or territory code, area code, number.  The following are restricted in the phone number period \".\", dash \"-\", plus sign \"+\" and conventional parentheses \"(\" and \")\", \"EXT\" or \"OPT\"
      *
      * @return $this
      */

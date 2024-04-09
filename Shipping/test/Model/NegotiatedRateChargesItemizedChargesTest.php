@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * NegotiatedRateChargesItemizedChargesTest Class Doc Comment
  *
  * @category    Class
- * @description Itemized Charges are returned only when the Subversion element is present and greater than or equal to 1601.  Negotiated itemized charges are only returned for certain contract-only shipments as well as Worldwide Express Freight, Ground Freight Pricing, and Hazmat movements.
+ * @description NegotiatedRateChargesItemizedCharges
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

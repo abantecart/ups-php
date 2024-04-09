@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * PackageResultsShippingReceipt Class Doc Comment
  *
  * @category Class
- * @description Supported for following shipments - PRL shipments, Electronic Return Label or Electronic Import Control Label shipments with SubVersion greater than or equal to 1707.  Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Supported for following shipments - PRL shipments, Electronic Return Label or Electronic Import Control Label shipments with SubVersion greater than or equal to 1707.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -251,7 +251,7 @@ class PackageResultsShippingReceipt implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image
      *
-     * @param string $graphic_image Base 64 encoded receipt in HTML format.    Applicable only for ShipmentResponse and ShipAcceptResponse.  The receipt image is only returned for the first 5 packages.
+     * @param string $graphic_image Base 64 encoded receipt in HTML format.  The receipt image is only returned for the first 5 packages.
      *
      * @return $this
      */

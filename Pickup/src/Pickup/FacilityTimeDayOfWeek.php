@@ -284,7 +284,7 @@ class FacilityTimeDayOfWeek implements ModelInterface, ArrayAccess
     /**
      * Sets earliest_drop_offor_pickup
      *
-     * @param string $earliest_drop_offor_pickup Earliest time that a customer can pick up a package.
+     * @param string $earliest_drop_offor_pickup Earliest time that a customer can drop-off a package.
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class FacilityTimeDayOfWeek implements ModelInterface, ArrayAccess
     /**
      * Sets latest_drop_offor_pickup
      *
-     * @param string $latest_drop_offor_pickup Latest time that a customer can pick up a package.
+     * @param string $latest_drop_offor_pickup Latest time that a customer can drop-off a package.
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class FacilityTimeDayOfWeek implements ModelInterface, ArrayAccess
     /**
      * Sets open_hours
      *
-     * @param string $open_hours Facility Open Hours. The latest local open time. Format: HHmm Hour: 0-23 Minute: 0-59
+     * @param string $open_hours Facility Open Hours. The latest local open time. Format: HHmm - Hour: 0-23 - Minute: 0-59
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class FacilityTimeDayOfWeek implements ModelInterface, ArrayAccess
     /**
      * Sets close_hours
      *
-     * @param string $close_hours Facility Close Hours. The latest local close time. Format: HHmm Hour: 0-23 Minute: 0-59
+     * @param string $close_hours Facility Close Hours. The latest local close time. Format: HHmm - Hour: 0-23 - Minute: 0-59
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class FacilityTimeDayOfWeek implements ModelInterface, ArrayAccess
     /**
      * Sets prep_time
      *
-     * @param string $prep_time Preparation time for hold for pickup  Conditionally required if request is for hold for pickup.
+     * @param string $prep_time Time required by the facility to prepare your shipment for movement
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class FacilityTimeDayOfWeek implements ModelInterface, ArrayAccess
     /**
      * Sets last_drop
      *
-     * @param string $last_drop Latest time a package, requiring preparation can be dropped off (Close time - Prep time).
+     * @param string $last_drop Cut-off time for drop off that day.
      *
      * @return $this
      */

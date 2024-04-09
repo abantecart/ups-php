@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * RatedShipmentRatedPackageTest Class Doc Comment
  *
  * @category    Class
- * @description Rated Package Container.
+ * @description RatedShipmentRatedPackage
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

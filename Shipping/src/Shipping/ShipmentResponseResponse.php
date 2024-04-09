@@ -58,7 +58,7 @@ class ShipmentResponseResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'response_status' => '\UPS\Shipping\Shipping\ResponseResponseStatus',
-        'alert' => 'OneOfShipmentResponseResponseAlert',
+        'alert' => '\UPS\Shipping\Shipping\ResponseAlert[]',
         'transaction_reference' => '\UPS\Shipping\Shipping\ResponseTransactionReference'
     ];
 
@@ -244,7 +244,7 @@ class ShipmentResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets alert
      *
-     * @return OneOfShipmentResponseResponseAlert
+     * @return \UPS\Shipping\Shipping\ResponseAlert[]
      */
     public function getAlert()
     {
@@ -254,7 +254,7 @@ class ShipmentResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets alert
      *
-     * @param OneOfShipmentResponseResponseAlert $alert alert
+     * @param \UPS\Shipping\Shipping\ResponseAlert[] $alert Alert Container.  There can be zero to many alert containers with code and description.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

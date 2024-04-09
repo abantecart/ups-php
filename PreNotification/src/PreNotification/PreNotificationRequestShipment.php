@@ -425,7 +425,7 @@ class PreNotificationRequestShipment implements ModelInterface, ArrayAccess
     /**
      * Sets regulation_set
      *
-     * @param string $regulation_set The Regulatory set associated with every regulated shipment. It must be same across the shipment. Valid values are: ADR - European Agreement concerning the International Carriage of Dangerous Goods by Road.  49CFR - Title 49 of the United States Code of Federal Regulations.   IATA - International Air Transport Association (IATA) Dangerous Goods Regulations.
+     * @param string $regulation_set The Regulatory set associated with every regulated shipment. It must be same across the shipment. Valid values are: - ADR – European Agreement concerning the International Carriage of Dangerous Goods by Road. - 49CFR – Title 49 of the United States Code of Federal Regulations. - IATA – International Air Transport Association (IATA) Dangerous Goods Regulations.
      *
      * @return $this
      */

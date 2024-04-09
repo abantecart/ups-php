@@ -227,7 +227,7 @@ class BillingWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The code associated with the unit of measure for the billable weight of a package.
+     * @param string $code The code associated with the unit of measure for the billable weight of a shipment. Possible values are KGS or LBS.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class BillingWeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description The Description for the Unit Of Measurement.
+     * @param string $description The description for the billable weight associated with the shipment.
      *
      * @return $this
      */

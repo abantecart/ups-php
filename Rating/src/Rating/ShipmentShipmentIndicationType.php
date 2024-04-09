@@ -224,7 +224,7 @@ class ShipmentShipmentIndicationType implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code for Shipment Indication Type.Valid values: 01 - Hold for Pickup at UPS Access Point 02 - UPS Access Point Delivery
+     * @param string $code Code for Shipment Indication Type.  Valid values: - 01 - Hold for Pickup at UPS Access Point - 02 - UPS Access Point™ Delivery
      *
      * @return $this
      */

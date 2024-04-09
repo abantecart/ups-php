@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * RequestTransactionReferenceTest Class Doc Comment
  *
  * @category    Class
- * @description TransactionReference identifies transactions between client and server.  N/A
+ * @description TransactionReference identifies transactions between client and server.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

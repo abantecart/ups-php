@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * ResponseTransactionReference Class Doc Comment
  *
  * @category Class
- * @description Transaction Reference Container.  N/A
+ * @description Transaction Reference Container.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

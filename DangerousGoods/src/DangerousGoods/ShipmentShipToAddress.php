@@ -242,7 +242,7 @@ class ShipmentShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string $address_line The Ship From street address including name and number (when applicable).
+     * @param string $address_line The Ship To street address including name and number (when applicable).
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class ShipmentShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city The Ship From city.
+     * @param string $city The Ship To city.
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class ShipmentShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code The Ship From locations state or province code.
+     * @param string $state_province_code The Ship To locations state or province code.
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class ShipmentShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code The Ship From locations postal code. 9 characters are accepted.
+     * @param string $postal_code The Ship To locations postal code. 9 characters are accepted.
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class ShipmentShipToAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code The Ship From locations country or territory code.
+     * @param string $country_code The Ship To locations country or territory code.
      *
      * @return $this
      */

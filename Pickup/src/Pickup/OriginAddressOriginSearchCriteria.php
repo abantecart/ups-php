@@ -230,7 +230,7 @@ class OriginAddressOriginSearchCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets search_radius
      *
-     * @param string $search_radius Search Request range. Valied values: 1 to 200 Default: 200
+     * @param string $search_radius Search Request range. Valied values: - 1 to 200  Default: 200
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class OriginAddressOriginSearchCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_location
      *
-     * @param string $maximum_location Maximum Number of locations. Valied values: 1 to 100 Default: 100
+     * @param string $maximum_location Maximum Number of locations. Valied values: - 1 to 100  Default: 100
      *
      * @return $this
      */

@@ -1,6 +1,6 @@
 # UPS\TimeInTransit\DefaultApi
 
-All URIs are relative to *https://wwwcie.ups.com/api/*
+All URIs are relative to *https://wwwcie.ups.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 TimeInTransit
 
-Get Time and Transit Response
+The Time In Transit API provides estimated delivery times for various UPS shipping services, between specified locations.  Key Business Values: - **Enhanced Customer Experience**: Allows businesses provide accurate delivery estimates to their customers, enhancing customer service. - **Operational Efficiency**: Helps in logistics planning by providing transit times for different UPS services.
 
 ### Example
 ```php
@@ -28,7 +28,7 @@ $apiInstance = new UPS\TimeInTransit\Request\DefaultApi(
     $config
 );
 $body = new \UPS\TimeInTransit\TimeInTransit\TimeInTransitRequest(); // \UPS\TimeInTransit\TimeInTransit\TimeInTransitRequest | Generate sample code for popular API requests by selecting an example below. To view a full sample request and response, first click "Authorize" and enter your application credentials, then populate the required parameters above and click "Try it out".
-$trans_id = "trans_id_example"; // string | An identifier unique to the request.  Length 32
+$trans_id = "trans_id_example"; // string | An identifier unique to the request. Length 32
 $transaction_src = "testing"; // string | Identifies the clients/source application that is calling.  Length 512
 $version = "version_example"; // string | API Version
 
@@ -46,7 +46,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**\UPS\TimeInTransit\TimeInTransit\TimeInTransitRequest**](../Model/TimeInTransitRequest.md)| Generate sample code for popular API requests by selecting an example below. To view a full sample request and response, first click &quot;Authorize&quot; and enter your application credentials, then populate the required parameters above and click &quot;Try it out&quot;. |
- **trans_id** | **string**| An identifier unique to the request.  Length 32 |
+ **trans_id** | **string**| An identifier unique to the request. Length 32 |
  **transaction_src** | **string**| Identifies the clients/source application that is calling.  Length 512 | [default to testing]
  **version** | **string**| API Version |
 

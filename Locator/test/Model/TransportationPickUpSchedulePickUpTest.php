@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * TransportationPickUpSchedulePickUpTest Class Doc Comment
  *
  * @category    Class
- * @description Container to hold information regarding pickup day of the week and details.
+ * @description TransportationPickUpSchedulePickUp
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

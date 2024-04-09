@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * TransportationPickUpSchedulePickUp Class Doc Comment
  *
  * @category Class
- * @description Container to hold information regarding pickup day of the week and details.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -227,7 +226,7 @@ class TransportationPickUpSchedulePickUp implements ModelInterface, ArrayAccess
     /**
      * Sets day_of_week
      *
-     * @param string $day_of_week Day of the week for scheduled pickup. Valid values are:  1-Sunday 2-Monday 3-Tuesday 4-Wednesday 5-Thursday 6-Friday 7-Saturday.
+     * @param string $day_of_week Day of week. - 1 - Sunday - 2 - Monday - 3 - Tuesday - 4 - Wednesday - 5 - Thursday - 6 - Friday - 7 - Saturday.
      *
      * @return $this
      */

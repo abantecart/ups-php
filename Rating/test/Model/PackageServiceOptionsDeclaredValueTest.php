@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageServiceOptionsDeclaredValueTest Class Doc Comment
  *
  * @category    Class
- * @description Declared Value Container.  N/A
+ * @description Declared Value Container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

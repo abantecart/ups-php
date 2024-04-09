@@ -35,7 +35,6 @@ use \UPS\Shipping\ObjectSerializer;
  * PackageResultsAccessorial Class Doc Comment
  *
  * @category Class
- * @description The container for Accessorial indicators. This information would be returned only for UPS Worldwide Express Freight and UPS Worldwide Express Freight Mid-day service request with Dry Ice or Oversize Pallet and SubVersion greater than or equal to 1707.  This is valid only for UPS Worldwide Express Freight and UPS Worldwide Express Freight Mid-day service.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

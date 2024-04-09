@@ -290,7 +290,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets consignee_name
      *
-     * @param string $consignee_name Name. (Also includes the building name)Return if available.
+     * @param string $consignee_name Name. Not relevant for this tool
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string $address_line Address Line Information of the UPS location The address level or Intersection information. Only two address lines will be returned. The second line may contain such information as the building name, the suite, and room.
+     * @param string $address_line Address Line Information. The user may submit street level address information or provide Intersection information.
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division3
      *
-     * @param string $political_division3 Subdivision within a City. e.g., a Barrio.
+     * @param string $political_division3 Barrio or other sub-division of City
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division2
      *
-     * @param string $political_division2 City.
+     * @param string $political_division2 City or Town.
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets political_division1
      *
-     * @param string $political_division1 State/Province.
+     * @param string $political_division1 State or province
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets postcode_primary_low
      *
-     * @param string $postcode_primary_low Postal Code.
+     * @param string $postcode_primary_low Main postal code. Required if the user does not submit the City, State/Province address combination.
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code A country or territory code. Valid values to be returned are: US-United States (meaning US 50).
+     * @param string $country_code Two-character country or territory abbreviation
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class OriginAddressAddressKeyFormat implements ModelInterface, ArrayAccess
     /**
      * Sets single_line_address
      *
-     * @param string $single_line_address Single line search information. Can contain values of origin address in a single line. Will override other origin address information.
+     * @param string $single_line_address Single line search information. Can contain values of origin address in a single line. Will override other origin address information.  Conditionally Required for Non-Postal Code Countries. Applicable Country Ireland (IE)  SingleLineAddress used for the lookup  SingleLineAddress (Format - CSV) (\\\"Values:\\\" + postalCode + city + state + address + landmark + phoneNumber)
      *
      * @return $this
      */

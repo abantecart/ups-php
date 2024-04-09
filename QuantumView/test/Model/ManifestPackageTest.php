@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ManifestPackageTest Class Doc Comment
  *
  * @category    Class
- * @description Defines a package.
+ * @description ManifestPackage
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

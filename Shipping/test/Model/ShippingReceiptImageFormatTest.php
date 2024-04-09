@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShippingReceiptImageFormatTest Class Doc Comment
  *
  * @category    Class
- * @description Container for a Image Format.  Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Container for a Image Format.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

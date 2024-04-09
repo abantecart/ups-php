@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * PushToImageRepositoryResponse Class Doc Comment
  *
  * @category Class
- * @description Paperless Document API response container for Push To Image Repository request.  N/A
+ * @description Paperless Document API response container for Push To Image Repository request.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -248,7 +248,7 @@ class PushToImageRepositoryResponse implements ModelInterface, ArrayAccess
     /**
      * Sets forms_group_id
      *
-     * @param string $forms_group_id FormsGroupID is a consolidated ID representing one or multiple DocumentID(s).  N/A
+     * @param string $forms_group_id FormsGroupID is a consolidated ID representing one or multiple DocumentID(s).
      *
      * @return $this
      */

@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * PackagePackagingType Class Doc Comment
  *
  * @category Class
- * @description Packaging Type Container.  N/A
+ * @description Packaging Type Container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -224,7 +224,7 @@ class PackagePackagingType implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The code for the UPS packaging type associated with the package.  Valid values: 00 = UNKNOWN  01 = UPS Letter  02 = Package  03 = Tube  04 = Pak  21 = Express Box  24 = 25KG Box  25 = 10KG Box  30 = Pallet  2a = Small Express Box  2b = Medium Express Box 2c = Large Express Box. For FRS rating requests the only valid value is customer supplied packaging \"02\".
+     * @param string $code The code for the UPS packaging type associated with the package.  Valid values: - 00 - UNKNOWN - 01 - UPS Letter - 02 - Package - 03 - Tube - 04 - Pak - 21 - Express Box - 24 - 25KG Box - 25 - 10KG Box - 30 - Pallet - 2a - Small Express Box - 2b - Medium Express Box - 2c - Large Express Box.  For FRS rating requests the only valid value is customer supplied packaging “02”.
      *
      * @return $this
      */

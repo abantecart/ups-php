@@ -35,7 +35,6 @@ use \UPS\Rating\ObjectSerializer;
  * RatedPackageRateModifier Class Doc Comment
  *
  * @category Class
- * @description Container for returned Rate Modifier information. Applies only if SubVersion is 2205 or greater.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

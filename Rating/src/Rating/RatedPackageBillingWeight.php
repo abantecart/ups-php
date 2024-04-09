@@ -57,7 +57,7 @@ class RatedPackageBillingWeight implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'unit_of_measurement' => '\UPS\Rating\Rating\BillingWeightUnitOfMeasurement',
+        'unit_of_measurement' => '\UPS\Rating\Rating\RatedPackageBillingWeightUnitOfMeasurement',
         'weight' => 'string'
     ];
 
@@ -217,7 +217,7 @@ class RatedPackageBillingWeight implements ModelInterface, ArrayAccess
     /**
      * Gets unit_of_measurement
      *
-     * @return \UPS\Rating\Rating\BillingWeightUnitOfMeasurement
+     * @return \UPS\Rating\Rating\RatedPackageBillingWeightUnitOfMeasurement
      */
     public function getUnitOfMeasurement()
     {
@@ -227,7 +227,7 @@ class RatedPackageBillingWeight implements ModelInterface, ArrayAccess
     /**
      * Sets unit_of_measurement
      *
-     * @param \UPS\Rating\Rating\BillingWeightUnitOfMeasurement $unit_of_measurement unit_of_measurement
+     * @param \UPS\Rating\Rating\RatedPackageBillingWeightUnitOfMeasurement $unit_of_measurement unit_of_measurement
      *
      * @return $this
      */

@@ -254,7 +254,7 @@ class ProducerAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line Address information of the Producer.
+     * @param string[] $address_line Address line of the Producer.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ProducerAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city Address line of the Producer.
+     * @param string $city City of the Producer.  Applies to NAFTA CO. Conditionally required for: NAFTA CO, when Producer option is not specified.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class ProducerAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code State of the Producer.
+     * @param string $state_province_code State of the Producer.  Applies to NAFTA CO. Required for certain countries or territories.
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ProducerAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal code of the Producer.
+     * @param string $postal_code Postal code of the Producer.  Applies to NAFTA CO. Required for certain countries or territories. The length of the postal code depends on the country or territory code.
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ProducerAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code of the Producer.
+     * @param string $country_code Country or Territory code of the Producer.  Applies to NAFTA CO.
      *
      * @return $this
      */

@@ -58,7 +58,7 @@ class QuantumViewResponseQuantumViewEvents implements ModelInterface, ArrayAcces
       */
     protected static $swaggerTypes = [
         'subscriber_id' => 'string',
-        'subscription_events' => 'OneOfQuantumViewResponseQuantumViewEventsSubscriptionEvents'
+        'subscription_events' => '\UPS\QuantumView\QuantumView\QuantumViewEventsSubscriptionEvents[]'
     ];
 
     /**
@@ -241,7 +241,7 @@ class QuantumViewResponseQuantumViewEvents implements ModelInterface, ArrayAcces
     /**
      * Gets subscription_events
      *
-     * @return OneOfQuantumViewResponseQuantumViewEventsSubscriptionEvents
+     * @return \UPS\QuantumView\QuantumView\QuantumViewEventsSubscriptionEvents[]
      */
     public function getSubscriptionEvents()
     {
@@ -251,7 +251,7 @@ class QuantumViewResponseQuantumViewEvents implements ModelInterface, ArrayAcces
     /**
      * Sets subscription_events
      *
-     * @param OneOfQuantumViewResponseQuantumViewEventsSubscriptionEvents $subscription_events subscription_events
+     * @param \UPS\QuantumView\QuantumView\QuantumViewEventsSubscriptionEvents[] $subscription_events The event that a user receives a subset of Tracking information specific to either packages coming or packages going, after subscription request is made.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

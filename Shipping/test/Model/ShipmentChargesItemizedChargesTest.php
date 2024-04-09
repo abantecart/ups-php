@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentChargesItemizedChargesTest Class Doc Comment
  *
  * @category    Class
- * @description Itemized Charges are returned only when the Subversion element is present and greater than or equal to 1601.
+ * @description ShipmentChargesItemizedCharges
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

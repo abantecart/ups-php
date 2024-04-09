@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * AdjustedHeightUnitOfMeasurement Class Doc Comment
  *
  * @category Class
- * @description Unit of Measurement container for the Adjusted height.
+ * @description Container for UnitOfMeasurement for the adjusted height.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -224,7 +224,7 @@ class AdjustedHeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code for UnitOfMeasurement for the line item dimension. Valid value is IN
+     * @param string $code Code associated with Unit of Measurement for the Adjusted height. Valid value: IN  Unit of measurement code for Adjusted height is validated only when Handling unit type is SKD = Skid or PLT = Pallet.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdjustedHeightUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description for UnitOfMeasurement for the line item dimension.
+     * @param string $description Description for UnitOfMeasurement for the adjusted height.
      *
      * @return $this
      */

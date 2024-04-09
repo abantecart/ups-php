@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackagePackageServiceOptionsTest Class Doc Comment
  *
  * @category    Class
- * @description PackageServiceOptions container.  N/A
+ * @description PackageServiceOptions container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -130,6 +130,13 @@ class PackagePackageServiceOptionsTest extends TestCase
      * Test attribute "refrigeration_indicator"
      */
     public function testPropertyRefrigerationIndicator()
+    {
+    }
+
+    /**
+     * Test attribute "insurance"
+     */
+    public function testPropertyInsurance()
     {
     }
 

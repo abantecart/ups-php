@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * RequestTransactionReference Class Doc Comment
  *
  * @category Class
- * @description TransactionReference identifies transactions between client and server.  N/A
+ * @description TransactionReference identifies transactions between client and server.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -215,7 +215,7 @@ class RequestTransactionReference implements ModelInterface, ArrayAccess
     /**
      * Sets customer_context
      *
-     * @param string $customer_context The CustomerContext Information which will be echoed during response.
+     * @param string $customer_context May be used to synchronize request/response pairs. Information in the request element is echoed back in the response.
      *
      * @return $this
      */

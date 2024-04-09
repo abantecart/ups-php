@@ -57,7 +57,7 @@ class ChargeCardCardAddress implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'address_line' => 'string',
+        'address_line' => 'string[]',
         'city' => 'string',
         'state_province' => 'string',
         'postal_code' => 'string',
@@ -232,7 +232,7 @@ class ChargeCardCardAddress implements ModelInterface, ArrayAccess
     /**
      * Gets address_line
      *
-     * @return string
+     * @return string[]
      */
     public function getAddressLine()
     {
@@ -242,7 +242,7 @@ class ChargeCardCardAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string $address_line Address Lines of the credit card billing address.  Max of three address lines can be provided.
+     * @param string[] $address_line Address Lines of the credit card billing address.  Max of three address lines can be provided.
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class ChargeCardCardAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Charge card billing address country or territory code defined by ISO-3166.   Upper-case two letter string. For Discover card it should be US.
+     * @param string $country_code Charge card billing address country or territory code defined by ISO-3166.  Upper-case two letter string. For Discover card it should be US.
      *
      * @return $this
      */

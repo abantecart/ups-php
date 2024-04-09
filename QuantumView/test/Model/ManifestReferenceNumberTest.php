@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ManifestReferenceNumberTest Class Doc Comment
  *
  * @category    Class
- * @description Shipment-level reference numbers.
+ * @description ManifestReferenceNumber
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackagePackagingTypeTest Class Doc Comment
  *
  * @category    Class
- * @description Packaging Type Container.  N/A
+ * @description Packaging Type Container.
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

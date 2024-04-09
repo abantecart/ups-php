@@ -35,7 +35,6 @@ use \UPS\Rating\ObjectSerializer;
  * RatedShipmentRatedPackage Class Doc Comment
  *
  * @category Class
- * @description Rated Package Container.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -63,11 +62,11 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
         'total_charges' => '\UPS\Rating\Rating\RatedPackageTotalCharges',
         'weight' => 'string',
         'billing_weight' => '\UPS\Rating\Rating\RatedPackageBillingWeight',
-        'accessorial' => 'OneOfRatedShipmentRatedPackageAccessorial',
-        'itemized_charges' => 'OneOfRatedShipmentRatedPackageItemizedCharges',
+        'accessorial' => '\UPS\Rating\Rating\RatedPackageAccessorial[]',
+        'itemized_charges' => '\UPS\Rating\Rating\RatedPackageItemizedCharges[]',
         'negotiated_charges' => '\UPS\Rating\Rating\RatedPackageNegotiatedCharges',
         'simple_rate' => '\UPS\Rating\Rating\RatedPackageSimpleRate',
-        'rate_modifier' => 'OneOfRatedShipmentRatedPackageRateModifier'
+        'rate_modifier' => '\UPS\Rating\Rating\RatedPackageRateModifier[]'
     ];
 
     /**
@@ -409,7 +408,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Gets accessorial
      *
-     * @return OneOfRatedShipmentRatedPackageAccessorial
+     * @return \UPS\Rating\Rating\RatedPackageAccessorial[]
      */
     public function getAccessorial()
     {
@@ -419,7 +418,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Sets accessorial
      *
-     * @param OneOfRatedShipmentRatedPackageAccessorial $accessorial accessorial
+     * @param \UPS\Rating\Rating\RatedPackageAccessorial[] $accessorial The container for Accessorial indicators. This information would be returned only if ItemizedChargesRequested was present during Rate request. This is valid only for UPS Worldwide Express Freight and UPS Worldwide Express Freight Mid-day service request with Dry Ice or Oversize Pallet and SubVersion greater than or equal to 1707.  This is valid only for UPS Worldwide Express Freight and UPS Worldwide Express Freight Middday Service.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -433,7 +432,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return OneOfRatedShipmentRatedPackageItemizedCharges
+     * @return \UPS\Rating\Rating\RatedPackageItemizedCharges[]
      */
     public function getItemizedCharges()
     {
@@ -443,7 +442,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param OneOfRatedShipmentRatedPackageItemizedCharges $itemized_charges itemized_charges
+     * @param \UPS\Rating\Rating\RatedPackageItemizedCharges[] $itemized_charges Itemized Charges are returned only when the subversion element is present and greater than or equal to '1607'.  These charges would be returned only when subversion is greater than or equal to 1607.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -505,7 +504,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Gets rate_modifier
      *
-     * @return OneOfRatedShipmentRatedPackageRateModifier
+     * @return \UPS\Rating\Rating\RatedPackageRateModifier[]
      */
     public function getRateModifier()
     {
@@ -515,7 +514,7 @@ class RatedShipmentRatedPackage implements ModelInterface, ArrayAccess
     /**
      * Sets rate_modifier
      *
-     * @param OneOfRatedShipmentRatedPackageRateModifier $rate_modifier rate_modifier
+     * @param \UPS\Rating\Rating\RatedPackageRateModifier[] $rate_modifier Container for returned Rate Modifier information. Applies only if SubVersion is 2205 or greater.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SubscriptionFileGenericTest Class Doc Comment
  *
  * @category    Class
- * @description Container for generic record information.
+ * @description SubscriptionFileGeneric
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

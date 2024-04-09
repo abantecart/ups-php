@@ -57,7 +57,7 @@ class DropLocationServiceOfferingList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'service_offering' => 'OneOfDropLocationServiceOfferingListServiceOffering'
+        'service_offering' => '\UPS\Locator\Locator\ServiceOfferingListServiceOffering[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class DropLocationServiceOfferingList implements ModelInterface, ArrayAccess
     /**
      * Gets service_offering
      *
-     * @return OneOfDropLocationServiceOfferingListServiceOffering
+     * @return \UPS\Locator\Locator\ServiceOfferingListServiceOffering[]
      */
     public function getServiceOffering()
     {
@@ -218,7 +218,7 @@ class DropLocationServiceOfferingList implements ModelInterface, ArrayAccess
     /**
      * Sets service_offering
      *
-     * @param OneOfDropLocationServiceOfferingListServiceOffering $service_offering service_offering
+     * @param \UPS\Locator\Locator\ServiceOfferingListServiceOffering[] $service_offering Container for Service offering code.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

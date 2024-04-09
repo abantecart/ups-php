@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * CODTurnInPageImageTest Class Doc Comment
  *
  * @category    Class
- * @description The container of the image for COD Turn In Page.    Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description The container of the image for COD Turn In Page.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

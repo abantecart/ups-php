@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentResultsControlLogReceiptTest Class Doc Comment
  *
  * @category    Class
- * @description Container for the High Value reports when forward shipments have declared value between $999 and $50,000 USD.  Two copies of high value report needs to be pointed out.    Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description ShipmentResultsControlLogReceipt
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

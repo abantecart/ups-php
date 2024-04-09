@@ -236,7 +236,7 @@ class PickupCreationRequestPickupDateInfo implements ModelInterface, ArrayAccess
     /**
      * Sets close_time
      *
-     * @param string $close_time Pickup location's local close time. - User provided Close Time must be later than the Earliest Allowed Customer Close Time.  - Earliest Allowed Customer Close Time is defined by UPS pickup operation system.  - CloseTime minus ReadyTime must be greater than the LeadTime.  - LeadTime is determined by UPS pickup operation system. LeadTime is the minimum amount of time UPS requires between customer�s request for a pickup and driver arriving at the location for the pickup.  Format: HHmm Hour: 0-23 Minute: 0-59
+     * @param string $close_time Pickup location's local close time. - User provided Close Time must be later than the Earliest Allowed Customer Close Time. - Earliest Allowed Customer Close Time is defined by UPS pickup operation system. - CloseTime minus ReadyTime must be greater than the LeadTime. - LeadTime is determined by UPS pickup operation system. LeadTime is the minimum amount of time UPS requires between customer's request for a pickup and driver arriving at the location for the pickup.  Format: HHmm - Hour: 0-23 - Minute: 0-59
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class PickupCreationRequestPickupDateInfo implements ModelInterface, ArrayAccess
     /**
      * Sets pickup_date
      *
-     * @param string $pickup_date Local pickup date of the location.  Format: yyyyMMdd yyyy = Year Appliable MM = 01� 12 dd = 01�31
+     * @param string $pickup_date Local pickup date of the location. Format: yyyyMMdd - yyyy = Year Appliable - MM = 01–12 - dd = 01–31
      *
      * @return $this
      */

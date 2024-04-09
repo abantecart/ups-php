@@ -58,7 +58,7 @@ class PickupCreationRequestTrackingDataWithReferenceNumber implements ModelInter
       */
     protected static $swaggerTypes = [
         'tracking_number' => 'string',
-        'reference_number' => 'string'
+        'reference_number' => 'string[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PickupCreationRequestTrackingDataWithReferenceNumber implements ModelInter
     /**
      * Gets reference_number
      *
-     * @return string
+     * @return string[]
      */
     public function getReferenceNumber()
     {
@@ -248,7 +248,7 @@ class PickupCreationRequestTrackingDataWithReferenceNumber implements ModelInter
     /**
      * Sets reference_number
      *
-     * @param string $reference_number The reference number associated with the tracking number.
+     * @param string[] $reference_number The reference number associated with the tracking number.
      *
      * @return $this
      */

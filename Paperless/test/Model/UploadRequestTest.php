@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * UploadRequestTest Class Doc Comment
  *
  * @category    Class
- * @description Paperless Document API Request container for uploading User Created Forms.  N/A
+ * @description Paperless Document API Request container for uploading User Created Forms.
  * @package     UPS\Paperless
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -224,7 +224,7 @@ class ProducerPhone implements ModelInterface, ArrayAccess
     /**
      * Sets number
      *
-     * @param string $number The locations phone number of the Producer.
+     * @param string $number The locations phone number of the Producer. Applies to NAFTA CO.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ProducerPhone implements ModelInterface, ArrayAccess
     /**
      * Sets extension
      *
-     * @param string $extension The locations phone extension of the Producer.
+     * @param string $extension The locations phone extension of the Producer. Applies to NAFTA CO.
      *
      * @return $this
      */

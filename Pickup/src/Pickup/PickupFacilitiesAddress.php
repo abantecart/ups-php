@@ -383,7 +383,7 @@ class PickupFacilitiesAddress implements ModelInterface, ArrayAccess
     /**
      * Sets residential_indicator
      *
-     * @param string $residential_indicator Indicates if the pickup address is a residential place or not.  Valid Values: Y = Residential address N = Non-residential (Commercial) address (default)
+     * @param string $residential_indicator Indicates if the pickup location is commerical or residential. Valid values: Y = Residential address N = Non-residential (Commercial) address (default)
      *
      * @return $this
      */

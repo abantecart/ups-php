@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ImageImageFormatTest Class Doc Comment
  *
  * @category    Class
- * @description Container for the High Value Report image format information for Import Control Shipments.
+ * @description Container tag for the International forms image format information.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

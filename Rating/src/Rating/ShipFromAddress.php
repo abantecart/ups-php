@@ -245,7 +245,7 @@ class ShipFromAddress implements ModelInterface, ArrayAccess
     /**
      * Sets address_line
      *
-     * @param string[] $address_line The origin street address including name and number (when applicable).
+     * @param string[] $address_line The origin street address including name and number (when applicable).  Length is not validated.
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class ShipFromAddress implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city UPS Access Point city.
+     * @param string $city Origin city.  Required if country or territory does not utilize postal codes. Length is not validated.
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class ShipFromAddress implements ModelInterface, ArrayAccess
     /**
      * Sets state_province_code
      *
-     * @param string $state_province_code UPS Access Point State or Province code.
+     * @param string $state_province_code Origin state code.  A StateProvinceCode and valid account number are required when requesting negotiated rates. Otherwise the StateProvinceCode is optional.  If the TaxInformationIndicator flag is present in the request, a StateProvinceCode must be entered for tax charges to be accurately calculated in the response.
      *
      * @return $this
      */
@@ -317,7 +317,7 @@ class ShipFromAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal Code for UPS accounts billing address.  Postal Code  may be present when the FRS Payment Information type = 02 and type = 03.
+     * @param string $postal_code Origin postal code.  Required if country or territory utilizes postal codes (e.g. US and PR).
      *
      * @return $this
      */
@@ -341,7 +341,7 @@ class ShipFromAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code for the  UPS accounts & billing address.  Country or Territory Code is required when the FRS Payment Information type = 02 and type= 03.
+     * @param string $country_code Origin country or territory code. Refer to the Supported Country or Territory Tables located in the Appendix.  Required, but defaults to US.
      *
      * @return $this
      */

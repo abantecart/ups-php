@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SubscriptionFileDeliveryTest Class Doc Comment
  *
  * @category    Class
- * @description Container for delivery information.
+ * @description SubscriptionFileDelivery
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

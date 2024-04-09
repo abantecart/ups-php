@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ElementLevelInformationElementIdentifierTest Class Doc Comment
  *
  * @category    Class
- * @description Contains more information about the type of element. Returned if Level is &#x27;P&#x27; or &#x27;C&#x27;.
+ * @description ElementLevelInformationElementIdentifier
  * @package     UPS\Rating
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

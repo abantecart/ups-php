@@ -64,7 +64,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
         'street_type' => 'string',
         'street_suffix' => 'string',
         'building_name' => 'string',
-        'address_extended_information' => 'OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation',
+        'address_extended_information' => '\UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[]',
         'political_division3' => 'string',
         'political_division2' => 'string',
         'political_division1' => 'string',
@@ -460,7 +460,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Gets address_extended_information
      *
-     * @return OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation
+     * @return \UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[]
      */
     public function getAddressExtendedInformation()
     {
@@ -470,7 +470,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Sets address_extended_information
      *
-     * @param OneOfDeliveryLocationAddressArtifactFormatAddressExtendedInformation $address_extended_information address_extended_information
+     * @param \UPS\QuantumView\QuantumView\AddressArtifactFormatAddressExtendedInformation[] $address_extended_information Container tag for additional address information where package is delivered.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class DeliveryLocationAddressArtifactFormat implements ModelInterface, ArrayAcce
     /**
      * Sets postcode_extended_low
      *
-     * @param string $postcode_extended_low 4 Digit postal code extension where package is delivered.� Valid for US only.
+     * @param string $postcode_extended_low 4 Digit postal code extension where package is delivered. Valid for US only.
      *
      * @return $this
      */

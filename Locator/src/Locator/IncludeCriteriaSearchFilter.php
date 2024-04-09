@@ -281,7 +281,7 @@ class IncludeCriteriaSearchFilter implements ModelInterface, ArrayAccess
     /**
      * Sets shipper_preparation_delay
      *
-     * @param string $shipper_preparation_delay Value for the number of days to check for shipping availability from� the current day. When this value is present, ShippingAvailabilityIndicator is implied implicitly.
+     * @param string $shipper_preparation_delay Value for the number of days to check for shipping availability from the current day. When this value is present, ShippingAvailabilityIndicator is implied implicitly.
      *
      * @return $this
      */
@@ -305,7 +305,7 @@ class IncludeCriteriaSearchFilter implements ModelInterface, ArrayAccess
     /**
      * Sets click_and_collect_sort_with_distance
      *
-     * @param string $click_and_collect_sort_with_distance This contains the distance (in given UnitOfMeasurement) wherin to sort the click and collect access point locations above other� access point locations� when a UPS Access Point candidate list is obtained in search by address or geocode search.
+     * @param string $click_and_collect_sort_with_distance This contains the distance (in given UnitOfMeasurement) wherin to sort the click and collect access point locations above other access point locations when a UPS Access Point candidate list is obtained in search by address or geocode search.
      *
      * @return $this
      */

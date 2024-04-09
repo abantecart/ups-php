@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * SearchResultsDropLocationTest Class Doc Comment
  *
  * @category    Class
- * @description When a location request is submitted with a valid origin address, UPS locations will be returned.
+ * @description SearchResultsDropLocation
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

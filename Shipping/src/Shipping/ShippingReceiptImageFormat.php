@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * ShippingReceiptImageFormat Class Doc Comment
  *
  * @category Class
- * @description Container for a Image Format.  Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Container for a Image Format.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -224,7 +224,7 @@ class ShippingReceiptImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code representing the format in which a receipt is delivered. Valid values: HTML = HTML format.
+     * @param string $code Code representing the format in which a receipt is delivered. Valid values: - HTML = HTML format
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ShippingReceiptImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description of the image format.
+     * @param string $description Description of the image format code.
      *
      * @return $this
      */

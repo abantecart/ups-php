@@ -227,7 +227,7 @@ class OriginAddressGeocode implements ModelInterface, ArrayAccess
     /**
      * Sets latitude
      *
-     * @param string $latitude The latitude of the location address or the center point of the area code.
+     * @param string $latitude The latitude of the origin address or the center point of the area code.
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class OriginAddressGeocode implements ModelInterface, ArrayAccess
     /**
      * Sets longitude
      *
-     * @param string $longitude The longitude of the location address or the center point of the area code.
+     * @param string $longitude The longitude of the origin address or the center point of the area code.
      *
      * @return $this
      */

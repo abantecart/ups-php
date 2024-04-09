@@ -57,7 +57,7 @@ class PackageResultsNegotiatedCharges implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemized_charges' => 'OneOfPackageResultsNegotiatedChargesItemizedCharges'
+        'itemized_charges' => '\UPS\Shipping\Shipping\NegotiatedChargesItemizedCharges[]'
     ];
 
     /**
@@ -205,7 +205,7 @@ class PackageResultsNegotiatedCharges implements ModelInterface, ArrayAccess
     /**
      * Gets itemized_charges
      *
-     * @return OneOfPackageResultsNegotiatedChargesItemizedCharges
+     * @return \UPS\Shipping\Shipping\NegotiatedChargesItemizedCharges[]
      */
     public function getItemizedCharges()
     {
@@ -215,7 +215,7 @@ class PackageResultsNegotiatedCharges implements ModelInterface, ArrayAccess
     /**
      * Sets itemized_charges
      *
-     * @param OneOfPackageResultsNegotiatedChargesItemizedCharges $itemized_charges itemized_charges
+     * @param \UPS\Shipping\Shipping\NegotiatedChargesItemizedCharges[] $itemized_charges Negotiated Itemized Accessorial and SurCharges.  Negotiated itemized charges are only returned for certain contract-only shipments as well as Worldwide Express Freight, Ground Freight Pricing, and Hazmat movements. Negotiated Itemized Accessorial and Sur Charges are returned only when the subversion element is present and greater than or equal to 1607.  Package level itemized charges are only returned for US domestic movements  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

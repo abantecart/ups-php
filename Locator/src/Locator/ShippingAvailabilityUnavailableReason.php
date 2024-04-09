@@ -227,7 +227,7 @@ class ShippingAvailabilityUnavailableReason implements ModelInterface, ArrayAcce
     /**
      * Sets code
      *
-     * @param string $code Code for DCR/DCO unavailability. Valid values:  01-Temporarily Unavailable  02-Location Full 03-Unavailable 04-Weather
+     * @param string $code Code for shipping unavailability. Code for DCR/DCO unavailability.  Valid values: - 01 - Temporarily Unavailable - 02 - Location Full - 03 - Unavailable - 04 - Weather
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class ShippingAvailabilityUnavailableReason implements ModelInterface, ArrayAcce
     /**
      * Sets description
      *
-     * @param string $description Description for DCR/ DCO unavailability.
+     * @param string $description Description for shipping unavailability.
      *
      * @return $this
      */

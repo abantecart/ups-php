@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * OperatingHoursStandardHoursTest Class Doc Comment
  *
  * @category    Class
- * @description StandardHours Container.
+ * @description OperatingHoursStandardHours
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

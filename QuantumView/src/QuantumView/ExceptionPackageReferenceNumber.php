@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * ExceptionPackageReferenceNumber Class Doc Comment
  *
  * @category Class
- * @description Package-level reference number.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -284,7 +283,7 @@ class ExceptionPackageReferenceNumber implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Reflects what will go on the label as the name of the reference.  For addition information, refer to the Service Codes table in the Appendix.
+     * @param string $code Reflects what will go on the label as the name of the reference.  For additional information, refer to the Reference Codes table in the Appendix.
      *
      * @return $this
      */

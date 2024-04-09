@@ -227,7 +227,7 @@ class InternationalFormsOtherCharges implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value The Monetary value of Other Charges.  Applies to Invoice and Partial Invoice forms only. Required for Invoice forms and optional for Partial Invoice. Valid characters are 0-9 and \".\" (Decimal point). Limit to 2 digit after the decimal. The maximum length of the field is 15 including \".\" and can hold up to 2 decimal places.
+     * @param string $monetary_value The Monetary value of Other Charges.  Applies to Invoice and Partial Invoice forms only. Required for Invoice forms and optional for Partial Invoice. Valid characters are 0-9 and '.' (Decimal point). Limit to 2 digit after the decimal. The maximum length of the field is 15 including '.' and can hold up to 2 decimal places.
      *
      * @return $this
      */

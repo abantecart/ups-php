@@ -35,7 +35,6 @@ use \UPS\Rating\ObjectSerializer;
  * ResponseAlertDetail Class Doc Comment
  *
  * @category Class
- * @description Alert Detail Container.  Currently applies to and returned only for request containing HazMat and SubVersion greater than or equal to 1701.
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

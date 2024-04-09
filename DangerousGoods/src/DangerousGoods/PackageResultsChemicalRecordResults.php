@@ -35,7 +35,6 @@ use \UPS\DangerousGoods\ObjectSerializer;
  * PackageResultsChemicalRecordResults Class Doc Comment
  *
  * @category Class
- * @description Chemical Records Results container.
  * @package  UPS\DangerousGoods
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

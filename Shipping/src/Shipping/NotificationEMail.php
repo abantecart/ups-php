@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * NotificationEMail Class Doc Comment
  *
  * @category Class
- * @description Container for the e-mail message.
+ * @description Container for Email Information.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -242,7 +242,7 @@ class NotificationEMail implements ModelInterface, ArrayAccess
     /**
      * Sets e_mail_address
      *
-     * @param string[] $e_mail_address The destination email address of the receiver returns notification email.
+     * @param string[] $e_mail_address Email address where the notification is sent.  Up to five email addresses are allowed for each type of Quantum View TM shipment notification. Up to two email address for return notification.
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class NotificationEMail implements ModelInterface, ArrayAccess
     /**
      * Sets undeliverable_e_mail_address
      *
-     * @param string $undeliverable_e_mail_address The e-mail address where an undeliverable email message is sent if the Receiver Return Notification email is undeliverable.  Defaults to FromEMailAddress. Only allowed at the first package.
+     * @param string $undeliverable_e_mail_address The address where an undeliverable eMail message is sent if the eMail with the notification is undeliverable.  There can be only one UndeliverableEMailAddress for each shipment with Quantum View Shipment Notifications.
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class NotificationEMail implements ModelInterface, ArrayAccess
     /**
      * Sets from_e_mail_address
      *
-     * @param string $from_e_mail_address The email address listed in the Reply To field of the message header, includes name and e-mail address of sender. The \"From\" field of the message header contains pkginfo@ups.com.  Only allowed at the first package.
+     * @param string $from_e_mail_address The e-mail address specifies the Reply To E-mail address. The \"From\" field of the message header contains pkginfo@ups.com.  Valid for Return Notification only.
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class NotificationEMail implements ModelInterface, ArrayAccess
     /**
      * Sets from_name
      *
-     * @param string $from_name The name the receiver return notification will appear to be from.  Defaults to the Shipper Name. Only allowed at the first package.
+     * @param string $from_name The name the email will appear to be from. Defaults to the Shipper Name.  The FromName must occur only once for each shipment with Quantum View Shipment Notifications.
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class NotificationEMail implements ModelInterface, ArrayAccess
     /**
      * Sets memo
      *
-     * @param string $memo User defined text that will be included in the email.  Only allowed at the first package.
+     * @param string $memo User defined text that will be included in the eMail.  The Memo must occur only once for each shipment with Quantum View Shipment Notifications.
      *
      * @return $this
      */

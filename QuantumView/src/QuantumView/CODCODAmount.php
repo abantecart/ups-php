@@ -35,7 +35,7 @@ use \UPS\QuantumView\ObjectSerializer;
  * CODCODAmount Class Doc Comment
  *
  * @category Class
- * @description The monetary amount of the COD.
+ * @description The amount of the COD that is to be collected for the shipment.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -221,7 +221,7 @@ class CODCODAmount implements ModelInterface, ArrayAccess
     /**
      * Sets currency_code
      *
-     * @param string $currency_code The IATA currency code associated with the COD amount for the package. Required if the value for COD amount exists in MonetaryValue tag. Must match one of the IATA currency codes.  For additional information, refer to Currency Codes in the Appendix for valid values.
+     * @param string $currency_code The IATA currency code associated with the COD amount for the package.  Required if the value for COD amount exists in MonetaryValue tag.  Must match one of the IATA currency codes.  For addition information, refer to the Currency Codes table in the Appendix.
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class CODCODAmount implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value The COD value for the package. Required if CODCode is 1.Absolute maximum value is for a 32 bit float is� 3.40282347e+38f.
+     * @param string $monetary_value The COD value for the package. Required if CODCode is 1.Absolute maximum value is 21474836.47 (limited by the maximum value of a 32-bit integer).
      *
      * @return $this
      */

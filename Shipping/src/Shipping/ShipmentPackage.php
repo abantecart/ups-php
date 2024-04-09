@@ -66,6 +66,8 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
         'dim_weight' => '\UPS\Shipping\Shipping\PackageDimWeight',
         'package_weight' => '\UPS\Shipping\Shipping\PackagePackageWeight',
         'large_package_indicator' => 'string',
+        'oversize_indicator' => 'string',
+        'minimum_billable_weight_indicator' => 'string',
         'reference_number' => '\UPS\Shipping\Shipping\PackageReferenceNumber[]',
         'additional_handling_indicator' => 'string',
         'simple_rate' => '\UPS\Shipping\Shipping\PackageSimpleRate',
@@ -90,6 +92,8 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
         'dim_weight' => null,
         'package_weight' => null,
         'large_package_indicator' => null,
+        'oversize_indicator' => null,
+        'minimum_billable_weight_indicator' => null,
         'reference_number' => null,
         'additional_handling_indicator' => null,
         'simple_rate' => null,
@@ -135,6 +139,8 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
         'dim_weight' => 'DimWeight',
         'package_weight' => 'PackageWeight',
         'large_package_indicator' => 'LargePackageIndicator',
+        'oversize_indicator' => 'OversizeIndicator',
+        'minimum_billable_weight_indicator' => 'MinimumBillableWeightIndicator',
         'reference_number' => 'ReferenceNumber',
         'additional_handling_indicator' => 'AdditionalHandlingIndicator',
         'simple_rate' => 'SimpleRate',
@@ -159,6 +165,8 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
         'dim_weight' => 'setDimWeight',
         'package_weight' => 'setPackageWeight',
         'large_package_indicator' => 'setLargePackageIndicator',
+        'oversize_indicator' => 'setOversizeIndicator',
+        'minimum_billable_weight_indicator' => 'setMinimumBillableWeightIndicator',
         'reference_number' => 'setReferenceNumber',
         'additional_handling_indicator' => 'setAdditionalHandlingIndicator',
         'simple_rate' => 'setSimpleRate',
@@ -183,6 +191,8 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
         'dim_weight' => 'getDimWeight',
         'package_weight' => 'getPackageWeight',
         'large_package_indicator' => 'getLargePackageIndicator',
+        'oversize_indicator' => 'getOversizeIndicator',
+        'minimum_billable_weight_indicator' => 'getMinimumBillableWeightIndicator',
         'reference_number' => 'getReferenceNumber',
         'additional_handling_indicator' => 'getAdditionalHandlingIndicator',
         'simple_rate' => 'getSimpleRate',
@@ -259,6 +269,8 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
         $this->container['dim_weight'] = isset($data['dim_weight']) ? $data['dim_weight'] : null;
         $this->container['package_weight'] = isset($data['package_weight']) ? $data['package_weight'] : null;
         $this->container['large_package_indicator'] = isset($data['large_package_indicator']) ? $data['large_package_indicator'] : null;
+        $this->container['oversize_indicator'] = isset($data['oversize_indicator']) ? $data['oversize_indicator'] : null;
+        $this->container['minimum_billable_weight_indicator'] = isset($data['minimum_billable_weight_indicator']) ? $data['minimum_billable_weight_indicator'] : null;
         $this->container['reference_number'] = isset($data['reference_number']) ? $data['reference_number'] : null;
         $this->container['additional_handling_indicator'] = isset($data['additional_handling_indicator']) ? $data['additional_handling_indicator'] : null;
         $this->container['simple_rate'] = isset($data['simple_rate']) ? $data['simple_rate'] : null;
@@ -380,7 +392,7 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
     /**
      * Sets unit_price
      *
-     * @param string $unit_price Unit price of the commodity. Applicable for Air Freight only  Limit to 2 digit after the decimal. The maximum length of the field is 12 including \".\" and can hold up to 2 decimal place. (e.g. 999999999.99)
+     * @param string $unit_price Unit price of the commodity. Applicable for Air Freight only  Limit to 2 digit after the decimal. The maximum length of the field is 12 including '.' and can hold up to 2 decimal place. (e.g. 999999999.99)
      *
      * @return $this
      */
@@ -507,6 +519,54 @@ class ShipmentPackage implements ModelInterface, ArrayAccess
     public function setLargePackageIndicator($large_package_indicator)
     {
         $this->container['large_package_indicator'] = $large_package_indicator;
+
+        return $this;
+    }
+
+    /**
+     * Gets oversize_indicator
+     *
+     * @return string
+     */
+    public function getOversizeIndicator()
+    {
+        return $this->container['oversize_indicator'];
+    }
+
+    /**
+     * Sets oversize_indicator
+     *
+     * @param string $oversize_indicator Presence/Absence Indicator. Any value is ignored. If present, indicates that the package is over size.   Applicable for UPS Worldwide Economy DDU service.
+     *
+     * @return $this
+     */
+    public function setOversizeIndicator($oversize_indicator)
+    {
+        $this->container['oversize_indicator'] = $oversize_indicator;
+
+        return $this;
+    }
+
+    /**
+     * Gets minimum_billable_weight_indicator
+     *
+     * @return string
+     */
+    public function getMinimumBillableWeightIndicator()
+    {
+        return $this->container['minimum_billable_weight_indicator'];
+    }
+
+    /**
+     * Sets minimum_billable_weight_indicator
+     *
+     * @param string $minimum_billable_weight_indicator Presence/Absence Indicator. Any value is ignored. If present, indicates that the package is qualified for minimum billable weight.   Applicable for UPS Worldwide Economy DDU service.
+     *
+     * @return $this
+     */
+    public function setMinimumBillableWeightIndicator($minimum_billable_weight_indicator)
+    {
+        $this->container['minimum_billable_weight_indicator'] = $minimum_billable_weight_indicator;
 
         return $this;
     }

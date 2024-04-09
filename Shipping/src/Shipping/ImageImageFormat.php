@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * ImageImageFormat Class Doc Comment
  *
  * @category Class
- * @description Container for the High Value Report image format information for Import Control Shipments.
+ * @description Container tag for the International forms image format information.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -248,7 +248,7 @@ class ImageImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description of the image format.
+     * @param string $description Description of the form image format code.
      *
      * @return $this
      */

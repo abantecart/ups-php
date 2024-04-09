@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * LocationAttributeOptionTypeTest Class Doc Comment
  *
  * @category    Class
- * @description OptionType is a container that indicates the type of the location attribute.  There are 4 types of attributes.  They are: Location, Retail Location, Additional Services and Program Type.
+ * @description LocationAttributeOptionType
  * @package     UPS\Locator
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

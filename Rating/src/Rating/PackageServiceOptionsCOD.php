@@ -227,7 +227,7 @@ class PackageServiceOptionsCOD implements ModelInterface, ArrayAccess
     /**
      * Sets cod_funds_code
      *
-     * @param string $cod_funds_code For valid values, refer to\"Rating and Shipping COD Supported Countries or Territories in the Appendix.
+     * @param string $cod_funds_code Indicates the type of funds that will be used for the C.O.D. payment.  For valid values, refer to Rating and Shipping COD Supported Countries or Territories in the Appendix.
      *
      * @return $this
      */

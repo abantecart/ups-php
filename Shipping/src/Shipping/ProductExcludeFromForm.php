@@ -218,7 +218,7 @@ class ProductExcludeFromForm implements ModelInterface, ArrayAccess
     /**
      * Sets form_type
      *
-     * @param string[] $form_type Indicates the name of the International form requested to NOT have product information.  Possible Values are 04 - NAFTA CO.  Please note that if this is used and you DO NOT have the corresponding form type requested this will be IGNORED.
+     * @param string[] $form_type Indicates the name of the International form requested to NOT have product information.  Possible Values are 04 – NAFTA CO.  Please note that if this is used and you DO NOT have the corresponding form type requested this will be IGNORED.
      *
      * @return $this
      */

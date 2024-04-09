@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * SubscriptionFileManifest Class Doc Comment
  *
  * @category Class
- * @description Container represents all data that is relevant for the shipment, such as origin, destination, shipper, payment method etc. It will be return when available.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -59,13 +58,13 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipper' => '\UPS\QuantumView\QuantumView\ManifestShipper',
         'ship_to' => '\UPS\QuantumView\QuantumView\ManifestShipTo',
-        'reference_number' => 'OneOfSubscriptionFileManifestReferenceNumber',
+        'reference_number' => '\UPS\QuantumView\QuantumView\ManifestReferenceNumber[]',
         'service' => '\UPS\QuantumView\QuantumView\ManifestService',
         'pickup_date' => 'string',
         'scheduled_delivery_date' => 'string',
         'scheduled_delivery_time' => 'string',
         'documents_only' => 'string',
-        'package' => 'OneOfSubscriptionFileManifestPackage',
+        'package' => '\UPS\QuantumView\QuantumView\ManifestPackage[]',
         'shipment_service_options' => '\UPS\QuantumView\QuantumView\ManifestShipmentServiceOptions',
         'manufacture_country' => 'string',
         'harmonized_code' => 'string',
@@ -559,7 +558,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Gets reference_number
      *
-     * @return OneOfSubscriptionFileManifestReferenceNumber
+     * @return \UPS\QuantumView\QuantumView\ManifestReferenceNumber[]
      */
     public function getReferenceNumber()
     {
@@ -569,7 +568,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets reference_number
      *
-     * @param OneOfSubscriptionFileManifestReferenceNumber $reference_number reference_number
+     * @param \UPS\QuantumView\QuantumView\ManifestReferenceNumber[] $reference_number Shipment-level reference numbers.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -689,7 +688,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets documents_only
      *
-     * @param string $documents_only If the tag is present then the shipment is a document, otherwise the shipment is a non-document.  Valid values:�  1 = Letter 2 = Document (Non-Letter Document) 3 = Non-Document 4 = Pallet
+     * @param string $documents_only If the tag is present then the shipment is a document, otherwise the shipment is a non-document. Valid values: - 1 = Letter - 2 = Document (Non-Letter Document) - 3 = Non-Document - 4 = Pallet
      *
      * @return $this
      */
@@ -703,7 +702,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Gets package
      *
-     * @return OneOfSubscriptionFileManifestPackage
+     * @return \UPS\QuantumView\QuantumView\ManifestPackage[]
      */
     public function getPackage()
     {
@@ -713,7 +712,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets package
      *
-     * @param OneOfSubscriptionFileManifestPackage $package package
+     * @param \UPS\QuantumView\QuantumView\ManifestPackage[] $package Defines a package.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -1001,7 +1000,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets label_delivery_method
      *
-     * @param string $label_delivery_method Indicates Label Delivery Method, Values are: LDE Electronic Label .LDO One Attempt. LDP Print Label. LDT Three Attempt. LPM� Print and Mail Label.
+     * @param string $label_delivery_method Indicates Label Delivery Method, Values are: LDE Electronic Label. LDO One Attempt. LDP Print Label. LDT Three Attempt. LPM Print and Mail Label.
      *
      * @return $this
      */
@@ -1121,7 +1120,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets product
      *
-     * @param string $product This element will have value �PAC� for CAR shipments. For no CAR shipments this element will not be appeared.
+     * @param string $product This element will have value \"PAC\" for CAR shipments. For no CAR shipments this element will not be appeared.
      *
      * @return $this
      */
@@ -1145,7 +1144,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets ups_returns_exchange
      *
-     * @param string $ups_returns_exchange UPS Return and Exchange � This element will appear with value Y only when UPS Return and Exchange was requested. For no UPS Returns and Exchange then this element will not be appeared
+     * @param string $ups_returns_exchange UPS Return and Exchange – This element will appear with value Y only when UPS Return and Exchange was requested. For no UPS Returns and Exchange then this element will not appear
      *
      * @return $this
      */
@@ -1673,7 +1672,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets ups_premier_accessorial_indicator
      *
-     * @param string $ups_premier_accessorial_indicator �Y� indicates that the UPS Premier accessorial is provided.
+     * @param string $ups_premier_accessorial_indicator \"Y\" indicates that the UPS Premier accessorial is provided.
      *
      * @return $this
      */
@@ -1697,7 +1696,7 @@ class SubscriptionFileManifest implements ModelInterface, ArrayAccess
     /**
      * Sets ups_premier_category_code
      *
-     * @param string $ups_premier_category_code Indicates the UPS Premier category applied to the package Valid values: 'PRS' � UPS Premier Silver, 'PRG' � UPS Premier Gold, 'PRP' - UPS Premier Platinum
+     * @param string $ups_premier_category_code Indicates the UPS Premier category applied to the package Valid values: - 'PRS' – UPS Premier Silver - 'PRG' – UPS Premier Gold - 'PRP' - UPS Premier Platinum
      *
      * @return $this
      */

@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * DeleteResponse Class Doc Comment
  *
  * @category Class
- * @description Paperless Document API response container for delete request.  N/A
+ * @description Paperless Document API response container for delete request.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

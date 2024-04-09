@@ -35,7 +35,7 @@ use \UPS\Rating\ObjectSerializer;
  * PackageUPSPremier Class Doc Comment
  *
  * @category Class
- * @description UPS Premier  N/A
+ * @description UPS Premier
  * @package  UPS\Rating
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ShipmentResultsDisclaimerTest Class Doc Comment
  *
  * @category    Class
- * @description Disclaimer would be used to provide more information to shipper regarding the processed shipment. This would be used to notify shipper about possible taxes and duties that might have been added or might apply to the shipment.  This field would be returned only if TaxInformationIndicator is present in a request.
+ * @description ShipmentResultsDisclaimer
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

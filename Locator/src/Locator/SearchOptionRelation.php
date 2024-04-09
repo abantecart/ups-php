@@ -218,7 +218,7 @@ class SearchOptionRelation implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Applicable for Additional Services and Program Types.  Valid values:  01-And (Default) 02-Or
+     * @param string $code Applicable for Additional Services and Program Types.  Valid values:  - 01 - And (Default) - 02 - Or
      *
      * @return $this
      */

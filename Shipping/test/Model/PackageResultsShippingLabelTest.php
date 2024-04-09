@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PackageResultsShippingLabelTest Class Doc Comment
  *
  * @category    Class
- * @description The container for UPS shipping label. Returned for following shipments - Forward shipments, Shipments with PRL returns service,  Electronic Return Label or Electronic Import Control Label shipments with SubVersion greater than or equal to 1707. Shipping label wont be returned if BarCodeImageIndicator is present. Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description The container for UPS shipping label. Returned for following shipments - Forward shipments, Shipments with PRL returns service,  Electronic Return Label or Electronic Import Control Label shipments with SubVersion greater than or equal to 1707. Shipping label wont be returned if BarCodeImageIndicator is present.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

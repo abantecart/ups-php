@@ -57,7 +57,7 @@ class ShipmentFRSPaymentInformation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type' => 'string',
+        'type' => '\UPS\Shipping\Shipping\FRSPaymentInformationType',
         'account_number' => 'string',
         'address' => '\UPS\Shipping\Shipping\FRSPaymentInformationAddress'
     ];
@@ -223,7 +223,7 @@ class ShipmentFRSPaymentInformation implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return string
+     * @return \UPS\Shipping\Shipping\FRSPaymentInformationType
      */
     public function getType()
     {
@@ -233,7 +233,7 @@ class ShipmentFRSPaymentInformation implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param string $type Container to hold the Ground Freight Pricing payment type information.  It is required if the request has Ground Freight Pricing shipment indicator.
+     * @param \UPS\Shipping\Shipping\FRSPaymentInformationType $type type
      *
      * @return $this
      */

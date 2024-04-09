@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * VoidShipmentRequestVoidShipmentTest Class Doc Comment
  *
  * @category    Class
- * @description The container for the Ship Void Request.  N/A
+ * @description The container for the Ship Void Request.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

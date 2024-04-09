@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **disclaimer** | [**\UPS\Pickup\Pickup\RateResultDisclaimer**](RateResultDisclaimer.md) |  | [optional] 
-**rate_type** | **string** | Indicates the pickup is rated as same-day or future-day pickup. SD &#x3D; Same-day Pickup FD &#x3D; Future-day Pickup | [optional] 
+**rate_type** | **string** | Indicates the pickup is rated as same-day or future-day pickup. - SD &#x3D; Same-day Pickup - FD &#x3D; Future-day Pickup | [optional] 
 **currency_code** | **string** | IATA currency codes for the pickup charge. Such as USD | 
 **charge_detail** | [**\UPS\Pickup\Pickup\RateResultChargeDetail**](RateResultChargeDetail.md) |  | [optional] 
 **tax_charges** | [**\UPS\Pickup\Pickup\RateResultTaxCharges**](RateResultTaxCharges.md) |  | [optional] 

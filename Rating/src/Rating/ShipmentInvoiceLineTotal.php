@@ -251,7 +251,7 @@ class ShipmentInvoiceLineTotal implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value Total amount of the invoice accompanying the shipment. Required when the InvoiceLineTotal container exists in the rate request.  Valid values are from 1 to 99999999.00
+     * @param string $monetary_value Total amount of the invoice accompanying the shipment. Required when the InvoiceLineTotal container exists in the rate request.  Valid values are from 1 to 99999999.
      *
      * @return $this
      */

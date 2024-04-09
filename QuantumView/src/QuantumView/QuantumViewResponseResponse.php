@@ -60,7 +60,7 @@ class QuantumViewResponseResponse implements ModelInterface, ArrayAccess
         'transaction_reference' => '\UPS\QuantumView\QuantumView\ResponseTransactionReference',
         'response_status_code' => 'string',
         'response_status_description' => 'string',
-        'error' => 'OneOfQuantumViewResponseResponseError'
+        'error' => '\UPS\QuantumView\QuantumView\ResponseError[]'
     ];
 
     /**
@@ -301,7 +301,7 @@ class QuantumViewResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return OneOfQuantumViewResponseResponseError
+     * @return \UPS\QuantumView\QuantumView\ResponseError[]
      */
     public function getError()
     {
@@ -311,7 +311,7 @@ class QuantumViewResponseResponse implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param OneOfQuantumViewResponseResponseError $error error
+     * @param \UPS\QuantumView\QuantumView\ResponseError[] $error If an error is encountered during the interchange, the Response contains an error. If the error is present, then the ErrorSeverity and ErrorCodes are required.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

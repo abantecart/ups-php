@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * UpdatedAddressAddressExtendedInformationTest Class Doc Comment
  *
  * @category    Class
- * @description Container for information about updated shipping address. It will be returned if there is any update due to exception.
+ * @description UpdatedAddressAddressExtendedInformation
  * @package     UPS\QuantumView
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

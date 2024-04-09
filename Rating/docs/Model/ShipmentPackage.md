@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **commodity** | [**\UPS\Rating\Rating\PackageCommodity**](PackageCommodity.md) |  | [optional] 
 **large_package_indicator** | **string** | This element does not require a value and if one is entered it will be ignored.  If present, it indicates the shipment will be categorized as a Large Package. | [optional] 
 **package_service_options** | [**\UPS\Rating\Rating\PackagePackageServiceOptions**](PackagePackageServiceOptions.md) |  | [optional] 
-**additional_handling_indicator** | **string** | A flag indicating if the packages require additional handling. True if AdditionalHandlingIndicator tag exists; false otherwise. Additional Handling indicator indicates it\&quot;s a non-corrugated package.  Empty Tag. | [optional] 
+**additional_handling_indicator** | **string** | A flag indicating if the packages require additional handling. True if AdditionalHandlingIndicator tag exists; false otherwise. Additional Handling indicator indicates it&#x27;s a non-corrugated package.  Empty Tag. | [optional] 
 **simple_rate** | [**\UPS\Rating\Rating\PackageSimpleRate**](PackageSimpleRate.md) |  | [optional] 
 **ups_premier** | [**\UPS\Rating\Rating\PackageUPSPremier**](PackageUPSPremier.md) |  | [optional] 
 **oversize_indicator** | **string** | Presence/Absence Indicator. Any value inside is ignored. It indicates if packge is oversized.  Applicable for UPS Worldwide Economy DDU service | [optional] 

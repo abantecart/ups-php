@@ -59,7 +59,7 @@ class VoidShipmentResponse implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'response' => '\UPS\Shipping\Shipping\VoidShipmentResponseResponse',
         'summary_result' => '\UPS\Shipping\Shipping\VoidShipmentResponseSummaryResult',
-        'package_level_result' => 'OneOfVoidShipmentResponsePackageLevelResult'
+        'package_level_result' => '\UPS\Shipping\Shipping\VoidShipmentResponsePackageLevelResult[]'
     ];
 
     /**
@@ -271,7 +271,7 @@ class VoidShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Gets package_level_result
      *
-     * @return OneOfVoidShipmentResponsePackageLevelResult
+     * @return \UPS\Shipping\Shipping\VoidShipmentResponsePackageLevelResult[]
      */
     public function getPackageLevelResult()
     {
@@ -281,7 +281,7 @@ class VoidShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Sets package_level_result
      *
-     * @param OneOfVoidShipmentResponsePackageLevelResult $package_level_result package_level_result
+     * @param \UPS\Shipping\Shipping\VoidShipmentResponsePackageLevelResult[] $package_level_result Contains the Package Level Results.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

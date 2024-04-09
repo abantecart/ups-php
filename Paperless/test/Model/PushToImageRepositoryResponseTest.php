@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * PushToImageRepositoryResponseTest Class Doc Comment
  *
  * @category    Class
- * @description Paperless Document API response container for Push To Image Repository request.  N/A
+ * @description Paperless Document API response container for Push To Image Repository request.
  * @package     UPS\Paperless
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

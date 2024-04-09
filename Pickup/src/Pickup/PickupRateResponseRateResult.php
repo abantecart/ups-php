@@ -296,7 +296,7 @@ class PickupRateResponseRateResult implements ModelInterface, ArrayAccess
     /**
      * Sets rate_type
      *
-     * @param string $rate_type Indicates the pickup is rated as same-day or future-day pickup. SD = Same-day Pickup FD = Future-day Pickup
+     * @param string $rate_type Indicates the pickup is rated as same-day or future-day pickup. - SD = Same-day Pickup - FD = Future-day Pickup
      *
      * @return $this
      */

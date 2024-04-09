@@ -227,7 +227,7 @@ class XAVResponseAddressClassification implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Contains the classification code of the address: 0 - UnClassified 1 - Commercial 2 - Residential
+     * @param string $code Contains the classification code of the input address.  Valid values:  - 0 - UnClassified - 1 - Commercial - 2 - Residential
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class XAVResponseAddressClassification implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Contains the text description of the address classification code (see Code above).
+     * @param string $description Contains the text description of the address classification code: UnClassified, Commercial, Residential
      *
      * @return $this
      */

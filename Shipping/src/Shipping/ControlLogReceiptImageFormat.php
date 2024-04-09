@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * ControlLogReceiptImageFormat Class Doc Comment
  *
  * @category Class
- * @description Container for the High Value report format required if parent exist.    Applicable only for ShipmentResponse and ShipAcceptResponse.
+ * @description Container for the High Value report format required if parent exist.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -224,7 +224,7 @@ class ControlLogReceiptImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code representing the format in which the forms are generated. Valid values: PDF = pdf, PNG = png Code for the type of Graphic Image for the High Value Report. Applicable only for ShipmentResponse and ShipAcceptResponse. Valid values: EPL = EPL2 (when user requests label in EPL2 format) SPL = SPL (when user requests label in SPL format) ZPL = ZPL (when user requests label in ZPL format) HTML= HTML (when user requests label in HTML format)
+     * @param string $code Code for the type of Graphic Image for the High Value Report.  Valid values: - EPL = EPL2 (when user requests label in EPL2 format) - SPL = SPL (when user requests label in SPL format) - ZPL = ZPL (when user requests label in ZPL format) - HTML= HTML (when user requests label in HTML format)
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ControlLogReceiptImageFormat implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description of the image format.
+     * @param string $description Description of the format code.
      *
      * @return $this
      */

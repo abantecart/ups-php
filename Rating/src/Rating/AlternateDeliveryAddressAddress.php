@@ -329,7 +329,7 @@ class AlternateDeliveryAddressAddress implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string $postal_code Postal Code for UPS accounts billing address.  Postal Code  may be present when the FRS Payment Information type = 02 and type = 03.
+     * @param string $postal_code UPS Access Point Postal code.
      *
      * @return $this
      */
@@ -353,7 +353,7 @@ class AlternateDeliveryAddressAddress implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param string $country_code Country or Territory code for the  UPS accounts & billing address.  Country or Territory Code is required when the FRS Payment Information type = 02 and type= 03.
+     * @param string $country_code UPS Access Point country or territory code.
      *
      * @return $this
      */
@@ -401,7 +401,7 @@ class AlternateDeliveryAddressAddress implements ModelInterface, ArrayAccess
     /**
      * Sets po_box_indicator
      *
-     * @param string $po_box_indicator Presence/Absence Indicator. Any value inside is ignored.This field is a flag to indicate if the Alternate Delivery location is a PO box location. True if POBoxIndicator tag exists; false otherwise.  Not valid with Shipment Indication Types:01 Hold for Pickup at UPS Access Point02 UPS Access Point Delivery
+     * @param string $po_box_indicator Presence/Absence Indicator. Any value inside is ignored.  This field is a flag to indicate if the Alternate Delivery location is a PO box location.  True if POBoxIndicator tag exists; false otherwise.  Not valid with Shipment Indication Types: - 01 - Hold for Pickup at UPS Access Point - 02 - UPS Access Point™ Delivery
      *
      * @return $this
      */

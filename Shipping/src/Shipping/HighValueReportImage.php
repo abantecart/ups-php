@@ -35,7 +35,7 @@ use \UPS\Shipping\ObjectSerializer;
  * HighValueReportImage Class Doc Comment
  *
  * @category Class
- * @description Container for the High Value Report image for Import Control Shipments.
+ * @description Container tag for the High Value Report image.
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -57,7 +57,7 @@ class HighValueReportImage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'image_format' => '\UPS\Shipping\Shipping\ImageImageFormat',
+        'image_format' => '\UPS\Shipping\Shipping\HighValueReportImageImageFormat',
         'graphic_image' => 'string'
     ];
 
@@ -217,7 +217,7 @@ class HighValueReportImage implements ModelInterface, ArrayAccess
     /**
      * Gets image_format
      *
-     * @return \UPS\Shipping\Shipping\ImageImageFormat
+     * @return \UPS\Shipping\Shipping\HighValueReportImageImageFormat
      */
     public function getImageFormat()
     {
@@ -227,7 +227,7 @@ class HighValueReportImage implements ModelInterface, ArrayAccess
     /**
      * Sets image_format
      *
-     * @param \UPS\Shipping\Shipping\ImageImageFormat $image_format image_format
+     * @param \UPS\Shipping\Shipping\HighValueReportImageImageFormat $image_format image_format
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class HighValueReportImage implements ModelInterface, ArrayAccess
     /**
      * Sets graphic_image
      *
-     * @param string $graphic_image Base 64 Encoded PDF Image.
+     * @param string $graphic_image Base 64 encoded High Value Report image.
      *
      * @return $this
      */

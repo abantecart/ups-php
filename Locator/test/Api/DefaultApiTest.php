@@ -80,4 +80,14 @@ class DefaultApiTest extends TestCase
     public function testLocator()
     {
     }
+
+    /**
+     * Test case for locator_0
+     *
+     * Locator.
+     *
+     */
+    public function testLocator0()
+    {
+    }
 }

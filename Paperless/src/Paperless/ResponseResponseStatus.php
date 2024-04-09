@@ -35,7 +35,7 @@ use \UPS\Paperless\ObjectSerializer;
  * ResponseResponseStatus Class Doc Comment
  *
  * @category Class
- * @description Response status container.  N/A
+ * @description Response status container.
  * @package  UPS\Paperless
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

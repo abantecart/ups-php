@@ -230,7 +230,7 @@ class RateRequestRequest implements ModelInterface, ArrayAccess
     /**
      * Sets request_option
      *
-     * @param string $request_option Used to define the request type.  Valid Values:Rate = The server rates (The default Request option is Rate if a Request Option is not provided). Shop = The server validates the shipment, and returns rates for all UPS products from the ShipFrom to the ShipTo addresses. Ratetimeintransit = The server rates with transit time informationShoptimeintransit = The server validates the shipment, and returns rates and transit times for all UPS products from the ShipFrom to the ShipTo addresses.Rate is the only valid request option for UPS Ground Freight Pricing requests.
+     * @param string $request_option Used to define the request type. Valid Values: - Rate = The server rates (The default Request option is Rate if a Request Option is not provided). - Shop = The server validates the shipment, and returns rates for all UPS products from the ShipFrom to the ShipTo addresses. - Ratetimeintransit = The server rates with transit time information - Shoptimeintransit = The server validates the shipment, and returns rates and transit times for all UPS products from the ShipFrom to the ShipTo addresses.  Rate is the only valid request option for UPS Ground Freight Pricing requests.
      *
      * @return $this
      */

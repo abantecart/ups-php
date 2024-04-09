@@ -35,7 +35,6 @@ use \UPS\QuantumView\ObjectSerializer;
  * QuantumViewEventsSubscriptionEvents Class Doc Comment
  *
  * @category Class
- * @description The event that a user receives a subset of Tracking information specific to either packages coming or packages going, after subscription request is made.
  * @package  UPS\QuantumView
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -61,7 +60,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
         'number' => 'string',
         'subscription_status' => '\UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionStatus',
         'date_range' => '\UPS\QuantumView\QuantumView\SubscriptionEventsDateRange',
-        'subscription_file' => 'OneOfQuantumViewEventsSubscriptionEventsSubscriptionFile'
+        'subscription_file' => '\UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionFile[]'
     ];
 
     /**
@@ -242,7 +241,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name A name uniquely defined associated to the Subscription ID, for each subscription.� Required if the SubscriptionEvents container is present.
+     * @param string $name A name uniquely defined associated to the Subscription ID, for each subscription. Required if the SubscriptionEvents container is present.
      *
      * @return $this
      */
@@ -266,7 +265,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
     /**
      * Sets number
      *
-     * @param string $number A number uniquely defined associated to the Subscriber ID, for each subscription.� Required if the SubscriptionEvents container is present.
+     * @param string $number A number uniquely defined associated to the Subscriber ID, for each subscription. Required if the SubscriptionEvents container is present.
      *
      * @return $this
      */
@@ -328,7 +327,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
     /**
      * Gets subscription_file
      *
-     * @return OneOfQuantumViewEventsSubscriptionEventsSubscriptionFile
+     * @return \UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionFile[]
      */
     public function getSubscriptionFile()
     {
@@ -338,7 +337,7 @@ class QuantumViewEventsSubscriptionEvents implements ModelInterface, ArrayAccess
     /**
      * Sets subscription_file
      *
-     * @param OneOfQuantumViewEventsSubscriptionEventsSubscriptionFile $subscription_file subscription_file
+     * @param \UPS\QuantumView\QuantumView\SubscriptionEventsSubscriptionFile[] $subscription_file Container holds all of the unread files associated with the subscription.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

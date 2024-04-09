@@ -35,7 +35,6 @@ use \UPS\Locator\ObjectSerializer;
  * SearchResultsDropLocation Class Doc Comment
  *
  * @category Class
- * @description When a location request is submitted with a valid origin address, UPS locations will be returned.
  * @package  UPS\Locator
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -62,14 +61,14 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
         'ivr' => '\UPS\Locator\Locator\DropLocationIVR',
         'geocode' => '\UPS\Locator\Locator\DropLocationGeocode',
         'address_key_format' => '\UPS\Locator\Locator\DropLocationAddressKeyFormat',
-        'phone_number' => 'OneOfSearchResultsDropLocationPhoneNumber',
+        'phone_number' => 'string[]',
         'fax_number' => 'string',
         'e_mail_address' => 'string',
-        'location_attribute' => 'OneOfSearchResultsDropLocationLocationAttribute',
+        'location_attribute' => '\UPS\Locator\Locator\DropLocationLocationAttribute[]',
         'distance' => '\UPS\Locator\Locator\DropLocationDistance',
-        'special_instructions' => 'OneOfSearchResultsDropLocationSpecialInstructions',
-        'latest_ground_drop_off_time' => 'OneOfSearchResultsDropLocationLatestGroundDropOffTime',
-        'latest_air_drop_off_time' => 'OneOfSearchResultsDropLocationLatestAirDropOffTime',
+        'special_instructions' => '\UPS\Locator\Locator\DropLocationSpecialInstructions[]',
+        'latest_ground_drop_off_time' => 'string[]',
+        'latest_air_drop_off_time' => 'string[]',
         'additional_charge_indicator' => 'string',
         'standard_hours_of_operation' => 'string',
         'non_standard_hours_of_operation' => 'string',
@@ -78,13 +77,13 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
         'home_page_url' => 'string',
         'comments' => 'string',
         'additional_comments' => '\UPS\Locator\Locator\DropLocationAdditionalComments',
-        'disclaimer' => 'OneOfSearchResultsDropLocationDisclaimer',
+        'disclaimer' => 'string[]',
         'slic' => 'string',
         'timezone' => 'string',
         'facility_type' => 'string',
         'operating_hours' => '\UPS\Locator\Locator\DropLocationOperatingHours',
-        'localized_instruction' => 'OneOfSearchResultsDropLocationLocalizedInstruction',
-        'promotion_information' => 'OneOfSearchResultsDropLocationPromotionInformation',
+        'localized_instruction' => '\UPS\Locator\Locator\DropLocationLocalizedInstruction[]',
+        'promotion_information' => '\UPS\Locator\Locator\DropLocationPromotionInformation[]',
         'sort_code' => '\UPS\Locator\Locator\DropLocationSortCode',
         'service_offering_list' => '\UPS\Locator\Locator\DropLocationServiceOfferingList',
         'display_phone_number_indicator' => 'string',
@@ -568,7 +567,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets phone_number
      *
-     * @return OneOfSearchResultsDropLocationPhoneNumber
+     * @return string[]
      */
     public function getPhoneNumber()
     {
@@ -578,7 +577,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets phone_number
      *
-     * @param OneOfSearchResultsDropLocationPhoneNumber $phone_number The UPS locations Phone number. A phone number of the location will be returned.  10 digits allowed for US, otherwise 1..15 digits allowed.  The phone number will be returned as a string.
+     * @param string[] $phone_number The UPS locations Phone number. A phone number of the location will be returned.  10 digits allowed for US, otherwise 1..15 digits allowed.  The phone number will be returned as a string.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -640,7 +639,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets location_attribute
      *
-     * @return OneOfSearchResultsDropLocationLocationAttribute
+     * @return \UPS\Locator\Locator\DropLocationLocationAttribute[]
      */
     public function getLocationAttribute()
     {
@@ -650,7 +649,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets location_attribute
      *
-     * @param OneOfSearchResultsDropLocationLocationAttribute $location_attribute location_attribute
+     * @param \UPS\Locator\Locator\DropLocationLocationAttribute[] $location_attribute OptionType is a container that indicates the type of the location attribute.  There are 4 types of attributes.  They are: Location, Retail Location, Additional Services and Program Type.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -688,7 +687,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets special_instructions
      *
-     * @return OneOfSearchResultsDropLocationSpecialInstructions
+     * @return \UPS\Locator\Locator\DropLocationSpecialInstructions[]
      */
     public function getSpecialInstructions()
     {
@@ -698,7 +697,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets special_instructions
      *
-     * @param OneOfSearchResultsDropLocationSpecialInstructions $special_instructions special_instructions
+     * @param \UPS\Locator\Locator\DropLocationSpecialInstructions[] $special_instructions Walking directions.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -712,7 +711,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets latest_ground_drop_off_time
      *
-     * @return OneOfSearchResultsDropLocationLatestGroundDropOffTime
+     * @return string[]
      */
     public function getLatestGroundDropOffTime()
     {
@@ -722,7 +721,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets latest_ground_drop_off_time
      *
-     * @param OneOfSearchResultsDropLocationLatestGroundDropOffTime $latest_ground_drop_off_time The latest ground time the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Ground as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.
+     * @param string[] $latest_ground_drop_off_time The latest ground time the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Ground as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -736,7 +735,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets latest_air_drop_off_time
      *
-     * @return OneOfSearchResultsDropLocationLatestAirDropOffTime
+     * @return string[]
      */
     public function getLatestAirDropOffTime()
     {
@@ -746,7 +745,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets latest_air_drop_off_time
      *
-     * @param OneOfSearchResultsDropLocationLatestAirDropOffTime $latest_air_drop_off_time The latest airtime the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Air as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.
+     * @param string[] $latest_air_drop_off_time The latest airtime the users can Drop-off the package at the location to be picked up. The time information is based on the time at the UPS location.  When a user specifies a Drop-off Time and Air as the Service Type, the locations that have latest Drop-off times equal to or later than the specified Drop-off time and service type are returned.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -914,7 +913,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets comments
      *
-     * @param string $comments Comments returned about the location. Text will be displayed in English or the locale given in the request. If Country Code is FR, and locale passed in the request is fr_FR then text will be displayed in French language, else comment will be displayed in English language.
+     * @param string $comments Comments returned about the location. Text will be displayed in English or the locale given in the request. If Country Code is FR, and locale passed in the request is \"fr_FR\" then text will be displayed in French language, else comment will be displayed in English language.
      *
      * @return $this
      */
@@ -952,7 +951,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets disclaimer
      *
-     * @return OneOfSearchResultsDropLocationDisclaimer
+     * @return string[]
      */
     public function getDisclaimer()
     {
@@ -962,7 +961,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets disclaimer
      *
-     * @param OneOfSearchResultsDropLocationDisclaimer $disclaimer Textual disclaimer about the drop location.
+     * @param string[] $disclaimer Textual disclaimer about the drop location.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -1072,7 +1071,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets localized_instruction
      *
-     * @return OneOfSearchResultsDropLocationLocalizedInstruction
+     * @return \UPS\Locator\Locator\DropLocationLocalizedInstruction[]
      */
     public function getLocalizedInstruction()
     {
@@ -1082,7 +1081,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets localized_instruction
      *
-     * @param OneOfSearchResultsDropLocationLocalizedInstruction $localized_instruction localized_instruction
+     * @param \UPS\Locator\Locator\DropLocationLocalizedInstruction[] $localized_instruction LocalizedInstruction container. Applicable for SearchOptionCode 01, 02, 03.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -1096,7 +1095,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Gets promotion_information
      *
-     * @return OneOfSearchResultsDropLocationPromotionInformation
+     * @return \UPS\Locator\Locator\DropLocationPromotionInformation[]
      */
     public function getPromotionInformation()
     {
@@ -1106,7 +1105,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets promotion_information
      *
-     * @param OneOfSearchResultsDropLocationPromotionInformation $promotion_information promotion_information
+     * @param \UPS\Locator\Locator\DropLocationPromotionInformation[] $promotion_information Container to hold any promotion text for the location. Text will be displayed in English or the locale given in the request.  **NOTE:** For versions >= v2, this element will always be returned as an array. For requests using version = v1, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -1322,7 +1321,7 @@ class SearchResultsDropLocation implements ModelInterface, ArrayAccess
     /**
      * Sets will_call_location_indicator
      *
-     * @param string $will_call_location_indicator Will Call Location Indicator values: Y - Signifies a Will Call location that serves the customers address.  N - Signifies it is not a Will Call location. Will Call locations are only returned with a \"Y\" indicator if the request included EnhancedSearchOption code 10.
+     * @param string $will_call_location_indicator Will Call Location Indicator values: - Y – Signifies a Will Call location that serves the customers address. - N - Signifies it is not a Will Call location.  Will Call locations are only returned with a \\\"Y\\\" indicator if the request included EnhancedSearchOption code 10.
      *
      * @return $this
      */

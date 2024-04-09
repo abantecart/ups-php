@@ -35,7 +35,6 @@ use \UPS\Shipping\ObjectSerializer;
  * PackageResultsItemizedCharges Class Doc Comment
  *
  * @category Class
- * @description Itemized Charges are returned only when the subversion element is present and greater than or equal to 1607.  Package level itemized charges are only returned for US domestic movements
  * @package  UPS\Shipping
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

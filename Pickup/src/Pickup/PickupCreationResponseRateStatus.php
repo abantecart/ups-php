@@ -224,7 +224,7 @@ class PickupCreationResponseRateStatus implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code The rating status. 01 = Rate available 02 = Rate not available 03 = Rate not apply 04 = Rate not requested - If 01 is returned, then OnCallPickupRateResult will also be returned with rate details. - If 02 is returned, then OnCallPickupRateResult will not be returned. - If 03 is returned, then OnCallPickupRateResult will not be returned. The rate option is not appliable to this return pickup. The requester will not be charged. - If 04 is returned, then OnCallPickupRateResult will not be returned. The requester did not ask for rating this on-callpickup.
+     * @param string $code The rating status. - 01 = Rate available - 02 = Rate not available - 03 = Rate not apply - 04 = Rate not requested  - If 01 is returned, then OnCallPickupRateResult will also be returned with rate details. - If 02 is returned, then OnCallPickupRateResult will not be returned. - If 03 is returned, then OnCallPickupRateResult will not be returned. The rate option is not appliable to this return pickup. The requester will not be charged. - If 04 is returned, then OnCallPickupRateResult will not be returned. The requester did not ask for rating this on-callpickup.
      *
      * @return $this
      */

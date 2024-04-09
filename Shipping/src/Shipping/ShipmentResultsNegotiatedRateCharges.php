@@ -57,8 +57,8 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemized_charges' => 'OneOfShipmentResultsNegotiatedRateChargesItemizedCharges',
-        'tax_charges' => 'OneOfShipmentResultsNegotiatedRateChargesTaxCharges',
+        'itemized_charges' => '\UPS\Shipping\Shipping\NegotiatedRateChargesItemizedCharges[]',
+        'tax_charges' => '\UPS\Shipping\Shipping\NegotiatedRateChargesTaxCharges[]',
         'total_charge' => '\UPS\Shipping\Shipping\NegotiatedRateChargesTotalCharge',
         'total_charges_with_taxes' => '\UPS\Shipping\Shipping\NegotiatedRateChargesTotalChargesWithTaxes'
     ];
@@ -223,7 +223,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Gets itemized_charges
      *
-     * @return OneOfShipmentResultsNegotiatedRateChargesItemizedCharges
+     * @return \UPS\Shipping\Shipping\NegotiatedRateChargesItemizedCharges[]
      */
     public function getItemizedCharges()
     {
@@ -233,7 +233,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Sets itemized_charges
      *
-     * @param OneOfShipmentResultsNegotiatedRateChargesItemizedCharges $itemized_charges itemized_charges
+     * @param \UPS\Shipping\Shipping\NegotiatedRateChargesItemizedCharges[] $itemized_charges Itemized Charges are returned only when the Subversion element is present and greater than or equal to 1601.  Negotiated itemized charges are only returned for certain contract-only shipments as well as Worldwide Express Freight, Ground Freight Pricing, and Hazmat movements.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Gets tax_charges
      *
-     * @return OneOfShipmentResultsNegotiatedRateChargesTaxCharges
+     * @return \UPS\Shipping\Shipping\NegotiatedRateChargesTaxCharges[]
      */
     public function getTaxCharges()
     {
@@ -257,7 +257,7 @@ class ShipmentResultsNegotiatedRateCharges implements ModelInterface, ArrayAcces
     /**
      * Sets tax_charges
      *
-     * @param OneOfShipmentResultsNegotiatedRateChargesTaxCharges $tax_charges tax_charges
+     * @param \UPS\Shipping\Shipping\NegotiatedRateChargesTaxCharges[] $tax_charges TaxCharges container are returned only when TaxInformationIndicator is present in request. TaxCharges container contains Tax information for a given shipment.  **NOTE:** For versions >= v2403, this element will always be returned as an array. For requests using versions < v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1.
      *
      * @return $this
      */

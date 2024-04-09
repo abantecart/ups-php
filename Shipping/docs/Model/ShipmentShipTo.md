@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Consignee&#x27;s company name.  All other accounts must be either a daily pickup account or an occasional account. | 
-**attention_name** | **string** | Contact name at the consignee&#x27;s location.  Required for: UPS Next Day Air Early service, and when ShipTo country or territory is different than ShipFrom country or territory.   Required if Invoice International form is requested. | [optional] 
+**attention_name** | **string** | Contact name at the consignee&#x27;s location.  Required for: UPS Next Day Air® Early service, and when ShipTo country or territory is different than ShipFrom country or territory.  Required if Invoice International form is requested. | [optional] 
 **company_displayable_name** | **string** | Not applicable for ShipTo | [optional] 
 **tax_identification_number** | **string** | Consignee&#x27;s tax identification number. | [optional] 
 **phone** | [**\UPS\Shipping\Shipping\ShipToPhone**](ShipToPhone.md) |  | [optional] 

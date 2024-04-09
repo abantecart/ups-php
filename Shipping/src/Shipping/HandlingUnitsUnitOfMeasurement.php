@@ -224,7 +224,7 @@ class HandlingUnitsUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code associated with Unit of Measurement for the Adjusted height. Valid value: IN
+     * @param string $code Code for UnitOfMeasurement for the line item dimension. Valid value is IN
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class HandlingUnitsUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description Description for UnitOfMeasurement for the adjusted height.
+     * @param string $description Description for UnitOfMeasurement for the line item dimension.
      *
      * @return $this
      */

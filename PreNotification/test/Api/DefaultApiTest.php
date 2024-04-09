@@ -80,4 +80,14 @@ class DefaultApiTest extends TestCase
     public function testPreNotification()
     {
     }
+
+    /**
+     * Test case for preNotification_0
+     *
+     * Pre-Notification.
+     *
+     */
+    public function testPreNotification0()
+    {
+    }
 }

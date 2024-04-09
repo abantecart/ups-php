@@ -224,7 +224,7 @@ class UnitUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code Code for the Unit of measurement of the commodity units.
+     * @param string $code Code for the Unit of measurement of the commodity units.  Required for Invoice forms and optional for Partial Invoice.  Refer to Product Unit of Measure Codes in the Appendix for valid values.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UnitUnitOfMeasurement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description The Unit of Measure if OTH (Other) is entered as the UnitOfMeasurement code.
+     * @param string $description The Unit of Measure if OTH (Other) is entered as the UnitOfMeasurement code.  Applies to Invoice and Partial Invoice forms.  Conditionally Required for the Invoice and Partial Invoice form if OTH is entered as the units UnitOfMeasurement Code.
      *
      * @return $this
      */

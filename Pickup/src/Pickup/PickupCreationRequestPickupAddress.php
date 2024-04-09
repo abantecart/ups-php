@@ -476,7 +476,7 @@ class PickupCreationRequestPickupAddress implements ModelInterface, ArrayAccess
     /**
      * Sets urbanization
      *
-     * @param string $urbanization Barrio for Mexico (MX) Urbanization for Puerto Rico (PR) Shire for United Kingdom (UK)
+     * @param string $urbanization - Barrio for Mexico (MX) - Urbanization for Puerto Rico (PR) - Shire for United Kingdom (UK)
      *
      * @return $this
      */

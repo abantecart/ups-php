@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * ResponseAlertTest Class Doc Comment
  *
  * @category    Class
- * @description Alert Container.  There can be zero to many alert containers with code and description.
+ * @description ResponseAlert
  * @package     UPS\AddressValidation
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

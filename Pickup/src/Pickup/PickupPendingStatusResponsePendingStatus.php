@@ -275,7 +275,7 @@ class PickupPendingStatusResponsePendingStatus implements ModelInterface, ArrayA
     /**
      * Sets pickup_type
      *
-     * @param string $pickup_type Specify the type of pending pickup. 01 = on-callPickup
+     * @param string $pickup_type Specify the type of pending pickup. - 01 = on-callPickup
      *
      * @return $this
      */
@@ -299,7 +299,7 @@ class PickupPendingStatusResponsePendingStatus implements ModelInterface, ArrayA
     /**
      * Sets service_date
      *
-     * @param string $service_date Local service date Format: yyyyMMdd yyyy = Year applicable MM = 01� 12 dd = 01� 31
+     * @param string $service_date Local service date. Format: yyyyMMdd - yyyy = Year applicable - MM = 01-12 - dd = 01-31
      *
      * @return $this
      */
@@ -395,7 +395,7 @@ class PickupPendingStatusResponsePendingStatus implements ModelInterface, ArrayA
     /**
      * Sets pickup_status_message
      *
-     * @param string $pickup_status_message The status for on-callpickup. PickupPendingStatusResponse will only display incomplete status for today and tomorrow only.  002 and 012 are the most common responses. 001 = Received at dispatch 002 = Dispatched to driver 003 = Order successfully completed 004 = Order unsuccessfully completed 005 = Missed commit � Updated ETA supplied by driver 007 = Cancelled 008 = Order has invalid order status 012 = Your pickup request is being processed
+     * @param string $pickup_status_message The status for on-callpickup.  PickupPendingStatusResponse will only display incomplete status for today and tomorrow only. - 002 and 012 are the most common responses. - 001 = Received at dispatch - 002 = Dispatched to driver - 003 = Order successfully completed - 004 = Order unsuccessfully completed - 005 = Missed commit – Updated ETA supplied by driver - 007 = Cancelled - 008 = Order has invalid order status - 012 = Your pickup request is being processed
      *
      * @return $this
      */
@@ -419,7 +419,7 @@ class PickupPendingStatusResponsePendingStatus implements ModelInterface, ArrayA
     /**
      * Sets billing_code
      *
-     * @param string $billing_code Pickup billing classification for on call 01 = Regular 02 = Return 03 = Alternate Address (Not supported for now)
+     * @param string $billing_code Pickup billing classification for on call - 01 = Regular - 02 = Return - 03 = Alternate Address (Not supported for now)
      *
      * @return $this
      */

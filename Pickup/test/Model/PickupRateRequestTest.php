@@ -120,6 +120,13 @@ class PickupRateRequestTest extends TestCase
     }
 
     /**
+     * Test attribute "rate_chart_type"
+     */
+    public function testPropertyRateChartType()
+    {
+    }
+
+    /**
      * Test attribute "tax_information_indicator"
      */
     public function testPropertyTaxInformationIndicator()

@@ -251,7 +251,7 @@ class CODCODAmount implements ModelInterface, ArrayAccess
     /**
      * Sets monetary_value
      *
-     * @param string $monetary_value COD Amount.  Valid values: 0.01 USD to 50000.00 USD
+     * @param string $monetary_value COD Amount monetary value.
      *
      * @return $this
      */

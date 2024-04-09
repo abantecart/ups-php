@@ -34,7 +34,7 @@ use PHPUnit\Framework\TestCase;
  * NotificationEMailTest Class Doc Comment
  *
  * @category    Class
- * @description Container for the e-mail message.
+ * @description Container for Email Information.
  * @package     UPS\Shipping
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
