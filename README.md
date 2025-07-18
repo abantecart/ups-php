@@ -54,9 +54,10 @@ $password = '***YOUR_UPS_API_PASSWORD***';
 
 $config = \UPS\OAuthClientCredentials\Configuration::getDefaultConfiguration()
     ->setUsername($clientId)
-    ->setPassword($password);
+    ->setPassword($password)
+    ->setHost('https://wwwcie.ups.com');
 
-$apiInstance = new \UPS\OAuthClientCredentials\Request\DefaultApi(
+$apiInstance = new \UPS\OAuthClientCredentials\Request\OAuthClientCredentialsApi(
 // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
 // This is optional, `GuzzleHttp\Client` will be used as default.
     new \GuzzleHttp\Client(),
@@ -79,7 +80,7 @@ Rating request:
 // Configure OAuth2 access token for authorization: oauth2
 $config = UPS\Rating\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new UPS\Rating\Request\DefaultApi(
+$apiInstance = new UPS\Rating\Request\RatingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -99,6 +100,10 @@ try {
     echo 'Exception when calling DefaultApi->rate: ', $e->getMessage(), PHP_EOL;
 }
 ```
+More examples see in the _examples directory. 
+Shipment creation and getting labels code available inside AbanteCart "UPS" extension since v1.4.3
+
+
 
 ## Documentation
 
