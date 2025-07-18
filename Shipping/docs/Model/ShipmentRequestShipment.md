@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **ship_from** | [**\UPS\Shipping\Shipping\ShipmentShipFrom**](ShipmentShipFrom.md) |  | [optional] 
 **payment_information** | [**\UPS\Shipping\Shipping\ShipmentPaymentInformation**](ShipmentPaymentInformation.md) |  | [optional] 
 **frs_payment_information** | [**\UPS\Shipping\Shipping\ShipmentFRSPaymentInformation**](ShipmentFRSPaymentInformation.md) |  | [optional] 
+**global_tax_information** | [**\UPS\Shipping\Shipping\ShipmentGlobalTaxInformation**](ShipmentGlobalTaxInformation.md) |  | [optional] 
+**world_ease** | [**\UPS\Shipping\Shipping\ShipmentWorldEase**](ShipmentWorldEase.md) |  | [optional] 
 **freight_shipment_information** | [**\UPS\Shipping\Shipping\ShipmentFreightShipmentInformation**](ShipmentFreightShipmentInformation.md) |  | [optional] 
 **goods_not_in_free_circulation_indicator** | **string** | Goods Not In Free Circulation indicator.  This is an empty tag, any value inside is ignored. This indicator is invalid for a package type of UPS Letter and DocumentsOnly. | [optional] 
 **promotional_discount_information** | [**\UPS\Shipping\Shipping\ShipmentPromotionalDiscountInformation**](ShipmentPromotionalDiscountInformation.md) |  | [optional] 
@@ -42,6 +44,7 @@ Name | Type | Description | Notes
 **master_carton_indicator** | **string** | Master Carton Indicator. Presence of the indicator means Master Carton ID will be created and returned to client.  This is an empty tag, any value inside is ignored.                                                                  MasterCartonIndicator is only valid with Econmoy Shipment (Service Code 17 or 72). Will be ignored if master carton id present. | [optional] 
 **shipment_date** | **string** | User can send up to 7 days in the future with current date as day zero. Format: YYYYMMDD | [optional] 
 **package** | [**\UPS\Shipping\Shipping\ShipmentPackage[]**](ShipmentPackage.md) |  | 
+**quote_id** | **string** | This field is used to pass the Quote ID generated from the Global Checkout API. This is mandatory to validate your Global Checkout Guaranteed Landed Cost. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

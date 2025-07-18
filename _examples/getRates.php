@@ -4,7 +4,7 @@
 /** @see getAccessToken.php */
 $config = UPS\Rating\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new UPS\Rating\Request\DefaultApi(
+$apiInstance = new UPS\Rating\Request\RatingApi(
 // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
 // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

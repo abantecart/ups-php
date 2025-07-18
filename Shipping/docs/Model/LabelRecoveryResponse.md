@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **response** | [**\UPS\Shipping\Shipping\LabelRecoveryResponseResponse**](LabelRecoveryResponseResponse.md) |  | 
 **shipment_identification_number** | **string** | Tracking number of the leading package in the shipment | [optional] 
-**label_results** | [**OneOfLabelRecoveryResponseLabelResults**](OneOfLabelRecoveryResponseLabelResults.md) |  | 
+**label_results** | [**\UPS\Shipping\Shipping\LabelRecoveryResponseLabelResults[]**](LabelRecoveryResponseLabelResults.md) |  | 
 **cod_turn_in_page** | [**\UPS\Shipping\Shipping\LabelRecoveryResponseCODTurnInPage**](LabelRecoveryResponseCODTurnInPage.md) |  | [optional] 
 **form** | [**\UPS\Shipping\Shipping\LabelRecoveryResponseForm**](LabelRecoveryResponseForm.md) |  | [optional] 
 **high_value_report** | [**\UPS\Shipping\Shipping\LabelRecoveryResponseHighValueReport**](LabelRecoveryResponseHighValueReport.md) |  | [optional] 

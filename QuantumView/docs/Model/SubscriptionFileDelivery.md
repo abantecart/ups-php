@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**package_reference_number** | [**\UPS\QuantumView\QuantumView\DeliveryPackageReferenceNumber[]**](DeliveryPackageReferenceNumber.md) | Package-level reference number.  **NOTE:** For versions &gt;&#x3D; v2, this element will always be returned as an array. For requests using version &#x3D; v1, this element will be returned as an array if there is more than one object and a single object if there is only 1. | [optional] 
-**shipment_reference_number** | [**\UPS\QuantumView\QuantumView\DeliveryShipmentReferenceNumber[]**](DeliveryShipmentReferenceNumber.md) | Container tag for shipment reference number.  **NOTE:** For versions &gt;&#x3D; v2, this element will always be returned as an array. For requests using version &#x3D; v1, this element will be returned as an array if there is more than one object and a single object if there is only 1. | [optional] 
+**package_reference_number** | [**\UPS\QuantumView\QuantumView\DeliveryPackageReferenceNumber[]**](DeliveryPackageReferenceNumber.md) | Package-level reference number.  **NOTE:** For versions &gt;&#x3D; v3, this element will always be returned as an array. For requests using version &#x3D; v1 and v2, this element will be returned as an array if there is more than one object and a single object if there is only 1. | [optional] 
+**shipment_reference_number** | [**\UPS\QuantumView\QuantumView\DeliveryShipmentReferenceNumber[]**](DeliveryShipmentReferenceNumber.md) | Container tag for shipment reference number.  **NOTE:** For versions &gt;&#x3D; v3, this element will always be returned as an array. For requests using version &#x3D; v1 and v2, this element will be returned as an array if there is more than one object and a single object if there is only 1. | [optional] 
 **shipper_number** | **string** | Shipper&#x27;s six digit alphanumeric account number. | 
 **tracking_number** | **string** | Package&#x27;s 1Z tracking number. | 
 **date** | **string** | Date that the package is delivered. Date format is YYYYMMDD. | 

@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**delivery_photo** | [**\UPS\Tracking\Tracking\DeliveryPhoto**](DeliveryPhoto.md) |  | [optional] 
 **location** | **string** | The location where the package was dropped off. For example: &#x27;Front Door&#x27; | [optional] 
 **received_by** | **string** | The individual who took possession of the package at delivery. | [optional] 
 **signature** | [**\UPS\Tracking\Tracking\Signature**](Signature.md) |  | [optional] 

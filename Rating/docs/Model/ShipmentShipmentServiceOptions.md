@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**global_checkout_indicator** | **string** | A flag indicating if the shipment requires a GlobalCheckoutIndicator. True if GlobalCheckoutIndicator tag exists; false otherwise  Empty Tag. | [optional] 
 **saturday_pickup_indicator** | **string** | A flag indicating if the shipment requires a Saturday pickup. True if SaturdayPickupIndicator tag exists; false otherwise. Not available for GFP rating requests.  Empty Tag. | [optional] 
 **saturday_delivery_indicator** | **string** | A flag indicating if a shipment must be delivered on a Saturday. True if SaturdayDeliveryIndicator tag exists; false otherwise  Empty Tag. | [optional] 
 **sunday_delivery_indicator** | **string** | A flag indicating if a shipment must be delivered on a Sunday. True if SundayDeliveryIndicator tag exists; false otherwise  Empty Tag. | [optional] 

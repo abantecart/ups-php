@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tracking_number** | **string** | Package 1Z number.   For Mail Innovations shipments, please use the USPSPICNumber when tracking packages (a non-1Z number Mail Manifest Id is returned). | 
-**rate_modifier** | [**\UPS\Shipping\Shipping\PackageResultsRateModifier**](PackageResultsRateModifier.md) |  | [optional] 
+**rate_modifier** | [**\UPS\Shipping\Shipping\PackageResultsRateModifier[]**](PackageResultsRateModifier.md) | Returned Package Information.  **NOTE:** For versions &gt;&#x3D; v2403, this element will always be returned as an array. For requests using versions &lt; v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1. | [optional] 
 **base_service_charge** | [**\UPS\Shipping\Shipping\PackageResultsBaseServiceCharge**](PackageResultsBaseServiceCharge.md) |  | [optional] 
 **service_options_charges** | [**\UPS\Shipping\Shipping\PackageResultsServiceOptionsCharges**](PackageResultsServiceOptionsCharges.md) |  | [optional] 
 **shipping_label** | [**\UPS\Shipping\Shipping\PackageResultsShippingLabel**](PackageResultsShippingLabel.md) |  | [optional] 

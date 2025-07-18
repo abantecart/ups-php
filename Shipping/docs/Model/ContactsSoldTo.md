@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Company Name. | 
 **attention_name** | **string** | Sold to contact name. | 
-**tax_identification_number** | **string** | SoldTo Tax Identification Number. | [optional] 
+**tax_identification_number** | **string** | SoldTo Tax Identification Number. This element has been deprecated, replacement can be found in the GlobalTaxInformation container. | [optional] 
 **phone** | [**\UPS\Shipping\Shipping\SoldToPhone**](SoldToPhone.md) |  | [optional] 
 **option** | **string** | The text associated with the code will be printed in the sold to section of the NAFTA CO form.  The values indicate the following: 01 – Unknown.  Applies to NAFTA CO form. Possible Values are 01 and 02. | [optional] 
 **address** | [**\UPS\Shipping\Shipping\SoldToAddress**](SoldToAddress.md) |  | 

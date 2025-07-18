@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **negotiated_rate_charges** | [**\UPS\Rating\Rating\RatedShipmentNegotiatedRateCharges**](RatedShipmentNegotiatedRateCharges.md) |  | [optional] 
 **rated_package** | [**\UPS\Rating\Rating\RatedShipmentRatedPackage[]**](RatedShipmentRatedPackage.md) | Rated Package Container.  **NOTE:** For versions &gt;&#x3D; v2403, this element will always be returned as an array. For requests using versions &lt; v2403, this element will be returned as an array if there is more than one object and a single object if there is only 1. | 
 **time_in_transit** | [**\UPS\Rating\Rating\RatedShipmentTimeInTransit**](RatedShipmentTimeInTransit.md) |  | [optional] 
+**guaranteed_delivery** | [**\UPS\Rating\Rating\RatedShipmentGuaranteedDelivery**](RatedShipmentGuaranteedDelivery.md) |  | [optional] 
 **scheduled_delivery_date** | **string** | The rated shipments scheduled delivery date, ScheduledDeliveryDate returned only when Subversion of 2205 was sent in the request and the customer has the specific contract. | [optional] 
 **roar_rated_indicator** | **string** | Informational only | [optional] 
 

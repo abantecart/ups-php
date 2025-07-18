@@ -4,10 +4,10 @@ All URIs are relative to *https://wwwcie.ups.com/api/track/{version}*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**processSubscriptionTypeForTrackingNumber**](UPSTrackAlertApi.md#processsubscriptiontypefortrackingnumber) | **POST** /subscription/{type}/package | API to create subscriptions by tracking numbers.
+[**processSubscriptionTypeForTrackingNumber**](UPSTrackAlertApi.md#processsubscriptiontypefortrackingnumber) | **POST** /subscription/standard/package | API to create subscriptions by tracking numbers.
 
 # **processSubscriptionTypeForTrackingNumber**
-> \UPS\UPSTrackAlert\UPSTrackAlert\TrackSubsServiceResponse processSubscriptionTypeForTrackingNumber($trans_id, $transaction_src, $type, $body)
+> \UPS\UPSTrackAlert\UPSTrackAlert\TrackSubsServiceResponse processSubscriptionTypeForTrackingNumber($trans_id, $transaction_src, $version, $body)
 
 API to create subscriptions by tracking numbers.
 
@@ -18,7 +18,7 @@ This endpoint takes a list of tracking numbers and creates a subscription for ea
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure OAuth2 access token for authorization: oauth2
+// Configure OAuth2 access token for authorization: OAuth2
 $config = UPS\UPSTrackAlert\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 $apiInstance = new UPS\UPSTrackAlert\Request\UPSTrackAlertApi(
@@ -27,13 +27,13 @@ $apiInstance = new UPS\UPSTrackAlert\Request\UPSTrackAlertApi(
     new GuzzleHttp\Client(),
     $config
 );
-$trans_id = "trans_id_example"; // string | An identifier unique to the request.
-$transaction_src = "transaction_src_example"; // string | Identifies the client/source application that is calling.
-$type = "type_example"; // string | - 'Standard' - Represents a standard subscription type that provides near real time updates on tracking status.
+$trans_id = new \UPS\UPSTrackAlert\UPSTrackAlert\null(); //  | An identifier unique to the request.
+$transaction_src = new \UPS\UPSTrackAlert\UPSTrackAlert\null(); //  | Identifies the client/source application that is calling.
+$version = new \UPS\UPSTrackAlert\UPSTrackAlert\null(); //  | version
 $body = new \UPS\UPSTrackAlert\UPSTrackAlert\TrackSubsServiceRequest(); // \UPS\UPSTrackAlert\UPSTrackAlert\TrackSubsServiceRequest | 
 
 try {
-    $result = $apiInstance->processSubscriptionTypeForTrackingNumber($trans_id, $transaction_src, $type, $body);
+    $result = $apiInstance->processSubscriptionTypeForTrackingNumber($trans_id, $transaction_src, $version, $body);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UPSTrackAlertApi->processSubscriptionTypeForTrackingNumber: ', $e->getMessage(), PHP_EOL;
@@ -45,9 +45,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **trans_id** | **string**| An identifier unique to the request. |
- **transaction_src** | **string**| Identifies the client/source application that is calling. |
- **type** | **string**| - &#x27;Standard&#x27; - Represents a standard subscription type that provides near real time updates on tracking status. |
+ **trans_id** | [****](../Model/.md)| An identifier unique to the request. |
+ **transaction_src** | [****](../Model/.md)| Identifies the client/source application that is calling. |
+ **version** | [****](../Model/.md)| version |
  **body** | [**\UPS\UPSTrackAlert\UPSTrackAlert\TrackSubsServiceRequest**](../Model/TrackSubsServiceRequest.md)|  | [optional]
 
 ### Return type
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth2](../../README.md#oauth2)
+[OAuth2](../../README.md#OAuth2)
 
 ### HTTP request headers
 

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **seeds_indicator** | **string** | Presence/Absence Indicator. True if present; false otherwise. Any value is ignored. If present, indicates that the package contains Seeds.  Shippers account needs to have a valid contract for Seeds. | [optional] 
 **special_exceptions_indicator** | **string** | Presence/Absence Indicator. True if present; false otherwise. Any value is ignored. If present, indicates that the package contains Special Exception items.  Shippers account needs to have a valid contract for Special Exceptions. | [optional] 
 **tobacco_indicator** | **string** | Presence/Absence Indicator. True if present; false otherwise. Any value is ignored. If present, indicates that the package contains Tobacco  Shippers account needs to have a valid contract for Tobacco. | [optional] 
+**e_cigarettes_indicator** | **string** | Presence/Absence Indicator. True if present; false otherwise. Any value is ignored. If present, indicates that the package contains Ecigarettes  Shippers account needs to have a valid contract for Ecigarettes. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **delivery_date** | [**\UPS\Tracking\Tracking\DeliveryDate[]**](DeliveryDate.md) |  | [optional] 
 **delivery_information** | [**\UPS\Tracking\Tracking\DeliveryInformation**](DeliveryInformation.md) |  | [optional] 
 **delivery_time** | [**\UPS\Tracking\Tracking\DeliveryTime**](DeliveryTime.md) |  | [optional] 
+**dimension** | [**\UPS\Tracking\Tracking\Dimension**](Dimension.md) |  | [optional] 
+**is_smart_package** | **bool** | Indicator of whether the package is a smart package | [optional] 
 **milestones** | [**\UPS\Tracking\Tracking\Milestones[]**](Milestones.md) | milestones | [optional] 
 **package_address** | [**\UPS\Tracking\Tracking\PackageAddress[]**](PackageAddress.md) |  | [optional] 
 **package_count** | **int** | The total number of packages in the shipment. Note that this number may be greater than the number of returned packages in the response. In such cases subsequent calls are needed to get additional packages. | [optional] 
@@ -22,6 +24,7 @@ Name | Type | Description | Notes
 **status_description** | **string** | The activity status description. Note: this field will be translated based on the locale provided in the request. | [optional] 
 **suppression_indicators** | **string[]** | Contains values which signify that certain data should be suppressed or hidden. Valid values: Tracking activity details should be hidden. Note: this is mainly intended for use by UPS.com applications. | [optional] 
 **tracking_number** | **string** |  | [optional] 
+**ucix_status** | **string** | This indicator provides UCIX (UPS Customer Information Exchange) status Valid values: &#x27;O&#x27; means open. &#x27;C&#x27; means closed. | [optional] 
 **weight** | [**\UPS\Tracking\Tracking\Weight**](Weight.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -9,9 +9,10 @@ $password = '***YOUR_UPS_API_PASSWORD***';
 
 $config = \UPS\OAuthClientCredentials\Configuration::getDefaultConfiguration()
     ->setUsername($clientId)
-    ->setPassword($password);
+    ->setPassword($password)
+    ->setHost('https://wwwcie.ups.com');
 
-$apiInstance = new \UPS\OAuthClientCredentials\Request\DefaultApi(
+$apiInstance = new \UPS\OAuthClientCredentials\Request\OAuthClientCredentialsApi(
 // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
 // This is optional, `GuzzleHttp\Client` will be used as default.
     new \GuzzleHttp\Client(),
